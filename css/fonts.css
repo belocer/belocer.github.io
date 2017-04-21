@@ -1,0 +1,142 @@
+body {
+	font-size: 16px;
+}
+
+@font-face {
+	font-family: 'Montserrat-Regular';
+	src: url(../fonts/montserrat-regular/Montserrat-Regular.woff);
+	src: url(../fonts/montserrat-regular/Montserrat-Regular.woff) format('woff'),
+		 url(../fonts/montserrat-regular/Montserrat-Regular.woff2) format('woff2'),
+		 url(../fonts/montserrat-regular/Montserrat-Regular.eot) format('eot'),
+		 url(../fonts/montserrat-regular/Montserrat-Regular.ttf) format('ttf'),
+		 url(../fonts/montserrat-regular/Montserrat-Regular.svg) format('svg');
+}
+
+@font-face {
+	font-family: 'Montserrat-Black';
+	src: url(../fonts/montserrat-black/montserrat-black.woff);
+	src: url(../fonts/montserrat-black/montserrat-black.woff) format('woff'),
+		 url(../fonts/montserrat-black/montserrat-black.woff2) format('woff2'),
+		 url(../fonts/montserrat-black/montserrat-black.eot) format('eot'),
+		 url(../fonts/montserrat-black/montserrat-black.ttf) format('ttf'),
+		 url(../fonts/montserrat-black/montserrat-black.svg) format('svg');
+}
+
+@font-face {
+	font-family: 'CrimsonText-Roman';
+	src: url(../fonts/crimsonText-roman/crimsontext-roman.woff);
+	src: url(../fonts/crimsonText-roman/crimsontext-roman.woff) format('woff'),
+		 url(../fonts/crimsonText-roman/crimsontext-roman.woff2) format('woff2'),
+		 url(../fonts/crimsonText-roman/crimsontext-roman.eot) format('eot'),
+		 url(../fonts/crimsonText-roman/crimsontext-roman.ttf) format('ttf'),
+		 url(../fonts/crimsonText-roman/crimsontext-roman.svg) format('svg');
+}
+		
+				/*Главное меню*/
+.header__menu li a {	
+	font-family: 'Montserrat-Regular';
+}
+
+.header__cart span {
+	font-family: 'Montserrat-Regular';
+}
+
+.header__sign-in {	
+	font-family: 'Montserrat-Regular';
+	text-transform: uppercase;
+	color:  #343e5b;
+	font-size: 0.688rem;
+	font-weight: 400;
+	text-align: center;
+	line-height: 28px;
+	text-decoration: none;
+}
+
+.header__cart span:nth-child(1) {
+	font-family: 'Montserrat-Regular';
+	color:  #343e5b;
+}
+
+.header__cart span:nth-child(2) {
+	font-size: 0.688rem;
+	font-weight: 400;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.header__cart span:nth-child(3) {
+	font-family: 'Montserrat-Regular';
+	color:  #343e5b;
+	font-size: 0.688rem;
+	font-weight: 400;
+	text-align: center;
+	line-height: 22px;
+}
+
+					/*Второе меню*/
+.second-menu__menu li {
+	font-family: 'Montserrat-Regular';
+	color:  #b9bed1;
+	font-size: 0.688rem;
+	font-weight: 400;
+	text-align: left;
+}
+
+.second-menu__menu li a {
+	text-transform: uppercase;
+}
+
+.second-menu__menu > li:nth-child(3) > a {
+	color:  #343e5b;
+}
+
+.second-menu__support {
+	font-family: 'Montserrat-Regular';
+	color:  #b9bed1;
+	font-size: 0.688rem;
+	font-weight: 400;
+	text-align: right;
+}
+
+.second-menu__search {
+	font-family: 'Montserrat-Regular';
+	color:  #a1a8be;
+	font-size: 0.875rem;
+	font-weight: 400;
+	text-align: left;
+	line-height: 56px;
+}
+
+.second-menu__search > span:nth-child(2) {
+	font-family: 'Montserrat-Regular';
+	color:  #a1a8be;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.714;
+}
+				/*Банер с товаром*/
+.banner-item__header {
+	font-family: 'Montserrat-Regular';
+	color:  #ffffff;
+	font-size: 2.625rem;
+	font-weight: 900;
+	text-align: left;
+}
+
+.banner-item__specification {
+	font-family: 'CrimsonText-Roman';
+	color:  #ffffff;
+	font-size: 1rem;
+	line-height: 1.5;
+	text-align: left;
+}
+
+.banner-item__button {
+	font-family: 'Montserrat-Regular';
+	color:  #ffffff;
+	font-size: 0.688rem;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	text-align: center;	
+	text-decoration: none;
+	text-transform: uppercase;
+}
