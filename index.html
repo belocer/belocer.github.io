@@ -2,63 +2,64 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Углубление в Вёрстку</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lesson 5</title>
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fonts.css">
 </head>
 <body>
-	<div class="container">
-		<h2>Шоу ВЁРСТКА!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora totam ullam, 
-			ut enim voluptatem natus ratione provident culpa quaerat architeoriosam 
-			deserunt, a laborum, quasi beatae! Distinctio dolorum, 
-			nesciunt quae ex dignissimos, est vel, facere natus deserunt hic modi nostrum, 
-			cupiditate. Corporis ipsam minima expedita est cum accusantium tenetur non fugiat 
-			doloremque quasi voluptatum nisi ipsum nobis odit, asperiores, 
-			perferendis quo provident incidunt dignissimos cto quidem expedita dolore,
-			tenetur cum. Animi esse error, aliquam impedit aut saepe,
-			accusantium nostrum at quam maiores nisi laboriosam. 
-			Amet doloribus dolore facilis labore ea porro a esse dolorum iusto.
-			Error adipisci iusto, esse ea autem perferendis facilis quaerat ratione a neque reprehenderit.
-			Ea unde reprehenderit voluptatem, temporibus architecto. Facilis.</p>
-		<img src="http://bttm.co.uk/wp-content/uploads/2015/11/Star-wars-250x250.jpg" alt="">
-		<h2>Optio vero quidem sed illum, perferendis necessitatibus?</h2>
-		<p>Labore quis perferendis totam, assumenda temporibus numquam iure est odio obcaecati
-			itaque laboriosam deserunt, a laborum, quasi beatae! Distinctio dolorum, 
-			nesciunt quae ex dignissimos, est vel, facere natus deserunt hic modi nostrum,
-			cupiditate. 
-			Corporis ipsam minima expedita est cum accusantium tenetur non fugiat doloremque quasi 
-			voluptatum nisi ipsum nobis odit, asperiores, perferendis quo provident incidunt dignissimos oriosam deserunt,
-			a laborum, quasi beatae! Distinctio dolorum,
-			nesciunt quae ex dignissimos, est vel, facere natus deserunt hic modi nostrum, 
-			cupiditate. Corporis ipsam minima expedita est cum accusantium tenetur non
-			fugiat doloremque quasi voluptatum nisi ipsum nobis odit, asperiores, 
-			perferendis quo provident incidunt dignissimos voluptatibus sint eveniet 
-			molestiae iure! Quia qui atque, voluptatum? Ratione reiciendis cupiditate, nemo necessitatibus?
-		</p><img src="https://www.crafthubs.com/thumbs/victorian-star-wars.jpg" alt="">
-		<h2>Asperiores nemo dolor facere voluptatem, harum nostrum!</h2>
-		<p>Aliquid ad, ipsa consequatur excepturi eligendi vero? Saepe laboriosam amet earum corporis 
-			cumque quod a ea impedit possimus eveniet delectoriosam deserunt, a laborum,
-			quasi beatae! Distinctio dolorum, nesciunt quae ex dignissimos, est vel, facere 
-			natus deserunt hic modi nostrum, cupiditate. Corporis ipsam minima expedita est
-			cum accusantium tenetur non fugiat doloremque quasi voluptatum nisi ipsum nobis
-			odit, asperiores, perferendis quo provident incidunt dignissimos us architecto 
-			reprehenderit perferendis eius sed assumenda repellendus molestias nam magnam,
-			optio quasi!<img src="http://plasticandplush.com/images/2014/12/250x250/Hot-Toys-Star-Wars-Teaser-The-Circle-is-Now-Complete.jpg" alt=""> Quam amet dolores,
-			minima pariatur unde reprehenderit id iure aut, vel alias, nam, ex? Delectus 
-			aliquid voluptatem nisi enim pariatur voluptas a et consequatur dolores ea sit,
-			laborum consequuntur accusamus fugiat maxime, facere consectetur numquam cum,
-			quaerat voluptatibus.</p>
-		<p>Aliquid ad, ipsa consequatur excepturi eligendi vero? Saepe laboriosam amet 
-			earum corporis cumque quod a ea impedit possimus eveniet delectoriosam deserunt, 
-			a laborum, quasi beatae! Distinctio dolorum, nesciunt quae ex dignissimos, est vel,
-			facere natus deserunt hic modi nostrum, cupiditate. Corporis ipsam minima expedita
-			est cum accusantium tenetur non fugiat doloremque quasi voluptatum nisi ipsum nobis odit,
-			asperiores, perferendis quo provident incidunt dignissimos us architecto reprehenderit 
-			perferendis eius sed assumenda repellendus molestias nam magnam, 
-			optio quasi!<img src="http://www.pixeldynamo.com/wp-content/uploads/2015/11/Star-Wars-Battlefront-review-cover.jpg" alt=""> Quam amet dolores,
-			minima pariatur unde reprehenderit id iure aut, vel alias, nam, ex?
-			Delectus aliquid voluptatem nisi enim pariatur voluptas a et consequatur dolores ea sit,
-			laborum consequuntur accusamus fugiat maxime, facere consectetur numquam cum, quaerat voluptatibus.</p>
+<header class="header">
+	<!-- лого -->
+	<span class="header__logo"></span>
+	<!-- меню -->
+	<ul class="header__menu">
+		<li><a>Home</a></li>
+		<li><a>Devices</a></li>
+		<li><a>Delivery &amp; Payment</a></li>
+		<li><a>Guarantee</a></li>
+		<li><a>About Us</a></li>
+	</ul>
+<!-- корзину и sign up обернул для того что бы подвинуть вправо -->
+	<div class="header__wrap-right">	
+		<!-- корзина -->
+		<div class="header__cart">
+			<span></span>
+			<span>cart</span>
+			<span>0</span>
+		</div>
+		<!-- кнопка "войти" -->
+		<a href="#" class="header__sign-in">sign in</a>
 	</div>
+
+</header>
+
+
+ 		<!-- подменю -->
+<div class="second-menu">
+	<ul class="second-menu__menu">
+		<li><a>top sales</a></li>
+		<li><a>brand focus</a></li>
+		<li><a>hi-tech</a></li>
+		<li><a>best sellers</a></li>
+		<li><a>projects</a></li>
+	</ul>
+	<div class="second-menu__support">support</div>
+	<div class="second-menu__search">
+		<span></span>
+		<span>I'm looking for ...</span>
+	</div>
+</div>
+
+
+			<!-- блок с товаром -->
+<div class="banner-item">
+	<h1 class="banner-item__header">iPhone 6 32Gb<br>Black</h1>
+	<p class="banner-item__specification">
+		At first, for some time, I was not able to answer him one<br> word; but as he had taken me in his arms I held fast by him,<br> or I should have fallen to the ground.<br>
+	</p>
+	<a href="#" class="banner-item__button">buy now</a>
+	<img class="banner-item__img" src="img/phone.png" alt="item">
+</div>
 </body>
-</html>
+</html>	
