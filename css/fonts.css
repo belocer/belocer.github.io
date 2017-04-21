@@ -4,12 +4,13 @@ body {
 
 @font-face {
 	font-family: 'Montserrat-Regular';
-	src: url(../fonts/montserrat-regular/Montserrat-Regular.woff);
-	src: url(../fonts/montserrat-regular/Montserrat-Regular.woff) format('woff'),
-		 url(../fonts/montserrat-regular/Montserrat-Regular.woff2) format('woff2'),
-		 url(../fonts/montserrat-regular/Montserrat-Regular.eot) format('eot'),
-		 url(../fonts/montserrat-regular/Montserrat-Regular.ttf) format('ttf'),
-		 url(../fonts/montserrat-regular/Montserrat-Regular.svg) format('svg');
+	src: url(../fonts/montserrat-regular/montserrat-regular.woff);
+	src: url(../fonts/montserrat-regular/montserrat-regular.woff) format('woff'),
+		 url(../fonts/montserrat-regular/montserrat-regular.woff2) format('woff2'),
+		 url(../fonts/montserrat-regular/montserrat-regular.eot) format('eot'),
+		 url(../fonts/montserrat-regular/montserrat-regular.ttf) format('ttf'),
+		 url(../fonts/montserrat-regular/Montserrat-Regular.otf) format('otf'),
+		 url(../fonts/montserrat-regular/montserrat-regular.svg) format('svg');
 }
 
 @font-face {
