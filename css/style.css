@@ -19,3 +19,12 @@
 min-height: 300px;
 max-height: 310px;
 }
+
+.market-info__one-block img, 
+.market-info__two-block img,
+.market-info__three-block img,
+.market-info__four-block img
+{
+width: 120px;
+height: 110px;
+}
