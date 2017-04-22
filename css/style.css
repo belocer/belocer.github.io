@@ -1,4 +1,8 @@
-			/*ИконЫ*/
+*{
+	transition: all .2s;
+}
+
+				/*ИконЫ*/
 .market-info__main-header {
 	margin-top: 56px;
 }
