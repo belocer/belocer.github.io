@@ -1,65 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Lesson 5</title>
-	<link rel="stylesheet" href="css/normalize.css">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lesson 6</title>
+	<link rel="stylesheet" href="css/bootstrap.grid.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-<header class="header">
-	<!-- лого -->
-	<span class="header__logo"></span>
-	<!-- меню -->
-	<ul class="header__menu">
-		<li><a>Home</a></li>
-		<li><a>Devices</a></li>
-		<li><a>Delivery &amp; Payment</a></li>
-		<li><a>Guarantee</a></li>
-		<li><a>About Us</a></li>
-	</ul>
-<!-- корзину и sign up обернул для того что бы подвинуть вправо -->
-	<div class="header__wrap-right">	
-		<!-- корзина -->
-		<div class="header__cart">
-			<span></span>
-			<span>cart</span>
-			<span>0</span>
+<div class="market-info container">
+
+	<h1 class="market-info__main-header col-lg-12">Почему с нами работают?</h1>
+
+	<div class="row">
+	<!-- 1 БЛОК -->
+		<div class="market-info__one-block col-lg-3 col-md-6 col-sm-6 col-xs-12">	
+			<img src="img/crane.png" alt="img" class="img-responsive">
+			<h2 class="market-info__less-header">Позвольте вашим <br> деньгам работать</h2>	
+			<p class="market-info__declaration">Проценты по договорам <br> займа выше банковских</p>
 		</div>
-		<!-- кнопка "войти" -->
-		<a href="#" class="header__sign-in">sign in</a>
+
+	<!-- 2 БЛОК	 -->
+		<div class="market-info__two-block col-lg-3 col-md-6 col-sm-6 col-xs-12">	
+			<img src="img/bag.png" alt="img" class="img-responsive">
+			<h2 class="market-info__less-header">Зарабатывайте <br> вместе с нами</h2>	
+			<p class="market-info__declaration">Мы вкладываем <br> собственные средства</p>
+		</div>
+
+	<!-- 3 БЛОК	 -->
+		<div class="market-info__three-block col-lg-3 col-md-6 col-sm-6 col-xs-12">	
+			<img src="img/home.png" alt="img" class="img-responsive">
+			<h2 class="market-info__less-header">Абсолютная <br> надежность</h2>	
+			<p class="market-info__declaration">Все договоры займа <br> обеспечены залогом</p>
+		</div>
+
+	<!-- 4 БЛОК	 -->
+		<div class="market-info__four-block col-lg-3 col-md-6 col-sm-6 col-xs-12">	
+			<img src="img/umbrella.png" alt="img" class="img-responsive">
+			<h2 class="market-info__less-header">Никаких <br> рисков</h2>	
+			<p class="market-info__declaration">Наша профессиональная <br> деятельность застрахована</p>
+		</div>
 	</div>
 
-</header>
-
-
- 		<!-- подменю -->
-<div class="second-menu">
-	<ul class="second-menu__menu">
-		<li><a>top sales</a></li>
-		<li><a>brand focus</a></li>
-		<li><a>hi-tech</a></li>
-		<li><a>best sellers</a></li>
-		<li><a>projects</a></li>
-	</ul>
-	<div class="second-menu__support">support</div>
-	<div class="second-menu__search">
-		<span></span>
-		<span>I'm looking for ...</span>
-	</div>
-</div>
-
-
-			<!-- блок с товаром -->
-<div class="banner-item">
-	<h1 class="banner-item__header">iPhone 6 32Gb<br>Black</h1>
-	<p class="banner-item__specification">
-		At first, for some time, I was not able to answer him one<br> word; but as he had taken me in his arms I held fast by him,<br> or I should have fallen to the ground.<br>
-	</p>
-	<a href="#" class="banner-item__button">buy now</a>
-	<img class="banner-item__img" src="img/phone.png" alt="item">
-</div>
+</div> <!-- конец блока контейнера -->
 </body>
 </html>	
