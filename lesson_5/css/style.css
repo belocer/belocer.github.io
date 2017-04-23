@@ -1,0 +1,168 @@
+							/*Главное меню*/
+.header {
+	width: 90%;
+	max-width: 1400px;
+	height: 90px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color:  #ffffff;
+	margin: auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #e3e8f0;
+}
+
+.header__logo {
+	display: inline-block;
+	background-image: url(../img/Portland.svg);
+	width: 92px;
+	height: 25px;
+	float: left;
+	margin-left: 115px;
+}
+
+.header__menu {
+	float: left;
+	text-align: center;	
+}
+
+.header__menu li {
+	display: inline-block;
+	list-style: none;
+	color:  #343e5b;
+	font-size: 0.875rem;
+	font-weight: 400;
+}
+
+.header__menu li:not(:nth-child(1)){
+	margin-left: 30px;
+}
+
+.header__wrap-right {
+	display: flex;
+	align-items: center;
+}
+
+.header__cart span:nth-child(1) {	
+	display: inline-block;	
+	background-image: url(../img/ShoppingCartIcon.svg);
+	width: 18px;
+	height: 17px;
+	vertical-align: sub;
+}
+
+.header__sign-in {
+	border-radius: 16px;
+	border: 2px solid #e3e8f0;
+	width: 81px;
+	height: 28px;
+	margin-left: 31px;
+	margin-right: 115px;
+}
+
+.header__cart span:nth-child(3) {
+	display: inline-block;
+	border-radius: 12px;
+	background-color:  #e3e8f0;
+	width: 21px;
+	height: 21px;
+}
+
+					/*Второе меню*/
+.second-menu {
+	width: 90%;
+	max-width: 1400px;
+	height: 56px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color:  #ffffff;	
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;	
+}
+
+.second-menu__menu {
+	display: inline-block;
+	padding-left: 115px;
+}
+
+.second-menu__menu li {
+	display: inline-block;
+	list-style: none;
+}
+
+.second-menu__menu li:not(:nth-child(1)) {
+	margin-left: 30px;
+}
+
+.second-menu__support {
+	display: inline-block;
+	line-height: 56px;
+	padding-left: 390px;
+}
+
+.second-menu__search {
+	width: 200px;
+	border-left: 1px solid #f0f2f7;
+	border-right: 1px solid #f0f2f7;
+	margin-right: 115px;
+	padding-left: 15px;
+}
+
+.second-menu__search > span:nth-child(1) {
+	display: inline-block;
+	background-image: url(../img/SearchIcon.svg);
+	width: 13px;
+	height: 13px;
+	margin-left: 21px;
+}
+
+.second-menu__search > span:nth-child(2) {
+	margin-left: 13px;
+}
+
+				/*Баннер с товаром*/
+.banner-item {
+	width: 90%;
+	max-width: 1400px;
+	height: 500px;
+	background-color:  #1c1e23;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.banner-item__header {
+	display: inline-block;
+	position: absolute;
+	top: 103px;
+	left: 212px;
+}
+
+.banner-item__specification {
+	display: inline-block;
+	position: absolute;
+	top: 223px;
+	left: 212px;
+}
+
+.banner-item__button {
+	width: 165px;
+	height: 42px;
+	border-radius: 21px;
+	background-color:  #2754eb;
+	box-shadow: 10px 17px 40px 0px rgba(168, 173, 187, 0.10);
+	position: absolute;
+	top: 352px;
+	left: 213px;
+	line-height: 42px;
+}
+
+.banner-item__img {
+	position: absolute;
+	top: -67px;
+	left: 790px;
+}
