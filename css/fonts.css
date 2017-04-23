@@ -1,0 +1,53 @@
+@font-face {
+	font-family: 'Arvo';
+	src: url(../fonts/arvo/ArvoRegular.woff);
+	src: url(../fonts/arvo/ArvoRegular.woff) format('woff'),
+		 url(../fonts/arvo/arvo-regular.woff2) format('woff2'),
+		 url(../fonts/arvo/ArvoRegular.eot) format('eot'),
+		 url(../fonts/arvo/arvo-regular.ttf) format('ttf'),
+		 url(../fonts/arvo/arvo-regular.svg) format('svg');
+}
+
+@font-face {
+	font-family: 'notosans-regular';
+	src: url(../fonts/notoSans/notosans-regular.woff);
+	src: url(../fonts/notoSans/notosans-regular.woff) format('woff'),
+		 url(../fonts/notoSans/notosans-regular.woff2) format('woff2'),
+		 url(../fonts/notoSans/notosans-regular.eot) format('eot'),
+		 url(../fonts/notoSans/notosans-regular.ttf) format('ttf'),
+		 url(../fonts/notoSans/notosans-regular.svg) format('svg');
+}			
+
+@font-face {
+	font-family: 'supermolot';
+	src: url(../fonts/supermolot/supermolot-light.woff);
+	src: url(../fonts/supermolot/supermolot-light.woff) format('woff'),
+		 url(../fonts/supermolot/supermolot-light.woff2) format('woff2'),
+		 url(../fonts/supermolot/supermolot-light.eot) format('eot'),
+		 url(../fonts/supermolot/supermolot-light.ttf) format('ttf'),
+		 url(../fonts/supermolot/supermolot-light.svg) format('svg');
+}
+
+/*.market-info__main-header {
+	font-family: 'Arvo';
+	color:  #3b3e6a;
+	font-weight: 400;
+	text-align: center;
+}
+
+.market-info__less-header {
+	font-family: 'Arvo';
+	color:  #3b3e6a;
+	font-size: 22px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.market-info__declaration {
+	font-family: 'notosans-regular';
+	color:  #686b8b;
+	font-size: 1.25rem;
+	font-weight: 400;
+	text-align: center;
+} */
+
