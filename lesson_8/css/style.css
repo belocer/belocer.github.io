@@ -1,0 +1,80 @@
+body {
+	transition: all .2s;
+	background-image: url(http://subtlepatterns.com/patterns/subtlenet2.png);
+	font-weight: 400;
+	font: 1em 'PT Sans', Tahoma, Arial;
+	text-decoration: none;
+}	
+
+.text-box{
+	padding-top: 2rem;
+}
+.result {
+	margin-bottom: 0;
+	margin-top: 3rem;
+}
+.fonts {
+	font-size: 2rem;
+	text-align: center;
+	padding: 2rem;
+}
+small {
+	font-size: 1.3rem;
+}
+
+						/*ДЗ*/
+@font-face {
+	font-family: 'Bebas';
+	src: url('../fonts/bebas/BebasNeueRegular.eot');
+	src: url('../fonts/bebas/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/bebas/BebasNeueRegular.woff2') format('woff2'),
+		 url('../fonts/bebas/BebasNeueRegular.woff') format('woff'),
+		 url('../fonts/bebas/BebasNeueRegular.ttf') format('truetype'),
+		 url('../fonts/bebas/BebasNeueRegular.svg#BebasNeueRegular') format('svg'),
+		 url('../fonts/bebas/BebasNeueRegular.eot') format('eot');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/lato/Lato-Regular.eot');
+	src: url('../fonts/lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/lato/Lato-Regular.woff2') format('woff2'),
+		 url('../fonts/lato/Lato-Regular.woff') format('woff'),
+		 url('../fonts/lato/Lato-Regular.ttf') format('truetype'),
+		 url('../fonts/lato/Lato-Regular.svg#Lato-Regular') format('svg'),
+		 url('../fonts/lato/Lato-Regular.eot') format('eot');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lobster';
+	src: url('../fonts/lobster/subset-Lobster.eot');
+	src: url('../fonts/lobster/subset-Lobster.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/lobster/subset-Lobster.woff2') format('woff2'),
+		 url('../fonts/lobster/subset-Lobster.woff') format('woff'),
+		 url('../fonts/lobster/subset-Lobster.ttf') format('truetype'),
+		 url('../fonts/lobster/subset-Lobster.svg#Lobster') format('svg'),
+		 url('../fonts/lobster/subset-Lobster.eot') format('eot');
+	font-weight: normal;
+	font-style: normal;
+}
+					
+
+#openS {
+	font-family: 'Open Sans', sans-serif;
+}					
+
+#bebas {
+	font-family: 'Bebas', sans-serif;
+}
+
+#lato {
+	font-family: 'Lato', sans-serif;
+}
+
+#lobster {
+	font-family: 'Lobster', sans-serif;
+}
