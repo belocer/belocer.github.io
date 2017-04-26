@@ -37,7 +37,7 @@ $height: 100%;
 	overflow: hidden;
 }
 
-			/*ЛОГО*/
+						/*ЛОГО*/
 .logo-img {
 	@include dsp;
 	width: 26px;
@@ -70,7 +70,7 @@ $height: 100%;
 	margin-left: 2%;
 }
 
-					/*Горизонтальное меню*/
+						/*Горизонтальное меню*/
 .menu {
 	line-height: 147px;
 	margin-left: 45%;
@@ -106,7 +106,7 @@ $height: 100%;
 	margin-top: 5%;
 	font-family: 'Raleway';
 	color:  #202242;
-	font-size: 12px;/* Приближение из-за подстановки шрифтов */
+	font-size: 12px;
 	font-weight: 600;
 	line-height: 45px;
 	text-align: center;
