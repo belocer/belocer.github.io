@@ -193,6 +193,13 @@
   height: 72px;
   float: left;
   border: 0 solid transparent;
+  text-indent: 20px;
+  font-family: 'Raleway';
+  color: #2d2d2d;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
 }
 .main-image .ton .inp span {
   display: inline-block;
