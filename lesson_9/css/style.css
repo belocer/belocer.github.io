@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/*╨б╨╛╨▒╤Б╤В╨▓╨╡╨╜╨╜╨╛ ╨║╨╛╨┤*/
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.head {
+  width: 100%;
+  max-width: 1400px;
+  height: 147px;
+  margin: 0 auto;
+}
+
+/*╤И╨╕╤А╨╕╨╜╨░ ╨▒╨╗╨╛╨║╨╛╨▓*/
+.logo-menu {
+  height: 147px;
+  width: 66%;
+  overflow: hidden;
+  float: left;
+  border-right: 1px solid rgba(32, 34, 66, 0.31);
+}
+
+.contact {
+  height: 147px;
+  width: 33%;
+  overflow: hidden;
+}
+
+/*╨Ы╨Ю╨У╨Ю*/
+.logo-img {
+  display: inline-block;
+  width: 26px;
+  height: 32px;
+  background-image: url(../img/server.png);
+  background-repeat: no-repeat;
+}
+
+.wrap-logo {
+  display: inline-block;
+  float: left;
+  line-height: 165px;
+  margin-left: 8%;
+}
+
+#logo-text > span:nth-child(1) {
+  font-family: 'Rockwell';
+  color: #202242;
+  font-size: 1.875rem;
+}
+
+#logo-text > span:nth-child(2) {
+  font-family: 'Rockwell-bold';
+  color: #202242;
+  font-size: 1.875rem;
+}
+
+#logo-text {
+  display: inline-block;
+  float: left;
+  line-height: 141px;
+  margin-left: 2%;
+}
+
+/*╨У╨╛╤А╨╕╨╖╨╛╨╜╤В╨░╨╗╤М╨╜╨╛╨╡ ╨╝╨╡╨╜╤О*/
+.menu {
+  line-height: 147px;
+  margin-left: 45%;
+}
+.menu li {
+  font-family: 'Raleway';
+  list-style: none;
+  float: left;
+  display: inline-block;
+}
+.menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #202242;
+}
+.menu li a:hover {
+  color: #ffe13e;
+}
+.menu li:not(:first-child) {
+  margin-left: 20px;
+}
+
+/*╨Я╤А╨░╨▓╨░╤П ╤З╨░╤Б╤В╤М head - ╨░ .contact*/
+.help {
+  width: 100%;
+  clear: both;
+  margin-top: 5%;
+  font-family: 'Raleway';
+  color: #202242;
+  font-size: 12px;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  font-weight: 600;
+  line-height: 45px;
+  text-align: center;
+}
+
+.wrap-btn {
+  width: 235px;
+  text-align: center;
+  border-right: 1px solid rgba(32, 34, 66, 0.31);
+  float: left;
+}
+.wrap-btn a {
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  color: #202242;
+  font-family: 'Raleway-Semi-Bold';
+  font-size: 14px;
+  background-color: #ffe13e;
+  width: 122px;
+  height: 41px;
+  line-height: 41px;
+  margin-left: 30%;
+}
+
+.wrap-phone {
+  text-align: left;
+}
+.wrap-phone span {
+  font-family: 'Lato';
+  color: #202242;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 4%;
+  line-height: 42px;
+}
+
+/*╨Ч╨░╨│╨╛╨╗╨╛╨▓╨╛╨║ ╨д╨╛╨╜ ╨│╤А╨░╤Д╨╕╨║╨░ ╨╕╨╜╨┐╤Г╤В*/
+.main-image {
+  width: 1400px;
+  height: 794px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.main-image img {
+  width: 1398px;
+  height: 792px;
+}
+.main-image .ton {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 5, 5, 0.25);
+  position: absolute;
+  top: 0;
+  left: 0
+  /*╨Ш╨╜╨┐╤Г╤В domain*/
+}
+.main-image .ton .caption {
+  font-family: 'Rockwell';
+  font-size: 48px;
+  text-align: center;
+  color: #fff;
+  margin-top: 234px;
+  font-size: 48px;
+  font-weight: 400;
+}
+.main-image .ton .second-caption {
+  font-family: 'Raleway';
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 34px;
+}
+.main-image .ton .atom {
+  display: inline-block;
+  width: 102px;
+  height: 110px;
+  background-image: url(../img/atom.png);
+  margin-top: 123px;
+}
+.main-image .ton .inp {
+  width: 545px;
+  height: 70px;
+  border: 20px solid rgba(213, 219, 219, 0.5);
+  margin: 61px auto 0;
+  text-align: center;
+  line-height: 70px;
+}
+.main-image .ton .inp .domain {
+  width: 280px;
+  height: 72px;
+  float: left;
+  border: 0 solid transparent;
+}
+.main-image .ton .inp span {
+  display: inline-block;
+  width: 108px;
+  height: 72px;
+  background: #ffe13e;
+  font-family: 'Raleway';
+  color: #2d2d2d;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  float: left;
+  border-right: 1px solid #fff;
+}
+.main-image .ton .inp .check {
+  display: inline-block;
+  width: 156px;
+  height: 72px;
+  background: #ffe13e;
+  color: white;
+  font-family: 'Raleway';
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}

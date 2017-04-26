@@ -1,0 +1,246 @@
+$color-text : #202242;
+$color-btn : #ffe13e;
+$width : 100%;
+$height: 100%;
+
+@mixin ctr{
+	margin: 0 auto;
+}
+@mixin dsp{
+	display: inline-block;
+}
+
+						/*Собственно код*/
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}						
+
+.head {
+	width: 100%;
+	max-width: 1400px;
+	height: 147px;
+	@include ctr;
+}
+						/*ширина блоков*/
+.logo-menu {
+	height: 147px;
+	width: $width - 34%;
+	overflow: hidden;
+	float: left;
+	border-right: 1px solid rgba(32, 34, 66, 0.31);
+}
+.contact {
+	height: 147px;
+	width: $width - 67%;
+	overflow: hidden;
+}
+
+			/*ЛОГО*/
+.logo-img {
+	@include dsp;
+	width: 26px;
+	height: 32px;
+	background-image: url(../img/server.png);
+	background-repeat: no-repeat;	
+}
+.wrap-logo {
+	@include dsp;
+	float: left;
+	line-height: 165px;
+	margin-left: 8%;	
+}
+
+#logo-text > span:nth-child(1) {
+	font-family: 'Rockwell';
+	color: $color-text;
+	font-size: 1.875rem;
+}
+#logo-text > span:nth-child(2) {
+	font-family: 'Rockwell-bold';
+	color: $color-text;
+	font-size: 1.875rem;
+}
+
+#logo-text {
+	@include dsp;
+	float: left;
+	line-height: 141px;
+	margin-left: 2%;
+}
+
+					/*Горизонтальное меню*/
+.menu {
+	line-height: 147px;
+	margin-left: 45%;
+
+	li {		
+		font-family: 'Raleway';
+		list-style: none;
+		float: left;
+		@include dsp;
+		
+		a {
+			text-decoration: none;
+			text-transform: uppercase;
+			color: $color-text;
+		}
+
+		a:hover {
+			color: $color-btn;
+		}
+		 
+	}
+
+	li:not(:first-child) {
+		margin-left: 20px;
+	}
+
+}
+
+					/*Правая часть head - а .contact*/
+.help {
+	width: 100%;
+	clear: both;
+	margin-top: 5%;
+	font-family: 'Raleway';
+	color:  #202242;
+	font-size: 12px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 600;
+	line-height: 45px;
+	text-align: center;
+}
+
+.wrap-btn {	 	
+	width: 235px;
+	text-align: center;
+	border-right: 1px solid rgba(32, 34, 66, 0.31);
+	float: left;
+	 a {
+	 	text-align: center;
+	 	display: inline-block;
+	 	text-decoration: none;
+	 	color: $color-text;
+	 	font-family: 'Raleway-Semi-Bold';
+	 	font-size: 14px;
+	 	background-color:  $color-btn;
+		width: 122px;
+		height: 41px;
+		line-height: 41px;
+		margin-left: 30%;
+	}
+}
+
+.wrap-phone {
+	text-align: left;
+
+	span {
+		font-family: 'Lato';
+		color:  #202242;
+		font-size: 24px;
+		font-weight: 700;
+		margin-left: 4%;
+		line-height: 42px;
+	}
+}
+
+
+			/*Заголовок Фон графика инпут*/
+.main-image {
+	width: 1400px;
+	height: 794px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+
+
+	img {
+		width: 1398px;
+		height: 792px;
+	}
+
+	.ton {
+		@include dsp;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(5,5,5, .25);
+		position: absolute;
+		top: 0;
+		left: 0;
+			
+		.caption {
+			font-family: 'Rockwell';
+			font-size: 48px;
+			text-align: center;
+			color: #fff;
+			margin-top: 234px;
+			font-size: 48px;
+			font-weight: 400;
+		}
+		
+		.second-caption {
+			font-family: 'Raleway';
+			color:  #fff;
+			font-size: 30px;
+			font-weight: 400;
+			line-height: 24px; 
+			text-align: center;
+			margin-top: 34px;
+		}
+		
+		.atom {
+			@include dsp;
+			width: 102px;
+			height: 110px;
+			background-image: url(../img/atom.png);
+			margin-top: 123px;
+		}
+					/*Инпут domain*/
+		.inp {
+			width: 545px;
+			height: 70px;
+			border: 20px solid rgba(213,219,219, 0.5);
+			margin: 61px auto 0;
+			text-align: center;
+			line-height: 70px;
+
+			.domain {
+				width: 280px;
+				height: 72px;
+				float: left;
+				border: 0 solid transparent;
+			}
+
+			span {
+				@include dsp;
+				width: 108px;
+				height: 72px;
+				background: $color-btn;
+				font-family: 'Raleway';
+				color:  #2d2d2d;
+				font-size: 18px;
+				font-weight: 700;
+				text-align: center;
+				float: left;
+				border-right: 1px solid #fff;
+			}
+
+			.check {
+				@include dsp;
+				width: 156px;
+				height: 72px;
+				background: $color-btn;
+				color: white;
+				font-family: 'Raleway';
+				color:  #fff;
+				font-size: 14px;
+				font-weight: 700;
+				text-decoration: none;
+			}
+		}					
+	}
+}	
+
+	
