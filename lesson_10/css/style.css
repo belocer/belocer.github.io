@@ -116,8 +116,10 @@ body {
   margin-top: -10px;
 }
 
-.btn:hover {
-  background-color: white;
+.btn-default:hover {
+    color: #333;
+    background-color: #ffffff;
+    border-color: #ffffff;
 }
 
 .btn i {
