@@ -63,6 +63,10 @@ body {
       -ms-transform: scale(1.02);
           transform: scale(1.02);
   box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21);
+    -webkit-transition: transform ease-out 0.5s;
+      -moz-transition: transform ease-out 0.5s;
+        -o-transition: transform ease-out 0.5s;
+           transition: transform ease-out 0.5s;
 }
 
 .block i {
@@ -75,10 +79,6 @@ body {
   -webkit-transform: rotate(-18.453deg);
       -ms-transform: rotate(-18.453deg);
           transform: rotate(-18.453deg);
-  -webkit-transition: transform ease-out 0.5s;
-      -moz-transition: transform ease-out 0.5s;
-        -o-transition: transform ease-out 0.5s;
-           transition: transform ease-out 0.5s;
 }
 
 .block:first-child {
