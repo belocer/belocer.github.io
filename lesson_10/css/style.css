@@ -75,10 +75,10 @@ body {
   -webkit-transform: rotate(-18.453deg);
       -ms-transform: rotate(-18.453deg);
           transform: rotate(-18.453deg);
-  -webkit-transition: rotate ease-out 0.5s;
-      -moz-transition: rotate ease-out 0.5s;
-        -o-transition: rotate ease-out 0.5s;
-           transition: rotate ease-out 0.5s;
+  -webkit-transition: transform ease-out 0.5s;
+      -moz-transition: transform ease-out 0.5s;
+        -o-transition: transform ease-out 0.5s;
+           transition: transform ease-out 0.5s;
 }
 
 .block:first-child {
