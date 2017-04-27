@@ -1,0 +1,126 @@
+@charset "UTF-8";
+body {
+  -webkit-transition: all .2s;
+          transition: all .2s;
+  text-decoration: none;
+}
+
+.head {
+  font-family: 'Open Sans', sans-serif;
+  color: #fc6744;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 0.915;
+  text-align: center;
+  margin-top: 86px;
+}
+.head span {
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 0.915;
+  text-align: center;
+}
+
+.second-head {
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(65, 65, 65, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: -20px;
+}
+
+/*4 ╨▒╨╗╨╛╨║╨░*/
+.block {
+  width: 262px;
+  height: 263px;
+  float: left;
+  text-align: center;
+  margin-top: 109px;
+}
+.block .head-block {
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: center;
+}
+.block .second-head-block {
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+
+.block:hover {
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+  box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21);
+}
+
+.block i {
+  font-size: 50px;
+  color: #fff;
+  margin-top: 52px;
+}
+
+#rotate {
+  -webkit-transform: rotate(-18.453deg);
+      -ms-transform: rotate(-18.453deg);
+          transform: rotate(-18.453deg);
+}
+
+.block:first-child {
+  background-color: #4eb2f7;
+}
+
+.block:nth-child(2) {
+  background-color: #c049f8;
+}
+
+.block:nth-child(3) {
+  background-color: #817eff;
+}
+
+.block:nth-child(4) {
+  background-color: #f74770;
+}
+
+.block:not(:first-child) {
+  margin-left: 31px;
+}
+
+/*4 ╨║╨╜╨╛╨┐╨║╨╕*/
+.btn {
+  border-radius: 27px;
+  background-color: #ffffff;
+  box-shadow: 3px 5px 14px 0px rgba(20, 20, 21, 0.09);
+  width: 228px;
+  height: 55px;
+  border: none;
+  margin-top: -10px;
+}
+
+.btn i {
+  text-align: left;
+  color: rgba(0, 0, 0, 0.4);
+  margin-left: -51px;
+  line-height: 5px;
+}
+
+.btn span {
+  margin-left: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+}
