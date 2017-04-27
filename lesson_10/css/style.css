@@ -40,6 +40,10 @@ body {
   float: left;
   text-align: center;
   margin-top: 109px;
+      -webkit-transition: all ease-in-out 0.5s;
+      -moz-transition: all ease-in-out 0.5s;
+        -o-transition: all ease-in-out 0.5s;
+           transition: all ease-in-out 0.5s;
 }
 .block .head-block {
   font-family: 'Open Sans', sans-serif;
