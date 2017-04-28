@@ -1,5 +1,6 @@
 body {
-  background-image: url(../img/rain.jpg) no-repeat center center;
+  background-image: url(../img/rain.jpg);
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
