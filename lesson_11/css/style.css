@@ -1,0 +1,80 @@
+.box {
+  -webkit-transition: all 2s;
+          transition: all 2s;
+  width: 650px;
+  height: 350px;
+  background: url(../img/beach.jpg) no-repeat center center;
+  background-size: cover;
+  margin: 30px auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  text-align: center;
+}
+.box:hover .wrap {
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  -webkit-transform: translateY(0%) scale(1);
+      -ms-transform: translateY(0%) scale(1);
+          transform: translateY(0%) scale(1);
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  -webkit-transition: all .5s;
+          transition: all .5s;
+  opacity: 0;
+  -webkit-transform-origin: 0% 0%;
+      -ms-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: translateY(100%) scale(0.2);
+      -ms-transform: translateY(100%) scale(0.2);
+          transform: translateY(100%) scale(0.2);
+  text-align: center;
+}
+
+.sign {
+  text-align: center;
+}
+.sign span {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.sign a {
+  display: block;
+  width: 100%;
+  border: 1px solid #999;
+  border-radius: 50px;
+  line-height: 40px;
+  color: #fff;
+  margin-top: 20px;
+  -webkit-transition: all .5s;
+          transition: all .5s;
+  font-family: 'Jura', sans-serif;
+  font-size: 18px;
+}
+.sign a:hover {
+  text-decoration: none;
+  background-color: #fff;
+  color: #333;
+  -webkit-transition: all .5s;
+          transition: all .5s;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+}
+.sign a:link, .sign a:focus {
+  text-decoration: none;
+}
