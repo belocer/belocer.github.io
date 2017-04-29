@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson 11</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="wrapper-control">
+			<a href="#dropdown" class="control" id="control" onclick="tog();">
+				<i id="arrow" class="fa fa-caret-down"></i>				
+			</a>
+		</div>
+		<div class="dropdown" id="dropdown">
+			<div class="btn">
+				<i class="fa fa-gears"></i>
+			</div>
+			<div class="btn">
+				<i class="fa fa-wifi"></i>
+			</div>
+			<div class="btn">
+				<i class="fa fa-folder"></i>
+			</div>
+		</div>
+	</div>
+<script>
+function tog(){	
+	var x = document.getElementById('arrow').getAttribute('class');
+	if ( x == "fa fa-caret-up")
+	{
+		document.getElementById('arrow').setAttribute("class","fa fa-caret-down");
+		document.getElementById('control').setAttribute("href", "#");
+	} 
+	else if ( x == "fa fa-caret-down" ) 
+	{
+		document.getElementById('arrow').setAttribute("class","fa fa-caret-up");
+		document.getElementById('control').setAttribute("href", "#dropdown");
+	}
+}
+</script>
+</body>
+</html>

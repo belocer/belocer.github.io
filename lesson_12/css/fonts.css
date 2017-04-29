@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'firasans-light';
+	src: url(../fonts/firaSansLight/firasans-light.woff);
+	src: url(../fonts/firaSansLight/firasans-light.woff) format('woff'),
+		 url(../fonts/firaSansLight/firasans-light.woff2) format('woff2'),
+		 url(../fonts/firaSansLight/firasans-light.eot) format('eot'),
+		 url(../fonts/firaSansLight/FiraSans-Light.ttf) format('ttf'),
+		 url(../fonts/firaSansLight/firasans-light.svg) format('svg');
+}
+
+@font-face {
+	font-family: 'firasans-medium';
+	src: url(../fonts/firaSansMedium/firasans-medium.woff);
+	src: url(../fonts/firaSansMedium/firasans-medium.woff) format('woff'),
+		 url(../fonts/firaSansMedium/firasans-medium.woff2) format('woff2'),
+		 url(../fonts/firaSansMedium/firasans-medium.eot) format('eot'),
+		 url(../fonts/firaSansMedium/FiraSans-Medium.ttf) format('ttf'),
+		 url(../fonts/firaSansMedium/firasans-medium.svg) format('svg');
+}
