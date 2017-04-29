@@ -89,7 +89,7 @@ div.dropdown > div:nth-child(1) {
       -ms-transform: translateY(-170%);
           transform: translateY(-170%);
 }
-
+/*
 .popup {
   width: 300px;
   height: 400px;
@@ -131,3 +131,4 @@ div.dropdown > div:nth-child(1) {
   text-decoration: none;
   font-size: 2rem;
 }
+*/
