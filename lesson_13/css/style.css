@@ -55,6 +55,8 @@ html {
   background-color: #25292D;
   width: 100%;
   height: 93px;
+  -webkit-transition: all .5;
+          transition: all .5;
 }
 .one-screen__menu ul {
   display: -webkit-box;
@@ -414,6 +416,35 @@ div.one-screen__img > h3 {
   margin: 30px;
 }
 
+/*╨Р╨Э╨Ш╨Ь╨Р╨ж╨Ш╨Ш*/
+/*╨Р╨Э╨Ш╨Ь╨Р╨ж╨Ш╨Ш*/
+/*╨Р╨Э╨Ш╨Ь╨Р╨ж╨Ш╨Ш*/
+/*╨Р╨Э╨Ш╨Ь╨Р╨ж╨Ш╨Ш*/
+/*╨Р╨Э╨Ш╨Ь╨Р╨ж╨Ш╨Ш*/
+#anim {
+  -webkit-animation-name: anim;
+          animation-name: anim;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*╨а╨╡╨░╨║╤Ж╨╕╤П ╨╜╨░ ╤Б╨║╤А╨╛╨╗*/
 .menu-fixed {
   position: fixed;
@@ -421,7 +452,9 @@ div.one-screen__img > h3 {
   left: 0;
   background-color: rgba(37, 41, 45, 0.6);
   width: 100%;
-  height: 93px;
+  height: 60px;
+  -webkit-transition: all .5;
+          transition: all .5;
 }
 .menu-fixed ul {
   display: -webkit-box;
@@ -445,7 +478,7 @@ div.one-screen__img > h3 {
 .menu-fixed ul li {
   list-style: none;
   display: inline-block;
-  line-height: 93px;
+  line-height: 60px;
 }
 .menu-fixed ul li a {
   text-decoration: none;
