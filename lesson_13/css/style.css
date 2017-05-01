@@ -390,31 +390,19 @@ div.one-screen__img > h3 {
 
 @-webkit-keyframes ani {
   0% {
-    transform: scale(1);
     opacity: 0;
   }
-  50% {
-    transform: scale(1.1);
-    opacity: .5;
-  }
   100% {
-    transform: scale(1);
-    opacity: 1;
+     opacity: 1;
   }
 }
 
 @keyframes ani {
   0% {
-    transform: scale(1);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: .5;
+     opacity: 0;
   }
   100% {
-    transform: scale(1);
-    opacity: 1;
+     opacity: 1;
   }
 }
 .one-screen__mouse {
