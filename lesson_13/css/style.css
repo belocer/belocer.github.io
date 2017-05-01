@@ -394,7 +394,7 @@ div.one-screen__img > h3 {
     opacity: 0;
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: .5;
   }
   100% {
@@ -409,7 +409,7 @@ div.one-screen__img > h3 {
     opacity: 0;
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: .5;
   }
   100% {
