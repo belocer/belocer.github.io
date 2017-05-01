@@ -380,15 +380,15 @@ div.one-screen__img > h3 {
 /*╨Р╨Э╨Ш╨Ь╨Р╨ж╨Ш╨Ш*/
 /*╨Р╨Э╨Ш╨Ь╨Р╨ж╨Ш╨Ш*/
 #anim {
-  -webkit-animation-name: anim1;
-          animation-name: anim1;
+  -webkit-animation-name: ani;
+          animation-name: ani;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes anim1 {
+@-webkit-keyframes ani {
   0% {
     transform: scale(1);
   }
@@ -400,7 +400,7 @@ div.one-screen__img > h3 {
   }
 }
 
-@keyframes anim1 {
+@keyframes ani {
   0% {
     transform: scale(1);
   }
