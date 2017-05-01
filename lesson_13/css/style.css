@@ -380,27 +380,71 @@ div.one-screen__img > h3 {
 /*╨Р╨Э╨Ш╨Ь╨Р╨ж╨Ш╨Ш*/
 /*╨Р╨Э╨Ш╨Ь╨Р╨ж╨Ш╨Ш*/
 #anim {
-  -webkit-animation-name: anim;
-          animation-name: anim;
+  -webkit-animation-name: anim1;
+          animation-name: anim1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes anim1 {
+  1% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes anim1 {
+  1% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.one-screen__mouse {
+  -webkit-animation-name: anim2;
+          animation-name: anim2;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
-@-webkit-keyframes anim {
+@-webkit-keyframes anim2 {
   0% {
-    opacity: 0;
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  50% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
   }
   100% {
-    opacity: 1;
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
   }
 }
 
-@keyframes anim {
+@keyframes anim2 {
   0% {
-    opacity: 0;
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  50% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
   }
   100% {
-    opacity: 1;
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
   }
 }
 /*╨а╨╡╨░╨║╤Ж╨╕╤П ╨╜╨░ ╤Б╨║╤А╨╛╨╗*/
