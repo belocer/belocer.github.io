@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson 13</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fonts.css">
+</head>
+<body>
+<div class="wrapper"> <!-- Обёртка сайта ширина сайта 1575px -->
+
+ <!-- первый экран -->
+	<div class="one-screen">
+
+		 <div class="one-screen__logo-fon"> <!-- первая строка -->
+			<div class="one-screen__logo">Видео-ролики для бизнеса<br>в Казани</div>
+			<div class="one-screen__number-button">
+				<span>8 (843) 999-99-99</span><br>
+				<button>Заказать звонок</button>
+			</div>
+		</div> <!-- конец первой строки -->
+
+		<div class="one-screen__menu" id="test"> <!-- горизонтальное меню -->
+			<ul>
+				<li><a href="#">Главная</a>
+				<li><a href="#">О нас</a>
+				<li><a href="#">Наши клиенты</a>
+				<li><a href="#">Виды роликов</a>
+				<li><a href="#">Портфолио</a>
+				<li><a href="#">Цены</a>
+				<li><a href="#">Контакты</a>
+			</ul>
+		</div> <!-- конец горизонтального меню -->
+		
+		<div class="one-screen__img">
+			<div class="one-screen__LOGO"></div>
+			<h2>Создание видео-роликов и проведение съемки</h2>
+			<h3>для решения маркетинговых , имиджевых <br>и презентационных задач</h3>
+			<span class="one-screen__slogan">Посмотрите короткое видео о нашей команде</span><br>
+			<a href="#" class="one-screen__watch-video">Смотреть видео</a><br>
+			<span class="one-screen__look-down">Листайте вниз, чтобы узнать больше</span><br>
+			<div class="one-screen__mouse"></div>
+		</div>
+
+	</div> <!-- конец первого экрана -->
+
+<!-- второй экран -->
+	<div class="two-screen"> 
+
+	<!-- светлый блок -->
+		<div class="two-screen__light-box">	
+			<h2 class="two-screen__head_light">Немного о BeamLight</h2>
+			<div class="two-screen__bloks">			
+				<div class="two-screen__left-blok">
+					<div class="two-screen__monitor-header">
+						<span></span><br>
+						<h3>Чем мы занимаемся</h3>
+					</div>
+					<p class="two-screen__description">Сегодня видеоролик способен решать сотни различных задач! Мы создаем видеорекламу, которая продает лучше любого менеджера. Мы делаем презентационные ролики, которые способны рассказать и показать больше, чем любая многочасовая лайв-презентация. А наши корпоративные и имиджевые видео позволяют эффективно продемонстрировать лучшие стороны любого продукта, бизнеса или организации.</p>
+				</div>
+				<div class="two-screen__right-blok">
+					<div class="two-screen__card-header">
+						<span></span><br>
+						<h3>Наша команда</h3>
+					</div>
+					<p class="two-screen__description">В нашей команде только творческие люди, у которых за плечами большой опыт в создании видеороликов, репортажной съёмки, составления сценариев и качественном видео-монтаже. В своей работе мы используем только современную и профессиональную технику <br>
+					Вместе мы - команда профессионалов своего дела.</p>				
+				</div>
+			</div>		
+		</div>
+
+	<!-- тёмный блок с логотипами -->
+		<div class="two-screen__dark-box">
+			<h2 class="two-screen__head_dark">Нам доверяют</h2>
+			<div class="two-screen__logo">
+				<div class="two-screen__hink"></div>
+				<div class="two-screen__room-out"></div>
+				<div class="two-screen__promo-S"></div>
+				<div class="two-screen__run"></div>
+				<div class="two-screen__tele2"></div>
+				<div class="two-screen__geometria"></div>
+				<div class="two-screen__coffee"></div>
+			</div>
+		</div>
+
+	</div> <!-- конец второго экрана -->
+
+</div> <!-- Обёртка конец -->
+
+
+<script>
+	window.onscroll = function() {
+  var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+  if( scrolled > 100 ) {
+	document.getElementById('test').removeAttribute("class");
+	document.getElementById('test').setAttribute("class", "menu-fixed");
+  } else if ( scrolled < 100) {
+	document.getElementById('test').removeAttribute("class");
+	document.getElementById('test').setAttribute("class", "one-screen__menu");
+  }
+}	
+/*
+elem.setAttribute(name, value) – устанавливает атрибут
+elem.removeAttribute(name) – удаляет атрибут
+*/
+</script>
+</body>
+</html>
