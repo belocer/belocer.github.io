@@ -52,6 +52,7 @@ html {
 	background-color: #25292D;
 	width: 100%;
 	height: 93px;
+	transition: all .5;
 
 	ul {
 		display: flex;
@@ -78,48 +79,10 @@ html {
 		text-align: center;
 	}
 	
-	ul li:not(:first-child) {
-		margin-left: -270px;
-	}
+/* 	ul li:not(:first-child) {
+		padding-left: -270px;
+	}  */
 }
-
-.one-screen__menu > ul > li:nth-child(1) > a {
-	width: 102px;
-	height: 22px;
-	display: inline-block;
-}
-.one-screen__menu > ul > li:nth-child(2) > a {
-	width: 72px;
-	height: 22px;
-	display: inline-block;
-}
-.one-screen__menu > ul > li:nth-child(3) > a {
-	width: 194px;
-	height: 22px;
-	display: inline-block;
-}
-.one-screen__menu > ul > li:nth-child(4) > a {
-	width: 191px;
-	height: 22px;
-	display: inline-block;
-}
-.one-screen__menu > ul > li:nth-child(5) > a {
-	width: 149px;
-	height: 22px;
-	display: inline-block;
-}
-.one-screen__menu > ul > li:nth-child(6) > a {
-	width: 70px;
-	height: 22px;
-	display: inline-block;
-}
-.one-screen__menu > ul > li:nth-child(7) > a {
-	width: 125px;
-	height: 22px;
-	display: inline-block;
-}
-
-
 
 						/*Бэкграунд и главный заголовок*/
 .one-screen__img {
@@ -146,6 +109,7 @@ html {
 		text-transform: uppercase;
 		margin-top: 40px;
 		margin-bottom: 130px;
+		text-decoration: none;
 	}
 
 	.one-screen__slogan {
@@ -380,7 +344,44 @@ div.one-screen__img > h3 {
 	margin: 30px;
 }
 
+/*АНИМАЦИИ*//*АНИМАЦИИ*//*АНИМАЦИИ*//*АНИМАЦИИ*//*АНИМАЦИИ*/
+#anim {
+	animation-name: anim1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
 
+@keyframes anim1 {
+	1%{
+		//transform: translateY(-100%);
+		opacity : 0;
+	}
+	100%{
+		//transform: translateY(0%);
+		opacity : 1;		
+	}
+}
+
+
+.one-screen__mouse {
+	animation-name: anim2;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+	animation-timing-function: ease;
+}
+
+@keyframes anim2 {
+	0%{
+		transform: translateY(-10%);
+	}
+	50%{
+		transform: translateY(10%);
+	}
+	100%{
+		transform: translateY(-10%);	
+	}
+}
 					/*Реакция на скрол*/
 .menu-fixed {
 	position: fixed;
@@ -388,7 +389,8 @@ div.one-screen__img > h3 {
 	left: 0;
 	background-color: rgba(37,41,45, .6);
 	width: 100%;
-	height: 93px;
+	height: 60px;
+	transition: all .5;
 
 	ul {
 		display: flex;
@@ -403,7 +405,7 @@ div.one-screen__img > h3 {
 	ul li {
 		list-style: none;
 		display: inline-block;
-		line-height: 93px;
+		line-height: 60px;
 	}
 
 	ul li a {
@@ -415,8 +417,8 @@ div.one-screen__img > h3 {
 		text-align: center;
 	}
 	
-	ul li:not(:first-child) {
+/* 	ul li:not(:first-child) {
 		margin-left: -270px;
-	}
+	} */
 
 }
