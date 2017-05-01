@@ -384,8 +384,8 @@ div.one-screen__img > h3 {
           animation-name: anim1;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
-  -webkit-animation-iteration-count: 19;
-          animation-iteration-count: 19;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes anim1 {
@@ -493,3 +493,4 @@ div.one-screen__img > h3 {
   font-weight: 300;
   text-align: center;
 }
+
