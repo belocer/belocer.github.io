@@ -1,3 +1,14 @@
+@font-face {
+	font-family: 'Something Strange';
+	src: url('SomethingStrange.eot');
+	src: url('SomethingStrange.eot?#iefix') format('embedded-opentype'),
+		url('SomethingStrange.woff2') format('woff2'),
+		url('SomethingStrange.woff') format('woff'),
+		url('SomethingStrange.ttf') format('truetype'),
+		url('SomethingStrange.svg#SomethingStrange') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
 * {
   box-sizing: border-box;
 }
@@ -5,7 +16,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Something Strange', sans-serif;
   font-size: 16px;
 }
 
