@@ -3,6 +3,11 @@ html {
   font-size: 16px;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 /*╨┐╨╡╤А╨▓╨░╤П ╨┐╨╛╨╗╨╛╤Б╨░ ╤Б ╨╗╨╛╨│╨╛ ╨╕ ╨╜╨╛╨╝╨╡╤А╨╛╨╝ ╤В╨╡╨╗╨╡╤Д╨╛╨╜╨░*/
 .one-screen__logo-fon {
   display: -webkit-box;
