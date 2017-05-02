@@ -1,0 +1,30 @@
+body {
+  -webkit-transition: all .3s;
+          transition: all .3s;
+  background: url(http://subtlepatterns.com/patterns/subtlenet2.png);
+  font-weight: 400;
+  font: 16px 'PT Sans', Tahoma, Arial;
+  text-decoration: none;
+}
+
+.popup {
+  width: 300px;
+  height: 400px;
+  background-color: #aeaeae;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-30%);
+      -ms-transform: translateX(-30%);
+          transform: translateX(-30%);
+  display: none;
+}
+.popup:target {
+  display: block;
+}
+.popup-close {
+  position: absolute;
+  top: .5rem;
+  right: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+}
