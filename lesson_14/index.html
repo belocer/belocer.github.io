@@ -8,21 +8,39 @@
 </head>
 <body>
 <div class="slider">
-	<div class="item item-1" id="item1"><span>A&nbsp;Nightmare</span></div>
-	<div class="item item-2" id="item2"><span>on</span></div>
-	<div class="item item-3" id="item3"><span>Elm</span></div>
-	<div class="item item-4" id="item4"><span>Street</span></div>
+	<div class="item item-1" id="item" onMouseover="add1();"><span>A Nightmare</span></div>
+	<div class="item item-2" id="item1" onMouseover="add2();"><span>on</span></div>
+	<div class="item item-3" id="item2" onMouseover="add3();"><span>Elm</span></div>
+	<div class="item item-4" id="item3" onMouseover="add4();"><span>Street</span></div>
 </div>
-<audio autoplay>
-    	<source id="music" src="audio/1.mp3" type="audio/mpeg">
+<audio id="music" autoplay>
+    	<source  src="audio/1.mp3" type="audio/mpeg">
  </audio>
 <script>	
-function add(){
+function add1(){
+	document.getElementById('music').pause();
+	document.getElementById('music').currentTime = 0.0;
 	document.getElementById('music').setAttribute('src', 'audio/2.mp3');
+	document.getElementById('music').play();
 }
-function notAdd(){
-	document.getElementById('stop').setAttribute('src', 'audio/3.mp3');
+function add2(){
+	document.getElementById('music').pause();
+	document.getElementById('music').currentTime = 0.0;
+	document.getElementById('music').setAttribute('src', 'audio/3.mp3');
+	document.getElementById('music').play();
 }
-</script>	
+function add3(){
+	document.getElementById('music').pause();
+	document.getElementById('music').currentTime = 0.0;
+	document.getElementById('music').setAttribute('src', 'audio/2.mp3');
+	document.getElementById('music').play();
+}
+function add4(){
+	document.getElementById('music').pause();
+	document.getElementById('music').currentTime = 0.0;
+	document.getElementById('music').setAttribute('src', 'audio/3.mp3');
+	document.getElementById('music').play();
+}
+</script>
 </body>
 </html>
