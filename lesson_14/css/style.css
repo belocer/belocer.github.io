@@ -57,7 +57,7 @@ body {
   -webkit-transition: all 0.5s;
           transition: all 0.5s;
   color: #d00015;
-  font-size: 2rem;
+  font-size: 4rem;
   -webkit-flex-basis: 25%;
       -ms-flex-preferred-size: 25%;
           flex-basis: 25%;
