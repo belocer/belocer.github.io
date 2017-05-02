@@ -8,15 +8,21 @@
 </head>
 <body>
 <div class="slider">
-	<div class="item item-1" id="item"><span>A&nbsp;Nightmare</span></div>
-	<div class="item item-2" id="item"><span>on</span></div>
-	<div class="item item-3" id="item"><span>Elm</span></div>
-	<div class="item item-4" id="item"><span>Street</span></div>
+	<div class="item item-1" id="item1"><span>A&nbsp;Nightmare</span></div>
+	<div class="item item-2" id="item2"><span>on</span></div>
+	<div class="item item-3" id="item3"><span>Elm</span></div>
+	<div class="item item-4" id="item4"><span>Street</span></div>
 </div>
- <audio autoplay>
-    <source src="audio/1.mp3" type="audio/mpeg">
-    Тег audio не поддерживается вашим браузером. 
-    <a href="audio/1.mp3">Скачайте музыку</a>.
-  </audio>	
+<audio autoplay>
+    	<source id="music" src="audio/1.mp3" type="audio/mpeg">
+ </audio>
+<script>	
+function add(){
+	document.getElementById('music').setAttribute('src', 'audio/2.mp3');
+}
+function notAdd(){
+	document.getElementById('stop').setAttribute('src', 'audio/3.mp3');
+}
+</script>	
 </body>
 </html>
