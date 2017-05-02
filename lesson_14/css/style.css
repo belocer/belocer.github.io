@@ -105,6 +105,6 @@ body {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
     opacity: .7;
     font-size: 1rem;
-    text-shadow: 0 0 5px white, 0 0 10px black;
+   text-shadow: 0 0 15px rgba(0,0,0, 1), 1px 1px 15px rgba(208,0,21, 1), 0 5px 15px rgba(208,0,21, 1);
   }
 }
