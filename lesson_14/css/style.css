@@ -128,3 +128,5 @@ body {
 	left: 0;
 	z-index: 800;
 }*/
+.slider .item{
+position: relative;}
