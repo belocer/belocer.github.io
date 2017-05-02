@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'Something Strange';
-	src: url('SomethingStrange.eot');
-	src: url('SomethingStrange.eot?#iefix') format('embedded-opentype'),
-		url('SomethingStrange.woff2') format('woff2'),
-		url('SomethingStrange.woff') format('woff'),
-		url('SomethingStrange.ttf') format('truetype'),
-		url('SomethingStrange.svg#SomethingStrange') format('svg');
+	src: url('../fonts/SomethingStrange.eot');
+	src: url('../fonts/SomethingStrange.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SomethingStrange.woff2') format('woff2'),
+		url('../fonts/SomethingStrange.woff') format('woff'),
+		url('../fonts/SomethingStrange.ttf') format('truetype'),
+		url('../fonts/SomethingStrange.svg#SomethingStrange') format('svg');
 	font-weight: 100;
 	font-style: normal;
 }
