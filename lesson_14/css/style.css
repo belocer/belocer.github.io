@@ -45,7 +45,7 @@ body {
   border-right: 1px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.5s;
           transition: all 0.5s;
-  color: #fff;
+  color: #d00015;
   font-size: 2rem;
   -webkit-flex-basis: 25%;
       -ms-flex-preferred-size: 25%;
@@ -64,8 +64,8 @@ body {
           transition: all 0.5s;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
   opacity: .7;
-  font-size: 3rem;
-  text-shadow: 0 0 5px white, 0 0 10px black;
+  font-size: 5rem;
+  text-shadow: 0 0 15px black, 1px 1px 15px #d00015, 0 5px 15px #d00015;
 }
 .slider .item-1 {
   background: url(../img/1.jpg) no-repeat center center;
