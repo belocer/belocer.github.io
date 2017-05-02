@@ -1,3 +1,14 @@
+@font-face {
+	font-family: 'Something Strange';
+	src: url('../fonts/SomethingStrange.eot');
+	src: url('../fonts/SomethingStrange.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SomethingStrange.woff2') format('woff2'),
+		url('../fonts/SomethingStrange.woff') format('woff'),
+		url('../fonts/SomethingStrange.ttf') format('truetype'),
+		url('../fonts/SomethingStrange.svg#SomethingStrange') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
 * {
 	box-sizing: border-box;
 }
@@ -5,7 +16,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Russo One', sans-serif;
+	font-family: 'Something Strange', 'Russo One', sans-serif;
 	font-size: 16px;
 }
 
