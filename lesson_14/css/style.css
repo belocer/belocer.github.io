@@ -64,9 +64,9 @@ body {
   background: rgba(255, 255, 255, 0.9);
   opacity: 1;
 }
-.slider .item span {
+/*.slider .item span {
   padding-bottom: 10rem;
-}
+}*/
 .slider .item:hover {
   -webkit-flex-basis: 60%;
       -ms-flex-preferred-size: 60%;
@@ -118,4 +118,10 @@ body {
     font-size: 1rem;
    text-shadow: 0 0 15px rgba(0,0,0, 1), 1px 1px 15px rgba(208,0,21, 1), 0 5px 15px rgba(208,0,21, 1);
   }
+}
+#item1 > span,
+#item2 > span,
+#item3 > span,
+#item4 > span{
+
 }
