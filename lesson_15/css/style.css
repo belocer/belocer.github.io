@@ -195,7 +195,7 @@ body {
 /*2-╨╣ ╨н╨║╤А╨░╨╜ SECTION*/
 .section {
   display: inline-block;
-  max-width: 1920px;
+  max-width: 1170px;
   width: 100vw;
 }
 .section__icon {
