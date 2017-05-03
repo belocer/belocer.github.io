@@ -196,7 +196,7 @@ body {
 .section {
   display: inline-block;
   max-width: 1170px;
-  width: 100vw;
+  width: 100%;
 }
 .section__icon {
   text-align: center;
