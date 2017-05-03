@@ -270,4 +270,8 @@ body {
     margin: 0 auto;
     width: 95%;
   }
+  .section__icon:not(:first-child) {
+    margin-top: 0px;
+}
+  
 }
