@@ -20,7 +20,8 @@ body {
   display: inline-block;
   max-width: 1920px;
   width: 100vw;
-  height: 750px;
+  min-height: 750px;
+  height: 100%;
   background: url("../img/head-car.jpg") no-repeat center center;
   position: relative
   /*╨Ц╨╡╨╗╤В╤Л╨╣ ╨╖╨░╨│╨╛╨╗╨╛╨▓╨╛╨║*/
