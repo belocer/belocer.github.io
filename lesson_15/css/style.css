@@ -273,5 +273,7 @@ body {
   .section__icon:not(:first-child) {
     margin-top: 0px;
 }
-  
+  .section:first-child {
+    margin-top: 185px;
+  }
 }
