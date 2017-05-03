@@ -196,7 +196,7 @@ body {
 .section {
     margin: 0 auto;
     /* display: inline-block; */
-    width: 1170px;
+    max-width: 1170px;
     /* width: 100%; */
 }
 .section__icon {
