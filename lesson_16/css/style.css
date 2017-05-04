@@ -87,7 +87,7 @@ body {
 }
 .menu_active {
     position: absolute;
-    top: 33px;
+    top: 35px;
     left: 16px;
 }
 .menu ul {
