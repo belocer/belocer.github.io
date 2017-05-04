@@ -42,10 +42,9 @@ body {
   background-color: #FFF;
   border-radius: 50%;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
-  position: fixed;
-  margin: 240px auto 0
-  /* top: 506px; */
-  /* left: 108px; */
+    position: absolute;
+    top: 500px;
+    left: 111px;
 }
 .menu-link span, .menu-link span:before, .menu-link span:after {
   display: block;
