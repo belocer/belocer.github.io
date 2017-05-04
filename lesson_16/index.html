@@ -31,11 +31,11 @@
 <!-- менюшка -->
 	<div class="menu">
 		<ul>
-			<li><a href="#main">Главная</a>
-			<li><a href="#about">О нас</a>
-			<li><a href="#download">Скачать</a>
-			<li><a href="#demo">Демо</a>
-			<li><a href="#contacts">контакты</a>
+			<li><a href="#main" onclick="add1();">Главная</a>
+			<li><a href="#about" onclick="add2();">О нас</a>
+			<li><a href="#download" onclick="add3();">Скачать</a>
+			<li><a href="#demo" onclick="add4();">Демо</a>
+			<li><a href="#contacts" onclick="add5();">контакты</a>
 		</ul>
 	</div>
 
@@ -76,7 +76,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-	<script>
+<script>
 	$(document).ready(function(){
 
 	var link = $('.menu-link');
@@ -95,6 +95,37 @@
 
 	});	
 	</script>
-
+<script>	
+function add1(){
+	document.getElementById('music').pause();
+	document.getElementById('music').currentTime = 0.0;
+	document.getElementById('music').setAttribute('src', 'audio/1.mp3');
+	document.getElementById('music').play();
+}
+function add2(){
+	document.getElementById('music').pause();
+	document.getElementById('music').currentTime = 0.0;
+	document.getElementById('music').setAttribute('src', 'audio/2.mp3');
+	document.getElementById('music').play();
+}
+function add3(){
+	document.getElementById('music').pause();
+	document.getElementById('music').currentTime = 0.0;
+	document.getElementById('music').setAttribute('src', 'audio/3.mp3');
+	document.getElementById('music').play();
+}
+function add4(){
+	document.getElementById('music').pause();
+	document.getElementById('music').currentTime = 0.0;
+	document.getElementById('music').setAttribute('src', 'audio/4.mp3');
+	document.getElementById('music').play();
+}
+function add4(){
+	document.getElementById('music').pause();
+	document.getElementById('music').currentTime = 0.0;
+	document.getElementById('music').setAttribute('src', 'audio/5.mp3');
+	document.getElementById('music').play();
+}
+</script>	
   </body>
 </html>
