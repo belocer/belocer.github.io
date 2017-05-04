@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'p22-book';
+	src: url('../fonts/p22/book/P22UndergroundCYPro-Book.eot');
+	src: url('../fonts/p22/book/P22UndergroundCYPro-Book.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/p22/book/P22UndergroundCYPro-Book.woff2') format('woff2'),
+		 url('../fonts/p22/book/P22UndergroundCYPro-Book.otf') format('otf'),
+		 url('../fonts/p22/book/P22UndergroundCYPro-Book.woff') format('woff'),
+		 url('../fonts/p22/book/P22UndergroundCYPro-Book.ttf') format('truetype'),
+		 url('../fonts/p22/book/P22UndergroundCYPro-Book.svg#P22UndergroundCYPro-Book') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
