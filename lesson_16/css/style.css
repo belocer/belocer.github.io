@@ -86,9 +86,9 @@ body {
   margin-top: 0;
 }
 .menu_active {
-  position: fixed;
-  top: 8%;
-  left: 43.75%;
+    position: absolute;
+    top: 33px;
+    left: 16px;
 }
 .menu ul {
   list-style: none;
