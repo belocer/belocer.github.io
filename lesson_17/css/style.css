@@ -1,0 +1,124 @@
+@charset "UTF-8";
+* {
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+  -webkit-transition: all 0.5;
+          transition: all 0.5;
+}
+
+html {
+  font-size: 10px;
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper {
+  background-image: url(../img/bg.jpg);
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accordion {
+  margin: 0 auto;
+  width: 860px;
+  text-align: center;
+}
+.accordion h1 {
+  font-family: 'Ubuntu', sans-serif;
+  color: #0bbaf0;
+  font-size: 3.6rem;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.accordion h2 {
+  display: inline-block;
+  margin-top: -5px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #0bbaf0;
+  font-size: 2.4rem;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.accordion span {
+  height: 1px;
+  width: 100px;
+  display: inline-block;
+  border-bottom: 1px solid #c6c6c6;
+  margin: 10px auto 30px;
+}
+
+.tab {
+  display: inline-block;
+  margin-bottom: 5px;
+  background-color: #0bbaf0;
+  width: 860px;
+  height: 54px;
+  line-height: 40px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  font-size: 2.32rem;
+  font-weight: 400;
+  line-height: 54px;
+  text-decoration: none;
+}
+.tab:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.content {
+  height: 152px;
+  width: 837px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  display: none;
+  text-align: center;
+  border-radius: 10px;
+  border-width: 4px;
+  border-color: #dcdcdc;
+  border-style: solid;
+  background-color: #fff;
+  margin: -21px auto 0;
+}
+.content > p {
+  display: inline-block;
+  width: 745px;
+  font-family: Ubuntu;
+  color: #535353;
+  font-size: 2.2rem;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0;
+  line-height: 22px;
+  padding: 32px;
+}
+
+.content-1 {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
