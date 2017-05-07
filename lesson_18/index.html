@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Lesson 18</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">	
     <link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
 
@@ -20,20 +22,42 @@
   <body>
 
 
-<section>
-	<div class="container">
-		<form id="form" action="thanks.html">
+<section class="container">
 
-		<span id="error" style="color: #a23965;font-size: 19px;"></span>
-			<p>Имя:</p>
-			<input id="name" type="text" class="form-control" placeholder="Введите имя" name="name" required><br><br>
-			<p>Номер телефона:</p>
-			<input id="phone" type="tel" class="form-control" placeholder="Введите телефон" name="tel" required><br><br>
-			<p>E-mail:</p>
-			<input id="email" type="email" class="form-control" placeholder="Введите email" name="email" required><br><br>
-			<button class="btn btn-default" type="submit">Отправить форму</button>
-		</form>
+		
+	<div class="block-center">
+
+		<div class="left-block"></div>
+
+		<div class="right-block">
+			<h1>Сохрани свой аккаунт</h1>
+			<p>Получи бесплатно неограниченное количество<br>форм, вопросов и ответов.</p>
+			<span id="error" style="color: #a23965;"></span>
+			<form id="form" action="thanks.html">
+				
+				<div class="wrap-input input-name">
+					<i class="fa fa-user"></i>
+					<input id="name" type="text" class="form-control" placeholder="Имя или никнейм" name="name" required>
+				</div>
+
+				<div class="wrap-input input-email">
+					<i class="fa fa-envelope"></i>
+					<input id="phone" type="Email" class="form-control" placeholder="Email" name="Email" required>
+				</div>
+
+				<div class="wrap-input input-pass">
+					<i class="fa fa-lock"></i>
+					<input id="password" type="password" class="form-control" placeholder="Пароль" name="password" required>
+				</div>
+
+				
+				<button class="btn btn-default" type="submit">Сохранить<i class="fa fa-angle-right"></i></button><br>
+				<span id="account">Уже есть аккаунт?<span>Войти</span></span>
+			</form>
+		</div>
 	</div>
+
+	
 </section>
 
 
@@ -41,25 +65,19 @@
 
 <script>
 $(document).ready(function(){
-
 	var btn = $('.btn');
-
 	btn.click(function(e){
-
 		//var error = [];
-
 		var userName = $('#name').val();
 		var userPhone = $('#phone').val();
-		var userEmail = $('#email').val();
+		var userEmail = $('#password').val();
 		var form = $('#form');
-
 		if ( (userName.length <= 3) || (userPhone.length <= 3) || (userEmail.length <= 3) ) {
 			e.preventDefault();
 			$('#error').text('Проверьте правильность заполнения полей!');
 		} 
 	});
 });
-
 </script>
 
   </body>
