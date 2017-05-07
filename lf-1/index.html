@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>lesson 1</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+    	<pre>
+    		
+    		/* ДЗ 1 - Функции */
+
+/*
+ Задание 1:
+
+ Функция должна принимать один аргумент и возвращать его
+ */
+function returnFirstArgument(arg) {
+    return arg;
+}
+/*
+ Задание 2:
+
+ Функция должна принимать два аргумента и возвращать сумму переданных значений
+ Значение по умолчанию второго аргумента должно быть 100
+ */
+function defaultParameterValue(a, b=100) {
+    return a + b;
+}
+
+/*
+ Задание 3: 
+
+ Функция должна возвращать все переданные в нее аргументы в виде массива
+ Количество переданных аргументов заранее неизвестно
+ */
+function returnArgumentsArray() {
+    var result = [];
+    for (var i = 0; i < arguments.length; i++) {
+        result[i] = arguments[i];
+    }
+    return result;
+}
+/*
+ Задание 4:
+
+ Функция должна принимать другую функцию и возвращать результат вызова переданной функции
+ */
+function returnFnResult(fn) {
+    return fn();
+}
+
+/*
+ Задание 5:
+
+ Функция должна принимать число (значение по умолчанию - 0) и возвращать функцию (F)
+ При вызове F, переданное число должно быть увеличено на единицу и возвращено из F
+ */
+function returnCounter(x = 0) {
+    return function F() {
+        return ++x;
+    }
+}
+
+/*
+ Задание 6 *:
+
+ Функция должна принимать другую функцию (F) и некоторое количество дополнительных аргументов
+ Функция должна привязать переданные аргументы к функции F и вернуть получившуюся функцию
+ */
+function bindFunction(F, a, b) {
+    F = F.bind(null, a, b);
+    return F;
+}
+
+export {
+    returnFirstArgument,
+    defaultParameterValue,
+    returnArgumentsArray,
+    returnFnResult,
+    returnCounter,
+    bindFunction
+}
+
+    	</pre>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
