@@ -92,7 +92,7 @@ html {
   color: #888;
   position: absolute;
   top: 18px;
-  left: 0;
+  left: 5px;
 }
 .right-block #password {
   border-bottom: 0;
