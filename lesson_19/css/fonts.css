@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'p22-thin';
+	src: url('../fonts/p22/thin/P22UndergroundCYPro-Thin.eot');
+	src: url('../fonts/p22/thin/P22UndergroundCYPro-Thin.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/p22/thin/P22UndergroundCYPro-Thin.woff2') format('woff2'),
+		 url('../fonts/p22/thin/P22UndergroundCYPro-Thin.otf') format('otf'),
+		 url('../fonts/p22/thin/P22UndergroundCYPro-Thin.woff') format('woff'),
+		 url('../fonts/p22/thin/P22UndergroundCYPro-Thin.ttf') format('truetype'),
+		 url('../fonts/p22/thin/P22UndergroundCYPro-Thin.svg#P22UndergroundCYPro-Thin') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'p22-medium';
+	src: url('../fonts/p22/medium/P22UndergroundCYPro-Medium.eot');
+	src: url('../fonts/p22/medium/P22UndergroundCYPro-Medium.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/p22/medium/P22UndergroundCYPro-Medium.woff2') format('woff2'),
+		 url('../fonts/p22/medium/P22UndergroundCYPro-Medium.otf') format('otf'),
+		 url('../fonts/p22/medium/P22UndergroundCYPro-Medium.woff') format('woff'),
+		 url('../fonts/p22/medium/P22UndergroundCYPro-Medium.ttf') format('truetype'),
+		 url('../fonts/p22/medium/P22UndergroundCYPro-Medium.svg#P22UndergroundCYPro-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'p22-book';
+	src: url('../fonts/p22/book/P22UndergroundCYPro-Book.eot');
+	src: url('../fonts/p22/book/P22UndergroundCYPro-Book.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/p22/book/P22UndergroundCYPro-Book.woff2') format('woff2'),
+		 url('../fonts/p22/book/P22UndergroundCYPro-Book.otf') format('otf'),
+		 url('../fonts/p22/book/P22UndergroundCYPro-Book.woff') format('woff'),
+		 url('../fonts/p22/book/P22UndergroundCYPro-Book.ttf') format('truetype'),
+		 url('../fonts/p22/book/P22UndergroundCYPro-Book.svg#P22UndergroundCYPro-Book') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'p22-heavy';
+	src: url('../fonts/p22/heavy/P22UndergroundCYPro-Heavy.eot');
+	src: url('../fonts/p22/heavy/P22UndergroundCYPro-Heavy.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/p22/heavy/P22UndergroundCYPro-Heavy.woff2') format('woff2'),
+		 url('../fonts/p22/heavy/P22UndergroundCYPro-Heavy.otf') format('otf'),
+		 url('../fonts/p22/heavy/P22UndergroundCYPro-Heavy.woff') format('woff'),
+		 url('../fonts/p22/heavy/P22UndergroundCYPro-Heavy.ttf') format('truetype'),
+		 url('../fonts/p22/heavy/P22UndergroundCYPro-Heavy.svg#P22UndergroundCYPro-Heavy') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
