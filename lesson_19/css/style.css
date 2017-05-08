@@ -315,7 +315,7 @@ body .ton {
   color: #333;
 }
 
-body > div:nth-child(10) {
+/* body > div:nth-child(10) {
   position: absolute;
   height: 400px;
   width: 400px;
@@ -323,7 +323,7 @@ body > div:nth-child(10) {
   left: 760px;
   display: block;
   z-index: 101;
-}
+} */
 
 /********/
 /********/
