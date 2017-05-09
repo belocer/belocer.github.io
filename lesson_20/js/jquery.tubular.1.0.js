@@ -19,7 +19,7 @@
         ratio: 16/9, // usually either 4/3 or 16/9 -- tweak as needed
         videoId: 'ZCAnLxRvNNc', // toy robot in space is a good default, no?
         mute: true,
-        repeat: true,
+        repeat: false,
         width: $(window).width(),
         wrapperZIndex: 99,
         playButtonClass: 'tubular-play',
@@ -28,7 +28,10 @@
         volumeUpClass: 'tubular-volume-up',
         volumeDownClass: 'tubular-volume-down',
         increaseVolumeBy: 10,
-        start: 0
+        start: 0,
+        onVideoEnd: function(){
+        	alert("End");
+        }
     };
 
     // methods
@@ -39,10 +42,10 @@
             $node = $(node); // cache wrapper node
 
         // build container
-        var tubularContainer = '<div id="tubular-container" style="overflow: hidden; position: fixed; z-index: 1; width: 100%; height: 100%"><div id="tubular-player" style="position: absolute"></div></div><div id="tubular-shield" style="width: 100%; height: 100%; z-index: 2; position: absolute; left: 0; top: 0;"></div>';
+        var tubularContainer = '<div id="tubular-container" style="overflow: hidden; position: absolute; top: 0; left: 0; z-index: 1; width: 100%; height: 769px"><div id="tubular-player" style="position: absolute"></div></div><div id="tubular-shield" style="width: 100%; height: 769px; z-index: 2; position: absolute; left: 0; top: 0;"></div>';
 
         // set up css prereq's, inject tubular container and set up wrapper defaults
-        $('html,body').css({'width': '100%', 'height': '100%'});
+       // $('html,body').css({'width': '100%', 'height': '100%'});
         $body.prepend(tubularContainer);
         $node.css({position: 'relative', 'z-index': options.wrapperZIndex});
 
@@ -74,9 +77,10 @@
         }
 
         window.onPlayerStateChange = function(state) {
-            if (state.data === 0 && options.repeat) { // video ended and repeat option is set true
-                player.seekTo(options.start); // restart
-            }
+			if (state.data === 0) {
+				options.repeat && player.seekTo(options.start);
+				options.onVideoEnd && options.onVideoEnd();
+			}
         }
 
         // resize handler updates width, height and offset of player after resize/init
