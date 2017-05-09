@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,18 +10,23 @@ html {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #fff;
 }
 
-.header {
+#player, #tubular-shield, #tubular-container {
+  width: 100%;
+  height: 769px;
+}
+
+/*╨Я╨╡╤А╨▓╤Л╨╣ ╤Н╨║╤А╨░╨╜*/
+#header {
+  height: 769px;
   width: 100%;
   margin: 0 auto;
-  background-color: rgba(165, 165, 165, 0.5);
-  height: auto;
-  min-height: 769px;
-  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
 }
-.header h3 {
+#header h3 {
   font-family: 'Ubuntu', sans-serif;
   color: #fff;
   font-size: 0.875rem;
@@ -31,7 +37,7 @@ html {
   letter-spacing: 3px;
   padding-top: 110px;
 }
-.header h1 {
+#header h1 {
   font-family: 'Ubuntu', sans-serif;
   color: #fff;
   font-size: 3.5rem;
@@ -40,7 +46,7 @@ html {
   text-align: center;
   margin-top: 35px;
 }
-.header h2 {
+#header h2 {
   font-family: 'Ubuntu', sans-serif;
   color: #fff;
   font-size: 1.5rem;
@@ -49,14 +55,14 @@ html {
   text-align: center;
   margin-top: 35px;
 }
-.header .wrap_inp {
+#header .wrap_inp {
   display: block;
   width: 600px;
   height: 50px;
-  margin: 220px auto 0;
+  margin: 200px auto 0;
   clear: both;
 }
-.header .inp {
+#header .inp {
   width: 220px;
   height: 50px;
   background-color: #fff;
@@ -66,14 +72,14 @@ html {
   float: left;
   border: none;
 }
-.header .inp:focus, .header .inp:active {
+#header .inp:focus, #header .inp:active {
   border: none;
   box-shadow: none;
 }
-.header .bord_left {
+#header .bord_left {
   border-left: 1px solid #aaa;
 }
-.header .btn {
+#header .btn {
   background-color: #1abc9c;
   width: 160px;
   height: 50px;
@@ -82,10 +88,10 @@ html {
   padding: 0;
   border: 0;
 }
-.header .btn:hover {
+#header .btn:hover {
   box-shadow: 0 5px 100px rgba(0, 0, 0, 0.5);
 }
-.header p {
+#header p {
   margin: 49px auto 0;
   font-family: 'Ubuntu', sans-serif;
   color: #fff;
@@ -93,13 +99,203 @@ html {
   font-weight: 300;
   line-height: 1.688;
   text-align: center;
-  font-family: Ubuntu;
-  color: #fff;
-  font-size: 1rem;
+  overflow: hidden;
+}
+#header p span {
+  color: #19bc9b;
+}
+
+.wrapper-menu {
+  width: 100%;
+  height: 61px;
+  background-color: #fff;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  z-index: 150;
+}
+
+#menu {
+  display: block;
+  width: 1140px;
+  height: 61px;
+  margin: 0 auto;
+}
+#menu .logo {
+  width: 65px;
+  height: 61px;
+  display: block;
+  float: left;
+  background: url(../img/logo.png) no-repeat center center;
+  line-height: 61px;
+  clear: both;
+  overflow: hidden;
+}
+#menu > ul {
+  width: 55%;
+  min-width: 470px;
+  max-width: 1140px;
+  height: 100%;
+  overflow: hidden;
+  margin-left: 50px;
+  margin-right: 0;
+  padding: 0;
+  float: left;
+}
+#menu > ul li {
+  display: inline-block;
+  list-style: none;
+  float: left;
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  line-height: 61px;
+}
+#menu > ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  color: #a69999;
+  font-size: 0.938rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+}
+#menu .social {
+  width: 138px;
+  height: 80%;
+  display: inline-block;
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  margin-left: 10rem;
+  margin-top: 7px;
+}
+#menu .social .social-wrap {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#menu .social .social-wrap .facebook {
+  color: #3b5998;
+  font-size: 1.688rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: left;
+}
+#menu .social .social-wrap .twitter {
+  color: #00aced;
+  font-size: 1.688rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: left;
+}
+#menu .social .social-wrap .elipse {
+  display: inline-block;
+  background: url(../img/elips.png) no-repeat center center;
+  width: 30px;
+  height: 8px;
+}
+
+/*╨Т╤В╨╛╤А╨╛╨╣ ╤Н╨║╤А╨░╨╜*/
+.whatWeDo {
+  width: 1140px;
+  height: 728px;
+  background-color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+.whatWeDo .smile {
+  margin-top: 100px;
+  width: 65px;
+  height: 65px;
+  display: inline-block;
+  background: url(../img/smile.png) no-repeat center center;
+}
+.whatWeDo h3 {
+  font-family: 'Ubuntu', sans-serif;
+  color: #a5a5a5;
+  font-size: 0.938rem;
+  font-weight: 700;
+  line-height: 4.467;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.whatWeDo h1 {
+  margin-top: 0;
+  font-family: 'Ubuntu', sans-serif;
+  color: #4c4c4c;
+  font-size: 3.813rem;
   font-weight: 300;
+}
+.whatWeDo h1 span {
+  font-family: 'Ubuntu', sans-serif;
+  color: #1abc9c;
+  font-size: 3.813rem;
+  font-weight: 300;
+}
+.whatWeDo .wrapper_three {
+  margin-top: 90px;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.whatWeDo .wrapper_three .whatWeDo_bloks {
+  width: 360px;
+  height: 350px;
+  display: block;
+}
+.whatWeDo .wrapper_three .whatWeDo_bloks h2 {
+  font-family: 'Ubuntu', sans-serif;
+  color: #4c4c4c;
+  font-size: 1.688rem;
+  font-weight: 400;
+  line-height: 2.481;
+  text-align: center;
+}
+.whatWeDo .wrapper_three .whatWeDo_bloks p {
+  font-family: 'Ubuntu', sans-serif;
+  color: #939598;
+  font-size: 1rem;
+  font-weight: 400;
   line-height: 1.688;
   text-align: center;
 }
-.header p span {
-  color: #19bc9b;
+.whatWeDo .wrapper_three .whatWeDo_fully > span {
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  background: url(../img/ipad-iphone.png) no-repeat center center;
+}
+.whatWeDo .wrapper_three .whatWeDo_Easy > span {
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  background: url(../img/flip-arrow.png) no-repeat center center;
+}
+.whatWeDo .wrapper_three .whatWeDo_Direct > span {
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  background: url(../img/bulb.png) no-repeat center center;
 }
