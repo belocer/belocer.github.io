@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100vh;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(0, 0, 0, .7);
+}
+.header {
+	width: 100%;
+	//max-width: 1140px;
+	margin: 0 auto;
+	background-color: rgba(165, 165, 165, 0.5);
+	height: auto;
+	min-height: 769px;
+	height: 100%;
+
+
+	h3 {
+		font-family: 'Ubuntu', sans-serif;
+		color: #fff;
+		font-size: 0.875rem;
+		font-weight: 700;
+		line-height: 4.786;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		padding-top: 110px;
+	}
+
+	h1 {
+		font-family: 'Ubuntu', sans-serif;
+		color: #fff;
+		font-size: 3.5rem;
+		font-weight: 400;
+		line-height: 1.196;
+		text-align: center;
+		margin-top: 35px;
+	}
+
+	h2 {
+		font-family: 'Ubuntu', sans-serif;
+		color: #fff;
+		font-size: 1.5rem;
+		font-weight: 300;
+		line-height: 2.792;
+		text-align: center;
+		margin-top: 35px;
+	}
+
+	.wrap_inp {
+		display: block;
+		width: 600px;
+		height: 50px;
+		margin: 220px auto 0;
+		clear: both;
+	}
+	
+	.inp {
+		width: 220px;
+		height: 50px;
+		background-color: #fff;
+		text-indent: 38px;
+		margin: 0;
+		padding: 0;
+		float: left;
+		border: none;
+
+		&:focus, &:active {
+			border: none;
+			box-shadow: none;
+		}
+	}
+
+	.bord_left {
+		border-left: 1px solid #aaa;
+	}
+
+	.btn {
+		background-color: #1abc9c;
+		width: 160px;
+		height: 50px;
+		color: #fff;
+		margin: 0;
+		padding: 0;
+		border: 0;
+
+		&:hover {
+			box-shadow: 0 5px 100px rgba(0,0,0, .5);
+		}
+	}
+
+	p {
+		margin: 49px auto 0;
+		font-family: 'Ubuntu', sans-serif;
+		color: #fff;
+		font-size: 1rem;
+		font-weight: 300;
+		line-height: 1.688;
+		text-align: center;
+		font-family: Ubuntu;
+		color: #fff;
+		font-size: 1rem;
+		font-weight: 300;
+		line-height: 1.688;
+		text-align: center;
+
+		span {
+			color: #19bc9b;
+		}
+	}
+}
