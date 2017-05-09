@@ -8,16 +8,21 @@ html {
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
-	background-color: rgba(0, 0, 0, .7);
+	background-color: #fff;
 }
-.header {
+
+
+#player, #tubular-shield, #tubular-container {
 	width: 100%;
-	//max-width: 1140px;
+	height: 769px;}
+
+						/*Первый экран*/
+#header {
+	height: 769px;
+	width: 100%;
 	margin: 0 auto;
-	background-color: rgba(165, 165, 165, 0.5);
-	height: auto;
-	min-height: 769px;
-	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: relative;
 
 
 	h3 {
@@ -56,7 +61,7 @@ html {
 		display: block;
 		width: 600px;
 		height: 50px;
-		margin: 220px auto 0;
+		margin: 200px auto 0;
 		clear: both;
 	}
 	
@@ -102,15 +107,206 @@ html {
 		font-weight: 300;
 		line-height: 1.688;
 		text-align: center;
-		font-family: Ubuntu;
-		color: #fff;
-		font-size: 1rem;
-		font-weight: 300;
-		line-height: 1.688;
-		text-align: center;
+		overflow: hidden;
+
 
 		span {
 			color: #19bc9b;
 		}
+	}
+}
+
+.wrapper-menu {
+	width: 100%;
+	height: 61px;
+	background-color: #fff;
+	box-shadow: 0 5px 30px rgba(0,0,0, .4);
+	display: inline-block;
+	z-index: 150;
+}
+
+#menu {
+	display: block;
+	width: 1140px;
+	height: 61px;
+	margin: 0 auto;
+
+	.logo {
+		width: 65px;
+		height: 61px;
+		display: block;
+		float: left;
+		background: url(../img/logo.png) no-repeat center center;
+		line-height: 61px;
+		clear: both;
+		overflow: hidden;
+	}
+
+	&>ul {
+		width: 55%;
+		min-width: 470px;
+		max-width: 1140px;
+		height: 100%;
+		overflow: hidden;
+		margin-left: 50px;
+		margin-right: 0;
+		padding: 0;
+		float: left;
+	}
+
+	&>ul li {
+		display: inline-block;
+		list-style: none;
+		float: left;
+		width: 15%;
+		height: 100%;
+		text-align: center;
+		line-height: 61px;
+	}
+
+	&>ul li a{
+		display: inline-block;
+		text-decoration: none;
+		font-family: 'Ubuntu', sans-serif;
+		color:  #a69999;
+		font-size: 0.938rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		width: 100%;
+		height: 100%;
+	}
+
+	.social {
+		width: 138px;
+		height: 80%;
+		display: inline-block;
+		border-left: 1px solid #d9d9d9;
+		border-right: 1px solid #d9d9d9;
+		margin-left: 10rem;
+		margin-top: 7px;
+
+		.social-wrap {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+
+			.facebook {
+				color:  #3b5998;
+				font-size: 1.688rem;
+				font-weight: 400;
+				line-height: 1;
+				text-align: left;
+			}
+
+			.twitter {
+				color:  #00aced;
+				font-size: 1.688rem;
+				font-weight: 400;
+				line-height: 1;
+				text-align: left;
+			}
+
+			.elipse {
+				display: inline-block;
+				background: url(../img/elips.png) no-repeat center center;
+				width: 30px;
+				height: 8px;
+			}
+		}
+	}
+}
+
+/*Второй экран*/
+.whatWeDo {
+	width: 1140px;
+	height: 728px;
+	background-color: #fff;
+	margin: 0 auto;
+	text-align: center;
+
+	.smile {
+		margin-top: 100px;
+		width: 65px;
+		height: 65px;
+		display: inline-block;
+		background: url(../img/smile.png) no-repeat center center;
+	}
+
+	h3 {
+		font-family: 'Ubuntu', sans-serif;
+		color:  #a5a5a5;
+		font-size: 0.938rem;
+		font-weight: 700;
+		line-height: 4.467;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+	}
+
+	h1 {
+		margin-top: 0;
+		font-family: 'Ubuntu', sans-serif;
+		color: #4c4c4c;
+		font-size: 3.813rem;
+		font-weight: 300;
+
+		span {
+			font-family: 'Ubuntu', sans-serif;
+			color: #1abc9c;
+			font-size: 3.813rem;
+			font-weight: 300;
+		}
+	}
+
+	.wrapper_three {
+		margin-top: 90px;
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.whatWeDo_bloks {
+			width: 360px;
+			height: 350px;
+			display: block;
+
+			h2 {
+				font-family: 'Ubuntu', sans-serif;
+				color:  #4c4c4c;
+				font-size: 1.688rem;
+				font-weight: 400;
+				line-height: 2.481;
+				text-align: center;
+			}
+			p {
+				font-family: 'Ubuntu', sans-serif;
+				color:  #939598;
+				font-size: 1rem;
+				font-weight: 400;
+				line-height: 1.688;
+				text-align: center;
+			}
+		}
+		.whatWeDo_fully>span{
+			width: 75px;
+			height: 75px;
+			display: inline-block;
+			background: url(../img/ipad-iphone.png) no-repeat center center;
+		}
+		.whatWeDo_Easy>span{
+			width: 75px;
+			height: 75px;
+			display: inline-block;
+			background: url(../img/flip-arrow.png) no-repeat center center;
+		}
+		.whatWeDo_Direct>span{
+			width: 75px;
+			height: 75px;
+			display: inline-block;
+			background: url(../img/bulb.png) no-repeat center center;
+		}
+
 	}
 }
