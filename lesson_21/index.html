@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Lesson 20</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Ubuntu:300,300i,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--Заголовок-->
+<header>
+
+    <!--ЛОГО + меню-->
+    <div class="head_menu">
+        <span class="logo">
+            <i class="fa fa-tint"></i>
+            Tank<span>app</span>
+        </span>
+        <ul>
+            <li><a href="#">How it works</a>
+            <li><a href="#">About us</a>
+            <li><a href="#">Contact us</a>
+            <li><a href="#">Blog</a>
+        </ul>
+    </div>  <!--Конец лого + меню-->
+</header>
+    <!--Баннер с рукой и телефоном-->
+    <div class="banner">
+
+        <div class="block" id="scene">
+
+            <h1>Track your next <br> fuel shops</h1>
+            <h3>Monitor and Alert on all petrol bunks near to you</h3>
+
+            <h6 class="signUp">
+                <span>Signup&nbsp;For</span>&nbsp;<span id="yellow">Free</span>
+            </h6>
+            <form action="#">
+                <input type="email" class="inp" placeholder="Your E-mail  Adress">
+                <input type="submit" class="inp_btn" value="signup">
+            </form>
+            <!--Паралакс-->
+            <div class="layer" data-depth="0.00"><img src="img/layer2.png"></div>
+            <div class="layer" data-depth="1.00"><img src="img/layer1.png"></div>
+        </div>
+
+    </div>  <!--Конец Баннер с рукой и телефоном-->
+
+<div class="corporation">
+    <div class="evernote"></div>
+    <div class="microsoft"></div>
+    <div class="google"></div>
+    <div class="sony"></div>
+    <div class="firefox"></div>
+</div>
+
+<!--jQuery -->
+<!-- 3.x snippet: -->
+ <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<!-- 2.x snippet: -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- 1.x snippet: -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+<script src="js/parallax.js"></script>
+
+<script>
+    $(document).ready(function () {
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    });
+</script>
+</body>
+</html>

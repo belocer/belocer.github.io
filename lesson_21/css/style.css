@@ -1,0 +1,278 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+/* <link href="https://fonts.googleapis.com/css?family=Nunito|Ubuntu:300,300i,400,500,700" rel="stylesheet"> */
+/*
+font-family: 'Nunito', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+header {
+  width: 100%;
+  height: 87px;
+}
+
+/*╨╝╨╡╨╜╤О*/
+.head_menu {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 87px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+}
+.head_menu .logo {
+  width: 201px;
+  height: 31px;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  color: #333;
+  font-size: 2.311rem;
+  font-weight: 400;
+  line-height: 1.893;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.head_menu .logo i {
+  color: #ffce54;
+  font-size: 2.311rem;
+  font-weight: 400;
+  line-height: 1.893;
+  text-align: center;
+}
+.head_menu .logo span {
+  font-family: 'Nunito', sans-serif;
+  color: #65a9d9;
+  font-size: 2.311rem;
+  font-weight: 400;
+  line-height: 1.893;
+  text-align: center;
+}
+.head_menu ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45%;
+  height: 100%;
+}
+.head_menu ul li {
+  list-style: none;
+  display: inline-block;
+  height: 87px;
+  float: left;
+  line-height: 87px;
+}
+.head_menu ul li a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  color: rgba(45, 57, 76, 0.84);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2.938;
+}
+
+.banner {
+  width: 100%;
+  height: 843px;
+  background-color: #54a3da;
+}
+.banner .block {
+  margin: 0 auto;
+  max-width: 1280px;
+  height: 100%;
+  position: relative;
+}
+.banner .block h1 {
+  margin-top: 230px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #f7f6f2;
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 1.385;
+  text-align: left;
+  display: inline-block;
+}
+.banner .block h3 {
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.958;
+  text-align: left;
+}
+.banner .block .signUp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-top: 50px;
+}
+.banner .block .signUp > span {
+  font-family: 'Ubuntu', sans-serif;
+  color: #f7f7f7;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  display: inline-block;
+  width: 57px;
+  height: 27px;
+  float: left;
+}
+.banner .block #yellow {
+  margin-left: 23px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #f7f7f7;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #ffce54;
+  line-height: 27px;
+  width: 57px;
+  height: 27px;
+  text-transform: uppercase;
+}
+.banner .block form {
+  margin-top: 37px;
+  display: inline-block;
+  float: left;
+}
+.banner .block form input:first-child {
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: #fff;
+  width: 423px;
+  height: 54px;
+  text-indent: 15px;
+}
+.banner .block form input:last-child {
+  border-radius: 5px;
+  background-color: #77c344;
+  width: 113px;
+  height: 54px;
+  border: none;
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+
+#scene > div:nth-child(5) {
+  position: absolute;
+  top: 169px;
+  left: -20px;
+}
+
+#scene > div:nth-child(6) {
+  position: absolute;
+  top: 93px;
+  left: 719px;
+}
+
+/*╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╨╕*/
+.corporation {
+  width: 100%;
+  max-width: 1280px;
+  min-height: 158px;
+  height: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.corporation div {
+  width: 142px;
+  height: 31px;
+  display: inline-block;
+  float: left;
+}
+.corporation .evernote {
+  background: url(../img/evernote.png) no-repeat center center;
+  width: 169px;
+  height: 43px;
+}
+.corporation .microsoft {
+  background: url(../img/microsoft.png) no-repeat center center;
+  width: 169px;
+  height: 43px;
+}
+.corporation .google {
+  background: url(../img/google.png) no-repeat center center;
+  width: 169px;
+  height: 43px;
+}
+.corporation .sony {
+  background: url(../img/sony.png) no-repeat center center;
+  width: 169px;
+  height: 43px;
+}
+.corporation .firefox {
+  background: url(../img/firefox.png) no-repeat center center;
+  width: 169px;
+  height: 43px;
+}
