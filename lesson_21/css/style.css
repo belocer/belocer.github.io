@@ -6,11 +6,9 @@
 }
 
 html {
-  height: 100vh;
   font-size: 16px;
   margin: 0;
   padding: 0;
-  background-color: #fff;
 }
 
 /* <link href="https://fonts.googleapis.com/css?family=Nunito|Ubuntu:300,300i,400,500,700" rel="stylesheet"> */
@@ -277,4 +275,30 @@ header {
   background: url(../img/firefox.png) no-repeat center center;
   width: 169px;
   height: 43px;
+}
+
+/*2 ╨┐╨░╤А╨░╨╗╨░╨║╤Б*/
+.parallax-window {
+  min-height: 600px;
+}
+
+#bg1, #bg2 {
+  min-height: 600px;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), -webkit-radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+}
+
+/*3 ╨┐╨░╤А╨░╨╗╨░╨║╤Б*/
+section {
+  width: 100%;
+}
+section .rellax {
+  max-width: 1280px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+}
+section .rellax i {
+  font-size: 25px;
+  color: #5e5e5e;
 }
