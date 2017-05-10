@@ -61,8 +61,8 @@
                 <input type="submit" class="inp_btn" value="signup">
             </form>
             <!--Паралакс-->
-            <div class="layer" data-depth="0.40"><img src="img/layer2.png"></div>
-            <div class="layer" data-depth="1.00"><img src="img/layer1.png"></div>
+            <div class="layer" data-depth="0.50"><img src="img/layer2.png"></div>
+            <div class="layer" data-depth="1.20"><img src="img/layer1.png"></div>
         </div>
 
     </div>  <!--Конец Баннер с рукой и телефоном-->
@@ -75,22 +75,64 @@
     <div class="firefox"></div>
 </div>
 
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/1.jpg"></div>
+<div class="parallax-window" id="bg1">
+    <section>
+        <div class="rellax">
+            <i class="fa fa-tencent-weibo"></i>
+        </div>
+        <div class="rellax" data-rellax-speed="7">
+            <i class="fa fa-tint"></i>
+        </div>
+        <div class="rellax" data-rellax-speed="-4">
+            <i class="fa fa-umbrella"></i>
+        </div>
+        <div class="rellax">
+            <i class="fa fa-smile-o"></i>
+        </div>
+        <div class="rellax" data-rellax-speed="7">
+            <i class="fa fa-usd"></i>
+        </div>
+        <div class="rellax" data-rellax-speed="-4">
+            <i class="fa fa-tripadvisor"></i>
+        </div>
+        <div class="rellax">
+            <i class="fa fa-pagelines"></i>
+        </div>
+        <div class="rellax" data-rellax-speed="7">
+            <i class="fa fa-cloud"></i>
+        </div>
+        <div class="rellax" data-rellax-speed="-4">
+            <i class="fa fa-heart-o"></i>
+        </div>
+    </section>
+</div>
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/2.jpg"></div>
+<div class="parallax-window" id="bg2"></div>
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/3.jpg"></div>
 
-<!--jQuery -->
+
+
+<!--======> jQuery <======-->
 <!-- 3.x snippet: -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 <!-- 2.x snippet: -->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
 <!-- 1.x snippet: -->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/rellax.js"></script>
 
 <script>
     $(document).ready(function () {
         var scene = document.getElementById('scene');
         var parallax = new Parallax(scene);
     });
+
+    // Also can pass in optional settings block
+    var rellax = new Rellax('.rellax');
 </script>
 </body>
 </html>
