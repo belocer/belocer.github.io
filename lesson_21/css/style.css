@@ -119,7 +119,7 @@ header {
   width: 100%;
   height: 843px;
   background-color: #54a3da;
-  overflow-x: hidden;	
+  overflow-x: hidden;
 }
 .banner .block {
   margin: 0 auto;
@@ -214,22 +214,17 @@ header {
   margin-left: 30px;
 }
 
-/* #scene > div:nth-child(5) {
+/*╨н╨╗╨╡╨╝╨╡╨╜╤В╤Л ╨┐╨░╤А╨░╨╗╨░╨║╤Б╨░*/
+#scene > div > div:nth-child(5) > img {
   position: absolute;
-  top: 169px;
-  left: -20px;
+  top: -383px;
+  left: -81px;
 }
 
-#scene > div:nth-child(6) {
+#scene > div > div:nth-child(6) > img {
   position: absolute;
   top: 93px;
   left: 719px;
-} */
-
-#scene > div > div:nth-child(6) > img {
-	position: absolute;
-	top: 93px;
-	left: 719px;
 }
 
 /*╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╨╕*/
