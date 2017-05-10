@@ -213,7 +213,7 @@ header {
   margin-left: 30px;
 }
 
-#scene > div:nth-child(5) {
+/* #scene > div:nth-child(5) {
   position: absolute;
   top: 169px;
   left: -20px;
@@ -223,6 +223,12 @@ header {
   position: absolute;
   top: 93px;
   left: 719px;
+} */
+
+#scene > div > div:nth-child(6) > img {
+	position: absolute;
+	top: 93px;
+	left: 719px;
 }
 
 /*╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╨╕*/
