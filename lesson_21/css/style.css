@@ -119,6 +119,7 @@ header {
   width: 100%;
   height: 843px;
   background-color: #54a3da;
+  overflow-x: hidden;	
 }
 .banner .block {
   margin: 0 auto;
