@@ -1,21 +1,5 @@
 @charset "UTF-8";html{font-size:16px;}
 body{margin:0;padding:0;}
-.one-screen__logo-fon{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;margin:30px auto;max-width:1600px;}
-.one-screen__logo{font-family:'Panton-ExtraBold';color:#363636;font-size:1.5rem;font-weight:700;text-align:center;}
-.one-screen__number-button{text-align:center;}
-.one-screen__number-button span{font-family:'Panton-ExtraBold';color:#363636;font-size:1.2rem;font-weight:700;text-align:left;}
-.one-screen__number-button button{font-family:'Panton-SemiBold';color:#363636;font-size:1.625rem;font-weight:600;text-align:center;border-radius:10px;border-width:2px;border-color:#282828;border-style:solid;width:263px;height:47px;background-color:#FFF;}
-.one-screen__menu{background-color:#25292D;width:100%;height:93px;-webkit-transition:all .5;transition:all .5}
-.one-screen__menu ul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;margin:0 auto;max-width:1300px;padding-left:0;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;}
-.one-screen__menu ul li{list-style:none;display:inline-block;line-height:93px;}
-.one-screen__menu ul li a{text-decoration:none;font-family:'Panton-Light';color:#ffffff;font-size:1.2rem;font-weight:300;text-align:center;}
-.one-screen__img{height:1064px;width:100%;display:inline-block;background-size:cover;background-image:url(../img/bg-head.jpg);text-align:center}
-.one-screen__img .one-screen__watch-video{display:inline-block;background-color:#059feb;width:350px;height:66px;border-radius:50px;line-height:66px;font-family:'Panton-ExtraBold';color:#ffffff;font-size:1.875rem;font-weight:700;text-align:center;text-transform:uppercase;margin-top:40px;margin-bottom:130px;text-decoration:none;}
-.one-screen__img .one-screen__slogan{display:inline-block;font-family:'Panton-SemiBold';color:#fff;font-size:1.5rem;font-weight:600;text-align:center;margin-top:55px;}
-.one-screen__img .one-screen__look-down{font-family:'Panton-SemiBold';color:#ffffff;font-size:1.5rem;font-weight:600;text-align:center;}
-.one-screen__img .one-screen__mouse{display:inline-block;background-image:url(../img/mouse.png);width:36px;height:58px;margin-top:25px;}
-.one-screen__LOGO{width:440px;height:90px;background-image:url(../img/BeamLightLogoWhite.png);background-size:contain;background-repeat:no-repeat;margin:320px auto 0;}
-.one-screen__img > h2{font-family:'Panton-Black';color:#fff;font-size:2.5rem;font-weight:900;text-transform:uppercase;display:inline;clear:both;}
 div.one-screen__img > h3{font-family:'Panton-SemiBold';color:#ffffff;font-size:1.5rem;font-weight:600;text-align:center;text-transform:uppercase;}
 .two-screen__light-box{height:620px;width:100%;margin-top:146px}
 .two-screen__light-box .two-screen__head_light{font-family:'Panton-ExtraBlack';color:#363636;font-size:2.25rem;font-weight:900;text-align:center;text-transform:uppercase;margin-bottom:105px;}
