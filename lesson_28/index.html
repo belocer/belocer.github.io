@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>lesson 28</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+    <div class="wrapper">
+	<!-- левый блок -->
+		<img class="item" src="img/Кресло.png" alt="img">
+
+		<span class="cross"></span>
+
+	<!-- правый блок -->
+		<div class="description">
+			<h2>Стул “Венеция”</h2>
+			<h3>Ограниченный выпуск.</h3>
+			<span class="price">
+				<span>4 250 р.</span>
+				<span class="stars">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+					<span>4.5</span>
+				</span> <!-- Звезды -->
+			</span>
+			<p class="text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезызвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+			<div class="quantity">
+				<span>-</span>
+				<span>2</span>
+				<span>+</span>
+			</div><br><br>
+			<!-- <a href="#" class="btn">Добавить в корзину</a> -->
+
+<!-- Яндекс деньги -->
+
+<form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml"> 
+    <input type="hidden" name="receiver" value="410011170075610"> 
+    <input type="hidden" name="formcomment" value="Покупка кресла"> 
+    <input type="hidden" name="short-dest" value="Стильное некчёмное жёлтое кресло"> 
+    <input type="hidden" name="label" value="$order_id"> 
+    <input type="hidden" name="quickpay-form" value="shop"> 
+    <input type="hidden" name="targets" value="транзакция {4444444}"> 
+    <input type="hidden" name="sum" value="4250" data-type="number"> 
+    <input type="hidden" name="need-fio" value="true"> 
+    <input type="hidden" name="need-email" value="true"> 
+    <input type="hidden" name="need-phone" value="false"> 
+    <input type="hidden" name="need-address" value="false"> 
+    <!-- <label><input type="radio" name="paymentType" value="PC">Яндекс.Деньгами</label>  -->
+    <input type="hidden" name="paymentType" value="PC"> 
+    <input type="submit" class="btn" value="Добавить в корзину"> 
+</form>
+
+		</div>
+	</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

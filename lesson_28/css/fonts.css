@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'Bliss ExtraLight';
+	src: url('../fonts/extralight/BlissPro-ExtraLight.eot');
+	src: url('../fonts/extralight/BlissPro-ExtraLight.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/extralight/BlissPro-ExtraLight.woff2') format('woff2'),
+		 url('../fonts/extralight/BlissPro-ExtraLight.woff') format('woff'),
+		 url('../fonts/extralight/BlissPro-ExtraLight.ttf') format('truetype'),
+		 url('../fonts/extralight/blisspro-extralight.otf') format('otf'),
+		 url('../fonts/extralight/BlissPro-ExtraLight.svg#BlissPro-ExtraLight') format('svg');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bliss Heavy';
+	src: url('../fonts/heavy/BlissPro-Heavy.eot');
+	src: url('../fonts/heavy/BlissPro-Heavy.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/heavy/BlissPro-Heavy.woff2') format('woff2'),
+		 url('../fonts/heavy/BlissPro-Heavy.woff') format('woff'),
+		 url('../fonts/heavy/BlissPro-Heavy.ttf') format('truetype'),
+		 url('../fonts/extralight/blisspro-heavy.otf') format('otf'),
+		 url('../fonts/heavy/BlissPro-Heavy.svg#BlissPro-Heavy') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bliss';
+	src: url('../fonts/regular/BlissPro.eot');
+	src: url('../fonts/regular/BlissPro.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/regular/BlissPro.woff2') format('woff2'),
+		 url('../fonts/regular/BlissPro.woff') format('woff'),
+		 url('../fonts/regular/BlissPro.ttf') format('truetype'),
+		 url('../fonts/regular/blisspro.otf') format('otf'),
+		 url('../fonts/regular/BlissPro.svg#BlissPro') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bliss Medium';
+	src: url('../fonts/medium/BlissPro-Medium.eot');
+	src: url('../fonts/medium/BlissPro-Medium.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/medium/BlissPro-Medium.woff2') format('woff2'),
+		 url('../fonts/medium/BlissPro-Medium.woff') format('woff'),
+		 url('../fonts/medium/BlissPro-Medium.ttf') format('truetype'),
+		 url('../fonts/medium/blisspro-medium.otf') format('otf'),
+		 url('../fonts/medium/BlissPro-Medium.svg#BlissPro-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
