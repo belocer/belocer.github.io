@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>lesson 6</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+    	<pre>
+      <code>
+/* ДЗ 6.1 - Асинхронность и работа с сетью */
+
+/**
+ * Функция должна создавать Promise, который должен быть resolved через seconds секунду после создания
+ *
+ * @param {number} seconds - количество секунд, через которое Promise должен быть resolved
+ * @return {Promise}
+ */
+function delayPromise(seconds) {
+    seconds = 1000;
+    return new Promise(function (resolve, reject) {
+        setTimeout(function () {
+            resolve();
+        }, seconds);
+    });
+}
+
+/**
+ * Функция должна вернуть Promise, который должен быть разрешен массивом городов, загруженным из
+ * https://raw.githubusercontent.com/smelukov/citiesTest/master/cities.json
+ * Элементы полученного массива должны быть отсортированы по имени города
+ *
+ * @return {Promise<Array<{name: String}>>}
+ */
+function loadAndSortTowns() {
+    return new Promise(function (resolve, reject) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://raw.githubusercontent.com/smelukov/citiesTest/master/cities.json');
+        xhr.responseType = 'json';
+        xhr.addEventListener('load', () => {
+
+            resolve(xhr.response.sort(function (a, b) {
+                if (a.name > b.name) {
+                    return 1;
+                }
+                if (a.name < b.name) {
+                    return -1;
+                }
+                return 0;
+            }));
+
+        });
+        xhr.send();
+    });
+}
+
+export {
+    delayPromise,
+    loadAndSortTowns
+};
+/**
+ * ДЗ 6.2 - Создать страницу с текстовым полем для фильтрации городов
+ *
+ * Страница должна предварительно загрузить список городов из
+ * https://raw.githubusercontent.com/smelukov/citiesTest/master/cities.json
+ * и отсортировать в алфавитном порядке.
+ *
+ * При вводе в текстовое поле, под ним должен появляться список тех городов,
+ * в названии которых, хотя бы частично, есть введенное значение.
+ * Регистр символов учитываться не должен, то есть "Moscow" и "moscow" - одинаковые названия.
+ *
+ * Во время загрузки городов, на странице должна быть надпись "Загрузка..."
+ * После окончания загрузки городов, надпись исчезает и появляется текстовое поле.
+ *
+ * Запрещено использовать сторонние библиотеки. Разрешено пользоваться только тем, что встроено в браузер
+ *
+ * *** Часть со звездочкой ***
+ * Если загрузка городов не удалась (например, отключился интернет или сервер вернул ошибку),
+ * то необходимо показать надпись "Не удалось загрузить города" и кнопку "Повторить".
+ * При клике на кнопку, процесс загруки повторяется заново
+ */
+
+/**
+ * homeworkContainer - это контейнер для всех ваших домашних заданий
+ * Если вы создаете новые html-элементы и добавляете их на страницу, то дабавляйте их только в этот контейнер
+ *
+ * @example
+ * homeworkContainer.appendChild(...);
+ */
+let homeworkContainer = document.querySelector('#homework-container');
+
+/**
+ * Функция должна загружать список городов из https://raw.githubusercontent.com/smelukov/citiesTest/master/cities.json
+ * И возвращать Promise, которой должен разрешиться массивом загруженных городов
+ *
+ * @return {Promise<Array<{name: string}>>}
+ */
+function loadTowns() {
+    return townsPromise = new Promise((resolve) => {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://raw.githubusercontent.com/smelukov/citiesTest/master/cities.json');
+        xhr.responseType = 'json';
+
+        xhr.addEventListener('load', () => {
+
+            loadingBlock.innerHTML = '';
+            filterBlock.style.display = 'inline-block';
+
+            resolve(xhr.response.sort(function (a, b) {
+                if (a.name > b.name) {
+                    return 1;
+                }
+                if (a.name < b.name) {
+                    return -1;
+                }
+                return 0;
+            }));
+        });
+        xhr.send();
+    });
+}
+
+/**
+ * Функция должна проверять встречается ли подстрока chunk в строке full
+ * Проверка должна происходить без учета регистра символов
+ *
+ * @example
+ * isMatching('Moscow', 'moscow') // true
+ * isMatching('Moscow', 'mosc') // true
+ * isMatching('Moscow', 'cow') // true
+ * isMatching('Moscow', 'SCO') // true
+ * isMatching('Moscow', 'Moscov') // false
+ *
+ * @return {boolean}
+ */
+function isMatching(full, chunk) {
+    if (full.toLowerCase().indexOf(chunk.toLowerCase()) !== -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+let loadingBlock = homeworkContainer.querySelector('#loading-block');
+let filterBlock = homeworkContainer.querySelector('#filter-block');
+let filterInput = homeworkContainer.querySelector('#filter-input');
+let filterResult = homeworkContainer.querySelector('#filter-result');
+let townsPromise;
+let cities = [];
+
+loadTowns()
+    .then(res => {
+        cities = res;
+        loadingBlock.style.display = 'none';
+        filterBlock.style.display = 'block';
+    });
+
+filterInput.addEventListener('keyup', function () {
+    filterResult.innerHTML = filterInput.value ?
+        cities
+            .filter(item => isMatching(item.name, filterInput.value))
+            .map(item => `<div>${item.name}</div>`)
+            .join('')
+        : '';
+});
+
+export {
+    loadTowns,
+    isMatching
+};
+
+        </code>
+    	</pre>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </body>
+</html>
