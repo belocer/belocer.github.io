@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container">
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3>
+            Мое местоположение:
+        </h3>
+    </div>
+    <ul class="list-group" id="messageContainer">
+    </ul>
+</div>
+<div class="row">
+    <button class="btn btn-default" id="locate">определить</button>
+    <button class="btn btn-default" id="watch">отслеживать</button>
+    <button class="btn btn-default" id="unwatch">отменить отслеживание</button>
+</div>
+<script>
+    var watchId;
+
+    function addLocation(geopos) {
+        var messageItem = document.createElement('li');
+
+        messageItem.className = "list-group-item";
+        messageItem.textContent = 'Широта: ' + geopos.coords.latitude + '; Долгота: ' + geopos.coords.longitude + '; Точность: ' + geopos.coords.accuracy;
+
+        messageContainer.appendChild(messageItem);
+        messageContainer.scrollTop = messageContainer.scrollHeight - messageContainer.clientHeight;
+    }
+
+    locate.addEventListener('click', function() {
+        navigator.geolocation.getCurrentPosition(addLocation, function() {
+            alert('Невозможно определить местоположение');
+        });
+    });
+
+    watch.addEventListener('click', function() {
+        if (!watchId) {
+            watchId = navigator.geolocation.watchPosition(addLocation, function() {
+                alert('Невозможно определить местоположение');
+            });
+        }
+    });
+
+    unwatch.addEventListener('click', function() {
+        navigator.geolocation.clearWatch(watchId);
+        watchId = null;
+    });
+</script>
+</body>
+</html>
