@@ -138,3 +138,7 @@ body {
   line-height: 25px;
   text-align: center;
 }
+
+#wrap {
+      width: 106%;
+}
