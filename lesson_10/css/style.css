@@ -40,6 +40,7 @@ body {
   float: left;
   text-align: center;
   margin-top: 109px;
+  margin-left: 31px;
       -webkit-transition: transform ease-in-out 0.5s;
       -moz-transition: transform ease-in-out 0.5s;
         -o-transition: transform ease-in-out 0.5s;
