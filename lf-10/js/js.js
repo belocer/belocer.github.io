@@ -38,7 +38,7 @@ function dragDrop(ev) {
 	for(var i = 0; i < responseVK.items.length; i++){
 
 		if(!responseVK.items[i].photo_200){
-			responseVK.items[i].photo_200 = '../img/5.jpg';
+			responseVK.items[i].photo_200 = 'img/5.jpg';
 		}
 
 		if(responseVK.items[i].id == data){
