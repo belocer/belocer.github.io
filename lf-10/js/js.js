@@ -130,37 +130,42 @@ document.querySelector('.save a').addEventListener('click', () => {
 
 /*Поиск по первому списку*/
 function isMatching(full, chunk) {
-/*	console.log(full);
-	console.log(chunk);*/
+	console.log(full);
+	console.log(chunk);
     if (full.toLowerCase().indexOf(chunk.toLowerCase()) !== -1) {
         return true;
     } else {
         return false;
     }
 }
-
+var search1 = document.getElementById('search1');
 search1.addEventListener('keyup', function () {
     render();
 });
 
 // функция рендеринга
 function render() {
+	var arr_left_column = document.querySelectorAll('.common_friends_list ul li');
+	//console.log(arr_left_column[100].children[1].textContent);
     common_friends_list.innerHTML = '';
 
-    for (let key in responseVK.items) {
-/*    	
-		console.log(key);
-    	console.log(responseVK);
-    	console.log(responseVK.items);
-    	console.log(responseVK.items[key]['first_name']);
-    	console.log(responseVK.items[key]['last_name']);
-    	console.log(document.getElementById(responseVK.items[key]['id']));
-        if(!(isMatching(key,search1.value) || isMatching(responseVK.items[key]['first_name'], search1.value))) continue;
-*/
-        if (!(isMatching(responseVK.items[key]['first_name'], search1.value) || isMatching(responseVK.items[key]['last_name'], search1.value))) continue;
+    for (let key in arr_left_column.items) {
+    	
+/*		console.log(key);
+    	console.log(arr_left_column);
+    	console.log(arr_left_column.items);
+    	console.log(arr_left_column.items[key]['first_name']);
+    	console.log(arr_left_column.items[key]['last_name']);
+    	console.log(document.getElementById(arr_left_column.items[key]['id']));
+        if(!(isMatching(key,search1.value) || isMatching(arr_left_column.items[key]['first_name'], search1.value))) continue;*/
+        // if (!(isMatching(responseVK.items[key]['first_name'], search1.value) || isMatching(responseVK.items[key]['last_name'], search1.value))) continue;
         
-        if(document.getElementById(responseVK.items[key]['id'])){
-        	common_friends_list.innerHTML += document.getElementById(responseVK.items[key]['id']);
+		console.log(arr_left_column[key].children[1].textContent);
+
+        if (!(isMatching(arr_left_column[key].children[1], search1.value))) continue;
+        
+        if(document.getElementById(arr_left_column.items[key]['id'])){
+        	common_friends_list.innerHTML += document.getElementById(arr_left_column.items[key]['id']);
         }
     }
 }
