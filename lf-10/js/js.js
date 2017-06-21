@@ -33,22 +33,12 @@ function dragOver(ev) {
 	event.preventDefault();
 }
 function dragDrop(ev) {
-	var data = ev.dataTransfer.getData("text");
+    var data = ev.dataTransfer.getData("text");
 
-	for(var i = 0; i < responseVK.items.length; i++){
-
-		if(!responseVK.items[i].photo_200){
-			responseVK.items[i].photo_200 = 'img/5.jpg';
-		}
-
-		if(responseVK.items[i].id == data){
-			console.log(document.getElementById(data));
-			document.getElementById(data).lastElementChild.setAttribute('class', 'fa fa-remove');
-			ev.target.appendChild(document.getElementById(data));
-			ev.stopPropagation();
-			return false;
-		}
-	}	
+    document.getElementById(data).lastElementChild.setAttribute('class', 'fa fa-remove');
+    ev.target.appendChild(document.getElementById(data));
+    ev.stopPropagation();
+    return false;
 }
 
 /* VK API */
