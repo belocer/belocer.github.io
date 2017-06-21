@@ -149,7 +149,8 @@ function render() {
     	console.log(responseVK.items);
     	console.log(responseVK.items[key]['first_name']);
     	console.log(responseVK.items[key]['last_name']);*/
-        if(!(isMatching(key,search1.value) || isMatching(responseVK.items[key]['first_name'], search1.value))) continue;
+        //if(!(isMatching(key,search1.value) || isMatching(responseVK.items[key]['first_name'], search1.value))) continue;
+        if (!(isMatching(responseVK.items[key]['first_name'], search1.value) || isMatching(responseVK.items[key]['last_name'], search1.value))) continue;
         common_friends_list.innerHTML += document.getElementById(responseVK.items[key]['id']);
     }
 }
