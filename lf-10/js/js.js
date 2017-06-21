@@ -102,7 +102,7 @@ new Promise(resolve => window.onload = resolve)
     .then(response => {
     		for(var i = 0; i < response.items.length; i++){
     		if(!response.items[i].photo_200){
-    			response.items[i].photo_200 = '../img/5.jpg';
+    			response.items[i].photo_200 = 'img/5.jpg';
     		}
     	} // При первой загрузке страницы загружает первый список
     	document.querySelector('.common_friends_list ul').innerHTML = templateFn(response);
