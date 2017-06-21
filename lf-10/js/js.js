@@ -2,6 +2,7 @@
 var common_friends_list = document.querySelector('.common_friends_list ul');
 var selected_friend_list = document.querySelector('.selected_friend_list ul');
 var responseVK = {};
+
 common_friends_list.addEventListener('click', (e) => {
 	if(e.target.getAttribute('class') == 'fa fa-plus') {
 		e.target.setAttribute('class', 'fa fa-remove');
@@ -104,7 +105,7 @@ new Promise(resolve => window.onload = resolve)
     	});
     })
     .then( (arrSelected) => {
-    	for (var prop in arrSelected) {
+    	for (let prop in arrSelected) {
     		document.getElementById(arrSelected[prop]).lastElementChild.setAttribute('class', 'fa fa-remove');
 			document.getElementById('selected_friend_list').appendChild(document.getElementById(arrSelected[prop]));
 		}
@@ -124,3 +125,31 @@ document.querySelector('.save a').addEventListener('click', () => {
 });
 
 /*Поиск по первому списку*/
+function isMatching(full, chunk) {
+	console.log(full);
+	console.log(chunk);
+    if (full.toLowerCase().indexOf(chunk.toLowerCase()) !== -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+search1.addEventListener('keyup', function () {
+    render();
+});
+
+// функция рендеринга
+function render() {
+    common_friends_list.innerHTML = '';
+
+    for (let key in responseVK.items) {
+/*    	console.log(key);
+    	console.log(responseVK);
+    	console.log(responseVK.items);
+    	console.log(responseVK.items[key]['first_name']);
+    	console.log(responseVK.items[key]['last_name']);*/
+        if(!(isMatching(key,search1.value) || isMatching(responseVK.items[key]['first_name'], search1.value))) continue;
+        common_friends_list.innerHTML += document.getElementById(responseVK.items[key]['id']);
+    }
+}
