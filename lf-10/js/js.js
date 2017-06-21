@@ -34,7 +34,6 @@ function dragOver(ev) {
 }
 function dragDrop(ev) {
     var data = ev.dataTransfer.getData("text");
-
     document.getElementById(data).lastElementChild.setAttribute('class', 'fa fa-remove');
     ev.target.appendChild(document.getElementById(data));
     ev.stopPropagation();
@@ -90,11 +89,38 @@ new Promise(resolve => window.onload = resolve)
     .then(() => vkInit())
     .then(() => vkApi('friends.get', {fields: 'photo_200'}))
     .then(response => {
-    		for(var i = 0; i < response.items.length; i++){
+    	for(var i = 0; i < response.items.length; i++){
     		if(!response.items[i].photo_200){
     			response.items[i].photo_200 = 'img/5.jpg';
     		}
-    	} // При первой загрузке страницы загружает первый список
+    	} 		// При первой загрузке страницы загружает первый список
     	document.querySelector('.common_friends_list ul').innerHTML = templateFn(response);
+    	return new Promise(function(resolve){
+/* Вывести из хранилища если есть там что то*/			
+			if(localStorage.data){
+				var arrSelected = JSON.parse(localStorage.data);
+				resolve(arrSelected);
+			}
+    	});
+    })
+    .then( (arrSelected) => {
+    	for (var prop in arrSelected) {
+    		document.getElementById(arrSelected[prop]).lastElementChild.setAttribute('class', 'fa fa-remove');
+			document.getElementById('selected_friend_list').appendChild(document.getElementById(arrSelected[prop]));
+		}
     })
     .catch(e => alert('Ошибка: ' + e.message));
+
+/* Сохранить в localStorage */
+var storage = localStorage;
+var reestablish = {};
+
+document.querySelector('.save a').addEventListener('click', () => {
+	var arrLi = document.querySelectorAll('.selected_friend_list ul li');
+	for(var i = 0; i < arrLi.length; i++){
+		reestablish[i] = arrLi[i].getAttribute('id');
+	}
+	storage.data = JSON.stringify(reestablish);
+});
+
+/*Поиск по первому списку*/
