@@ -16,7 +16,7 @@ body {
 /*╨Ю╨▒╤С╤А╤В╨║╨░ ╨┤╨╗╤П ╨▓╤Б╨╡╨│╨╛*/
 .wrapper {
   display: block;
-  width: 600px;
+  width: 680px;
   height: 600px;
   margin: 0 auto;
   text-align: center;
@@ -93,13 +93,13 @@ body {
   /*╨н╨╗╨╡╨╝╨╡╨╜╤В ╤Б╨┐╨╕╤Б╨║╨░*/
 }
 .wrapper .wrapper_friends .block_friends ul {
-  width: 90%;
+  width: 96%;
   height: 93%;
   padding: 0 0 0 10px;
 }
 .wrapper .wrapper_friends .block_friends ul li {
   display: block;
-  width: 270px;
+  width: 300px;
   height: 45px;
   list-style: none;
   margin-bottom: 7px;
