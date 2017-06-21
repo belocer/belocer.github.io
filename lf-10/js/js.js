@@ -147,7 +147,7 @@ search1.addEventListener('keyup', function () {
 function render() {
 	var arr_left_column = document.querySelectorAll('.common_friends_list ul li');
 	console.log(arr_left_column[0].children[1].textContent);
-   // common_friends_list.innerHTML = '';
+    common_friends_list.innerHTML = '';
 
     for (let key in arr_left_column.items) {
     	
@@ -159,7 +159,7 @@ function render() {
         if (!(isMatching(arr_left_column[key].children[1].textContent, search1.value))) continue;
         
         //if(document.getElementById(arr_left_column.items[key]['id'])){
-        	common_friends_list.innerHTML += document.getElementById(arr_left_column.items[key]['id']);
+        	common_friends_list.innerHTML += document.getElementById(arr_left_column[key]['id']);
         //}
     }
 }
