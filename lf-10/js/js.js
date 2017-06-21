@@ -18,6 +18,7 @@ selected_friend_list.addEventListener('click', (e) => {
 
 var imp = {};
 
+
 /* Drag and Drop */
 function dragStart(ev) {
 	ev.dataTransfer.effectAllowed='move';
@@ -40,6 +41,7 @@ function dragDrop(ev) {
     ev.stopPropagation();
     return false;
 }
+
 
 /* VK API */
 function vkApi(method, options) {
@@ -74,6 +76,7 @@ function vkInit() { // Инициализация приложения
         }, 2);
     });
 }
+
 // HandelBars Шаблонизатор
 var template = `
 {{#each items}}
@@ -96,7 +99,8 @@ new Promise(resolve => window.onload = resolve)
     		}
     	} 		// При первой загрузке страницы загружает первый список
     	document.querySelector('.common_friends_list ul').innerHTML = templateFn(response);
-    	return new Promise(function(resolve){
+    	return new Promise((resolve) => {
+
 /* Вывести из хранилища если есть там что то*/			
 			if(localStorage.data){
 				var arrSelected = JSON.parse(localStorage.data);
@@ -126,8 +130,8 @@ document.querySelector('.save a').addEventListener('click', () => {
 
 /*Поиск по первому списку*/
 function isMatching(full, chunk) {
-	console.log(full);
-	console.log(chunk);
+/*	console.log(full);
+	console.log(chunk);*/
     if (full.toLowerCase().indexOf(chunk.toLowerCase()) !== -1) {
         return true;
     } else {
@@ -144,13 +148,19 @@ function render() {
     common_friends_list.innerHTML = '';
 
     for (let key in responseVK.items) {
-/*    	console.log(key);
+/*    	
+		console.log(key);
     	console.log(responseVK);
     	console.log(responseVK.items);
     	console.log(responseVK.items[key]['first_name']);
-    	console.log(responseVK.items[key]['last_name']);*/
-        //if(!(isMatching(key,search1.value) || isMatching(responseVK.items[key]['first_name'], search1.value))) continue;
+    	console.log(responseVK.items[key]['last_name']);
+    	console.log(document.getElementById(responseVK.items[key]['id']));
+        if(!(isMatching(key,search1.value) || isMatching(responseVK.items[key]['first_name'], search1.value))) continue;
+*/
         if (!(isMatching(responseVK.items[key]['first_name'], search1.value) || isMatching(responseVK.items[key]['last_name'], search1.value))) continue;
-        common_friends_list.innerHTML += document.getElementById(responseVK.items[key]['id']);
+        
+        if(document.getElementById(responseVK.items[key]['id'])){
+        	common_friends_list.innerHTML += document.getElementById(responseVK.items[key]['id']);
+        }
     }
 }
