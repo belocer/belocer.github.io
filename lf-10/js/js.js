@@ -146,26 +146,20 @@ search1.addEventListener('keyup', function () {
 // функция рендеринга
 function render() {
 	var arr_left_column = document.querySelectorAll('.common_friends_list ul li');
-	//console.log(arr_left_column[100].children[1].textContent);
-    common_friends_list.innerHTML = '';
+	console.log(arr_left_column[0].children[1].textContent);
+   // common_friends_list.innerHTML = '';
 
     for (let key in arr_left_column.items) {
     	
-/*		console.log(key);
-    	console.log(arr_left_column);
-    	console.log(arr_left_column.items);
-    	console.log(arr_left_column.items[key]['first_name']);
-    	console.log(arr_left_column.items[key]['last_name']);
-    	console.log(document.getElementById(arr_left_column.items[key]['id']));
-        if(!(isMatching(key,search1.value) || isMatching(arr_left_column.items[key]['first_name'], search1.value))) continue;*/
-        // if (!(isMatching(responseVK.items[key]['first_name'], search1.value) || isMatching(responseVK.items[key]['last_name'], search1.value))) continue;
-        
+//	if(!(isMatching(key,search1.value) || isMatching(arr_left_column.items[key]['first_name'], search1.value))) continue;
+// if (!(isMatching(responseVK.items[key]['first_name'], search1.value) || isMatching(responseVK.items[key]['last_name'], search1.value))) continue;
+
 		console.log(arr_left_column[key].children[1].textContent);
 
-        if (!(isMatching(arr_left_column[key].children[1], search1.value))) continue;
+        if (!(isMatching(arr_left_column[key].children[1].textContent, search1.value))) continue;
         
-        if(document.getElementById(arr_left_column.items[key]['id'])){
+        //if(document.getElementById(arr_left_column.items[key]['id'])){
         	common_friends_list.innerHTML += document.getElementById(arr_left_column.items[key]['id']);
-        }
+        //}
     }
 }
