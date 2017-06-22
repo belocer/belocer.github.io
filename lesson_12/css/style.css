@@ -1,7 +1,7 @@
 body {
   -webkit-transition: all .3s;
           transition: all .3s;
-  background: url(img/1.png);
+  background: url(../img/1.png);
   font-weight: 400;
   font: 16px 'PT Sans', Tahoma, Arial;
   text-decoration: none;
