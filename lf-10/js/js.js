@@ -1,7 +1,7 @@
 /* Обработка клика по плюсу и крестику */
 var common_friends_list = document.querySelector('.common_friends_list ul');
 var selected_friend_list = document.querySelector('.selected_friend_list ul');
-var responseVK = {};
+var responseVK = null;
 
 common_friends_list.addEventListener('click', (e) => {
 	if(e.target.getAttribute('class') == 'fa fa-plus') {
@@ -15,9 +15,6 @@ selected_friend_list.addEventListener('click', (e) => {
 		common_friends_list.appendChild(e.target.parentNode);
 	}
 });
-
-var imp = {};
-
 
 /* Drag and Drop */
 function dragStart(ev) {
@@ -41,7 +38,6 @@ function dragDrop(ev) {
     ev.stopPropagation();
     return false;
 }
-
 
 /* VK API */
 function vkApi(method, options) {
@@ -130,8 +126,6 @@ document.querySelector('.save a').addEventListener('click', () => {
 
 /*Поиск по первому списку*/
 function isMatching(full, chunk) {
-	console.log(full);
-	console.log(chunk);
     if (full.toLowerCase().indexOf(chunk.toLowerCase()) !== -1) {
         return true;
     } else {
@@ -139,27 +133,27 @@ function isMatching(full, chunk) {
     }
 }
 var search1 = document.getElementById('search1');
-search1.addEventListener('keyup', function () {
-    render();
+	search1.addEventListener('keyup', function () {
+	var arr_left_column = document.querySelectorAll('.common_friends_list ul li p');		
+    render(arr_left_column,search1);
 });
+var search2 = document.getElementById('search2');
+	search2.addEventListener('keyup', function () {
+	var arr_right_column = document.querySelectorAll('.selected_friend_list ul li p');		
+    render(arr_right_column,search2);
+});	
 
 // функция рендеринга
-function render() {
-	var arr_left_column = document.querySelectorAll('.common_friends_list ul li');
-	console.log(arr_left_column[0].children[1].textContent);
-    common_friends_list.innerHTML = '';
-
-    for (let key in arr_left_column.items) {
-    	
-//	if(!(isMatching(key,search1.value) || isMatching(arr_left_column.items[key]['first_name'], search1.value))) continue;
-// if (!(isMatching(responseVK.items[key]['first_name'], search1.value) || isMatching(responseVK.items[key]['last_name'], search1.value))) continue;
-
-		console.log(arr_left_column[key].children[1].textContent);
-
-        if (!(isMatching(arr_left_column[key].children[1].textContent, search1.value))) continue;
-        
-        //if(document.getElementById(arr_left_column.items[key]['id'])){
-        	common_friends_list.innerHTML += document.getElementById(arr_left_column[key]['id']);
-        //}
+function render(arr,element) {
+    for (let key in arr) {
+        if(isMatching(arr[key].textContent, element.value)) {
+        	for(let i = 0; i < arr.length; i++){
+        		arr[key].parentNode.style.display = 'block';
+        	}
+        } else {
+        	for(let i = 0; i < arr.length; i++){
+        		arr[key].parentNode.style.display = 'none';
+        	}
+        }
     }
 }
