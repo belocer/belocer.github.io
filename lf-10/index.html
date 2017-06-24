@@ -36,8 +36,10 @@
 
 			<!-- общий список друзей -->
 		<div class="block_friends common_friends_list">
-			<ul style="color: #777">
-				<li draggable="true" id="1" ondragstart="return dragStart(event)">
+			<ul style="color: #777" ondragenter="return dragenter(event)"
+     			ondrop="return dragdrop(event)" 
+    			ondragover="return dragover(event)">
+				<li draggable="true" id="1" ondragstart="return dragstart(event)">
 					<img src="img/1.jpg" alt="img">
 					<p>Белоцерковец Денис</p>
 					<i class="fa fa-plus"></i>
