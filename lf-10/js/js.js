@@ -124,7 +124,8 @@ document.querySelector('.save a').addEventListener('click', () => {
 });
 
 /* Поиск по первому и второму списку */
-function isMatching(full, chunk) {
+function isMatching(full='1', chunk='1') {
+//debugger
     if (full.toLowerCase().indexOf(chunk.toLowerCase()) !== -1) {
         return true;
     } else {
@@ -132,12 +133,12 @@ function isMatching(full, chunk) {
     }
 }
 var search1 = document.getElementById('search1');
-	search1.addEventListener('keyup', () => {
+	search1.addEventListener('input', () => {
 	var arr_left_column = document.querySelectorAll('.common_friends_list ul li p');		
     render(arr_left_column,search1);
 });
 var search2 = document.getElementById('search2');
-	search2.addEventListener('keyup', () => {
+	search2.addEventListener('input', () => {
 	var arr_right_column = document.querySelectorAll('.selected_friend_list ul li p');		
     render(arr_right_column,search2);
 });	
@@ -145,11 +146,11 @@ var search2 = document.getElementById('search2');
 // функция рендеринга
 function render(arr,element) {
     for (let key in arr) {
-        if(isMatching(arr[key].textContent, element.value)) {
+        if(isMatching(arr[key].textContent, element.value)) {     	
         	for(let i = 0; i < arr.length; i++){
         		arr[key].parentNode.style.display = 'block';
         	}
-        } else {
+        } else if(!(isMatching(arr[key].textContent, element.value))) {        	
         	for(let i = 0; i < arr.length; i++){
         		arr[key].parentNode.style.display = 'none';
         	}
