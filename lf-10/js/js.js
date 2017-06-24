@@ -124,7 +124,7 @@ document.querySelector('.save a').addEventListener('click', () => {
 	storage.data = JSON.stringify(reestablish);
 });
 
-/*Поиск по первому списку*/
+/* Поиск по первому и второму списку */
 function isMatching(full, chunk) {
     if (full.toLowerCase().indexOf(chunk.toLowerCase()) !== -1) {
         return true;
@@ -133,12 +133,12 @@ function isMatching(full, chunk) {
     }
 }
 var search1 = document.getElementById('search1');
-	search1.addEventListener('keyup', function () {
+	search1.addEventListener('keyup', () => {
 	var arr_left_column = document.querySelectorAll('.common_friends_list ul li p');		
     render(arr_left_column,search1);
 });
 var search2 = document.getElementById('search2');
-	search2.addEventListener('keyup', function () {
+	search2.addEventListener('keyup', () => {
 	var arr_right_column = document.querySelectorAll('.selected_friend_list ul li p');		
     render(arr_right_column,search2);
 });	
