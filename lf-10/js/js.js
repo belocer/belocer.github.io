@@ -124,8 +124,7 @@ document.querySelector('.save a').addEventListener('click', () => {
 });
 
 /* Поиск по первому и второму списку */
-function isMatching(full='1', chunk='1') {
-//debugger
+function isMatching(full=' ', chunk=' ') {
     if (full.toLowerCase().indexOf(chunk.toLowerCase()) !== -1) {
         return true;
     } else {
@@ -144,15 +143,15 @@ var search2 = document.getElementById('search2');
 });	
 
 // функция рендеринга
-function render(arr,element) {
+function render(arr=' ',element=' ') {
     for (let key in arr) {
-        if(isMatching(arr[key].textContent, element.value)) {     	
+        if(isMatching(arr[key].textContent, element.value)) { 
         	for(let i = 0; i < arr.length; i++){
         		arr[key].parentNode.style.display = 'block';
         	}
-        } else if(!(isMatching(arr[key].textContent, element.value))) {        	
+        } else if (!(isMatching(arr[key].textContent, element.value))) {    
         	for(let i = 0; i < arr.length; i++){
-        		arr[key].parentNode.style.display = 'none';
+        		arr[key].parentNode ? arr[key].parentNode.style.display ='none' : '';
         	}
         }
     }
