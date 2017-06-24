@@ -17,10 +17,9 @@ selected_friend_list.addEventListener('click', (e) => {
 });
 
 /* Drag and Drop */
-function dragStart(ev) {
+function dragStart(ev) { // Событие взятие элемента
 	ev.dataTransfer.effectAllowed='move';
-	// console.log(ev.target.dataset);
-	ev.dataTransfer.setData("text", ev.target.id);
+	ev.dataTransfer.setData("text", ev.target.id); // Кладёт id поднимаемого элемента
 	ev.dataTransfer.setDragImage(ev.target,135,22);
 	return true;
 }
@@ -31,11 +30,11 @@ function dragEnter(ev) {
 function dragOver(ev) {
 	event.preventDefault();
 }
-function dragDrop(ev) {
-    var data = ev.dataTransfer.getData("text");
+function dragDrop(ev) { // Событие отпускания элемента
+    var data = ev.dataTransfer.getData("text"); // Берёт id поднятого элемента
     document.getElementById(data).lastElementChild.setAttribute('class', 'fa fa-remove');
-    ev.target.appendChild(document.getElementById(data));
-    ev.stopPropagation();
+    ev.currentTarget.appendChild(document.getElementById(data));
+    ev.stopPropagation(); // Останавливает дальнейшее погружение события
     return false;
 }
 
