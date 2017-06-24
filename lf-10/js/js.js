@@ -38,6 +38,31 @@ function dragDrop(ev) { // Событие отпускания элемента
     return false;
 }
 
+/************************** ПЕРЕНОС обратно***************************************/
+/*****************************************************************/
+function dragstart(ev) { // Событие взятие элемента
+	ev.dataTransfer.effectAllowed='move';
+	ev.dataTransfer.setData("text", ev.target.id); // Кладёт id поднимаемого элемента
+	ev.dataTransfer.setDragImage(ev.target,135,22);
+	return true;
+}
+function dragenter(ev) {
+	event.preventDefault();
+	return true;
+}
+function dragover(ev) {
+	event.preventDefault();
+}
+function dragdrop(ev) { // Событие отпускания элемента
+    var data = ev.dataTransfer.getData("text"); // Берёт id поднятого элемента
+    document.getElementById(data).lastElementChild.setAttribute('class', 'fa fa-plus');
+    ev.currentTarget.appendChild(document.getElementById(data));
+    ev.stopPropagation(); // Останавливает дальнейшее погружение события
+    return false;
+}
+/*****************************************************************/
+/*****************************************************************/
+
 /* VK API */
 function vkApi(method, options) {
     if (!options.v) {
@@ -151,7 +176,7 @@ function render(arr=' ',element=' ') {
         	}
         } else if (!(isMatching(arr[key].textContent, element.value))) {    
         	for(let i = 0; i < arr.length; i++){
-        		arr[key].parentNode ? arr[key].parentNode.style.display ='none' : '';
+        		arr[key].parentNode ? arr[key].parentNode.style.display = 'none' : '';
         	}
         }
     }
