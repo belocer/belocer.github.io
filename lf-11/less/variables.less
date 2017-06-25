@@ -1,0 +1,19 @@
+@orange-bg: #ff8663;
+@grey-bg: #f0f0f0;
+@grey: #9f9f9f;
+@dark-grey: #4f4f4f;
+
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.fonts(@size, @weight, @height, @color) {
+  font-size: @size;
+  font-weight: @weight;
+  line-height: @height;
+  color: @color;
+}

@@ -1,0 +1,26 @@
+{
+    "name": "Geo_Review",
+    "version": "0.1.0",
+    "description": "Учебный проект «Геоотзыв» от LoftSchool",
+    "author": "Павлов Сергей",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/VorgSpring/Loft-School-JS-Home-Task.git"
+    },
+    "devDependencies": {
+        "autoprefixer": "6.3.3",
+        "grunt": "0.4.5",
+        "grunt-contrib-less": "1.2.0",
+        "grunt-browser-sync": "2.2.0",
+        "grunt-contrib-watch": "0.6.1",
+        "grunt-postcss": "0.7.2",
+        "grunt-webpack": "1.0.14 ",
+        "webpack": "^1.13.0",
+        "webpack-dev-server": "^1.14.1",
+        "load-grunt-tasks": "3.4.1"
+    },
+    "scripts": {
+        "build": "grunt less && grunt postcss && grunt webpack",
+        "start": "npm run build && grunt serve"
+    }
+}
