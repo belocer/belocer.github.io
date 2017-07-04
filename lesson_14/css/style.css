@@ -74,7 +74,7 @@ body {
   -webkit-transition: all 0.5s;
           transition: all 0.5s;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
-  opacity: .7;
+  opacity: 1;
   font-size: 5rem;
   text-shadow: 0 0 15px black, 1px 1px 15px #d00015, 0 5px 15px #d00015;
 }
