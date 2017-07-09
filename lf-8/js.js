@@ -18,7 +18,7 @@ function vkApi(method, options) {
 function vkInit() { // фукнция инициализации и авторизации 
     return new Promise((resolve, reject) => {
         VK.init({
-            apiId: 6069818
+            apiId: 6106818
         });
 
         VK.Auth.login(data => {
