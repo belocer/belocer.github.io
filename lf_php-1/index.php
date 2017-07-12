@@ -35,7 +35,7 @@
     $markers = 23;
     $pencils = 40;
     // Описать и вывести условия, решение этой задачи на PHP. Все числа должны быть указаны в переменных.
-    echo $paints = DRAWINGS - 23 - 40;
+    echo $paints = DRAWINGS - $markers - $pencils;
     echo '<hr>';
 
 
