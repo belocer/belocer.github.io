@@ -5,7 +5,32 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+        * {
+            transition: all 1s;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url(http://subtlepatterns.com/patterns/grid.png);
+            font: 1em 'PT Sans', Helvetica, Tahoma, Arial, sans-serif;
+            color: #333;
+        }
+
+        .wrapper {
+            width: 500px;
+            max-width: 800px;
+            min-width: 420px;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+    </style>
     <title>Document</title>
 </head>
 <body>
