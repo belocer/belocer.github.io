@@ -45,9 +45,10 @@
     define('CONSTABLE', 'triple');
     // Проверьте, существует ли константа, которую Вы хотите использовать
     // Выведите значение созданной константы
-    if (defined('consta') == true) echo "Константа const объявлена! Её значение равно: " . CONSTABLE;
+    if (defined('CONSTABLE') == true) echo "Константа CONSTABLE объявлена! Её значение равно: " . CONSTABLE;
     // Попытайтесь изменить значение созданной константы.
     // echo CONSTABLE = CONSTABLE . 'loftschool'; //НЕ меняется
+    echo '<hr>';
 
 
     // Задание #4
@@ -174,11 +175,15 @@
     print_r($str);
     echo '</pre>';
 
-    $s = ' ';
     $z = 0;
     while ($z < count($str)) {
-        echo $str[$z] . ' + ';
-        $z++;
+        if ($z != count($str) - 1) {
+            echo $str[$z] . ' + ';
+            $z++;
+        } else {
+            echo $str[$z];
+            $z++;
+        }
     }
     echo '<hr>';
     ?>
