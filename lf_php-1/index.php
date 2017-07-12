@@ -119,9 +119,9 @@
     // year
     //  Заполните ячейки значениями соответсвенно: “X5”, 120, 5, “2015”
     // Создайте   массивы   $toyota   и   $opel   аналогичные   массиву   $bmw   (заполните  данными)
-    $bmw = [model => 'X5', speed => 120, doors => 5, year => 2015];
-    $toyota = [model => 'corolla', speed => 160, doors => 4, year => 2016];
-    $opel = [model => 'zafira', speed => 120, doors => 5, year => 2010];
+    $bmw = ['model' => 'X5', 'speed' => 120, 'doors' => 5, 'year' => 2015];
+    $toyota = ['model' => 'corolla', 'speed' => 160, 'doors' => 4, 'year' => 2016];
+    $opel = ['model' => 'zafira', 'speed' => 120, 'doors' => 5, 'year' => 2010];
     // Объедините три массива в один многомерный массив
     $auto = [$bmw, $toyota, $opel];
     $car_name = ['bmw', 'toyota', 'opel'];
