@@ -34,6 +34,10 @@
 <body>
 <div class="wrapper">
     <?php
+    error_reporting(E_ALL);
+
+    ini_set('display_errors', 1);
+
     echo '<h1>Задание #1</h1>';
     //
     // Создайте   переменную   $name   и   присвойте   ей   строковое   значение   содержащее  Ваше имя
@@ -194,17 +198,18 @@
     $str = explode(" ", $str);
 
     echo '<pre style="text-align: left;">';
-    print_r(array_reverse($str));
+    print_r($str);
     echo '</pre>';
 
-    $z = 0;
-    while ($z < count($str)) {
-        if ($z != count($str) - 1) {
-            echo $str[$z] . ' + ';
-            $z++;
-        } else {
+    $z = count($str);
+
+    while ($z > 0) {
+        if ($z == 1) {
+            $z--;
             echo $str[$z];
-            $z++;
+        } else {
+            $z--;
+            echo $str[$z] . ' + ';
         }
     }
     echo '<hr>';
