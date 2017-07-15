@@ -146,19 +146,35 @@
     // year
     //  Заполните ячейки значениями соответсвенно: “X5”, 120, 5, “2015”
     // Создайте   массивы   $toyota   и   $opel   аналогичные   массиву   $bmw   (заполните  данными)
-    $bmw = ['carName' => 'bmw', ['model' => 'X5', 'speed' => 120, 'doors' => 5, 'year' => 2015]];
-    $toyota = ['carName' => 'toyota', ['model' => 'corolla', 'speed' => 160, 'doors' => 4, 'year' => 2016]];
-    $opel = ['carName' => 'opel', ['model' => 'zafira', 'speed' => 120, 'doors' => 5, 'year' => 2010]];
+    $bmw = [
+            'model' => 'X5',
+            'speed' => 120,
+            'doors' => 5,
+            'year' => 2015
+    ];
+    $toyota = [
+            'model' => 'corolla',
+            'speed' => 160,
+            'doors' => 4,
+            'year' => 2016
+    ];
+    $opel = [
+            'model' => 'zafira',
+            'speed' => 120,
+            'doors' => 5,
+            'year' => 2010
+    ];
     // Объедините три массива в один многомерный массив
-    $auto = [$bmw, $toyota, $opel];
+    $auto = ['bmw' => $bmw, 'toyota' => $toyota, 'opel' => $opel];
 
     foreach ($auto as $key => $value) {
 
-        echo '*************<h4>CAR ' . $value['carName'] . '</h4>';
-        echo '<h4 style="display: inline-block;">' . $value[0]['model'] . '&nbsp;</h4>' .
-            $value[0]['speed'] . ' ' .
-            $value[0]['doors'] . ' ' .
-            $value[0]['year'] . ' ' .
+
+        echo '*************<h4>CAR ' . $key . '</h4>';
+        echo '<h4 style="display: inline-block;">' . $value['model'] . '&nbsp;</h4>' .
+            $value['speed'] . ' ' .
+            $value['doors'] . ' ' .
+            $value['year'] . ' ' .
             "<br><br>";
     }
     echo '<hr>';
