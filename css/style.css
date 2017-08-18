@@ -172,12 +172,13 @@ body > div > div.good_work > div {
 
 /*Дизайн*/
 .good_work > div > img {
-    width: 50%;
-    box-shadow: 0 0 10px rgba(50, 50, 50, 0.5);
-    transition: width .9s;
+  width: 50%;
+  box-shadow: 0 0 10px rgba(50, 50, 50, 0.5);
+  transition: all .9s;
+  border-radius: 7px; 
 }
-
-.good_work > div > img:hover {
-    transition: width .9s;
+  .good_work > div > img:hover {
+    transition: all .9s;
     width: 100%;
+    border-radius: 0; 
 }
