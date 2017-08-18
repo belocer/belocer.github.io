@@ -40,16 +40,16 @@ h2 {
     background: #fff;
     background-size: cover;
     box-shadow: 0 0 20px #fff; }
-    .description .description__data li span ul {
+    .description .description__data li ul {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
       margin: 0;
       padding: 0; }
-      .description .description__data li span ul li {
+      .description .description__data li ul li {
         margin-left: 2rem;
         color: rgba(10, 10, 10, 0.8); }
-        .description .description__data li span ul li span {
+        .description .description__data li ul li span {
           color: inherit; }
 
 .good_work {
