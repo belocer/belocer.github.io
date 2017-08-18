@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Курс Верстальщик</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<!--Меню-->
+<header>
+    <nav id="test" class="inplace">
+        <ul id="min_menu" data-menu="0">
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#work">Работы</a></li>
+            <li><a href="#dizain">Дизайн</a></li>
+            <li><a href="#certificate">Сертификаты</a></li>
+            <li><a href="#task">Задачи</a></li>
+        </ul>
+    </nav>
+</header>
 <div class="wrapper">
     <h3 class="wrapper__header">Разработка сайтов</h3>
     <div class="description">
-        <div class="description__photo"><img src="img/photo.jpg" alt=""></div>
+        <div class="description__photo"><img src="img/photo.jpg" alt="img"></div>
         <div class="description__data">
             <ul>
                 <li>ФИО: <span>Белоцерковец Денис Викторович</span></li>
@@ -48,13 +60,16 @@
                         <ul>
                             <li>Skype: <span>belocerkovecden</span></li>
                             <li>email: <span>belocerkovecden@gmail.com</span></li>
-                            <li>телефон: <span>+7 928 304 85 94</span></li>
+                            <li id="work">телефон: <span>+7 928 304 85 94</span></li>
                         </ul>
                     </span>
                 </li>
             </ul>
         </div>
     </div>
+
+
+<!--Выполненые работы-->
     <div class="good_work">
         <h2 class="loftschool__header">Мои работы:</h2>
         <div>
@@ -93,12 +108,16 @@
                 наработки</a>
             <hr>
         </div>
-        <div>
+
+
+<!--Дизайн-->
+        <div id="dizain">
             <h2>Моя активность на github</h2>
             <a class="main__button" href="https://github.com/belocer" target="_blank">Мой профиль Github</a>
             <hr>
         </div>
         <div>
+            <h1>Дизайн:</h1>
             <h2>Дизайн группы VK.com</h2>
             <img src="img/vk.jpg" alt="img">
             <hr>
@@ -127,7 +146,47 @@
             <img src="img/2.jpg" alt="img">
             <hr>
         </div>
+
+<!--Сесртификаты-->
+        <h2 class="loftschool__header" id="certificate">Сертификаты:</h2>
+        <h2>Веб-дизайн</h2>
+        <div class="certificate">
+            <div>
+                <h4>Дизайн</h4>
+                <img src="img/dizain.png" alt="img">
+                <a href="https://geekbrains.ru/certificates/68471" target="_blank">Перейти на сайт</a>
+            </div>
+            <div>
+                <h4>HTML&CSS</h4>
+                <img src="img/html_css.png" alt="img">
+                <a href="https://geekbrains.ru/certificates/63834" target="_blank">Перейти на сайт</a>
+            </div>
+            <div>
+                <h4>Javascript</h4>
+                <img src="img/js.png" alt="img">
+                <a href="https://geekbrains.ru/certificates/230954" target="_blank">Перейти на сайт</a>
+            </div>
+            <div>
+                <h4>Основы Веба</h4>
+                <img src="img/os.png" alt="img">
+                <a href="https://geekbrains.ru/certificates/69963" target="_blank">Перейти на сайт</a>
+            </div>
+            <div>
+                <h4>PHP</h4>
+                <img src="img/php.png" alt="img">
+                <a href="https://geekbrains.ru/certificates/88765" target="_blank">Перейти на сайт</a>
+            </div>
+            <div>
+                <h4>Javascript("продвинутый")</h4>
+                <img src="img/ru.png" alt="img">
+                <a href="https://loftschool.com/certificate/VV1492774769/ru" target="_blank">Перейти на сайт</a>
+            </div>
+        </div>
     </div>
+
+
+    <!--Выполненые задачи-->
+    <h2 style="text-align: center" id="task">Выполненые задачи</h2>
     <div class="main">
         <h2 class="main__header">Вёрстка</h2>
         <a class="main__button" href="lesson_1/index.html" target="_blank">Адаптив</a>
@@ -175,13 +234,8 @@
         <a class="loftschool__button" href="lf_php-3/" target="_blank">Файлы</a>
         <a class="loftschool__button" href="graduation_projects/" target="_blank">1 В.Проект</a>
         <a class="loftschool__button" href="lf_php-4/" target="_blank">База Данных</a>
-        <!--	 	<a class="loftschool__button" href="lf_php-5/index.html" target="_blank">Урок 5</a>
-                 <a class="loftschool__button" href="lf_php-6/index.html" target="_blank">2 В.Проект</a>
-                 <a class="loftschool__button" href="lf_php-7/index.html" target="_blank">Урок 6</a>
-                 <a class="loftschool__button" href="lf_php-8/index.html" target="_blank">Урок 7</a>
-                 <a class="loftschool__button" href="lf_php-9/index.html" target="_blank">Урок 8</a>
-                 <a class="loftschool__button" href="lf_php-10/index.html" target="_blank">3 В.Проект</a>-->
     </div>
 </div>
+<script src="js/js.js" defer></script>
 </body>
 </html>
