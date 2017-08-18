@@ -1,88 +1,133 @@
-*{
-	transition: all .2s;
-}
+@charset "UTF-8";
+* {
+  transition: all .2s; }
 
 body {
-	background: url(http://subtlepatterns.com/patterns/subtlenet2.png);
-	font: 1em 'PT Sans', Tahoma, Arial;
-	text-transform: uppercase;
-}
+  background: url(http://subtlepatterns.com/patterns/subtlenet2.png);
+  font: 1em 'PT Sans', Tahoma, Arial; }
 
 .wrapper {
-	width: 835px;
-	margin: 0 auto;
-}
+  max-width: 835px;
+  margin: 0 auto; }
 
-				/*Колонки*/
+/*Данные по мне*/
+.description {
+  width: 100%;
+  height: 298px; }
+  .description .description__photo {
+    max-width: 50%;
+    display: inline-block; }
+    .description .description__photo img {
+      border-radius: 50%;
+      box-shadow: 0 0 30px #fff;
+      margin: 0 auto -4rem;
+      max-width: 300px; }
+  .description .description__data {
+    display: inline-block;
+    width: 350px;
+    /* height: 500px; */
+    margin-left: 26%;
+    background: #fff;
+    background-size: cover;
+    box-shadow: 0 0 20px #fff; }
+    .description .description__data li span ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start; }
+      .description .description__data li span ul li {
+        margin-left: 2rem; }
+
+.good_work {
+  text-align: center; }
+  .good_work > h2 {
+    color: #1c1e23; }
+
+body > div > div.good_work > div {
+  margin-bottom: 5rem; }
+
+/*Колонки*/
 .main, .loftschool {
-	width: 100%;
-	max-width: 250px;
-	color: #555;
-	text-align: center;
-	border: 1px solid #999;
-	background-color: rgba(51,51,51, 0.85);
-	box-shadow: 0 0 20px #000;
-	float: left;
-	margin-left: 20px;
-	overflow: hidden;
-	margin-bottom: 1rem;
-}
+  width: 100%;
+  max-width: 250px;
+  color: #555;
+  text-align: center;
+  border: 1px solid #999;
+  background-color: rgba(51, 51, 51, 0.85);
+  box-shadow: 0 0 20px #000;
+  float: left;
+  margin-left: 20px;
+  overflow: hidden;
+  margin-bottom: 1rem; }
 
-				/*Заголовок*/
-.wrapper__header{
-	padding: 10px;
-	color: #555;	
-	font-family: 'supermolot';
-	width: 100%;
-	text-align: center;
-}
+/*Заголовок*/
+.wrapper__header {
+  padding: 10px;
+  color: #555;
+  font-family: 'supermolot';
+  width: 100%;
+  text-align: center; }
 
-				/*Подзаголовки*/
+/*Подзаголовки*/
 .main__header, .loftschool__header {
-	color: #fff;
-}				
-				/*Кнопки*/
+  color: #fff; }
 
+/*Кнопки*/
 .main__button, .loftschool__button {
-	text-decoration: none;
-	display: block;
-	margin-top: 10px;
-	border: 1px solid #333;
-	width: 185px;
-	height: 30px;
-	margin: 10px auto;
-	line-height: 30px;
-	border-radius: 50px;
-	color: #fff;
-	background-color: rgba(56, 56, 56, 0.65);
-	box-shadow: 0 0 1px #fff;
-	font-size: 16px;
-	text-transform: none;
-	font-family: 'supermolot';
-}
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+  border: 1px solid #333;
+  width: 185px;
+  height: 30px;
+  margin: 10px auto;
+  line-height: 30px;
+  border-radius: 50px;
+  color: #fff;
+  background-color: rgba(56, 56, 56, 0.65);
+  box-shadow: 0 0 1px #fff;
+  font-size: 16px;
+  text-transform: none;
+  font-family: 'supermolot'; }
 
 .main__button:hover, .loftschool__button:hover {
-	background-color: rgba(150,150,150, 0.65);
-	box-shadow: 0 0 7px #555;
-	font-size: 17px;
-} 				
+  background-color: rgba(150, 150, 150, 0.65);
+  box-shadow: 0 0 7px #555;
+  font-size: 17px; }
 
-@media only screen and (max-width: 800px){
-	.main__header, .loftschool__header {
-		padding: 10px;
-		font-size: 14px;
-	}
-
-	.main__button, .loftschool__button {
-		width: 75px;
-		height: 25px;
-		font-size: 10px;
-		line-height: 25px;
-	}
-
-	.wrapper {
-		width: 100%;
-		margin: 0 auto;
-	}
-}
-
+@media only screen and (max-width: 859px) {
+  .description {
+    width: 100%;
+    text-align: center; }
+  .description > .description__photo, .description > .description__data {
+    display: block;
+    /* width: 65%; */
+    height: 250px;
+    float: none;
+    margin: 2rem auto 0;
+    max-width: 300px; }
+  .good_work {
+    margin-top: 17rem; }
+  .main__header, .loftschool__header {
+    padding: 10px;
+    font-size: 14px; }
+  .main__button, .loftschool__button {
+    width: 75px;
+    height: 25px;
+    font-size: 10px;
+    line-height: 25px; }
+  .wrapper {
+    width: 100%;
+    margin: 0 auto; }
+  .main, .loftschool {
+    width: 100%;
+    max-width: 250px;
+    color: #555;
+    text-align: center;
+    border: 1px solid #999;
+    background-color: rgba(51, 51, 51, 0.85);
+    box-shadow: 0 0 20px #000;
+    overflow: hidden;
+    display: block;
+    float: none;
+    margin: 2rem auto;
+    height: auto; } }
