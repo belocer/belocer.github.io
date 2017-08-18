@@ -20,7 +20,7 @@ body {
     .description .description__photo img {
       border-radius: 50%;
       box-shadow: 0 0 30px #fff;
-      margin: 0 auto -4rem;
+      margin: 0 auto 0rem;
       max-width: 300px; }
   .description .description__data {
     display: inline-block;
