@@ -38,7 +38,8 @@ body {
         margin-left: 2rem; }
 
 .good_work {
-  text-align: center; }
+  text-align: center;
+  margin-top: 7rem; }
   .good_work > h2 {
     color: #1c1e23; }
 
@@ -106,7 +107,7 @@ body > div > div.good_work > div {
     margin: 2rem auto 0;
     max-width: 300px; }
   .good_work {
-    margin-top: 17rem; }
+    margin-top: 23rem; }
   .main__header, .loftschool__header {
     padding: 10px;
     font-size: 14px; }
@@ -131,3 +132,8 @@ body > div > div.good_work > div {
     float: none;
     margin: 2rem auto;
     height: auto; } }
+
+/*Дизайн*/
+.good_work > div > img {
+  width: 50%;
+  box-shadow: 0 0 10px rgba(50, 50, 50, 0.5); }
