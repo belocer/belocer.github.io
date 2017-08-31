@@ -1,12 +1,13 @@
 // Меню по скролу
+var test = document.getElementById('test');
 window.addEventListener("scroll", () => {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
     if (scrolled > 500) {
-        document.getElementById('test').removeAttribute("class");
-        document.getElementById('test').setAttribute("class", "opacit");
+        test.removeAttribute("class");
+        test.setAttribute("class", "opacit");
     } else if (scrolled < 100) {
-        document.getElementById('test').removeAttribute("class");
-        document.getElementById('test').setAttribute("class", "inplace");
+        test.removeAttribute("class");
+        test.setAttribute("class", "inplace");
     }
 });
 /*
