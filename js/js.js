@@ -1,16 +1,25 @@
 // Меню по скролу
+window.addEventListener("scroll", () => {
+    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrolled > 500) {
+        document.getElementById('test').removeAttribute("class");
+        document.getElementById('test').setAttribute("class", "opacit");
+    } else if (scrolled < 100) {
+        document.getElementById('test').removeAttribute("class");
+        document.getElementById('test').setAttribute("class", "inplace");
+    }
+});
+/*
 window.onscroll = function () {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
     if (scrolled > 500) {
         document.getElementById('test').removeAttribute("class");
         document.getElementById('test').setAttribute("class", "opacit");
-
     } else if (scrolled < 100) {
         document.getElementById('test').removeAttribute("class");
         document.getElementById('test').setAttribute("class", "inplace");
-
     }
-};
+};*/
 
 // меню моб версия
 var min_menu = document.getElementById('min_menu');
@@ -35,7 +44,7 @@ function fn() {
 
         function smooth_scroll(link_menu, scrollys) {
 
-            link_menu.addEventListener('click', function (e) {
+            link_menu.addEventListener('click', (e) => {
                 e.preventDefault();
 
                 switch (e.target.textContent) {
@@ -49,7 +58,7 @@ function fn() {
                         w = 5190;
                         break;
                     case "Задачи":
-                        w = 6020;
+                        w = 6300;
                         break;
                     default:
                         w = 0;
@@ -77,7 +86,6 @@ function fn() {
                 }
             });
         }
-
     }
 }
 
@@ -85,7 +93,7 @@ window.addEventListener("resize", fn);
 window.addEventListener("load", fn);
 
 // Отрабатываю октрытие и закрытие меню
-min_menu.addEventListener('click', function (e) {
+min_menu.addEventListener('click', (e) => {
 
     var x = min_menu.dataset.menu;
     //console.log(x);
