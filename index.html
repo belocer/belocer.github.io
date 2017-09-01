@@ -6,26 +6,54 @@
     <title>Портфолио</title>
 </head>
 <body>
+<div id="particles-js"></div>
 <!--Меню-->
 <header>
-    <nav id="test" class="inplace">
+    <nav id="test" class="inplace" style="top:40px">
         <ul id="min_menu" data-menu="0">
             <li><a href="#">Контакты</a></li>
-            <li><a href="#work">Работы</a></li>
-            <li><a href="#dizain">Дизайн</a></li>
-            <li><a href="#certificate">Сертификаты</a></li>
-            <li><a href="#task">Задачи</a></li>
+            <li><a href="#">Работы</a></li>
+            <li><a href="#">Дизайн</a></li>
+            <li><a href="#">Сертификаты</a></li>
+            <li><a href="#">Задачи</a></li>
         </ul>
     </nav>
 </header>
-<div class="wrapper">
-    <h3 class="wrapper__header">Разработка сайтов</h3>
-    <div class="description">
-        <div class="description__photo"><img src="img/photo.jpg" alt="img"></div>
-        <div class="description__data">
+<div class="description_head1">
+    <div class="description__photo">
+        <img src="img/photo.jpg" alt="img">
+        <div class="contact">
+            <span><i class="fa fa-user" aria-hidden="true"></i>Денис</span><br>
+            <span><i class="fa fa-skype" aria-hidden="true"></i>belocerkovecden</span><br>
+            <span><i class="fa fa-phone" aria-hidden="true"></i>8 928 304 85 94</span><br>
+            <span><i class="fa fa-envelope-o" aria-hidden="true"></i>belocerkovecden@mail.ru</span>
+        </div>
+    </div>
+</div>
+
+<!-- Блок со скилами-->
+<h1 class="skills__header">Навыки</h1>
+<div class="skills_wrap">
+    <div class="skills animated bounceInUp">
+        <div class="skills__ico1"></div>
+        <h2>Вёрстка сайтов</h2>
+        <p>Чистый, комментированный, валидный код. <br> Адаптивная вёрстка. &gt;IE11</p>
+    </div>
+    <div class="skills animated bounceInUp">
+        <div class="skills__ico2"></div>
+        <h2>Написание <br> JavaScript кода</h2>
+        <p>Скрипты анимации, калькулятор для сайта, <br> json, ajax, ES6, API, cookie).</p>
+    </div>
+    <div class="skills animated bounceInUp">
+        <div class="skills__ico3"></div>
+        <h2>Написание <br> PHP кода</h2>
+        <p>Работа с БД MySQL PostgreSQL. ООП, MVC, <br> API, Безопасность.</p>
+    </div>
+</div>
+
+
+<!--        <div class="description__data">
             <ul>
-                <li>ФИО: <span>Белоцерковец Денис Викторович</span></li>
-                <li>Дата рождения: <span>04.11.1983</span></li>
                 <li>Услуги:
                     <ul>
                         <li>Вёрстка</li>
@@ -57,188 +85,213 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div>-->
 
 
 <!--Выполненые работы-->
-    <div class="good_work">
-        <h2 class="loftschool__header">Мои работы:</h2>
+<div class="good_work">
+    <h1 class="loftschool__header">Работы</h1>
+    <div class="work">
         <div>
-            <h2>Landing Page</h2>
-            <p>Выпускной проект. Вёрстка страницы + Эфекты. </p>
-            <span>Используемые технологии: HTML CSS Javascript</span>
+            <h2>Landing Page "ERP CRM"</h2>
+            <span></span>
+            <p>Выпускной проект. Вёрстка страницы + Эфекты.
+                <span>Используемые технологии:</span> HTML CSS Javascript </p>
             <a class="main__button" href="http://y9283007.bget.ru/index.html" target="_blank">Landing</a>
-            <hr>
         </div>
         <div>
             <h2>Landing Page "Ресницы"</h2>
-            <p>Дизайн, вёрстка, эфекты, добавил возможность комментировать.</p>
-            <span>Используемые технологии: HTML CSS Javascript Bootstrap CSV MySQL</span>
+            <span></span>
+            <p>Дизайн, вёрстка, эфекты, добавил возможность комментировать.
+                <span>Используемые технологии:</span> HTML CSS Javascript Bootstrap CSV MySQL </p>
             <a class="main__button" href="http://lashmeyker-krd.esy.es/" target="_blank">Ресницы</a>
-            <hr>
         </div>
         <div>
             <h2>Интернет магазин</h2>
-            <p>Вёрстка с PSD макета 15 страниц, эфекты, большой функционал.</p>
-            <span>Используемые технологии: HTML CSS Javascript PHP PostgreSQL</span>
-            <a class="main__button" href="http://shoggoth.ru/edu/09/dbelotserkovets/" target="_blank">Онлайн
+            <span></span>
+            <p>Вёрстка с PSD макета 15 страниц, эфекты, большой функционал.
+                <span>Используемые технологии:</span> HTML CSS Javascript PHP PostgreSQL </p>
+            <a class="main__button" href="http://portfolio-be-ru.1gb.ru/category1.php" target="_blank">Онлайн
                 магазин</a>
-            <hr>
         </div>
         <div>
-            <h2>Интернет магазин</h2>
-            <p>Вёрстка с PSD макета 15 страниц, эфекты, большой функционал.</p>
-            <span>Используемые технологии: HTML CSS Javascript PHP PostgreSQL</span>
-            <a class="main__button" href="http://shoggoth.ru/edu/09/dbelotserkovets//backEnd/index.php" target="_blank">Админка магазина</a>
-            <hr>
+            <h2>Админка магазина</h2>
+            <span></span>
+            <p>Вёрстка с PSD макета 15 страниц, эффекты, большой функционал.
+                <span>Используемые технологии:</span> HTML CSS Javascript PHP PostgreSQL </p>
+            <a class="main__button" href="http://portfolio-be-ru.1gb.ru//backEnd/items.php"
+               target="_blank">Админка магазина</a>
         </div>
         <div>
-            <h2>Наработки на github</h2>
-            <p>HTML CSS JavaScript JQuery PHP PostgreSQL</p>
-            <a class="main__button" href="https://github.com/belocer/my-achievements.github.io" target="_blank">Мои
-                наработки</a>
-            <hr>
-        </div>
-
-
-<!--Дизайн-->
-        <div id="dizain">
-            <h2>Моя активность на github</h2>
+            <h2>Мой аккаунт github</h2>
+            <span></span>
+            <p>Мои наработки во время обучение и заработка</p>
             <a class="main__button" href="https://github.com/belocer" target="_blank">Мой профиль Github</a>
-            <hr>
         </div>
-        <div>
-            <h1>Дизайн:</h1>
-            <h2>Дизайн группы VK.com</h2>
-            <img src="img/vk.jpg" alt="img"> 
-            <br>
-            <strong>200руб.</strong>
-            <hr>
-        </div>
-        <div>
-            <h2>Дизайн шапки "Лыжный спуск"</h2>
-            <img src="img/cold.jpg" alt="img"> 
-            <br>
-            <strong>200руб.</strong>
-            <hr>
-        </div>
-        <div>
-            <h2>Дизайн карточка товара</h2>
-            <img src="img/cart.jpg" alt="img">  
-            <br>
-            <strong>200руб.</strong>
-            <hr>
-        </div>
-        <div>
-            <h2>Дизайн страницы блога Counter-Strike</h2>
-            <img src="img/CS.jpg" alt="img">
-            <br>
-            <strong>300руб.</strong>
-            <hr>
-        </div>
-        <div>
-            <h2>Дизайн Landing Page "Теплооблок"</h2>
-            <img src="img/1.jpg" alt="img">
-            <br><br>
-            <img src="img/mockup.jpg" alt="img">
-            <br><br>
-            <img src="img/2.jpg" alt="img"> 
-            <br>
-            <strong>1000руб.</strong>
-            <hr>
-        </div>
-
-<!--Сертификаты-->
-        <h2 class="loftschool__header" id="certificate">Сертификаты:</h2>
-        <div class="certificate">
-            <div>
-                <h4>Дизайн</h4>
-                <img src="img/dizain.jpg" alt="img">
-                <a href="https://geekbrains.ru/certificates/68471" target="_blank">Перейти на сайт</a>
-            </div>
-            <div>
-                <h4>HTML&CSS</h4>
-                <img src="img/html_css.jpg" alt="img">
-                <a href="https://geekbrains.ru/certificates/63834" target="_blank">Перейти на сайт</a>
-            </div>
-            <div>
-                <h4>Javascript</h4>
-                <img src="img/js.jpg" alt="img">
-                <a href="https://geekbrains.ru/certificates/230954" target="_blank">Перейти на сайт</a>
-            </div>
-            <div>
-                <h4>Основы Веба</h4>
-                <img src="img/os.jpg" alt="img">
-                <a href="https://geekbrains.ru/certificates/69963" target="_blank">Перейти на сайт</a>
-            </div>
-            <div>
-                <h4>PHP</h4>
-                <img src="img/php.jpg" alt="img">
-                <a href="https://geekbrains.ru/certificates/88765" target="_blank">Перейти на сайт</a>
-            </div>
-            <div>
-                <h4>Javascript("продвинутый")</h4>
-                <img src="img/ru.png" alt="img">
-                <a href="https://loftschool.com/certificate/VV1492774769/ru" target="_blank">Перейти на сайт</a>
-            </div>
-        </div>
-    </div>
-
-
-    <!--Выполненые задачи-->
-    <h2 style="text-align: center" id="task">Выполненые задачи</h2>
-    <div class="main">
-        <h2 class="main__header">Вёрстка</h2>
-        <a class="main__button" href="lesson_1/index.html" target="_blank">Адаптив</a>
-        <a class="main__button" href="lesson_2/index.html" target="_blank">Load</a>
-        <a class="main__button" href="lesson_3/index.html" target="_blank">Modal win</a>
-        <a class="main__button" href="lesson_4/index.html" target="_blank">Column</a>
-        <a class="main__button" href="lesson_5/index.html" target="_blank">БЭМ</a>
-        <a class="main__button" href="lesson_6/index.html" target="_blank">grid</a>
-        <a class="main__button" href="lesson_8/index.html" target="_blank">fonts</a>
-        <a class="main__button" href="lesson_9/index.html" target="_blank">SASS</a>
-        <a class="main__button" href="lesson_10/index.html" target="_blank">fonts icon</a>
-        <a class="main__button" href="lesson_11/index.html" target="_blank">Hover</a>
-        <a class="main__button" href="lesson_12/index.html#" target="_blank">Modal win</a>
-        <a class="main__button" href="lesson_13/index.html" target="_blank">Animation</a>
-        <a class="main__button" href="lesson_14/index.html" target="_blank"><span style="color:red">* </span>Flex-Box</a>
-        <a class="main__button" href="lesson_15/index.html" target="_blank">Bootstrap grid</a>
-        <a class="main__button" href="lesson_16/index.html" target="_blank">JQuery</a>
-        <a class="main__button" href="lesson_17/index.html" target="_blank">Accordion</a>
-        <a class="main__button" href="lesson_18/index.html" target="_blank">Form JQ</a>
-        <a class="main__button" href="lesson_19/index.html" target="_blank">Modal JQ</a>
-        <a class="main__button" href="lesson_20/index.html" target="_blank">Видеофон</a>
-        <a class="main__button" href="lesson_21/index.html" target="_blank">Parallax</a>
-        <a class="main__button" href="https://www.youtube.com/watch?v=2sfro9tEdTc" target="_blank">PHP+mail</a>
-        <a class="main__button" href="lesson_23/index.html" target="_blank">Maps</a>
-        <a class="main__button" href="lesson_28/index.html" target="_blank">Оплата</a>
-    </div>
-    <div class="loftschool">
-        <h2 class="loftschool__header">JavaScript</h2>
-        <a class="loftschool__button" href="lf-1/index.html" target="_blank">Function</a>
-        <a class="loftschool__button" href="lf-2/index.html" target="_blank">Отладчик</a>
-        <a class="loftschool__button" href="lf-3/index.html" target="_blank">Array+Object</a>
-        <a class="loftschool__button" href="lf-4/index.html" target="_blank">DOM</a>
-        <a class="loftschool__button" href="lf-5/index.html" target="_blank">Events</a>
-        <a class="loftschool__button" href="lf-6/index.html" target="_blank">Ассинхронность</a>
-        <a class="loftschool__button" href="lf-7/index.html" target="_blank">Cookie</a>
-        <a class="loftschool__button" href="lf-8/index.html" target="_blank">VK friends</a>
-        <a class="loftschool__button" href="lf-9/index.html" target="_blank">Geo Location</a>
-        <a class="loftschool__button" href="lf-10/index.html" target="_blank">VK api</a>
-        <a class="loftschool__button" href="lf-11/index.html" target="_blank">ГЕО отзыв</a>
-    </div>
-    <div class="loftschool">
-        <h2 class="loftschool__header">PHP</h2>
-        <a class="loftschool__button" href="lf_php-1/" target="_blank">Основы</a>
-        <a class="loftschool__button" href="lf_php-2/" target="_blank">Функции</a>
-        <a class="loftschool__button" href="lf_php-3/" target="_blank">Файлы</a>
-        <a class="loftschool__button" href="graduation_projects/" target="_blank">1 В.Проект</a>
-        <a class="loftschool__button" href="lf_php-4/" target="_blank">База Данных</a>
     </div>
 </div>
+<!--Дизайн-->
+<div class="dizain_wrapper">
+    <h1>Дизайн:</h1>
+    <div class="slide__wrapper">
+        <div class="slide" data-int_img="1">
+            <div class="slide__left">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </div>
+            <div class="slide__right">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <!--<div>
+        <h1>Дизайн:</h1>
+        <h2>Дизайн группы VK.com</h2>
+        <img src="img/vk.jpg" alt="img">
+        <br>
+        <strong>200руб.</strong>
+        <hr>
+    </div>
+    <div>
+        <h2>Дизайн шапки "Лыжный спуск"</h2>
+        <img src="img/cold.jpg" alt="img">
+        <br>
+        <strong>200руб.</strong>
+        <hr>
+    </div>
+    <div>
+        <h2>Дизайн карточка товара</h2>
+        <img src="img/cart.jpg" alt="img">
+        <br>
+        <strong>200руб.</strong>
+        <hr>
+    </div>
+    <div>
+        <h2>Дизайн страницы блога Counter-Strike</h2>
+        <img src="img/CS.jpg" alt="img">
+        <br>
+        <strong>300руб.</strong>
+        <hr>
+    </div>
+    <div>
+        <h2>Дизайн Landing Page "Теплооблок"</h2>
+        <img src="img/1.jpg" alt="img">
+        <br><br>
+        <img src="img/mockup.jpg" alt="img">
+        <br><br>
+        <img src="img/2.jpg" alt="img">
+        <br>
+        <strong>1000руб.</strong>
+        <hr>
+    </div>-->
+</div>
+
+
+<!--Сертификаты-->
+<h2 class="loftschool__header">Сертификаты:</h2>
+<div class="certificate">
+    <div>
+        <h3>Дизайн</h3>
+        <img src="img/dizain.jpg" alt="img">
+        <a href="https://geekbrains.ru/certificates/68471" target="_blank">Перейти на сайт</a>
+    </div>
+    <div>
+        <h3>HTML&CSS</h3>
+        <img src="img/html_css.jpg" alt="img">
+        <a href="https://geekbrains.ru/certificates/63834" target="_blank">Перейти на сайт</a>
+    </div>
+    <div>
+        <h3>Javascript</h3>
+        <img src="img/js.jpg" alt="img">
+        <a href="https://geekbrains.ru/certificates/230954" target="_blank">Перейти на сайт</a>
+    </div>
+    <div>
+        <h3>Основы Веба</h3>
+        <img src="img/os.jpg" alt="img">
+        <a href="https://geekbrains.ru/certificates/69963" target="_blank">Перейти на сайт</a>
+    </div>
+    <div>
+        <h3>PHP</h3>
+        <img src="img/php.jpg" alt="img">
+        <a href="https://geekbrains.ru/certificates/88765" target="_blank">Перейти на сайт</a>
+    </div>
+    <div>
+        <h4>Javascript("продвинутый")</h4>
+        <img src="img/ru.png" alt="img">
+        <a href="https://loftschool.com/certificate/VV1492774769/ru" target="_blank">Перейти на сайт</a>
+    </div>
+</div>
+
+
+<!--Выполненые задачи-->
+<div class="task">
+    <h1>Выполненые задачи</h1>
+    <div class="task_wrap">
+        <div class="main">
+            <h2 class="main__header">Вёрстка</h2>
+            <a class="main__button" href="lesson_1/index.html" target="_blank">Адаптив</a>
+            <a class="main__button" href="lesson_2/index.html" target="_blank">Load</a>
+            <a class="main__button" href="lesson_3/index.html" target="_blank">Modal win</a>
+            <a class="main__button" href="lesson_4/index.html" target="_blank">Column</a>
+            <a class="main__button" href="lesson_5/index.html" target="_blank">БЭМ</a>
+            <a class="main__button" href="lesson_6/index.html" target="_blank">grid</a>
+            <a class="main__button" href="lesson_8/index.html" target="_blank">fonts</a>
+            <a class="main__button" href="lesson_9/index.html" target="_blank">SASS</a>
+            <a class="main__button" href="lesson_10/index.html" target="_blank">fonts icon</a>
+            <a class="main__button" href="lesson_11/index.html" target="_blank">Hover</a>
+            <a class="main__button" href="lesson_12/index.html#" target="_blank">Modal win</a>
+            <a class="main__button" href="lesson_13/index.html" target="_blank">Animation</a>
+            <a class="main__button" href="lesson_14/index.html" target="_blank"><span style="color:red">* </span>Flex-Box</a>
+            <a class="main__button" href="lesson_15/index.html" target="_blank">Bootstrap grid</a>
+            <a class="main__button" href="lesson_16/index.html" target="_blank">JQuery</a>
+            <a class="main__button" href="lesson_17/index.html" target="_blank">Accordion</a>
+            <a class="main__button" href="lesson_18/index.html" target="_blank">Form JQ</a>
+            <a class="main__button" href="lesson_19/index.html" target="_blank">Modal JQ</a>
+            <a class="main__button" href="lesson_20/index.html" target="_blank">Видеофон</a>
+            <a class="main__button" href="lesson_21/index.html" target="_blank">Parallax</a>
+            <a class="main__button" href="https://www.youtube.com/watch?v=2sfro9tEdTc" target="_blank">PHP+mail</a>
+            <a class="main__button" href="lesson_23/index.html" target="_blank">Maps</a>
+            <a class="main__button" href="lesson_28/index.html" target="_blank">Оплата</a>
+        </div>
+        <div class="main">
+            <h2 class="main__header">JavaScript</h2>
+            <a class="main__button" href="lf-1/index.html" target="_blank">Function</a>
+            <a class="main__button" href="lf-2/index.html" target="_blank">Отладчик</a>
+            <a class="main__button" href="lf-3/index.html" target="_blank">Array+Object</a>
+            <a class="main__button" href="lf-4/index.html" target="_blank">DOM</a>
+            <a class="main__button" href="lf-5/index.html" target="_blank">Events</a>
+            <a class="main__button" href="lf-6/index.html" target="_blank">Ассинхронность</a>
+            <a class="main__button" href="lf-7/index.html" target="_blank">Cookie</a>
+            <a class="main__button" href="lf-8/index.html" target="_blank">VK friends</a>
+            <a class="main__button" href="lf-9/index.html" target="_blank">Geo Location</a>
+            <a class="main__button" href="lf-10/index.html" target="_blank">VK api</a>
+            <a class="main__button" href="lf-11/index.html" target="_blank">ГЕО отзыв</a>
+        </div>
+        <div class="main">
+            <h2 class="main__header">PHP</h2>
+            <a class="main__button" href="lf_php-1/" target="_blank">Основы</a>
+            <a class="main__button" href="lf_php-2/" target="_blank">Функции</a>
+            <a class="main__button" href="lf_php-3/" target="_blank">Файлы</a>
+            <a class="main__button" href="graduation_projects/" target="_blank">1 В.Проект</a>
+            <a class="main__button" href="lf_php-4/" target="_blank">База Данных</a>
+        </div>
+    </div>
+</div>
+
 <link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="http://allfont.ru/allfont.css?fonts=arvo">
 <link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/skills.css">
+<link rel="stylesheet" href="css/work.css">
+<link rel="stylesheet" href="css/sertificate.css">
+<link rel="stylesheet" href="css/dizain.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/task.css">
 <link rel="stylesheet" href="css/style.css">
-<script src="js/js.js" async></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" defer></script>
+<script src="js/particles.js" defer></script>
+<script src="js/js.js" defer></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>

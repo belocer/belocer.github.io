@@ -1,15 +1,17 @@
-@font-face{font-family:'Arvo';src:url(../fonts/arvo/ArvoRegular.woff);src:url(../fonts/arvo/ArvoRegular.woff) format('woff'),
-url(../fonts/arvo/arvo-regular.woff2) format('woff2'),
-url(../fonts/arvo/ArvoRegular.eot) format('eot'),
-url(../fonts/arvo/arvo-regular.ttf) format('ttf'),
-url(../fonts/arvo/arvo-regular.svg) format('svg');}
-@font-face{font-family:'notosans-regular';src:url(../fonts/notoSans/notosans-regular.woff);src:url(../fonts/notoSans/notosans-regular.woff) format('woff'),
-url(../fonts/notoSans/notosans-regular.woff2) format('woff2'),
-url(../fonts/notoSans/notosans-regular.eot) format('eot'),
-url(../fonts/notoSans/notosans-regular.ttf) format('ttf'),
-url(../fonts/notoSans/notosans-regular.svg) format('svg');}
-@font-face{font-family:'supermolot';src:url(../fonts/supermolot/supermolot-light.woff);src:url(../fonts/supermolot/supermolot-light.woff) format('woff'),
-url(../fonts/supermolot/supermolot-light.woff2) format('woff2'),
-url(../fonts/supermolot/supermolot-light.eot) format('eot'),
-url(../fonts/supermolot/supermolot-light.ttf) format('ttf'),
-url(../fonts/supermolot/supermolot-light.svg) format('svg');}
+@charset "UTF-8";
+/*
+Шрифты
+========================================*/
+@font-face {
+  font-family: 'supermolot';
+  src: url("../fonts/supermolot/supermolot-light.eot");
+  src: url("../fonts/supermolot/supermolot-light.eot") format("embedded-opentype"), url("../fonts/supermolot/supermolot-light.woff2") format("woff2"), url("../fonts/supermolot/supermolot-light.woff") format("woff"), url("../fonts/supermolot/supermolot-light.ttf") format("truetype"), url("../fonts/supermolot/supermolot-light.svg") format("svg"), url("../fonts/supermolot/supermolot-light.eot") format("eot");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'notosans';
+  src: url("../fonts/notoSans/notosans-regular.eot");
+  src: url("../fonts/notoSans/notosans-regular.eot") format("embedded-opentype"), url("../fonts/notoSans/notosans-regular.woff2") format("woff2"), url("../fonts/notoSans/notosans-regular.woff") format("woff"), url("../fonts/notoSans/notosans-regular.ttf") format("truetype"), url("../fonts/notoSans/notosans-regular.svg") format("svg"), url("../fonts/notoSans/notosans-regular.eot") format("eot");
+  font-weight: normal;
+  font-style: normal; }
