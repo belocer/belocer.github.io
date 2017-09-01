@@ -7,7 +7,8 @@
   width: 100%;
   height: 1300px;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
-  background-blend-mode: multiply,multiply; }
+  background-blend-mode: multiply,multiply;
+  z-index: 100; }
   .task h1 {
     color: #fff;
     font-family: 'Arvo', arial;
@@ -62,7 +63,8 @@
   /* box-shadow: 0 0 1px #fff; */
   font-size: 16px;
   text-transform: none;
-  font-family: 'supermolot'; }
+  font-family: 'supermolot';
+  z-index: 100; }
 
 .main__button:hover {
   background-color: rgba(150, 150, 150, 0.65);
