@@ -2,7 +2,6 @@
 /* Блок со скилами */
 .skills__header {
   color: #fff;
-  background: rgba(41, 32, 44, 0.8);
   display: block;
   line-height: 7rem;
   width: 100%;
@@ -18,7 +17,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background: rgba(41, 32, 44, 0.8);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+  background-blend-mode: multiply,multiply;
   box-shadow: 0 25px 50px rgba(40, 40, 40, 0.3); }
   .skills_wrap .skills {
     display: inline-block;
