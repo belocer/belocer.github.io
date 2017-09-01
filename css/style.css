@@ -1,108 +1,152 @@
 @charset "UTF-8";
 * {
-  transition: all .5s;
-  padding: 0;
-  margin: 0;
-  font-family: 'notosans';
-  box-sizing: content-box; }
+    transition: all .5s;
+    padding: 0;
+    margin: 0;
+    font-family: 'notosans';
+    box-sizing: content-box;
+}
 
 html {
-  background: black;
-  font-size: 16px;
-  padding: 0;
-  margin: 0; }
+    background: black;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
 
 body {
-  background: #fff;
-  text-align: center;
-  padding: 0;
-  margin: 0; }
+    background: #fff;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
 
 h2 {
-  color: #313030; }
+    color: #313030;
+}
 
 /*Данные по мне*/
 .description_head1 {
-  display: block;
-  text-align: center;
-  width: 100%;
-  background: rgba(44, 28, 13, 0.67);
-  height: 35rem;
-  box-shadow: 0 0 50px rgba(40, 40, 40, 0.85); }
-  .description_head1 span {
+    display: block;
+    text-align: center;
+    width: 100%;
+    background: rgba(44, 28, 13, 0.67);
+    height: 35rem;
+    box-shadow: 0 0 50px rgba(40, 40, 40, 0.85);
+}
+
+.description_head1 span {
     display: inline-block;
     color: rgba(255, 255, 255, 0.72);
     margin-top: 2rem;
     font-family: 'supermolot';
     letter-spacing: 2px;
-    font-size: 2rem; }
-  .description_head1 .description__photo {
+    font-size: 2rem;
+}
+
+.description_head1 .description__photo {
     display: block;
     width: 35%;
     margin: 0 auto;
-    position: relative; }
-    .description_head1 .description__photo img {
-      display: inline-block;
-      border-radius: 50%;
-      max-width: 300px;
-      margin-top: 8rem;
-      margin-left: -50%; }
-    .description_head1 .description__photo .contact {
-      display: inline-block;
-      width: 285px;
-      text-align: left;
-      position: absolute;
-      top: 48%;
-      /* right: 5%; */
-      margin-left: 1rem; }
-      .description_head1 .description__photo .contact span {
-        margin-top: 7px;
-        font-size: 1rem; }
-        .description_head1 .description__photo .contact span i {
-          font-size: 1.5rem;
-          padding-right: 1rem; }
+    position: relative;
+}
+
+.description_head1 .description__photo img {
+    display: inline-block;
+    border-radius: 50%;
+    max-width: 300px;
+    margin-top: 8rem;
+    margin-left: -50%;
+}
+
+.description_head1 .description__photo .contact {
+    display: inline-block;
+    width: 285px;
+    text-align: left;
+    position: absolute;
+    top: 48%;
+    /* right: 5%; */
+    margin-left: 1rem;
+}
+
+.description_head1 .description__photo .contact span {
+    margin-top: 7px;
+    font-size: 1rem;
+}
+
+.description_head1 .description__photo .contact span i {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
 
 .description__data {
-  display: inline-block;
-  width: 350px;
-  margin-left: 26%;
-  background: #fff;
-  background-size: cover;
-  box-shadow: 0 0 20px #fff; }
-  .description__data li ul {
+    display: inline-block;
+    width: 350px;
+    margin-left: 26%;
+    background: #fff;
+    background-size: cover;
+    box-shadow: 0 0 20px #fff;
+}
+
+.description__data li ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 0;
-    padding: 0; }
-    .description__data li ul li {
-      margin-left: 2rem;
-      color: rgba(10, 10, 10, 0.8); }
-      .description__data li ul li span {
-        color: inherit; }
+    padding: 0;
+}
+
+.description__data li ul li {
+    margin-left: 2rem;
+    color: rgba(10, 10, 10, 0.8);
+}
+
+.description__data li ul li span {
+    color: inherit;
+}
 
 @media only screen and (max-width: 859px) {
-  .description {
-    width: 100%;
-    text-align: center; }
-  .description > .description__photo, .description > .description__data {
-    display: block;
-    width: auto;
-    height: auto;
-    float: none;
-    margin: 2rem auto 0;
-    max-width: 300px; } }
+    .description {
+        width: 100%;
+        text-align: center;
+    }
 
+    .description > .description__photo, .description > .description__data {
+        display: block;
+        width: auto;
+        height: auto;
+        float: none;
+        margin: 2rem auto 0;
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 859px) {
+    .description_head1 .description__photo .contact {
+        text-align: center;
+        position: relative;
+        font-size: 14px;
+    }
+
+    .description_head1 .description__photo {
+        width: 76%;
+        position: relative;
+    }
+
+    .description_head1 .description__photo img {
+        margin-left: 0;
+    }
+}
 
 .description_head1 {
-  position: relative;
+    position: relative;
 }
 
 #particles-js {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width:100%;
-  height: 100%;
-  opacity: .2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
 }
