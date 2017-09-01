@@ -168,7 +168,7 @@ h2 {
         position: relative;
     }
 
-    .description_head1 .description__photo img {
+    .description_head1 .description__photo .description_img {
         margin-left: 0;
     }
 }
