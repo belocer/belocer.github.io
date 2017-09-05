@@ -197,7 +197,6 @@ if (window.innerWidth > 859) {
         dream2.style.display= 'none';
         del_timer();
     });
-    console.log(document.querySelector('.dream2 p').innerText);
     var timerId = setInterval(function () {
         if (document.querySelector('.dream2 p').innerText === 'Мечтаю написать ИИ на Javascript. И написать ремастеринг игры "Command & Conquer 3: Tiberium Wars"'){
             document.querySelector('.dream2 p').innerText = 'С удовольствием пошёл бы стажёром на 1-2 месяца, за подзатыльники. Или поработал бы, с маленькой оплатой, и маленькими требованиями)';
@@ -205,7 +204,6 @@ if (window.innerWidth > 859) {
             document.querySelector('.dream2 p').innerText = 'Мечтаю написать ИИ на Javascript. И написать ремастеринг игры "Command & Conquer 3: Tiberium Wars"';
         }
     }, 3000);
-
 
     function del_timer ()
     {
