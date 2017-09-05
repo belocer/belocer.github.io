@@ -195,7 +195,6 @@ if (window.innerWidth > 859) {
         dream0.style.display= 'none';
         dream1.style.display= 'none';
         dream2.style.display= 'none';
-        del_timer();
     });
     var timerId = setInterval(function () {
         if (document.querySelector('.dream2 p').innerText === 'Хотелось бы написать ИИ на Javascript. И ещё написать ремастеринг игры "Command & Conquer 3: Tiberium Wars"'){
