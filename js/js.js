@@ -175,3 +175,40 @@ function new_img() {
     }
 }
 
+/* smile */
+if (window.innerWidth > 859) {
+
+    var head = document.querySelector('.description_head1');
+    var img = document.querySelector('.description_img');
+    var dream0 = document.querySelector('.dream0');
+    var dream1 = document.querySelector('.dream1');
+    var dream2 = document.querySelector('.dream2');
+
+    head.addEventListener('mouseover', function () {
+        img.setAttribute('class', 'description_img1');
+        dream0.style.display= 'inline-block';
+        dream1.style.display= 'inline-block';
+        dream2.style.display= 'inline-block';
+    });
+    head.addEventListener('mouseout', function () {
+        document.querySelector('.description_img1').setAttribute('class', 'description_img');
+        dream0.style.display= 'none';
+        dream1.style.display= 'none';
+        dream2.style.display= 'none';
+        del_timer();
+    });
+    console.log(document.querySelector('.dream2 p').innerText);
+    var timerId = setInterval(function () {
+        if (document.querySelector('.dream2 p').innerText === 'Мечтаю написать ИИ на Javascript. И написать ремастеринг игры "Command & Conquer 3: Tiberium Wars"'){
+            document.querySelector('.dream2 p').innerText = 'С удовольствием пошёл бы стажёром на 1-2 месяца, за подзатыльники. Или поработал бы, с маленькой оплатой, и маленькими требованиями)';
+        } else {
+            document.querySelector('.dream2 p').innerText = 'Мечтаю написать ИИ на Javascript. И написать ремастеринг игры "Command & Conquer 3: Tiberium Wars"';
+        }
+    }, 3000);
+
+
+    function del_timer ()
+    {
+        clearInterval(timerId);
+    }
+}
