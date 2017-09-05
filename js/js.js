@@ -88,15 +88,15 @@ min_menu.addEventListener('click', (e) => {
 
     var x = min_menu.dataset.menu;
 //console.log(x);
-    if (x === '0') {
-        min_menu.innerHTML = '<li><a href="#">Контакты</a></li><li><a href="#work">Работы</a></li><li><a href="#dizain">Дизайн</a></li><li><a href="#certificate">Сертификаты</a></li><li><a href="#task">Задачи</a></li>';
-        min_menu.dataset.menu = 1;
-    } else if (x === '1') {
-        if (window.innerWidth < 859) {
-            min_menu.innerHTML = '<span class="cross" style="border-radius:50%;font-size:30px;"><i class="fa fa-bars" aria-hidden="true"></i></span>';
-            min_menu.dataset.menu = 0;
-        }
+if (x === '0') {
+    min_menu.innerHTML = '<li><a href="#">Контакты</a></li><li><a href="#work">Работы</a></li><li><a href="#dizain">Дизайн</a></li><li><a href="#certificate">Сертификаты</a></li><li><a href="#task">Задачи</a></li>';
+    min_menu.dataset.menu = 1;
+} else if (x === '1') {
+    if (window.innerWidth < 859) {
+        min_menu.innerHTML = '<span class="cross" style="border-radius:50%;font-size:30px;"><i class="fa fa-bars" aria-hidden="true"></i></span>';
+        min_menu.dataset.menu = 0;
     }
+}
 });
 
 /*
@@ -196,17 +196,11 @@ if (window.innerWidth > 859) {
         dream1.style.display= 'none';
         dream2.style.display= 'none';
     });
-    var timerId = setInterval(function () {
+    setInterval(function () {
         if (document.querySelector('.dream2 p').innerText === 'Хотелось бы написать ИИ на Javascript. И ещё написать ремастеринг игры "Command & Conquer 3: Tiberium Wars"'){
             document.querySelector('.dream2 p').innerText = 'С удовольствием пошёл бы стажёром на 1-2 месяца, за подзатыльники. Или поработал бы, с маленькой оплатой, и маленькими требованиями)';
         } else {
             document.querySelector('.dream2 p').innerText = 'Хотелось бы написать ИИ на Javascript. И ещё написать ремастеринг игры "Command & Conquer 3: Tiberium Wars"';
         }
     }, 3000);
-
-
-    function del_timer ()
-    {
-        clearInterval(timerId);
-    }
 }
