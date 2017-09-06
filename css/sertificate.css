@@ -223,35 +223,13 @@
     font-size: 34rem;
 }
 
-@media only screen and (max-width: 1205px) {
-    .certificate {
-        height: 1130px;
-    }
-}
-
 @media only screen and (max-width: 810px) {
     .certificate {
         height: 2170px;
     }
-
-    .ico_back1,
-    .ico_back2,
-    .ico_back3,
-    .ico_back4,
-    .ico_back5,
-    .ico_back6,
-    .ico_back7,
-    .ico_back8,
-    .ico_back9,
-    .ico_back10,
-    .ico_back11,
-    .ico_back12,
-    .ico_back13,
-    .ico_back14,
-    .ico_back15,
-    .ico_back16,
-    .ico_back17,
-    .ico_back18 {
-        display: none;
+}
+@media only screen and (max-width: 1205px) {
+    .certificate {
+        height: 1130px;
     }
 }
