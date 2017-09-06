@@ -25,7 +25,7 @@ function fn() {
         min_menu.innerHTML = '<li><a href="#">Контакты</a></li>\n' +
             '<li><a href="#work">Работы</a></li>\n' +
             '<li><a href="#dizain">Дизайн</a></li>\n' +
-            '<li><a href="#certificate">Сертификаты</a></li>\n' +
+            '<li><a href="#sertificate">Сертификаты</a></li>\n' +
             '<li><a href="#task">Задачи</a></li>';
         min_menu.style.background = 'rgba(12, 42, 95, 0.81);';
 
