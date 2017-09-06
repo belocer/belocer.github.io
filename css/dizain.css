@@ -39,7 +39,9 @@
     text-align: center;
     position: relative;
     margin-top: 2rem;
-    box-shadow: 0 0 70px rgba(35, 35, 35, 0.85); }
+    box-shadow: 0 0 70px rgba(35, 35, 35, 0.85); 
+    z-index: 2;
+}
     .slide__wrapper .slide__left {
       width: 10%;
       height: 100%;
