@@ -44,7 +44,7 @@ h2 {
   background: linear-gradient(to bottom, rgba(0, 122, 255, 0.25) 0%, rgba(0, 173, 255, 0.13) 40%, rgba(28, 28, 28, 0.32) 150%), linear-gradient(to top, rgba(0, 255, 211, 0.31) 0%, rgba(2, 45, 255, 0.58) 200%);
   background-blend-mode: multiply;
   height: 35rem;
-  box-shadow: 0 0 50px rgba(40, 40, 40, 0.85);
+   box-shadow: 0 0 33px rgba(43, 43, 43, 0.55);
   position: relative; }
   .description_head1 span {
     display: inline-block;
