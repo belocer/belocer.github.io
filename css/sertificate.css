@@ -15,6 +15,7 @@
     background-blend-mode: multiply;
     padding-top: 4rem;
     box-shadow: 0 25px 50px rgba(40, 40, 40, 0.3);
+    overflow: hidden;
 }
 
 .certificate_wrap .certificate .certificate__header {
