@@ -204,3 +204,24 @@ if (window.innerWidth > 859) {
         }
     }, 3000);
 }
+
+if (window.innerWidth < 1200) {
+    document.querySelector('.ico_back1').style.display = 'none';
+    document.querySelector('.ico_back2').style.display = 'none';
+    document.querySelector('.ico_back3').style.display = 'none';
+    document.querySelector('.ico_back4').style.display = 'none';
+    document.querySelector('.ico_back5').style.display = 'none';
+    document.querySelector('.ico_back6').style.display = 'none';
+    document.querySelector('.ico_back7').style.display = 'none';
+    document.querySelector('.ico_back8').style.display = 'none';
+    document.querySelector('.ico_back9').style.display = 'none';
+    document.querySelector('.ico_back10').style.display = 'none';
+    document.querySelector('.ico_back11').style.display = 'none';
+    document.querySelector('.ico_back12').style.display = 'none';
+    document.querySelector('.ico_back13').style.display = 'none';
+    document.querySelector('.ico_back14').style.display = 'none';
+    document.querySelector('.ico_back15').style.display = 'none';
+    document.querySelector('.ico_back16').style.display = 'none';
+    document.querySelector('.ico_back17').style.display = 'none';
+    document.querySelector('.ico_back18').style.display = 'none';
+}
