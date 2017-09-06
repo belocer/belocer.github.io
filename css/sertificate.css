@@ -172,9 +172,9 @@
     width: 50%; }
 
 @media only screen and (max-width: 1205px) {
-  .certificate {
+  .certificate_wrap .certificate {
     height: 1130px; } }
 
 @media only screen and (max-width: 810px) {
-  .certificate {
+  .certificate_wrap .certificate {
     height: 2170px; } }
