@@ -5,7 +5,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  linear-gradient(to bottom, rgba(0, 122, 255, 0.64) 0%, rgba(0, 173, 255, 0.32) 40%, #1C1C1C 150%), linear-gradient(to top, rgba(0, 255, 211, 0.56) 0%, rgba(2, 45, 255, 0.9) 200%);
+  background: linear-gradient(to bottom, rgba(0, 122, 255, 0.64) 0%, rgba(0, 173, 255, 0.32) 40%, #1C1C1C 150%), linear-gradient(to top, rgba(0, 255, 211, 0.56) 0%, rgba(2, 45, 255, 0.9) 200%);
   background-blend-mode: multiply;
   padding-top: 4rem;
   box-shadow: 0 25px 50px rgba(40, 40, 40, 0.3); }
