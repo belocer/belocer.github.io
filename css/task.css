@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Блок задачи
 */
@@ -22,17 +23,17 @@
   margin: 0 auto; }
 
 .main {
-width: 100%;
-    max-width: 250px;
-    color: #555;
-    text-align: center;
-    border: 1px solid #999;
-    background: rgba(255, 255, 255, 0.22);
-    box-shadow: 0 0 20px rgba(72, 70, 70, 0.19);
-    float: left;
-    margin-left: 20px;
-    overflow: hidden;
-    margin-bottom: 1rem; }
+  width: 100%;
+  max-width: 250px;
+  color: #555;
+  text-align: center;
+  border: 1px solid #999;
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 0 20px rgba(72, 72, 72, 0.19);
+  float: left;
+  margin-left: 20px;
+  overflow: hidden;
+  margin-bottom: 1rem; }
 
 /*Заголовок*/
 .wrapper__header {
@@ -64,12 +65,7 @@ width: 100%;
   text-transform: none;
   font-family: 'supermolot';
   z-index: 100; }
-#task > div > div:nth-child(1) > a:nth-child(25),
-#task > div > div:nth-child(2) > a:nth-child(12),
-#task > div > div:nth-child(3) > a:nth-child(6)
-{
-margin-bottom: 1rem;
-}
+
 .main__button:hover {
   background-color: rgba(150, 150, 150, 0.65);
   box-shadow: 0 0 7px #555;
@@ -100,7 +96,7 @@ margin-bottom: 1rem;
     text-align: center;
     border: 1px solid #999;
     background-color: rgba(51, 51, 51, 0.85);
-    box-shadow: 0 0 20px #000;
+    box-shadow: 0 0 20px rgba(72, 72, 70, 0.19);
     overflow: hidden;
     display: block;
     float: none;
@@ -114,3 +110,9 @@ margin-bottom: 1rem;
 @media only screen and (max-width: 905px) {
   .task {
     height: 1855px; } }
+
+/*Нижний отступ для кнопок*/
+#task > div > div:nth-child(1) > a:nth-child(25),
+#task > div > div:nth-child(2) > a:nth-child(11),
+#task > div > div:nth-child(3) > a:nth-child(6) {
+  margin-bottom: 1rem; }

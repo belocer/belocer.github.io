@@ -3,116 +3,86 @@
                   Работы
 */
 .good_work__header {
-    color: #fff;
-    display: block;
-    line-height: 7rem;
-    width: 100%;
-    height: 3rem;
-    padding: 3rem auto 2rem;
-    font-size: 2rem;
-    letter-spacing: 2px;
-    font-family: 'Arvo', arial;
-}
+  color: #fff;
+  display: block;
+  line-height: 7rem;
+  width: 100%;
+  height: 3rem;
+  padding: 3rem auto 2rem;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-family: 'Arvo', arial; }
 
 .good_work {
-    display: block;
-    text-align: center;
-    width: 100%;
-    background: linear-gradient(to bottom, rgba(0, 122, 255, 0.25) 0%, rgba(0, 173, 255, 0.13) 40%, rgba(28, 28, 28, 0.32) 150%), linear-gradient(to top, rgba(0, 255, 211, 0.31) 0%, rgba(2, 45, 255, 0.58) 200%);
-    background-blend-mode: multiply;
-}
-
-.good_work .work {
+  display: block;
+  text-align: center;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 122, 255, 0.25) 0%, rgba(0, 173, 255, 0.13) 40%, rgba(28, 28, 28, 0.32) 150%), linear-gradient(to top, rgba(0, 255, 211, 0.31) 0%, rgba(2, 45, 255, 0.58) 200%);
+  background-blend-mode: multiply; }
+  .good_work .work {
     width: 100%;
     height: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    box-shadow: 0 25px 50px rgba(40, 40, 40, 0.3);
-}
-
-.good_work .work div:nth-child(2) > span {
-    background: url("../img/lash.jpg");
-    background-size: cover;
-}
-
-.good_work .work div:nth-child(3) > span {
-    background: url("../img/shop.jpg");
-    background-size: cover;
-}
-
-.good_work .work div:nth-child(4) > span {
-    background: url("../img/admin.jpg");
-    background-size: cover;
-}
-
-.good_work .work div:nth-child(5) > span {
-    background: url("../img/git.jpg");
-    background-size: cover;
-}
-
-.good_work .work div {
-    text-align: center;
-    display: inline-block;
-    height: 400px;
-    width: 300px;
-    margin: 2rem 3rem;
-}
-
-.good_work .work div > span {
-    display: inline-block;
-    background: url("../img/erp.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 150px;
-    margin: 2rem auto;
-    box-shadow: 0 0 10px rgba(100, 100, 100, 0.8);
-    filter: grayscale(100%);
-}
-
-.good_work .work div > span:hover {
-    filter: grayscale(0);
-}
-
-.good_work .work div h2 {
-    color: #fff;
-    margin-top: 3rem;
-}
-
-.good_work .work div p {
-    display: inline-block;
-    margin: 0 auto;
-    color: #fff;
-}
-
-.good_work .work div a {
-    display: inline-block;
-    align-self: flex-end;
-    width: 185px;
-    height: 30px;
-    text-decoration: none;
-    border: 1px solid #333;
-    margin: 2rem auto 0;
-    line-height: 30px;
-    border-radius: 50px;
-    color: #fff;
-    background-color: rgba(56, 56, 56, 0.65);
-    box-shadow: 0 0 1px #fff;
-    font-size: 16px;
-    text-transform: none;
-    font-family: 'supermolot';
-}
+    box-shadow: 0 25px 50px rgba(40, 40, 40, 0.3); }
+    .good_work .work div:nth-child(2) > span {
+      background: url("../img/lash.jpg");
+      background-size: cover; }
+    .good_work .work div:nth-child(3) > span {
+      background: url("../img/shop.jpg");
+      background-size: cover; }
+    .good_work .work div:nth-child(4) > span {
+      background: url("../img/admin.jpg");
+      background-size: cover; }
+    .good_work .work div:nth-child(5) > span {
+      background: url("../img/git.jpg");
+      background-size: cover; }
+    .good_work .work div {
+      text-align: center;
+      display: inline-block;
+      height: 400px;
+      width: 300px;
+      margin: 2rem 3rem; }
+      .good_work .work div > span {
+        display: inline-block;
+        background: url("../img/erp.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 150px;
+        margin: 2rem auto;
+        box-shadow: 0 0 10px rgba(100, 100, 100, 0.8);
+        filter: grayscale(100%); }
+        .good_work .work div > span:hover {
+          filter: grayscale(0); }
+      .good_work .work div h2 {
+        color: #fff;
+        margin-top: 3rem; }
+      .good_work .work div p {
+        display: inline-block;
+        margin: 0 auto;
+        color: #fff; }
+      .good_work .work div a {
+        display: inline-block;
+        align-self: flex-end;
+        width: 185px;
+        height: 30px;
+        text-decoration: none;
+        border: 1px solid #333;
+        margin: 2rem auto 0;
+        line-height: 30px;
+        border-radius: 50px;
+        color: #fff;
+        background-color: rgba(56, 56, 56, 0.65);
+        box-shadow: 0 0 1px #fff;
+        font-size: 16px;
+        text-transform: none;
+        font-family: 'supermolot'; }
 
 @media only screen and (max-width: 1205px) {
-    .good_work .work {
-        height: 1405px;
-    }
-}
+  .good_work .work {
+    height: 1405px; } }
 
 @media only screen and (max-width: 810px) {
-    .good_work .work {
-        height: 2335px;
-    }
-}
-
-/* Кнопка анимация */
+  .good_work .work {
+    height: 2335px; } }
