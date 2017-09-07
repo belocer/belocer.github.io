@@ -22,17 +22,17 @@
   margin: 0 auto; }
 
 .main {
-  width: 100%;
-  max-width: 250px;
-  color: #555;
-  text-align: center;
-  border: 1px solid #999;
-  background: rgba(255, 255, 255, 0.22);
-  box-shadow: 0 0 20px #000;
-  float: left;
-  margin-left: 20px;
-  overflow: hidden;
-  margin-bottom: 1rem; }
+width: 100%;
+    max-width: 250px;
+    color: #555;
+    text-align: center;
+    border: 1px solid #999;
+    background: rgba(255, 255, 255, 0.22);
+    box-shadow: 0 0 20px rgba(72, 70, 70, 0.19);
+    float: left;
+    margin-left: 20px;
+    overflow: hidden;
+    margin-bottom: 1rem; }
 
 /*Заголовок*/
 .wrapper__header {
