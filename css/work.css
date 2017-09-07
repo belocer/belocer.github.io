@@ -86,3 +86,84 @@
 @media only screen and (max-width: 810px) {
   .good_work .work {
     height: 2335px; } }
+
+/*Иконки на фоне*/
+#work {
+  position: relative; }
+  #work .ico_back3,
+  #work .ico_back4,
+  #work .ico_back5,
+  #work .ico_back6,
+  #work .ico_back7,
+  #work .ico_back8,
+  #work .ico_back9,
+  #work .ico_back11,
+  #work .ico_back14,
+  #work .ico_back15,
+  #work .ico_back16,
+  #work .ico_back18 {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.15);
+    z-index: 1; }
+  #work .ico_back3 {
+    top: 50%;
+    left: 1%;
+    transform: rotate(-10deg);
+    font-size: 4rem; }
+  #work .ico_back4 {
+    top: 16%;
+    left: 30%;
+    transform: rotate(6deg);
+    font-size: 3rem; }
+  #work .ico_back5 {
+    top: -177%;
+    left: 46%;
+    transform: rotate(-11deg);
+    font-size: 7rem; }
+  #work .ico_back6 {
+    top: -133%;
+    left: 79%;
+    transform: rotate(-11deg);
+    font-size: 5rem; }
+  #work .ico_back7 {
+    top: -139%;
+    left: 1%;
+    transform: rotate(-11deg);
+    font-size: 3rem; }
+  #work .ico_back8 {
+    top: 0%;
+    left: 88%;
+    transform: rotate(7deg);
+    font-size: 3.4rem; }
+  #work .ico_back9 {
+    top: 151%;
+    left: 8%;
+    transform: rotate(-12deg);
+    font-size: 3.4rem; }
+  #work .ico_back11 {
+    top: -89%;
+    right: 0;
+    transform: rotate(0deg);
+    font-size: 42.4rem;
+    width: 50%; }
+  #work .ico_back14 {
+    top: 133%;
+    left: 79%;
+    transform: rotate(3deg);
+    font-size: 4rem; }
+  #work .ico_back15 {
+    top: 83%;
+    left: 83%;
+    transform: rotate(15deg);
+    font-size: 9rem; }
+  #work .ico_back16 {
+    top: 190%;
+    left: 42%;
+    transform: rotate(15deg);
+    font-size: 5rem; }
+  #work .ico_back18 {
+    top: -76%;
+    left: 0;
+    transform: rotate(0deg);
+    font-size: 33rem;
+    width: 50%; }

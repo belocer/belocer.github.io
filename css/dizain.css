@@ -115,3 +115,21 @@
   height: 8px;
   width: 8px;
   background: rgba(255, 255, 255, 0.5); }
+
+/*Иконки на background*/
+.dizain_wrapper {
+  position: relative;
+  overflow: hidden; }
+  .dizain_wrapper .ico_back11,
+  .dizain_wrapper .ico_back18 {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.15);
+    z-index: 1; }
+  .dizain_wrapper .ico_back11 {
+    top: 4%;
+    right: 1%;
+    font-size: 34rem; }
+  .dizain_wrapper .ico_back18 {
+    top: 10%;
+    left: 5%;
+    font-size: 35rem; }

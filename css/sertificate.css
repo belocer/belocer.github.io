@@ -60,22 +60,10 @@
         z-index: 100; }
   .certificate_wrap .ico_back1,
   .certificate_wrap .ico_back2,
-  .certificate_wrap .ico_back3,
-  .certificate_wrap .ico_back4,
-  .certificate_wrap .ico_back5,
-  .certificate_wrap .ico_back6,
-  .certificate_wrap .ico_back7,
-  .certificate_wrap .ico_back8,
-  .certificate_wrap .ico_back9,
   .certificate_wrap .ico_back10,
-  .certificate_wrap .ico_back11,
   .certificate_wrap .ico_back12,
   .certificate_wrap .ico_back13,
-  .certificate_wrap .ico_back14,
-  .certificate_wrap .ico_back15,
-  .certificate_wrap .ico_back16,
-  .certificate_wrap .ico_back17,
-  .certificate_wrap .ico_back18 {
+  .certificate_wrap .ico_back17 {
     position: absolute;
     color: rgba(255, 255, 255, 0.15);
     z-index: 1; }
@@ -89,52 +77,11 @@
     left: 57%;
     transform: rotate(-13deg);
     font-size: 5rem; }
-  .certificate_wrap .ico_back3 {
-    top: -95%;
-    left: 6%;
-    transform: rotate(-10deg);
-    font-size: 4rem; }
-  .certificate_wrap .ico_back4 {
-    top: -106%;
-    left: 30%;
-    transform: rotate(6deg);
-    font-size: 3rem; }
-  .certificate_wrap .ico_back5 {
-    top: -177%;
-    left: 46%;
-    transform: rotate(-11deg);
-    font-size: 7rem; }
-  .certificate_wrap .ico_back6 {
-    top: -133%;
-    left: 79%;
-    transform: rotate(-11deg);
-    font-size: 5rem; }
-  .certificate_wrap .ico_back7 {
-    top: -139%;
-    left: 1%;
-    transform: rotate(-11deg);
-    font-size: 3rem; }
-  .certificate_wrap .ico_back8 {
-    top: -101%;
-    left: 88%;
-    transform: rotate(7deg);
-    font-size: 3.4rem; }
-  .certificate_wrap .ico_back9 {
-    top: 151%;
-    left: 8%;
-    transform: rotate(-12deg);
-    font-size: 3.4rem; }
   .certificate_wrap .ico_back10 {
     top: 37%;
     left: 78%;
     transform: rotate(-12deg);
     font-size: 3.4rem; }
-  .certificate_wrap .ico_back11 {
-    top: -89%;
-    right: 0;
-    transform: rotate(0deg);
-    font-size: 42.4rem;
-    width: 50%; }
   .certificate_wrap .ico_back12 {
     top: 90%;
     left: 95%;
@@ -145,32 +92,11 @@
     left: 39%;
     transform: rotate(0deg);
     font-size: 6rem; }
-  .certificate_wrap .ico_back14 {
-    top: 133%;
-    left: 79%;
-    transform: rotate(3deg);
-    font-size: 4rem; }
-  .certificate_wrap .ico_back15 {
-    top: 204%;
-    left: 83%;
-    transform: rotate(15deg);
-    font-size: 9rem; }
-  .certificate_wrap .ico_back16 {
-    top: 190%;
-    left: 42%;
-    transform: rotate(15deg);
-    font-size: 5rem; }
   .certificate_wrap .ico_back17 {
     top: 95%;
     left: 58%;
     transform: rotate(15deg);
     font-size: 4rem; }
-  .certificate_wrap .ico_back18 {
-    top: -76%;
-    left: 0;
-    transform: rotate(0deg);
-    font-size: 33rem;
-    width: 50%; }
 
 @media only screen and (max-width: 1205px) {
   .certificate_wrap .certificate {
