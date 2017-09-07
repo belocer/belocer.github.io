@@ -24,14 +24,14 @@
       font-family: 'Arvo', arial;
       position: absolute; }
     .certificate_wrap .certificate div {
-      width: 230px;
-      display: inline-block;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.22);
-      margin: 3rem 5rem;
-      min-height: 250px;
-      box-shadow: 0 0 20px rgba(50, 50, 50, 0.5);
-      z-index: 2; }
+width: 230px;
+    display: inline-block;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.22);
+    margin: 3rem 5rem;
+    min-height: 250px;
+    box-shadow: 0 0 48px rgba(50, 50, 50, 0.13);
+    z-index: 2; }
       .certificate_wrap .certificate div h3, .certificate_wrap .certificate div h4 {
         color: #fff;
         margin-top: 1rem; }
