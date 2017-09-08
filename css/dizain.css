@@ -40,7 +40,7 @@
     text-align: center;
     position: relative;
     margin-top: 2rem;
-    box-shadow: 0 0 70px rgba(35, 35, 35, 0.85);
+    box-shadow: 0 0 100px rgba(35, 35, 35, 0.37);
     z-index: 2;
     border-radius: 20px; }
     .slide__wrapper .slide__left {

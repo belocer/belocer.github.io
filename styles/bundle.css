@@ -302,7 +302,7 @@ hr{margin-top:20px;margin-bottom:20px;border-top:1px solid #eee}
 .slide__wrapper .slide__left i,.slide__wrapper .slide__right i{color:rgba(232,247,255,.6);font-size:3rem;line-height:600px}
 .dizain_wrapper div img{width:50%;-webkit-box-shadow:0 0 10px rgba(50,50,50,.5);box-shadow:0 0 10px rgba(50,50,50,.5);-webkit-transition:all .9s;-o-transition:all .9s;transition:all .9s;border-radius:7px}
 .dizain_wrapper div img:hover{-webkit-transition:all .9s;-o-transition:all .9s;transition:all .9s;width:85%;border-radius:0}
-.slide__wrapper .slide{width:80%;max-width:900px;min-width:320px;height:600px;display:block;margin:2rem auto 0;background:url(../../img/1.jpg) center center no-repeat;background-size:cover;position:relative;-webkit-box-shadow:0 0 70px rgba(35,35,35,.85);box-shadow:0 0 70px rgba(35,35,35,.85);z-index:2;border-radius:20px}
+.slide__wrapper .slide{width:80%;max-width:900px;min-width:320px;height:600px;display:block;margin:2rem auto 0;background:url(../../img/1.jpg) center center no-repeat;background-size:cover;position:relative;-webkit-box-shadow:0 0 100px rgba(35,35,35,.37);box-shadow:0 0 100px rgba(35,35,35,.37);z-index:2;border-radius:20px}
 .fa.fa-pull-left,.fa.pull-left{margin-right:.3em}
 .slide__wrapper .slide__left:hover,.slide__wrapper .slide__right:hover{background:rgba(70,70,70,.5)}
 .slide__wrapper .slide__left{width:10%;height:100%;display:inline-block;float:left;z-index:100;border-radius:20px 0 0 20px}
