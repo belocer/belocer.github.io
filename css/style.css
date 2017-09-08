@@ -171,7 +171,20 @@ h2 {
   .description_head1 .description__photo .contact {
     text-align: center;
     position: relative;
-    font-size: 14px; }
+    font-size: 12px; }
+  .description_head1 .description__photo .contact {
+    display: inline-block;
+    width: 225px;
+    position: relative; }
+    .description_head1 .description__photo .contact span {
+      margin-top: 7px;
+      font-size: 12px; }
+      .description_head1 .description__photo .contact span:hover {
+        color: #fff;
+        transition: color .3s; }
+      .description_head1 .description__photo .contact span i {
+        font-size: 13px;
+        padding-right: 10px; }
   .description_head1 .description__photo {
     width: 76%;
     position: relative; }

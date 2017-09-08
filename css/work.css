@@ -73,11 +73,13 @@
         line-height: 30px;
         border-radius: 50px;
         color: #fff;
-        background-color: rgba(56, 56, 56, 0.65);
+        background-color: rgba(95, 95, 95, 0.58);
         box-shadow: 0 0 1px #fff;
         font-size: 16px;
         text-transform: none;
         font-family: 'supermolot'; }
+        .good_work .work div a:hover {
+          background-color: rgba(150, 150, 150, 0.65); }
 
 @media only screen and (max-width: 1205px) {
   .good_work .work {

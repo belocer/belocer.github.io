@@ -42,14 +42,14 @@
     margin-top: 2rem;
     box-shadow: 0 0 70px rgba(35, 35, 35, 0.85);
     z-index: 2;
-    border-radius: 47px; }
+    border-radius: 20px; }
     .slide__wrapper .slide__left {
       width: 10%;
       height: 100%;
       display: inline-block;
       float: left;
       z-index: 100;
-      border-radius: 47px 0 0 47px; }
+      border-radius: 20px 0 0 20px; }
       .slide__wrapper .slide__left:hover {
         background: rgba(70, 70, 70, 0.5); }
       .slide__wrapper .slide__left i {
@@ -62,7 +62,7 @@
       display: inline-block;
       float: right;
       z-index: 100;
-      border-radius: 0 47px 47px 0; }
+      border-radius: 0 20px 20px 0; }
       .slide__wrapper .slide__right:hover {
         background: rgba(70, 70, 70, 0.5); }
       .slide__wrapper .slide__right i {
