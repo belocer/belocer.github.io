@@ -12,6 +12,17 @@ window.onscroll = function () {
     }
     oldScrollY = scrolled;
 };
+document.addEventListener('wheel', function () {
+    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    var dY = scrolled - oldScrollY;
+
+    if (dY > 0) {
+        test.style = "top:-40px";
+    } else {
+        test.style = "top:40px";
+    }
+    oldScrollY = scrolled;
+});
 
 // меню моб версия
 var min_menu = document.getElementById('min_menu');
