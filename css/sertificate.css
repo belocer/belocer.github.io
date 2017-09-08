@@ -32,7 +32,7 @@
       display: inline-block;
       text-align: center;
       background: rgba(255, 255, 255, 0.22);
-      margin: 3rem 5rem;
+      margin: 7rem 5rem 3rem;
       min-height: 250px;
       box-shadow: 0 0 20px rgba(72, 70, 70, 0.19);
       z-index: 2; }
@@ -108,5 +108,5 @@
     height: 1130px; } }
 
 @media only screen and (max-width: 810px) {
-  .certificate_wrap .certificate {
+  .certificate_wrap .certificate, .certificate_wrap {
     height: 2170px; } }

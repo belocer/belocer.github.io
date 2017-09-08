@@ -26,37 +26,36 @@
     width: 29%;
     height: 300px;
     margin-top: 6rem;
-    text-align: center; }
+    text-align: center;
+    /*    @keyframes move {
+      50% {
+        transform: rotateY(360deg);
+      }
+      100% {
+        transform: rotateY(0deg);
+      }
+    }*/ }
     .skills_wrap .skills .skills__ico1 {
       background: url("../img/monitor_html.png") center center no-repeat;
       background-size: cover;
       width: 120px;
       height: 120px;
       display: inline-block;
-      margin: 0 auto;
-      animation: move 5s infinite ease-in-out; }
+      margin: 0 auto; }
     .skills_wrap .skills .skills__ico2 {
       background: url("../img/monitor_js.png") center center no-repeat;
       background-size: cover;
       width: 120px;
       height: 120px;
       display: inline-block;
-      margin: 0 auto;
-      animation: move 6s infinite ease-in-out; }
+      margin: 0 auto; }
     .skills_wrap .skills .skills__ico3 {
       background: url("../img/monitor_php.png") center center no-repeat;
       background-size: cover;
       width: 120px;
       height: 120px;
       display: inline-block;
-      margin: 0 auto;
-      animation: move 7s infinite ease-in-out; }
-
-@keyframes move {
-  50% {
-    transform: rotateY(360deg); }
-  100% {
-    transform: rotateY(0deg); } }
+      margin: 0 auto; }
     .skills_wrap .skills h2 {
       margin-top: 2rem;
       color: #fff;
