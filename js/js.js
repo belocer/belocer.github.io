@@ -1,5 +1,5 @@
 // Меню по скролу
-var test = document.getElementById('test');
+/*var test = document.getElementById('test');
 var oldScrollY = 0;
 window.onscroll = function () {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
@@ -11,7 +11,7 @@ window.onscroll = function () {
         test.style = "top:40px";
     }
     oldScrollY = scrolled;
-};
+};*/
 
 // меню моб версия
 var min_menu = document.getElementById('min_menu');
