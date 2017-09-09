@@ -27,7 +27,7 @@ function fn() {
             '<li><a href="#dizain">Дизайн</a></li>\n' +
             '<li><a href="#sertificate">Сертификаты</a></li>\n' +
             '<li><a href="#task">Задачи</a></li>\n' +
-            '<li><a href="#chat">Чат</a></li>';
+            '<li><a href="#vk_comments">Чат</a></li>';
         min_menu.style.background = 'rgba(12, 42, 95, 0.81);';
 
         /* Плавный скролл */
@@ -93,7 +93,7 @@ min_menu.addEventListener('click', function () {
     var x = min_menu.dataset.menu;
 //console.log(x);
     if (x === '0') {
-        min_menu.innerHTML = '<li><a href="#">Контакты</a></li><li><a href="#work">Работы</a></li><li><a href="#dizain">Дизайн</a></li><li><a href="#certificate">Сертификаты</a></li><li><a href="#task">Задачи</a></li><li><a href="#chat">Чат</a></li>';
+        min_menu.innerHTML = '<li><a href="#">Контакты</a></li><li><a href="#work">Работы</a></li><li><a href="#dizain">Дизайн</a></li><li><a href="#certificate">Сертификаты</a></li><li><a href="#task">Задачи</a></li><li><a href="#vk_comments">Чат</a></li>';
         min_menu.dataset.menu = 1;
     } else if (x === '1') {
         if (window.innerWidth < 859) {
