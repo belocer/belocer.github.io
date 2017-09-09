@@ -13,6 +13,17 @@ window.onscroll = function () {
     oldScrollY = scrolled;
 };*/
 
+window.onscroll = function() {
+    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    if( scrolled > 100 ) {
+        document.getElementById('test').removeAttribute("class");
+        document.getElementById('test').setAttribute("class", "opacit");
+    } else if ( scrolled < 100) {
+        document.getElementById('test').removeAttribute("class");
+        document.getElementById('test').setAttribute("class", "inplace");
+    }
+}
+
 // меню моб версия
 var min_menu = document.getElementById('min_menu');
 var opacit = document.querySelector('.opacit');

@@ -3,21 +3,25 @@
 header {
   margin: 0 auto;
   padding: 0;
-  background: rgba(220, 210, 223, 0.8); }
+  background: rgba(220, 210, 223, 0.8);
+  /*  height: 40px;
+  position: fixed;
+  top: 0;
+  background: rgba(75, 73, 76, 0.1);
+  z-index: 10;
+  transition: position, height, background-color .5s;*/ }
   header .inplace {
     position: fixed;
     height: 40px;
     width: 100%;
     margin: -40px auto;
     border-radius: 0 0 3px 3px;
-    background: rgba(75, 73, 76, 0.8);
+    background: rgba(75, 73, 76, 0.1);
     z-index: 100; }
   header .opacit {
     height: 40px;
-    position: fixed;
     border-radius: 0 0 3px 3px;
-    transition: position, height, background-color .5s;
-    top: 0; }
+    transition: position, height, background-color .5s; }
   header .opacit ul li {
     line-height: 40px; }
   header ul {
@@ -44,7 +48,7 @@ header {
         padding: 0;
         text-transform: uppercase; }
         header ul li a:hover {
-          background-color: rgba(150, 150, 150, 0.65);
+          background-color: rgba(150, 150, 150, 0.35);
           color: #fafafa; }
 
 @media only screen and (max-width: 859px) {
