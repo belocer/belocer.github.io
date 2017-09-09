@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Портфолио</title>
+
+    <!--Подключение чата VK-->
     <!-- Put this script tag to the <head> of your page -->
     <script type="text/javascript" src="//vk.com/js/api/openapi.js?147"></script>
 
@@ -25,12 +27,9 @@
             <li><a href="#dizain">Дизайн</a></li>
             <li><a href="#sertificate">Сертификаты</a></li>
             <li><a href="#task">Задачи</a></li>
-            <li><a href="#chat">Чат</a></li>
         </ul>
     </nav>
 </header>
-
-<!--Head-->
 <div class="description_head1">
     <div class="description__photo">
         <span class="description_img"></span>
@@ -253,15 +252,6 @@
 
 </div>
 
-<!-- Чат VK -->
-<div class="chat" id="chat">
-    <!-- Put this div tag to the place, where the Comments block will be -->
-    <div id="vk_comments"></div>
-    <script type="text/javascript">
-        VK.Widgets.Comments("vk_comments", {limit: 20, attach: "*"});
-    </script>
-</div>
-
 
 
 <link rel="stylesheet" href="css/font-awesome.css">
@@ -286,11 +276,10 @@
 <script src="js/js.js" defer></script>
 <script src="js/main.js" defer></script>
 
-/*jivosite*/
-<!-- BEGIN JIVOSITE CODE {literal} -->
-<script type='text/javascript'>
-    (function(){ var widget_id = 'VrzrXsaJ06';var d=document;var w=window;function l(){
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
-<!-- {/literal} END JIVOSITE CODE -->
+<!-- Put this div tag to the place, where the Comments block will be -->
+<div id="vk_comments"></div>
+<script type="text/javascript">
+    VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
+</script>
 </body>
 </html>
