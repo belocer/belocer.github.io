@@ -1094,11 +1094,10 @@ header ul li a:hover{background:rgba(40,50,50,.8);color:#fafafa}
 .skills_wrap{height:78rem}
 .skills{margin-top:3rem}
 }
-body,html{height:100%;width:100%}
 *,body,html{padding:0;margin:0}
 *{-webkit-transition:all .5s;-o-transition:all .5s;transition:all .5s;-webkit-box-sizing:content-box;box-sizing:content-box}
-html{-webkit-tap-highlight-color:transparent;background:#000;font-size:16px;min-width:320px;overflow-x:hidden}
-body{min-height:1200px;position:relative;z-index:2}
+html{-webkit-tap-highlight-color:transparent;background:#000;font-size:16px;width:100%;height:100%;min-width:320px;overflow-x:hidden}
+body{width:100%;height:4480px;min-height:1200px;position:relative;z-index:2}
 body #particles-js{position:absolute;top:0;left:0;width:100%;height:93%;z-index:1}
 h2{color:#313030}
 .description_head1{display:block;width:100%;background:-webkit-gradient(linear,left top,left bottom,from(rgba(0,122,255,.25)),color-stop(40%,rgba(0,173,255,.13)),color-stop(150%,rgba(28,28,28,.32))),-webkit-gradient(linear,left bottom,left top,from(rgba(0,255,211,.31)),color-stop(200%,rgba(2,45,255,.58)));background:-o-linear-gradient(top,rgba(0,122,255,.25) 0,rgba(0,173,255,.13) 40%,rgba(28,28,28,.32) 150%),-o-linear-gradient(bottom,rgba(0,255,211,.31) 0,rgba(2,45,255,.58) 200%);background:linear-gradient(to bottom,rgba(0,122,255,.25) 0,rgba(0,173,255,.13) 40%,rgba(28,28,28,.32) 150%),linear-gradient(to top,rgba(0,255,211,.31) 0,rgba(2,45,255,.58) 200%);background-blend-mode:multiply;height:35rem;position:relative}
