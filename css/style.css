@@ -195,3 +195,7 @@ h2 {
   .description_head1 .description__photo .dream1,
   .description_head1 .description__photo .dream2 {
     display: none; } }
+
+/* Живо сайт убираю второй скролл */
+#jivo_magic_iframe {
+  top: 100%; }

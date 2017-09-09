@@ -12,17 +12,6 @@ window.onscroll = function () {
     }
     oldScrollY = scrolled;
 };
-document.addEventListener('wheel', function () {
-    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-    var dY = scrolled - oldScrollY;
-
-    if (dY > 0) {
-        test.style = "top:-40px";
-    } else {
-        test.style = "top:40px";
-    }
-    oldScrollY = scrolled;
-});
 
 // меню моб версия
 var min_menu = document.getElementById('min_menu');
@@ -37,7 +26,8 @@ function fn() {
             '<li><a href="#work">Работы</a></li>\n' +
             '<li><a href="#dizain">Дизайн</a></li>\n' +
             '<li><a href="#sertificate">Сертификаты</a></li>\n' +
-            '<li><a href="#task">Задачи</a></li>';
+            '<li><a href="#task">Задачи</a></li>\n' +
+            '<li><a href="#chat">Чат</a></li>';
         min_menu.style.background = 'rgba(12, 42, 95, 0.81);';
 
         /* Плавный скролл */
@@ -61,6 +51,9 @@ function fn() {
                         break;
                     case "Задачи":
                         w = 3980;
+                        break;
+                    case "Чат":
+                        w = 4480;
                         break;
                     default:
                         w = 0;
@@ -100,7 +93,7 @@ min_menu.addEventListener('click', function () {
     var x = min_menu.dataset.menu;
 //console.log(x);
     if (x === '0') {
-        min_menu.innerHTML = '<li><a href="#">Контакты</a></li><li><a href="#work">Работы</a></li><li><a href="#dizain">Дизайн</a></li><li><a href="#certificate">Сертификаты</a></li><li><a href="#task">Задачи</a></li>';
+        min_menu.innerHTML = '<li><a href="#">Контакты</a></li><li><a href="#work">Работы</a></li><li><a href="#dizain">Дизайн</a></li><li><a href="#certificate">Сертификаты</a></li><li><a href="#task">Задачи</a></li><li><a href="#chat">Чат</a></li>';
         min_menu.dataset.menu = 1;
     } else if (x === '1') {
         if (window.innerWidth < 859) {
