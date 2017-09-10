@@ -1074,7 +1074,7 @@ header ul li a:hover{background:rgba(40,50,50,.8);color:#fafafa}
 .certificate_wrap .ico_back13{top:75%;left:39%;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);font-size:6rem}
 #task .ico_back15,.certificate_wrap .ico_back17{-webkit-transform:rotate(15deg);-ms-transform:rotate(15deg)}
 .certificate_wrap .ico_back17{top:95%;left:58%;transform:rotate(15deg);font-size:4rem}
-@media only screen and (max-width:1205px){.certificate_wrap,.certificate_wrap .certificate{height:1130px}
+@media only screen and (max-width:1205px){.certificate_wrap,.certificate_wrap .certificate{height:1370px}
 }
 @media only screen and (max-width:810px){.certificate_wrap,.certificate_wrap .certificate{height:2170px}
 .certificate_wrap .certificate div{margin:2rem}
