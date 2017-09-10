@@ -1,14 +1,14 @@
 // Меню по скролу
-/*var test = document.getElementById('test');
+var test = document.getElementById('test');
 var oldScrollY = 0;
-window.onscroll = function () {
+/*window.onscroll = function () {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
     var dY = scrolled - oldScrollY;
 
     if (dY > 0) {
-        test.style = "top:-40px";
+        test.style.marginTop = "-40px";
     } else {
-        test.style = "top:40px";
+        test.style.marginTop = "40px";
     }
     oldScrollY = scrolled;
 };*/
@@ -22,7 +22,7 @@ window.onscroll = function() {
         document.getElementById('test').removeAttribute("class");
         document.getElementById('test').setAttribute("class", "inplace");
     }
-}
+};
 
 // меню моб версия
 var min_menu = document.getElementById('min_menu');
