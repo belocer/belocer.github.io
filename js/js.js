@@ -42,7 +42,7 @@ function fn() {
         min_menu.style.background = 'rgba(12, 42, 95, 0.81);';
 
         /* Плавный скролл */
-/*        var link_menu = document.getElementById('min_menu');
+        var link_menu = document.getElementById('min_menu');
         smooth_scroll(link_menu, scrollY);
 
         function smooth_scroll(link_menu, scrollys) {
@@ -75,23 +75,23 @@ function fn() {
 
                     var intervalID = setInterval(function () {
 
-                        scrollTo(0, scrollys += 15);
+                        scrollTo(0, scrollys += 30);
                         if (scrollys >= w) {
                             clearInterval(intervalID);
                         }
-                    }, 5);
+                    }, 10);
 
                 } else if (scrollys > w) {
                     intervalID = setInterval(function () {
 
-                        scrollTo(0, scrollys -= 15);
+                        scrollTo(0, scrollys -= 30);
                         if (scrollys <= w) {
                             clearInterval(intervalID);
                         }
-                    }, 5);
+                    }, 10);
                 }
             });
-        }*/
+        }
     }
 }
 
