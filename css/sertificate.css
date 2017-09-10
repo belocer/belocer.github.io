@@ -104,9 +104,11 @@
     font-size: 4rem; }
 
 @media only screen and (max-width: 1205px) {
-  .certificate_wrap .certificate {
+  .certificate_wrap .certificate, .certificate_wrap {
     height: 1130px; } }
 
 @media only screen and (max-width: 810px) {
   .certificate_wrap .certificate, .certificate_wrap {
-    height: 2170px; } }
+    height: 2170px; }
+  .certificate_wrap .certificate div {
+    margin: 2rem; } }
