@@ -239,4 +239,5 @@ if (window.innerWidth < 1200) {
     document.querySelector('.ico_back16').style.display = 'none';
     document.querySelector('.ico_back17').style.display = 'none';
     document.querySelector('.ico_back18').style.display = 'none';
+    document.querySelector('#pluso').style.display = 'none';
 }
