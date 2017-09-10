@@ -42,7 +42,7 @@ function fn() {
         min_menu.style.background = 'rgba(12, 42, 95, 0.81);';
 
         /* Плавный скролл */
-        var link_menu = document.getElementById('min_menu');
+        /*var link_menu = document.getElementById('min_menu');
         smooth_scroll(link_menu, scrollY);
 
         function smooth_scroll(link_menu, scrollys) {
@@ -91,7 +91,7 @@ function fn() {
                     }, 10);
                 }
             });
-        }
+        }*/
     }
 }
 
