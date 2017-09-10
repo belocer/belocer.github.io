@@ -195,3 +195,11 @@ h2 {
   .description_head1 .description__photo .dream1,
   .description_head1 .description__photo .dream2 {
     display: none; } }
+
+#pluso {
+  position: fixed;
+  top: 30%;
+  left: 1rem;
+  opacity: .5; }
+  #pluso:hover {
+    opacity: 1; }
