@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(http://allfont.ru/allfont.css?fonts=arvo);
 * {
   transition: all .5s;
   padding: 0;
@@ -36,7 +35,7 @@ body {
     z-index: 1; }
 
 h2 {
-  font-family: 'Arvo';
+  font-family: 'Supermolot';
   color: #313030; }
 
 /*Данные по мне*/
