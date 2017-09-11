@@ -11,7 +11,7 @@
 .inplace {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 15px;
   height: 40px;
   width: 100%;
   background: rgba(75, 73, 76, 0.1);

@@ -984,7 +984,7 @@ hr{margin-top:20px;margin-bottom:20px;border-top:1px solid #eee}
 .hidden{display:none!important}
 .affix{position:fixed}
 .dizain_wrapper{width:100%;height:830px;padding:0;background:-webkit-gradient(linear,left top,left bottom,from(rgba(101,0,255,.21)),to(rgba(0,231,255,.34))),radial-gradient(at top center,rgba(99,1,255,.12) 0,rgba(255,255,255,.35) 120%) #e2e1e1;background:-o-linear-gradient(top,rgba(101,0,255,.21) 0,rgba(0,231,255,.34) 100%),-o-radial-gradient(at top center,rgba(99,1,255,.12) 0,rgba(255,255,255,.35) 120%) #e2e1e1;background:linear-gradient(to bottom,rgba(101,0,255,.21) 0,rgba(0,231,255,.34) 100%),radial-gradient(at top center,rgba(99,1,255,.12) 0,rgba(255,255,255,.35) 120%) #e2e1e1;background-blend-mode:multiply,multiply}
-.dizain_wrapper h1{color:#fff;font-family:Arvo;line-height:7rem;letter-spacing:2px}
+.dizain_wrapper h1{color:#fff;font-family:Supermolot;line-height:7rem;letter-spacing:2px}
 .slide__wrapper .slide__left i,.slide__wrapper .slide__right i{color:rgba(232,247,255,.6);font-size:3rem;line-height:600px}
 .dizain_wrapper div img{width:50%;-webkit-box-shadow:0 0 10px rgba(50,50,50,.5);box-shadow:0 0 10px rgba(50,50,50,.5);-webkit-transition:all .9s;-o-transition:all .9s;transition:all .9s;border-radius:7px}
 .dizain_wrapper div img:hover{-webkit-transition:all .9s;-o-transition:all .9s;transition:all .9s;width:85%;border-radius:0}
@@ -1007,6 +1007,7 @@ hr{margin-top:20px;margin-bottom:20px;border-top:1px solid #eee}
 .dizain_wrapper{position:relative;overflow:hidden}
 .dizain_wrapper .ico_back11,.dizain_wrapper .ico_back18{position:absolute;color:rgba(255,255,255,.15);z-index:1}
 .fa-inverse,ul li a{color:#fff}
+.inplace,.opacit{background:rgba(75,73,76,.1);z-index:100}
 .dizain_wrapper .ico_back11{top:4%;right:1%;font-size:34rem}
 .dizain_wrapper .ico_back18{top:10%;left:5%;font-size:35rem}
 /*!
@@ -1025,7 +1026,6 @@ hr{margin-top:20px;margin-bottom:20px;border-top:1px solid #eee}
 .fa.fa-pull-right,.fa.pull-right{margin-left:.3em}
 .fa-ul>li{position:relative}
 .fa-li{position:absolute;left:-2.14285714em;width:2.14285714em;top:.14285714em}
-.inplace,.opacit{top:0;background:rgba(75,73,76,.1);z-index:100}
 .fa-li.fa-lg{left:-1.85714286em}
 .fa-border{padding:.2em .25em .15em;border:.08em solid #eee;border-radius:.1em}
 .sr-only,ul,ul li,ul li a{padding:0}
@@ -1731,8 +1731,8 @@ hr{margin-top:20px;margin-bottom:20px;border-top:1px solid #eee}
 #task,.main,.task_wrap{overflow:hidden}
 @font-face{font-family:supermolot;src:url(../../fonts/supermolot/supermolot-light.eot);src:url(../../fonts/supermolot/supermolot-light.eot) format("embedded-opentype"),url(../../fonts/supermolot/supermolot-light.woff2) format("woff2"),url(../../fonts/supermolot/supermolot-light.woff) format("woff"),url(../../fonts/supermolot/supermolot-light.ttf) format("truetype"),url(../../fonts/supermolot/supermolot-light.svg) format("svg"),url(../../fonts/supermolot/supermolot-light.eot) format("eot");font-weight:400;font-style:normal}
 @font-face{font-family:notosans;src:url(../../fonts/notoSans/notosans-regular.eot);src:url(../../fonts/notoSans/notosans-regular.eot) format("embedded-opentype"),url(../../fonts/notoSans/notosans-regular.woff2) format("woff2"),url(../../fonts/notoSans/notosans-regular.woff) format("woff"),url(../../fonts/notoSans/notosans-regular.ttf) format("truetype"),url(../../fonts/notoSans/notosans-regular.svg) format("svg"),url(../../fonts/notoSans/notosans-regular.eot) format("eot");font-weight:400;font-style:normal}
-.inplace{position:absolute;left:0}
-.opacit{position:fixed;left:0}
+.inplace{position:absolute;left:0;top:15px}
+.opacit{position:fixed;left:0;top:0}
 ul{margin:0 auto;width:75%}
 ul li{list-style:none;width:15%;height:100%;margin:0}
 ul li a{text-decoration:none;font-family:supermolot;margin:0}
@@ -1797,9 +1797,9 @@ h2{font-family:Supermolot;color:#313030}
 .description_head1{display:block;width:100%;background:-webkit-gradient(linear,left top,left bottom,from(rgba(0,122,255,.25)),color-stop(40%,rgba(0,173,255,.13)),color-stop(150%,rgba(28,28,28,.32))),-webkit-gradient(linear,left bottom,left top,from(rgba(0,255,211,.31)),color-stop(200%,rgba(2,45,255,.58)));background:-o-linear-gradient(top,rgba(0,122,255,.25) 0,rgba(0,173,255,.13) 40%,rgba(28,28,28,.32) 150%),-o-linear-gradient(bottom,rgba(0,255,211,.31) 0,rgba(2,45,255,.58) 200%);background:linear-gradient(to bottom,rgba(0,122,255,.25) 0,rgba(0,173,255,.13) 40%,rgba(28,28,28,.32) 150%),linear-gradient(to top,rgba(0,255,211,.31) 0,rgba(2,45,255,.58) 200%);background-blend-mode:multiply;height:35rem;position:relative}
 .description_head1 span{display:inline-block;color:rgba(255,255,255,.72);margin-top:2rem;font-family:supermolot;letter-spacing:2px;font-size:2rem}
 .description_head1 .description__photo{display:block;width:35%;margin:0 auto;position:relative;z-index:10}
-.description_head1 .description__photo .description_img,.description_head1 .description__photo .description_img1{-webkit-transition:all .8s;-o-transition:all .8s;display:inline-block;border-radius:50%;width:250px;height:250px;margin-top:8rem;margin-left:-50%;z-index:10}
-.description_head1 .description__photo .description_img{background:url(../../img/photo.jpg) center center no-repeat;background-size:cover;transition:all .8s}
-.description_head1 .description__photo .description_img1{transition:all .8s;-webkit-transform:rotate3d(10,10,10,360deg);transform:rotate3d(10,10,10,360deg);background:url(../../img/photo1.jpg) center center no-repeat;background-size:cover}
+.description_head1 .description__photo .description_img,.description_head1 .description__photo .description_img1{-webkit-transition:all .8s;-o-transition:all .8s;display:inline-block;border-radius:50%;width:250px;height:250px;margin-left:-50%;z-index:10}
+.description_head1 .description__photo .description_img{margin-top:10rem;background:url(../../img/photo.jpg) center center no-repeat;background-size:cover;transition:all .8s}
+.description_head1 .description__photo .description_img1{transition:all .8s;-webkit-transform:rotate3d(10,10,10,360deg);transform:rotate3d(10,10,10,360deg);margin-top:8rem;background:url(../../img/photo1.jpg) center center no-repeat;background-size:cover}
 .description_head1 .description__photo .dream1,.description_head1 .description__photo .dream2{background:-webkit-gradient(linear,left top,left bottom,from(rgba(123,123,123,.28)),color-stop(40%,rgba(115,115,115,.28)),color-stop(150%,rgba(105,105,105,.28))),-webkit-gradient(linear,left bottom,left top,from(rgba(255,255,255,.4)),color-stop(200%,rgba(0,0,0,.18)));background:-o-linear-gradient(top,rgba(123,123,123,.28) 0,rgba(115,115,115,.28) 40%,rgba(105,105,105,.28) 150%),-o-linear-gradient(bottom,rgba(255,255,255,.4) 0,rgba(0,0,0,.18) 200%);-webkit-transition:all .8s;-o-transition:all .8s;display:none;border-radius:50%;position:absolute}
 .description_head1 .description__photo .dream2{width:300px;top:15%;left:55%;background:linear-gradient(to bottom,rgba(123,123,123,.28) 0,rgba(115,115,115,.28) 40%,rgba(105,105,105,.28) 150%),linear-gradient(to top,rgba(255,255,255,.4) 0,rgba(0,0,0,.18) 200%);background-blend-mode:multiply;-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);transition:all .8s}
 .description_head1 .description__photo .dream2 p{font-size:.7rem;color:#fff;padding:2rem}
@@ -1826,7 +1826,7 @@ h2{font-family:Supermolot;color:#313030}
 #pluso{position:fixed;top:30%;left:1rem;opacity:.3}
 #pluso:hover{opacity:1}
 .task{display:block;width:100%;background:-webkit-gradient(linear,left top,left bottom,from(rgba(101,0,255,.21)),to(rgba(0,231,255,.34))),radial-gradient(at top center,rgba(99,1,255,.12) 0,rgba(255,255,255,.35) 120%) #e2e1e1;background:-o-linear-gradient(top,rgba(101,0,255,.21) 0,rgba(0,231,255,.34) 100%),-o-radial-gradient(at top center,rgba(99,1,255,.12) 0,rgba(255,255,255,.35) 120%) #e2e1e1;background:linear-gradient(to bottom,rgba(101,0,255,.21) 0,rgba(0,231,255,.34) 100%),radial-gradient(at top center,rgba(99,1,255,.12) 0,rgba(255,255,255,.35) 120%) #e2e1e1;background-blend-mode:multiply,multiply;z-index:100}
-.task h1{color:#fff;font-family:Arvo}
+.task h1{color:#fff;font-family:Supermolot}
 .main__button,.wrapper__header{font-family:supermolot}
 .task_wrap{width:60%;max-width:840px;display:inline-block;margin:0 auto}
 .main,.wrapper__header{color:#555;width:100%;text-align:center}
