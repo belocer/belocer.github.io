@@ -220,6 +220,8 @@ if (window.innerWidth > 859) {
     }, 3000);
 }
 
+
+/* Убираю элементы на маленьких экранах */
 if (window.innerWidth < 1200) {
     document.querySelector('.ico_back1').style.display = 'none';
     document.querySelector('.ico_back2').style.display = 'none';
