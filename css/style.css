@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(http://allfont.ru/allfont.css?fonts=arvo);
 * {
   transition: all .5s;
   padding: 0;
