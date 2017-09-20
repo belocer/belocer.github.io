@@ -117,7 +117,7 @@ min_menu.addEventListener('click', function () {
 /*
 Слайдер
 */
-var qty = 11; // Количество изображений
+var qty = 12; // Количество изображений
 var milisecond = 7000; // Количество милисекунд для смены слайда
 var slide__left = document.querySelector('.slide__left');
 var slide__right = document.querySelector('.slide__right');
