@@ -36,6 +36,9 @@
       background: url("../img/admin.jpg");
       background-size: cover; }
     .good_work .work div:nth-child(5) > span {
+      background: url("../img/shop1.jpg");
+      background-size: cover; }
+    .good_work .work div:nth-child(6) > span {
       background: url("../img/git.jpg");
       background-size: cover; }
     .good_work .work div {
@@ -83,11 +86,11 @@
 
 @media only screen and (max-width: 1205px) {
   .good_work .work {
-    height: 1405px; } }
+    height: 1610px; } }
 
 @media only screen and (max-width: 810px) {
   .good_work .work {
-    height: 2335px; } }
+    height: 2795px; } }
 
 /*Иконки на фоне*/
 #work {
