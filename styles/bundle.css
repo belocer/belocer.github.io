@@ -1869,6 +1869,7 @@ h2{font-family:Supermolot;color:#313030}
 .good_work .work div:nth-child(4)>span{background:url(../../img/admin.jpg);background-size:cover}
 .good_work .work div:nth-child(5)>span{background:url(../../img/shop1.jpg);background-size:cover}
 .good_work .work div:nth-child(6)>span{background:url(../../img/git.jpg);background-size:cover}
+.good_work .work div:nth-child(7)>span{background:url(../../img/secret.jpg);background-size:cover}
 .good_work .work div{text-align:center;display:inline-block;height:400px;width:300px;margin:2rem 3rem}
 .good_work .work div>span{display:inline-block;background:url(../../img/erp.jpg);background-size:cover;width:100%;height:150px;margin:2rem auto;-webkit-box-shadow:0 0 10px rgba(100,100,100,.8);box-shadow:0 0 10px rgba(100,100,100,.8);-webkit-filter:grayscale(100%);filter:grayscale(100%)}
 .good_work .work div>span:hover{-webkit-filter:grayscale(0);filter:grayscale(0)}
@@ -1876,9 +1877,9 @@ h2{font-family:Supermolot;color:#313030}
 .good_work .work div p{display:inline-block;margin:0 auto;color:#fff}
 .good_work .work div a{display:inline-block;-ms-flex-item-align:end;align-self:flex-end;width:185px;height:30px;text-decoration:none;border:1px solid #333;margin:2rem auto 0;line-height:30px;border-radius:50px;color:#fff;background-color:rgba(95,95,95,.58);-webkit-box-shadow:0 0 1px #fff;box-shadow:0 0 1px #fff;font-size:16px;text-transform:none;font-family:supermolot}
 .good_work .work div a:hover{background-color:rgba(150,150,150,.65)}
-@media only screen and (max-width:1205px){.good_work .work{height:1610px}
+@media only screen and (max-width:1205px){.good_work .work{height:2025px}
 }
-@media only screen and (max-width:810px){.good_work .work{height:2795px}
+@media only screen and (max-width:810px){.good_work .work{height:3455px}
 }
 #work{position:relative}
 #work .ico_back11,#work .ico_back14,#work .ico_back15,#work .ico_back16,#work .ico_back18,#work .ico_back3,#work .ico_back4,#work .ico_back5,#work .ico_back6,#work .ico_back7,#work .ico_back8,#work .ico_back9{position:absolute;color:rgba(255,255,255,.15);z-index:1}
