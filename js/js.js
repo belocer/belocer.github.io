@@ -75,7 +75,7 @@ function fn() {
 
                     var intervalID = setInterval(function () {
 
-                        scrollTo(0, scrollys += 30);
+                        scrollTo(0, scrollys += 50);
                         if (scrollys >= w) {
                             clearInterval(intervalID);
                         }
@@ -84,11 +84,11 @@ function fn() {
                 } else if (scrollys > w) {
                     intervalID = setInterval(function () {
 
-                        scrollTo(0, scrollys -= 30);
+                        scrollTo(0, scrollys -= 50);
                         if (scrollys <= w) {
                             clearInterval(intervalID);
                         }
-                    }, 10);
+                    }, 5);
                 }
             });
         }
