@@ -1,4 +1,4 @@
-jQuery(document).ready(function(){
+jQuery(document).ready(function(){ // Анимация точки палочки
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
     particlesJS.load('particles-js', 'json/particles.json', function() {
         //console.log('callback - particles.js config loaded');

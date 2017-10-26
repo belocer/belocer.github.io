@@ -13,12 +13,12 @@ window.onscroll = function () {
     oldScrollY = scrolled;
 };
 
-window.onscroll = function() {
+window.onscroll = function () {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-    if( scrolled > 100 ) {
+    if (scrolled > 100) {
         document.getElementById('test').removeAttribute("class");
         document.getElementById('test').setAttribute("class", "opacit");
-    } else if ( scrolled < 100) {
+    } else if (scrolled < 100) {
         document.getElementById('test').removeAttribute("class");
         document.getElementById('test').setAttribute("class", "inplace");
     }
@@ -42,7 +42,7 @@ function fn() {
         min_menu.style.background = 'rgba(12, 42, 95, 0.81);';
 
         /* Плавный скролл */
-        /*var link_menu = document.getElementById('min_menu');
+        var link_menu = document.getElementById('min_menu');
         smooth_scroll(link_menu, scrollY);
 
         function smooth_scroll(link_menu, scrollys) {
@@ -91,7 +91,7 @@ function fn() {
                     }, 10);
                 }
             });
-        }*/
+        }
     }
 }
 
@@ -243,3 +243,43 @@ if (window.innerWidth < 1200) {
     document.querySelector('.ico_back18').style.display = 'none';
     document.querySelector('#pluso').style.display = 'none';
 }
+
+
+/* Плавный скрол на jq
+
+var $links = $('.scroll-menu a');
+    //console.log($links);
+
+    $links.on('click', function (e) {
+        e.preventDefault($links);
+        console.log(e.target);
+        var link = $(this);
+        var target = link.attr('href');
+
+
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 1700);
+    });*/
+
+    /*    $('.reviews-box').owlCarousel({
+            loop: true,
+            margin: 30,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: true,
+                    loop: false
+                }
+            }
+        });*/
+
