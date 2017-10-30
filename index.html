@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Портфолио</title><!-- Стили -->
+    <title>Портфолио</title>
+
+    <!-- Стили -->
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/skills.css">
@@ -12,12 +14,25 @@
     <link rel="stylesheet" href="css/dizain.css">
     <link rel="stylesheet" href="css/task.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css"><!--Подключение чата VK-->
+    <link rel="stylesheet" href="css/menu.css">
+
+    <!-- Слик -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/sliden.css">
+
+    <!-- Подключение чата VK -->
     <!-- Put this script tag to the <head> of your page -->
     <script type="text/javascript" src="//vk.com/js/api/openapi.js?147"></script>
     <script type="text/javascript"> VK.init({apiId: 6178796, onlyWidgets: true}); </script>
 </head>
 <body>
+
+<!--/*Загрузка страницы*/-->
+<div id="loaded_page"></div>
+<i class="fa fa-spinner" aria-hidden="true"></i>
+
+
 <!--Меню-->
 <header id="potolok">
     <nav id="test" class="inplace">
@@ -32,7 +47,10 @@
     </nav>
 </header>
 <div class="site__wrap" id="scene"><!--Анимированый background-->
-    <div id="particles-js"></div><!-- Блок шапка -->
+
+    <div id="particles-js"></div>
+
+    <!-- Блок шапка -->
     <div class="description_head1 bg">
         <div class="bg_ton">
             <div class="description__photo">
@@ -56,6 +74,7 @@
             </div>
         </div>
     </div>
+
     <!-- Блок со скилами-->
     <div class="skills_wrap"><h1 class="skills__header">Навыки</h1>
         <div class="skills wow fadeInUp" data-wow-delay=".2s">
@@ -72,7 +91,9 @@
             <div class="skills__ico3"></div>
             <h2>Написание <br> PHP кода</h2>
             <p>Работа с БД MySQL PostgreSQL. ООП, MVC, <br> API, Безопасность.</p></div>
-    </div><!--Выполненые работы-->
+    </div>
+
+    <!--Выполненые работы-->
     <div class="good_work" id="work"><h1 class="good_work__header">Работы</h1>
         <div class="work">
             <div class="wow fadeInUp" data-wow-offset="200" data-wow-delay=".1s"><h2>Landing Page
@@ -148,16 +169,91 @@
         <div class="ico_back16"><span class="layer" data-depth="1.60"><i class="fa fa-gamepad"
                                                                          aria-hidden="true"></i></span>
         </div>
-    </div><!--Дизайн-->
-    <div class="dizain_wrapper" id="dizain"><h1>Дизайн:</h1>
-        <div class="slide__wrapper">
-            <div class="slide" data-int_img="1">
-                <div class="slide__left"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-                <div class="slide__right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+    </div>
+
+    <!--Дизайн-->
+    <!-- Слайдер -->
+    <div class="wrap-slide">
+        <div class="slide">
+            <h1>Дизайн</h1>
+            <div class="sl">
+                <div class="sl__slide"><img src="img/1.jpg" alt="img1" class="sl__img">
+                    <div class="sl__text">
+                        <h3 class="sl__zag">Ре-дизайн</h3>
+                        <p class="sl__desc">Правки по дизайну</p>
+                    </div>
+                </div>
+                <div class="sl__slide"><img src="img/2.jpg" alt="img2" class="sl__img">
+                    <div class="sl__text">
+                        <h3 class="sl__zag">Ре-дизайн</h3>
+                        <p class="sl__desc">Доработка страниц, личный кабинет</p>
+                    </div>
+                </div>
+                <div class="sl__slide">
+                    <img src="img/3.jpg" alt="img3" class="sl__img">
+                    <div class="sl__text">
+                        <h3 class="sl__zag">Дизайн</h3>
+                        <p class="sl__desc">Дизайн карточки товара</p>
+                    </div>
+                </div>
+                <div class="sl__slide"><img src="img/4.jpg" alt="img4" class="sl__img">
+                    <div class="sl__text">
+                        <h3 class="sl__zag">Дизайн</h3>
+                        <p class="sl__desc">Дйзайн первого экрана</p>
+                    </div>
+                </div>
+                <div class="sl__slide"><img src="img/5.jpg" alt="img5" class="sl__img">
+                    <div class="sl__text">
+                        <h3 class="sl__zag">Дизайн</h3>
+                        <p class="sl__desc">Дизайн главной страницы блога</p>
+                    </div>
+                </div>
+                <div class="sl__slide"><img src="img/6.jpg" alt="img6" class="sl__img">
+                    <div class="sl__text">
+                        <h3 class="sl__zag">Дизайн + проектировка</h3>
+                        <p class="sl__desc">Дизайн + проектировка Landing Page 2 дня</p>
+                    </div>
+                </div>
+                <div class="sl__slide"><img src="img/7.jpg" alt="img7" class="sl__img">
+                    <div class="sl__text">
+                        <h3 class="sl__zag">Дизайн VK сообщества</h3>
+                        <p class="sl__desc">Дизайн шапки для vk группы</p>
+                    </div>
+                </div>
+                <div class="sl__slide"><img src="img/8.jpg" alt="img8" class="sl__img">
+                    <div class="sl__text">
+                        <h3 class="sl__zag">Дизайн</h3>
+                        <p class="sl__desc">Дизайн визитки</p>
+                    </div>
+                </div>
+                <div class="sl__slide"><img src="img/9.jpg" alt="img9" class="sl__img">
+                    <div class="sl__text">
+                        <h3 class="sl__zag">Дизайн</h3>
+                        <p class="sl__desc">Дизайн визитки</p>
+                    </div>
+                </div>
+                <div class="sl__slide"><img src="img/10.jpg" alt="img10" class="sl__img">
+                    <div class="sl__text">
+                        <h3 class="sl__zag">Дизайн</h3>
+                        <p class="sl__desc">Дизайн визитки</p>
+                    </div>
+                </div>
+                <div class="sl__slide"><img src="img/11.jpg" alt="img11" class="sl__img">
+                    <div class="sl__text">
+                        <h3 class="sl__zag">Дизайн</h3>
+                        <p class="sl__desc">Дизайн визитки</p>
+                    </div>
+                </div>
+                <div class="sl__slide"><img src="img/12.jpg" alt="img12" class="sl__img">
+                    <div class="sl__text">
+                        <h3 class="sl__zag">Дизайн</h3>
+                        <p class="sl__desc">Дизайн визитки</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <span class="ico_back11"><i class="fa fa-laptop" aria-hidden="true"></i></span><span
-                class="ico_back18"><i class="fa fa-desktop" aria-hidden="true"></i></span></div>
+    </div>
+
     <!--Сертификаты-->
     <div class="certificate_wrap" id="sertificate">
         <div class="certificate"><h2 class="certificate__header">Сертификаты:</h2>
@@ -202,7 +298,9 @@
         <div class="ico_back17"><span class="layer" data-depth="1.80"><i class="fa fa-css3"
                                                                          aria-hidden="true"></i></span>
         </div>
-    </div><!--Выполненые задачи-->
+    </div>
+
+    <!--Выполненые задачи-->
     <div class="task" id="task"><h1>Выполненые задачи</h1>
         <div class="task_wrap">
             <div class="main"><h2 class="main__header">Вёрстка</h2><a class="main__button"
@@ -281,7 +379,11 @@
                                                                          aria-hidden="true"></i></span>
         </div>
     </div>
-</div><!--/* pluso */-->
+
+
+</div>
+
+<!--/* pluso */-->
 <script type="text/javascript">(function () {
     if (window.pluso) if (typeof window.pluso.start == "function") return;
     if (window.ifpluso == undefined) {
@@ -298,6 +400,7 @@
 <div class="pluso" id="pluso" data-background="transparent"
      data-options="medium,round,line,vertical,counter,theme=04"
      data-services="vkontakte,odnoklassniki,facebook,google,moimir"></div>
+
 <!-- BEGIN JIVOSITE CODE {literal} -->
 <script type='text/javascript'> (function () {
     var widget_id = 'VrzrXsaJ06';
@@ -322,24 +425,33 @@
             w.addEventListener('load', l, false);
         }
     }
-})();</script><!-- {/literal} END JIVOSITE CODE --><!-- Jquery НЕ кроссбраузерный -->
+})();</script><!-- {/literal} END JIVOSITE CODE -->
+
+<!-- Jquery НЕ кроссбраузерный -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- Jquery кроссбраузерный -->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+
 <!-- Parallax -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
 <script> var scene = document.getElementById('scene');
 var parallax = new Parallax(scene);</script>
 <script src="js/particles.js"></script>
 <script src="js/js.js"></script>
-<script src="js/main.js"></script><!-- WOW.js -->
+<script src="js/main.js"></script>
+
+<!-- WOW.js -->
 <link rel="stylesheet" href="css/animate.css">
 <script src="js/wow.min.js"></script>
-<script> new WOW().init();</script><!-- VK API -->
+<script> new WOW().init();</script>
+
+<!-- VK API -->
 <div id="vk_comments"></div>
 <script type="text/javascript"> VK.Widgets.Comments("vk_comments", {
     limit: 10,
     attach: "*"
 });</script>
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 </html>

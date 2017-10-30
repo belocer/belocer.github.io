@@ -21,7 +21,7 @@
   background-blend-mode: multiply; }
   .good_work .work {
     width: 100%;
-    height: 1000px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -47,7 +47,7 @@
     .good_work .work div {
       text-align: center;
       display: inline-block;
-      height: 400px;
+      height: 450px;
       width: 300px;
       margin: 2rem 3rem; }
       .good_work .work div > span {
@@ -86,14 +86,6 @@
         font-family: 'supermolot'; }
         .good_work .work div a:hover {
           background-color: rgba(150, 150, 150, 0.65); }
-
-@media only screen and (max-width: 1205px) {
-  .good_work .work {
-    height: 2025px; } }
-
-@media only screen and (max-width: 810px) {
-  .good_work .work {
-    height: 3455px; } }
 
 /*Иконки на фоне*/
 #work {

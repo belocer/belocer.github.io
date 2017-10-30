@@ -90,7 +90,7 @@ min_menu.addEventListener('click', function () {
         }
     }
 });
-var qty = 12;
+/*var qty = 12;
 var milisecond = 7000;
 var slide__left = document.querySelector('.slide__left');
 var slide__right = document.querySelector('.slide__right');
@@ -149,7 +149,7 @@ function new_img() {
             circle_arr[a].setAttribute('id', 'slide__circle_active');
         }
     }
-}
+}*/
 
 if (window.innerWidth > 859) {
     var head = document.querySelector('.description_head1');
@@ -199,7 +199,7 @@ if (window.innerWidth < 1200) {
     document.querySelector('#pluso').style.display = 'none';
 }
 
-/*Первый экран*/
+/*Первый экран Бэкгрануд*/
 var bg = document.querySelector('.bg');
 
 var r = 20;
@@ -265,3 +265,24 @@ function blueStart(r, g, b) {
         }
     }, 100);
 }
+
+
+/*Загрузка страницы*/
+window.addEventListener('load', function () {
+    $('#loaded_page').fadeOut(1500);
+    $('.fa-spinner').fadeOut(1500);
+
+    if ( $('#loaded_page') ){
+        $('#loaded_page').style.display = 'none';
+    }
+    $('.fa-spinner').style.display = 'none';
+});
+
+$(document).ready(function(){
+    $('.sl').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        dots: true,
+        arrows: false
+    });
+});
