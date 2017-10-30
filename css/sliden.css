@@ -88,5 +88,11 @@
   margin: 0 15px; }
 
 .slick-dots li button:before {
-  top: 87%;
-  left: 85%; }
+  top: 61%;
+  left: 60%;
+  width: 10px;
+  height: 10px; }
+
+.slick-dots li button {
+  width: 10px;
+  height: 10px; }

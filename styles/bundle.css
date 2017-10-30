@@ -1785,8 +1785,8 @@ header ul li a:hover{background:rgba(40,50,50,.8);color:#fafafa}
 .wrap-slide .slide .sl .sl__slide .sl__text h3{font-family:supermolot;padding:1rem;text-transform:uppercase;letter-spacing:1px}
 .good_work .work div a,.main__button{text-decoration:none;text-transform:none}
 .wrap-slide .slide .sl .sl__slide .sl__text p{font-family:supermolot;padding:0 1rem 1rem}
-.slick-dots li button{border:2px solid #777;border-radius:50%;-webkit-box-shadow:1px 1px 3px -1px rgba(0,0,0,.2);box-shadow:1px 1px 3px -1px rgba(0,0,0,.2);-webkit-transition:border-color .3s;-o-transition:border-color .3s;transition:border-color .3s}
-.slick-dots li button:before{contetn:'';width:10px;height:10px;background:#777;opacity:1;border-radius:50%;margin-top:-5px;margin-left:-5px;-webkit-transition:background .3s;-o-transition:background .3s;transition:background .3s;color:transparent;top:87%;left:85%}
+.slick-dots li button{border:2px solid #777;border-radius:50%;-webkit-box-shadow:1px 1px 3px -1px rgba(0,0,0,.2);box-shadow:1px 1px 3px -1px rgba(0,0,0,.2);-webkit-transition:border-color .3s;-o-transition:border-color .3s;transition:border-color .3s;width:10px;height:10px}
+.slick-dots li button:before{contetn:'';background:#777;opacity:1;border-radius:50%;margin-top:-5px;margin-left:-5px;-webkit-transition:background .3s;-o-transition:background .3s;transition:background .3s;color:transparent;top:61%;left:60%;width:10px;height:10px}
 body,html{height:100%;width:100%}
 .slick-dots li button:hover,.slick-dots li.slick-active button{border-color:#fff}
 .slick-dots li .slick-active button:before,.slick-dots li button:hover:before{background:#fff}

@@ -36,6 +36,7 @@ function fn() {
         function smooth_scroll(link_menu, scrollys) {
             link_menu.addEventListener('click', function (e) {
                 e.preventDefault();
+
                 switch (e.target.textContent) {
                     case"Контакты":
                         var w = 0;
