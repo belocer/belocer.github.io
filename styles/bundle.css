@@ -1834,8 +1834,9 @@ h2{font-family:Supermolot;color:#313030}
 #pluso:hover{opacity:1}
 .bg{background:#000;position:relative}
 .bg>div.bg_ton{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(58,58,58,.6)}
-#loaded_page{position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:1000;background:#fff;opacity:1}
-i.fa-spinner{position:absolute;top:29%;left:50%;margin-top:-16px;margin-left:-16px;color:#555;font-size:3rem;z-index:1000;-webkit-animation:rot 3s linear infinite;animation:rot 3s linear infinite;opacity:1}
+#loaded_page,i.fa-spinner{position:fixed;z-index:1000;opacity:1}
+#loaded_page{top:0;left:0;width:100vw;height:100vh;background:#fff}
+i.fa-spinner{top:29%;left:50%;margin-top:-16px;margin-left:-16px;color:#555;font-size:3rem;-webkit-animation:rot 3s linear infinite;animation:rot 3s linear infinite}
 @-webkit-keyframes rot{0%{-webkit-transform:rotate(0);transform:rotate(0)}
 100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
 }

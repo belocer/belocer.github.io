@@ -234,7 +234,7 @@ h2 {
   opacity: 1; }
 
 i.fa-spinner {
-  position: absolute;
+  position: fixed;
   top: 29%;
   left: 50%;
   margin-top: -16px;
