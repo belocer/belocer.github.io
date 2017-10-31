@@ -269,7 +269,8 @@
     </div>
 
     <!--Выполненые задачи-->
-    <div class="task" id="task"><h1>Выполненые задачи</h1>
+    <div class="task" id="task">
+        <h1>Выполненые задачи</h1>
         <div class="task_wrap">
             <div class="main"><h2 class="main__header">Вёрстка</h2><a class="main__button"
                                                                       href="lesson_1/index.html"
@@ -304,26 +305,29 @@
                                                                               href="lesson_28/index.html"
                                                                               target="_blank">Оплата</a>
             </div>
-            <div class="main"><h2 class="main__header">JavaScript</h2><a class="main__button"
-                                                                         href="lf-1/index.html"
-                                                                         target="_blank">Function</a><a
-                    class="main__button" href="lf-2/index.html" target="_blank">Отладчик</a><a
-                    class="main__button" href="lf-3/index.html" target="_blank">Array+Object</a><a
-                    class="main__button" href="lf-4/index.html" target="_blank">DOM</a><a
-                    class="main__button" href="lf-5/index.html" target="_blank">Events</a><a
-                    class="main__button" href="lf-6/index.html" target="_blank">Ассинхронность</a><a
-                    class="main__button" href="lf-7/index.html" target="_blank">Cookie</a><a
-                    class="main__button" href="lf-8/index.html" target="_blank">VK friends</a><a
-                    class="main__button" href="lf-9/index.html" target="_blank">Geo Location</a><a
-                    class="main__button" href="lf-10/index.html" target="_blank">VK api</a></div>
-            <div class="main"><h2 class="main__header">PHP</h2><a class="main__button"
-                                                                  href="lf_php-1/" target="_blank">Основы</a><a
-                    class="main__button" href="lf_php-2/" target="_blank">Функции</a><a
-                    class="main__button" href="lf_php-3/" target="_blank">Файлы</a><a
-                    class="main__button" href="graduation_projects/" target="_blank">1
-                В.Проект</a><a class="main__button" href="lf_php-4/" target="_blank">База Данных</a><a
-                    class="main__button" href="http://y9283007.bget.ru/calc/ver.02102016/"
-                    target="_blank">Калькулятор дат</a></div>
+            <div class="main"><h2 class="main__header">JavaScript</h2>
+                <a class="main__button" href="balls/1/ball.html" target="_blank">Balls</a>
+                <a class="main__button" href="lf-1/index.html" target="_blank">Function</a>
+                <a class="main__button" href="lf-2/index.html" target="_blank">Отладчик</a>
+                <a class="main__button" href="lf-3/index.html" target="_blank">Array+Object</a>
+                <a class="main__button" href="lf-4/index.html" target="_blank">DOM</a>
+                <a class="main__button" href="lf-5/index.html" target="_blank">Events</a>
+                <a class="main__button" href="lf-6/index.html" target="_blank">Ассинхронность</a>
+                <a class="main__button" href="lf-7/index.html" target="_blank">Cookie</a>
+                <a class="main__button" href="lf-8/index.html" target="_blank">VK friends</a>
+                <a class="main__button" href="lf-9/index.html" target="_blank">Geo Location</a>
+                <a class="main__button" href="lf-10/index.html" target="_blank">VK api</a>
+            </div>
+            <div class="main">
+                <h2 class="main__header">PHP</h2>
+                <a class="main__button" href="lf_php-1/" target="_blank">Основы</a>
+                <a class="main__button" href="lf_php-2/" target="_blank">Функции</a>
+                <a class="main__button" href="lf_php-3/" target="_blank">Файлы</a>
+                <a class="main__button" href="graduation_projects/" target="_blank">1 В.Проект</a>
+                <a class="main__button" href="lf_php-4/" target="_blank">База Данных</a>
+                <a class="main__button" href="http://y9283007.bget.ru/calc/ver.02102016/"
+                    target="_blank">Калькулятор дат</a>
+            </div>
         </div>
         <div class="ico_back3"><span class="layer" data-depth="1.20"><i class="fa fa-code"
                                                                         aria-hidden="true"></i></span>
@@ -392,20 +396,27 @@
             w.addEventListener('load', l, false);
         }
     }
-})();</script><!-- {/literal} END JIVOSITE CODE --><!-- Jquery НЕ кроссбраузерный -->
+})();</script><!-- {/literal} END JIVOSITE CODE -->
+
+<!-- Jquery НЕ кроссбраузерный -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- Jquery кроссбраузерный -->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+
 <!-- Parallax -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
 <script>var scene = document.getElementById('scene');
 var parallax = new Parallax(scene);</script>
 <script src="js/particles.js"></script>
 <script src="js/js.js"></script>
-<script src="js/main.js"></script><!-- WOW.js -->
+<script src="js/main.js"></script>
+
+<!-- WOW.js -->
 <link rel="stylesheet" href="css/animate.css">
 <script src="js/wow.min.js"></script>
-<script>new WOW().init();</script><!-- VK API -->
+<script>new WOW().init();</script>
+
+<!-- VK API -->
 <div id="vk_comments"></div>
 <script type="text/javascript">VK.Widgets.Comments("vk_comments", {
     limit: 10,

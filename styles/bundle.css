@@ -1862,7 +1862,7 @@ i.fa-spinner{top:29%;left:50%;margin-top:-16px;margin-left:-16px;color:#555;font
 @media only screen and (max-width:905px){.task_wrap{width:240px}
 .task{height:1995px}
 }
-#task>div>div:nth-child(1)>a:nth-child(25),#task>div>div:nth-child(2)>a:nth-child(11),#task>div>div:nth-child(3)>a:nth-child(7){margin-bottom:1rem}
+#task>div>div:nth-child(1)>a:nth-child(25),#task>div>div:nth-child(2)>a:nth-child(12),#task>div>div:nth-child(3)>a:nth-child(7){margin-bottom:1rem}
 #task{position:relative}
 #task .ico_back11,#task .ico_back14,#task .ico_back15,#task .ico_back16,#task .ico_back18,#task .ico_back3,#task .ico_back4,#task .ico_back5,#task .ico_back6,#task .ico_back7,#task .ico_back8,#task .ico_back9{position:absolute;color:rgba(255,255,255,.15);z-index:1}
 #task .ico_back3{top:50%;left:1%;-webkit-transform:rotate(-10deg);-ms-transform:rotate(-10deg);transform:rotate(-10deg);font-size:4rem}
