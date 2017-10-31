@@ -131,14 +131,14 @@ if (window.innerWidth < 1200) {
     document.querySelector('.ico_back8').style.display = 'none';
     document.querySelector('.ico_back9').style.display = 'none';
     document.querySelector('.ico_back10').style.display = 'none';
-    document.querySelector('.ico_back11').style.display = 'none';
+    document.querySelector('.ico_back11') ? document.querySelector('.ico_back11').style.display = 'none' : '';
     document.querySelector('.ico_back12').style.display = 'none';
     document.querySelector('.ico_back13').style.display = 'none';
     document.querySelector('.ico_back14').style.display = 'none';
     document.querySelector('.ico_back15').style.display = 'none';
     document.querySelector('.ico_back16').style.display = 'none';
     document.querySelector('.ico_back17').style.display = 'none';
-    document.querySelector('.ico_back18').style.display = 'none';
+    document.querySelector('.ico_back18') ? document.querySelector('.ico_back18').style.display = 'none' : '';
     document.querySelector('#pluso').style.display = 'none';
 }
 var bg = document.querySelector('.bg');
