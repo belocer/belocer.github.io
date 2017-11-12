@@ -20,7 +20,7 @@
         display: inline-block;
         width: 185px;
         height: 140px;
-        background: url("/img/logo.png") center center no-repeat no-repeat;
+        background: url("../img/logo.png") center center no-repeat no-repeat;
         background-size: cover; }
       .page-header .page-header__wrap .page-header__line .page-header__communications {
         float: right; }

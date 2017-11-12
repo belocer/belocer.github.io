@@ -4,36 +4,42 @@
   height: 500px;
   background: #E6E6E6;
   position: relative; }
-  .contact h2 {
-    text-align: center;
-    color: #1b263c;
-    font-family: "Exo 2", sans-serif;
-    font-size: 3rem;
-    font-weight: 300;
-    margin: 2rem; }
   .contact #contact__ton_map {
     width: 50%;
     height: 100%;
     display: inline-block;
     background: rgba(229, 229, 229, 0.7);
     position: absolute;
-    top: 122px;
+    top: 0;
     right: 0;
     z-index: 10;
     border-left: 3px solid #1b263c; }
-    .contact #contact__ton_map span {
+    .contact #contact__ton_map div {
       display: block;
       text-align: left;
       margin: 20% 0 0 4%; }
-      .contact #contact__ton_map span a {
+      .contact #contact__ton_map div h2 {
+        text-align: left;
+        font-family: "Exo 2", sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 2rem;
+        background-color: #565656;
+        color: transparent;
+        text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        margin-left: 0; }
+      .contact #contact__ton_map div a {
         color: #1b263c;
         text-decoration: none;
         display: block;
-        margin-top: 2rem;
+        margin-top: 1rem;
         font-family: "Exo 2", sans-serif;
         font-size: 1.2rem;
         font-weight: 700; }
-      .contact #contact__ton_map span address {
+      .contact #contact__ton_map div address {
         margin-top: 2rem;
         font-size: 1.2rem; }
   .contact #mymap {
