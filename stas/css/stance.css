@@ -1,0 +1,8 @@
+.stance {
+  display: inline-block;
+  width: 80%;
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  background: #E6E6E6;
+  border-top: 1px solid #1b263c; }

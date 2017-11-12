@@ -1,0 +1,44 @@
+section.we-for-you {
+  width: 80%;
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #E6E6E6; }
+  section.we-for-you .we-for-you__block {
+    width: 250px;
+    text-align: center;
+    color: #fff;
+    font-family: "Exo 2", sans-serif;
+    margin: 3rem;
+    background: #1b263c;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(50, 50, 50, 0.3);
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff; }
+    section.we-for-you .we-for-you__block span {
+      width: 130px;
+      height: 130px;
+      display: inline-block;
+      margin: 2rem auto 0;
+      border-radius: 50%;
+      background: #fff;
+      color: #1b263c;
+      text-align: center;
+      line-height: 130px;
+      font-size: 4rem; }
+      section.we-for-you .we-for-you__block span i {
+        background-color: #565656;
+        color: transparent;
+        text-shadow: 0 2px 3px rgba(255, 255, 255, 0.5);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text; }
+    section.we-for-you .we-for-you__block h2 {
+      margin: 1rem 0;
+      text-shadow: 1px 1px 1px #000; }
+    section.we-for-you .we-for-you__block p, section.we-for-you .we-for-you__block h2 {
+      font-weight: 300;
+      padding: 1rem; }

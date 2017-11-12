@@ -1,0 +1,40 @@
+.contact {
+  display: inline-block;
+  width: 100%;
+  height: 500px;
+  background: #E6E6E6;
+  position: relative; }
+  .contact h2 {
+    text-align: center;
+    color: #1b263c;
+    font-family: "Exo 2", sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 2rem; }
+  .contact #contact__ton_map {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    background: rgba(229, 229, 229, 0.7);
+    position: absolute;
+    top: 122px;
+    right: 0;
+    z-index: 10;
+    border-left: 3px solid #1b263c; }
+    .contact #contact__ton_map span {
+      display: block;
+      text-align: left;
+      margin: 20% 0 0 4%; }
+      .contact #contact__ton_map span a {
+        color: #1b263c;
+        text-decoration: none;
+        display: block;
+        margin-top: 2rem;
+        font-family: "Exo 2", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700; }
+      .contact #contact__ton_map span address {
+        margin-top: 2rem;
+        font-size: 1.2rem; }
+  .contact #mymap {
+    width: 50%; }

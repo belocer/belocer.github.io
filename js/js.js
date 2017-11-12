@@ -33,7 +33,11 @@ function fn() {
         var link_menu = document.getElementById('min_menu');
         smooth_scroll(link_menu, scrollY);
 
-        function smooth_scroll(link_menu, scrollys) {
+
+/*
+* Скрол по меню
+*/
+/*        function smooth_scroll(link_menu, scrollys) {
             link_menu.addEventListener('click', function (e) {
                 e.preventDefault();
 
@@ -76,7 +80,7 @@ function fn() {
                     }, 10);
                 }
             });
-        }
+        }*/
     }
 }
 
@@ -94,6 +98,10 @@ min_menu.addEventListener('click', function () {
         }
     }
 });
+
+/*
+* Хотелось бы!
+*/
 if (window.innerWidth > 859) {
     var head = document.querySelector('.description_head1');
     var img = document.querySelector('.description_img');
@@ -141,6 +149,10 @@ if (window.innerWidth < 1200) {
     document.querySelector('.ico_back18') ? document.querySelector('.ico_back18').style.display = 'none' : '';
     document.querySelector('#pluso').style.display = 'none';
 }
+
+/*
+* Меняющийся цвет бэкграунда шапки сайта
+*/
 var bg = document.querySelector('.bg');
 var r = 20;
 var g = 20;
@@ -148,7 +160,7 @@ var b = 240;
 var timerIdr = 0;
 var timerIdg = 0;
 var timerIdb = 0;
-redStart(r, g, b);
+//redStart(r, g, b);
 
 function redStart(r=20, g=20, b=20) {
     timerIdr = setInterval(function () {
@@ -196,6 +208,9 @@ function blueStart(r, g, b) {
     }, 100);
 }
 
+/*
+* Отрабатываю загрузку
+*/
 window.addEventListener('load', function () {
     $('#loaded_page').fadeOut(1500);
     $('.fa-spinner').fadeOut(1500);
