@@ -28,7 +28,7 @@ function fn() {
         min_menu.innerHTML = '<span class="cross" style="border-radius:50%;font-size:30px;"><i class="fa fa-bars" aria-hidden="true"></i></span>';
         min_menu.style.background = 'transparent';
     } else if (window.innerWidth > 859) {
-        min_menu.innerHTML = '<li><a href="#test">Контакты</a></li>\n' + '<li><a href="#work">Работы</a></li>\n' + '<li><a href="#dizain">Дизайн</a></li>\n' + '<li><a href="#sertificate">Сертификаты</a></li>\n' + '<li><a href="#task">Задачи</a></li>\n' + '<li><a href="#vk_comments">Чат</a></li>';
+        min_menu.innerHTML = '<li><a href="#body">Контакты</a></li>\n' + '<li><a href="#work">Работы</a></li>\n' + '<li><a href="#dizain">Дизайн</a></li>\n' + '<li><a href="#sertificate">Сертификаты</a></li>\n' + '<li><a href="#task">Задачи</a></li>\n' + '<li><a href="#vk_comments">Чат</a></li>';
         min_menu.style.background = 'rgba(12, 42, 95, 0.81);';
         var link_menu = document.getElementById('min_menu');
         smooth_scroll(link_menu, scrollY);
@@ -89,7 +89,7 @@ function fn() {
     min_menu.addEventListener('click', function () {
         var x = min_menu.dataset.menu;
         if (x === '0') {
-            min_menu.innerHTML = '<li><a href="#test">Контакты</a></li><li><a href="#work">Работы</a></li><li><a href="#dizain">Дизайн</a></li><li><a href="#sertificate">Сертификаты</a></li><li><a href="#task">Задачи</a></li><li><a href="#vk_comments">Чат</a></li>';
+            min_menu.innerHTML = '<li><a href="#body">Контакты</a></li><li><a href="#work">Работы</a></li><li><a href="#dizain">Дизайн</a></li><li><a href="#sertificate">Сертификаты</a></li><li><a href="#task">Задачи</a></li><li><a href="#vk_comments">Чат</a></li>';
             min_menu.dataset.menu = 1;
         } else if (x === '1') {
             if (window.innerWidth < 859) {
