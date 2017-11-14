@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all .5s; }
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #E6E6E6;
+  font-family: "Exo 2", sans-serif;
+  color: #1b263c; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.wrap {
+  width: 100%;
+  background: #E6E6E6; }
+
+section.partner {
+  width: 80%;
+  max-width: 1170px;
+  height: 100%;
+  margin: 1rem auto;
+  background: #E6E6E6; }
+  section.partner h2.partner__header {
+    margin-top: 3rem;
+    width: 100%;
+    font-size: 3rem;
+    color: #1b263c;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center; }
+  section.partner h2.partner__header:before,
+  section.partner h2.partner__header:after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: #000;
+    background-clip: content-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+  section.partner h2.partner__header:before {
+    left: -.5em;
+    margin: 0 0 0 -50%; }
+  section.partner h2.partner__header:after {
+    left: .5em;
+    margin: 0 -50% 0 0; }
+  section.partner h2.partner__header > span {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal; }
+  section.partner .partner__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #1b263c;
+    margin-top: 2rem;
+    margin-bottom: 5rem; }
+    section.partner .partner__wrap span {
+      display: inline-block;
+      width: 120px;
+      padding: 1rem;
+      margin: 3rem; }
+      section.partner .partner__wrap span:hover {
+        background: #FFDB4D; }
+    section.partner .partner__wrap span:nth-child(1) {
+      background: url("../img/partner/ls.png") center center no-repeat no-repeat;
+      background-size: contain; }
+    section.partner .partner__wrap span:nth-child(2) {
+      background: url("../img/partner/abb.png") center center no-repeat no-repeat;
+      background-size: contain; }
+    section.partner .partner__wrap span:nth-child(3) {
+      background: url("../img/partner/dkc.png") center center no-repeat no-repeat;
+      background-size: contain; }
+    section.partner .partner__wrap span:nth-child(4) {
+      background: url("../img/partner/legrand.png") center center no-repeat no-repeat;
+      background-size: contain; }
+    section.partner .partner__wrap span:nth-child(5) {
+      background: url("../img/partner/scheider.png") center center no-repeat no-repeat;
+      background-size: contain; }
+    section.partner .partner__wrap span:nth-child(6) {
+      background: url("../img/partner/siemens.png") center center no-repeat no-repeat;
+      background-size: contain; }
+    section.partner .partner__wrap span:nth-child(7) {
+      background: url("../img/partner/gusi.png") center center no-repeat no-repeat;
+      background-size: contain; }
+
+@media screen and (max-width: 510px) {
+  section.partner h2.partner__header {
+    font-size: 1.5rem;
+    font-weight: 100; } }
