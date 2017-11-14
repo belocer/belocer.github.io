@@ -77,3 +77,7 @@ section.we-product {
         padding: 1rem 2rem;
         font-size: 1.5rem;
         font-weight: 100; }
+  section.we-product .manager {
+    margin: 1rem;
+    font-size: 1.5rem;
+    text-align: center; }

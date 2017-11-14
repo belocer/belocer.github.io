@@ -769,6 +769,7 @@ html,section.we-for-you .we-for-you__block,section.we-for-you>h2{font-family:"Ex
 .page-header .page-header__line .page-header__logo{display:block;width:104px;height:90px}
 form.form{width:50%}
 }
+section.we-product .we-product__electro ul li,section.we-product .we-product__metal ul li{font-weight:100;padding:1rem 2rem;font-size:1.5rem}
 @media (max-width:600px){.wrap-slide{height:30rem}
 .wrap-slide .slide .exhortation h1{display:none}
 .wrap-slide .slide .exhortation{position:absolute;top:50%;left:0;margin:0 auto}
@@ -785,13 +786,13 @@ form.form label[for=tel] span{top:198px}
 .stance{display:inline-block;width:80%;max-width:1170px;height:100%;margin:0 auto;background:#E6E6E6;border-top:1px solid #1b263c}
 section.we-product{width:85%;max-width:1170px;height:600px;margin:3rem auto 7rem;background:url(../../img/icon_metal_electro.png) center center no-repeat no-repeat;background-size:cover;display:flex;justify-content:space-around;flex-wrap:wrap}
 section.we-product h2{width:100%;font-size:3rem;color:#1b263c;overflow:hidden;white-space:nowrap;text-align:center}
-section.we-product .we-product__electro ul li,section.we-product .we-product__metal ul li{padding:1rem 2rem;font-size:1.5rem;font-weight:100}
 section.we-product h2:after,section.we-product h2:before{content:"";position:relative;display:inline-block;width:49%;height:2px;vertical-align:middle;background:#000;background-clip:content-box;border-bottom:1px solid rgba(255,255,255,.5)}
 section.we-product h2:before{left:-.5em;margin:0 0 0 -50%}
 section.we-product h2:after{left:.5em;margin:0 -50% 0 0}
 section.we-product h2>span{display:inline-block;vertical-align:middle;white-space:normal}
 section.we-product .we-product__metal{width:50%;display:inline-block;text-align:right}
 section.we-product .we-product__electro{width:49%;display:inline-block;border-left:2px solid #1b263c}
+section.we-product .manager{margin:1rem;font-size:1.5rem;text-align:center}
 section.we-for-you{width:80%;max-width:1170px;height:100%;margin:0 auto;display:flex;justify-content:space-around;flex-wrap:wrap;background:#E6E6E6}
 section.we-for-you>h2{width:100%;font-size:3rem;color:#1b263c;overflow:hidden;white-space:nowrap;text-align:center}
 section.we-for-you>h2:after,section.we-for-you>h2:before{content:"";position:relative;display:inline-block;width:50%;height:2px;vertical-align:middle;background:#000;background-clip:content-box;border-bottom:1px solid rgba(255,255,255,.5)}
