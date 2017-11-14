@@ -59,7 +59,7 @@ section.we-work {
     justify-content: space-between;
     flex-wrap: nowrap;
     background: #1b263c;
-    margin: 2rem auto;
+    margin: 2rem auto 5rem;
     box-shadow: 10px 10px 20px rgba(50, 50, 50, 0.3);
     border-bottom: 2px solid #fff;
     border-right: 2px solid #fff; }

@@ -790,7 +790,7 @@ section.we-product h2:before{left:-.5em;margin:0 0 0 -50%}
 section.we-product h2:after{left:.5em;margin:0 -50% 0 0}
 section.we-product h2>span{display:inline-block;vertical-align:middle;white-space:normal}
 section.we-product .we-product__wrap{background:url(../../img/icon_metal_electro.png) center center no-repeat no-repeat;background-size:contain;display:flex;justify-content:space-around;flex-wrap:wrap;margin-top:2rem;padding:1rem}
-section.we-product .we-product__wrap .we-product__electro ul li,section.we-product .we-product__wrap .we-product__metal ul li{padding:1rem 2rem;font-weight:100;font-size:1.5rem}
+section.we-product .we-product__wrap .we-product__electro ul li,section.we-product .we-product__wrap .we-product__metal ul li{padding:1rem 2rem;font-weight:100;letter-spacing:-1px;font-size:1.5rem}
 section.we-product .we-product__wrap .we-product__metal{width:50%;display:inline-block;text-align:right;margin-top:3rem}
 section.we-product .we-product__wrap .we-product__electro{width:49%;display:inline-block;border-left:2px solid #1b263c;margin-top:3rem}
 section.we-product .manager{margin:1rem;font-size:1.5rem;text-align:center}
@@ -827,7 +827,7 @@ section.we-work .we-work__header:after,section.we-work .we-work__header:before{c
 section.we-work .we-work__header:before{left:-.5em;margin:0 0 0 -50%}
 section.we-work .we-work__header:after{left:.5em;margin:0 -50% 0 0}
 section.we-work .we-work__header>span{display:inline-block;vertical-align:middle;white-space:normal}
-section.we-work .we-work__blocks{display:flex;justify-content:space-between;flex-wrap:nowrap;background:#1b263c;margin:2rem auto;border-bottom:2px solid #fff}
+section.we-work .we-work__blocks{display:flex;justify-content:space-between;flex-wrap:nowrap;background:#1b263c;margin:2rem auto 5rem;border-bottom:2px solid #fff}
 section.we-work .we-work__blocks i{color:#FFDB4D;font-size:7rem;margin:0;padding:0;width:50px;line-height:200px}
 section.we-work .we-work__blocks .we-work__block{box-sizing:border-box;width:33.33333333333%;height:100%;display:flex;justify-content:space-around;flex-wrap:nowrap;color:#fff}
 section.we-work .we-work__blocks .we-work__block span{width:100px;height:200px;display:inline-block;text-align:center;line-height:200px}

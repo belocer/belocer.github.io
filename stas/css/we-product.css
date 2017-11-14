@@ -69,7 +69,8 @@ section.we-product {
         section.we-product .we-product__wrap .we-product__metal ul li {
           padding: 1rem 2rem;
           font-size: 1.5rem;
-          font-weight: 100; }
+          font-weight: 100;
+          letter-spacing: -1px; }
     section.we-product .we-product__wrap .we-product__electro {
       width: 49%;
       display: inline-block;
@@ -80,7 +81,8 @@ section.we-product {
         section.we-product .we-product__wrap .we-product__electro ul li {
           padding: 1rem 2rem;
           font-size: 1.5rem;
-          font-weight: 100; }
+          font-weight: 100;
+          letter-spacing: -1px; }
   section.we-product .manager {
     margin: 1rem;
     font-size: 1.5rem;
