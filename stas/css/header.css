@@ -1,4 +1,25 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  transition: all .5s; }
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #E6E6E6;
+  font-family: "Exo 2", sans-serif;
+  color: #1b263c; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.wrap {
+  width: 100%;
+  background: #E6E6E6; }
+
 .page-header {
   width: 100%;
   position: relative;
@@ -30,13 +51,7 @@
           font-family: "Exo 2", sans-serif;
           line-height: 100%;
           font-size: 1.2rem;
-          font-weight: 700;
-          /*          background-color: #565656;
-                    color: transparent;
-                    text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
-                    -webkit-background-clip: text;
-                    -moz-background-clip: text;
-                    background-clip: text;*/ }
+          font-weight: 700; }
 
 #logo {
   width: 100%;
@@ -46,7 +61,7 @@
 * Форма обратной связи
 ***********************/
 form.form {
-  width: 305px;
+  width: 35%;
   height: 316px;
   display: block;
   margin: 5rem auto;
@@ -83,20 +98,20 @@ form.form {
     outline: none !important; }
   form.form label[for="name"] span {
     top: 86.5px;
-    left: 7px;
+    left: 7%;
     border-right: 1px solid #1b263c;
     font-size: 1.1rem; }
   form.form label[for="email"] span {
     top: 142.5px;
-    left: 7px;
+    left: 7%;
     border-right: 1px solid #1b263c; }
   form.form label[for="tel"] span {
     top: 198.5px;
-    left: 7px;
+    left: 7%;
     border-right: 1px solid #1b263c;
     font-size: 1.1rem; }
   form.form input {
-    width: 18rem;
+    width: 85%;
     height: 40px;
     display: inline-block;
     margin-top: 1rem;

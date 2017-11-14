@@ -1,3 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all .5s; }
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #E6E6E6;
+  font-family: "Exo 2", sans-serif;
+  color: #1b263c; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.wrap {
+  width: 100%;
+  background: #E6E6E6; }
+
 .contact {
   display: inline-block;
   width: 100%;
@@ -17,7 +38,7 @@
     .contact #contact__ton_map div {
       display: block;
       text-align: left;
-      margin: 20% 0 0 4%; }
+      margin: 15% 0 0 4%; }
       .contact #contact__ton_map div h2 {
         text-align: left;
         font-family: "Exo 2", sans-serif;
@@ -26,7 +47,7 @@
         margin: 2rem;
         background-color: #565656;
         color: transparent;
-        text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+        text-shadow: 0 2px 3px rgba(255, 255, 255, 0.5);
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
@@ -41,6 +62,15 @@
         font-weight: 700; }
       .contact #contact__ton_map div address {
         margin-top: 2rem;
-        font-size: 1.2rem; }
+        font-size: 1rem; }
   .contact #mymap {
     width: 50%; }
+
+@media (max-width: 600px) {
+  .contact #contact__ton_map {
+    width: 100%; }
+    .contact #contact__ton_map div {
+      text-align: center; }
+      .contact #contact__ton_map div h2 {
+        text-align: center;
+        margin: 2rem; } }

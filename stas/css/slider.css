@@ -1,4 +1,25 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  transition: all .5s; }
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #E6E6E6;
+  font-family: "Exo 2", sans-serif;
+  color: #1b263c; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.wrap {
+  width: 100%;
+  background: #E6E6E6; }
+
 /*
 * Слайдер
 **************************/
@@ -40,14 +61,15 @@
         background: #fff;
         color: #1b263c;
         text-decoration: none;
-        width: 18rem;
+        width: 85%;
         height: 2.5rem;
         border-radius: 50px;
         line-height: 2.5rem;
         box-shadow: 37px 0px 47px -6px #000000 inset;
         font-family: #1b263c; }
       .wrap-slide .slide .exhortation #btn {
-        box-shadow: none; }
+        box-shadow: none;
+        background: #FFDB4D; }
         .wrap-slide .slide .exhortation #btn:hover {
           box-shadow: 0 0 20px #000 inset; }
     .wrap-slide .slide .sl {
@@ -91,7 +113,9 @@
   .page-header .page-header__line .page-header__logo {
     display: block;
     width: 104px;
-    height: 90px; } }
+    height: 90px; }
+  form.form {
+    width: 50%; } }
 
 /*
 * Мобильник
@@ -125,7 +149,15 @@
     text-align: center; }
   .page-header .page-header__wrap {
     width: 100%;
-    height: 750px; } }
+    height: 750px; }
+  form.form {
+    width: 96%; }
+    form.form label[for="name"] span {
+      top: 86px; }
+    form.form label[for="email"] span {
+      top: 142px; }
+    form.form label[for="tel"] span {
+      top: 198px; } }
 
 .ton {
   position: absolute;

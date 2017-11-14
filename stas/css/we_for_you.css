@@ -1,3 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all .5s; }
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #E6E6E6;
+  font-family: "Exo 2", sans-serif;
+  color: #1b263c; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.wrap {
+  width: 100%;
+  background: #E6E6E6; }
+
 section.we-for-you {
   width: 80%;
   max-width: 1170px;
@@ -7,6 +28,12 @@ section.we-for-you {
   justify-content: space-around;
   flex-wrap: wrap;
   background: #E6E6E6; }
+  section.we-for-you > h2 {
+    width: 100%;
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+    font-size: 3rem;
+    color: #1b263c; }
   section.we-for-you .we-for-you__block {
     width: 250px;
     text-align: center;
@@ -38,7 +65,8 @@ section.we-for-you {
         background-clip: text; }
     section.we-for-you .we-for-you__block h2 {
       margin: 1rem 0;
-      text-shadow: 1px 1px 1px #000; }
+      text-shadow: 1px 1px 1px #000;
+      color: #FFDB4D; }
     section.we-for-you .we-for-you__block p, section.we-for-you .we-for-you__block h2 {
       font-weight: 300;
       padding: 1rem; }

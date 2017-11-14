@@ -2,13 +2,17 @@
 .contact #contact__ton_map div a,.contact #contact__ton_map div h2{font-family:"Exo 2",sans-serif;font-weight:700}
 .contact{display:inline-block;width:100%;height:500px;background:#E6E6E6;position:relative}
 .contact #contact__ton_map{width:50%;height:100%;display:inline-block;background:rgba(229,229,229,.7);position:absolute;top:0;right:0;z-index:10;border-left:3px solid #1b263c}
-.contact #contact__ton_map div{display:block;text-align:left;margin:20% 0 0 4%}
+.contact #contact__ton_map div{display:block;text-align:left;margin:15% 0 0 4%}
 .contact #contact__ton_map div h2{text-align:left;font-size:2rem;margin:2rem 2rem 2rem 0;background-color:#565656;color:transparent;text-shadow:0 2px 3px rgba(255,255,255,.5);-webkit-background-clip:text;-moz-background-clip:text;background-clip:text}
-.fa.fa-pull-left,.fa.pull-left{margin-right:.3em}
 .contact #contact__ton_map div a{color:#1b263c;text-decoration:none;display:block;margin-top:1rem;font-size:1.2rem}
 .fa,.fa-stack{display:inline-block}
-.contact #contact__ton_map div address{margin-top:2rem;font-size:1.2rem}
+.contact #contact__ton_map div address{margin-top:2rem;font-size:1rem}
 .contact #mymap{width:50%}
+@media (max-width:600px){.contact #contact__ton_map{width:100%}
+.contact #contact__ton_map div{text-align:center}
+.contact #contact__ton_map div h2{text-align:center;margin:2rem}
+}
+.fa.fa-pull-left,.fa.pull-left{margin-right:.3em}
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -733,14 +737,14 @@
 .page-header .page-header__wrap .page-header__line .page-header__communications{float:right}
 .page-header .page-header__wrap .page-header__line .page-header__communications a{text-decoration:none;color:#1b263c;font-family:"Exo 2",sans-serif;line-height:100%;font-size:1.2rem;font-weight:700}
 #logo{width:100%;height:100%}
-form.form{width:305px;height:316px;display:block;margin:5rem auto;background:#1b263c;border-radius:5px;position:relative;box-shadow:10px 10px 20px rgba(50,50,50,.3);border-bottom:1px solid #fff;border-right:1px solid #fff}
+form.form{width:35%;height:316px;display:block;margin:5rem auto;background:#1b263c;border-radius:5px;position:relative;box-shadow:10px 10px 20px rgba(50,50,50,.3);border-bottom:1px solid #fff;border-right:1px solid #fff}
 form.form h3{color:#fff;padding-top:1rem;padding-bottom:1rem;font-weight:400;font-size:2rem}
 form.form label[for=name] span,form.form label[for=email] span,form.form label[for=tel] span{display:inline-block;width:40px;height:40px;border-radius:50px 0 0 50px;background:#fff;position:absolute;text-align:center;line-height:40px}
 form.form label[for=name] span:active,form.form label[for=name] span:focus,form.form label[for=email] span:active,form.form label[for=email] span:focus,form.form label[for=tel] span:active,form.form label[for=tel] span:focus{border:none;outline:0!important}
-form.form label[for=name] span{top:86.5px;left:7px;border-right:1px solid #1b263c;font-size:1.1rem}
-form.form label[for=email] span{top:142.5px;left:7px;border-right:1px solid #1b263c}
-form.form label[for=tel] span{top:198.5px;left:7px;border-right:1px solid #1b263c;font-size:1.1rem}
-form.form input{width:18rem;height:40px;display:inline-block;margin-top:1rem;text-indent:4rem;border:none}
+form.form label[for=name] span{top:86.5px;left:7%;border-right:1px solid #1b263c;font-size:1.1rem}
+form.form label[for=email] span{top:142.5px;left:7%;border-right:1px solid #1b263c}
+form.form label[for=tel] span{top:198.5px;left:7%;border-right:1px solid #1b263c;font-size:1.1rem}
+form.form input{width:85%;height:40px;display:inline-block;margin-top:1rem;text-indent:4rem;border:none}
 form.form input:nth-last-child(1){text-indent:0;box-shadow:none}
 .wrap-slide{position:absolute;top:0;left:0;width:100%;z-index:-1;height:100%}
 .wrap-slide .slide{margin:0 auto;width:100%;max-width:1920px;text-align:center;position:relative;z-index:1;height:100%}
@@ -748,19 +752,20 @@ form.form input:nth-last-child(1){text-indent:0;box-shadow:none}
 .wrap-slide .slide .exhortation h1{font-size:4rem;font-weight:700}
 .wrap-slide .slide .exhortation h2{font-size:1.2rem;font-weight:400}
 .wrap-slide .slide .exhortation h2 strong{font-size:1.4rem;font-weight:700}
-.wrap-slide .slide .exhortation input{display:inline-block;background:#fff;color:#1b263c;text-decoration:none;width:18rem;height:2.5rem;border-radius:50px;line-height:2.5rem;box-shadow:37px 0 47px -6px #000 inset;font-family:#1b263c}
-.wrap-slide .slide .exhortation #btn{box-shadow:none}
+.wrap-slide .slide .exhortation input{display:inline-block;background:#fff;color:#1b263c;text-decoration:none;width:85%;height:2.5rem;border-radius:50px;line-height:2.5rem;box-shadow:37px 0 47px -6px #000 inset;font-family:#1b263c}
+.wrap-slide .slide .exhortation #btn{box-shadow:none;background:#FFDB4D}
 .wrap-slide .slide .exhortation #btn:hover{box-shadow:0 0 20px #000 inset}
 .wrap-slide .slide .sl{margin:0 auto;width:100%;height:100%;max-width:1950px;z-index:3}
 .wrap-slide .slide .sl .sl__slide{position:relative}
 .wrap-slide .slide .sl .sl__slide img{max-width:100%;height:auto}
-.stance,section.we-for-you{max-width:1170px;height:100%}
 .wrap-slide .slide .sl .sl__slide .sl__text{position:absolute;bottom:0;width:100%;background:rgba(10,10,10,.7);color:#1b263c;text-align:left}
 .wrap-slide .slide .sl .sl__slide .sl__text h3{font-family:'Exo 2',sans-serif;padding:1rem;text-transform:uppercase;letter-spacing:1px}
 .wrap-slide .slide .sl .sl__slide .sl__text p{font-family:Vollkorn,serif;padding:0 1rem 1rem}
+html,section.we-for-you .we-for-you__block,section.we-for-you>h2{font-family:"Exo 2",sans-serif}
 @media (max-width:786px){.wrap-slide .slide .exhortation{position:absolute;top:40%;margin-left:-330px;left:50%}
 .wrap-slide .slide .exhortation h1{font-size:2rem;font-weight:400}
 .page-header .page-header__line .page-header__logo{display:block;width:104px;height:90px}
+form.form{width:50%}
 }
 @media (max-width:600px){.wrap-slide{height:30rem}
 .wrap-slide .slide .exhortation h1{display:none}
@@ -769,17 +774,32 @@ form.form input:nth-last-child(1){text-indent:0;box-shadow:none}
 .page-header .page-header__line .page-header__logo{width:104px;height:90px;margin:0 auto}
 .page-header .page-header__line .page-header__communications{float:none;width:350px;height:150px;margin:2rem auto 0;display:block;text-align:center}
 .page-header .page-header__wrap{width:100%;height:750px}
+form.form{width:96%}
+form.form label[for=name] span{top:86px}
+form.form label[for=email] span{top:142px}
+form.form label[for=tel] span{top:198px}
 }
 .ton{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(229,229,229,.7);z-index:5}
-.stance,.wrap,html,section.we-for-you{background:#E6E6E6}
-.stance{display:inline-block;width:80%;margin:0 auto;border-top:1px solid #1b263c}
-.wrap,body{width:100%}
-*,body{margin:0;padding:0}
-*{transition:all .5s}
-html{font-size:16px;box-sizing:border-box}
-section.we-for-you{width:80%;margin:0 auto;display:flex;justify-content:space-around;flex-wrap:wrap}
-section.we-for-you .we-for-you__block{width:250px;text-align:center;color:#fff;font-family:"Exo 2",sans-serif;margin:3rem;background:#1b263c;border-radius:5px;box-shadow:10px 10px 20px rgba(50,50,50,.3);border-bottom:2px solid #fff;border-right:2px solid #fff}
+.stance,section.we-for-you{width:80%;height:100%;margin:0 auto;background:#E6E6E6;max-width:1170px}
+.stance{display:inline-block;border-top:1px solid #1b263c}
+section.we-for-you{display:flex;justify-content:space-around;flex-wrap:wrap}
+section.we-for-you>h2{width:100%;text-align:center;font-size:3rem;color:#1b263c}
+section.we-for-you .we-for-you__block{width:250px;text-align:center;color:#fff;margin:3rem;background:#1b263c;border-radius:5px;box-shadow:10px 10px 20px rgba(50,50,50,.3);border-bottom:2px solid #fff;border-right:2px solid #fff}
 section.we-for-you .we-for-you__block span{width:130px;height:130px;display:inline-block;margin:2rem auto 0;border-radius:50%;background:#fff;color:#1b263c;text-align:center;line-height:130px;font-size:4rem}
+.wrap,body{width:100%}
 section.we-for-you .we-for-you__block span i{background-color:#565656;color:transparent;text-shadow:0 2px 3px rgba(255,255,255,.5);-webkit-background-clip:text;-moz-background-clip:text;background-clip:text}
-section.we-for-you .we-for-you__block h2{margin:1rem 0;text-shadow:1px 1px 1px #000}
+.wrap,html,section.we-work{background:#E6E6E6}
+section.we-for-you .we-for-you__block h2{margin:1rem 0;text-shadow:1px 1px 1px #000;color:#FFDB4D}
+*,body{margin:0}
 section.we-for-you .we-for-you__block h2,section.we-for-you .we-for-you__block p{font-weight:300;padding:1rem}
+*,body{padding:0}
+*{transition:all .5s}
+html{font-size:16px;box-sizing:border-box;color:#1b263c}
+section.we-work{width:80%;max-width:1170px;height:100%;margin:0 auto}
+section.we-work .we-work__header{width:100%;text-align:center;font-size:3rem;color:#1b263c}
+section.we-work .we-work__blocks{display:flex;justify-content:space-between;flex-wrap:nowrap;background:#1b263c;margin:2rem auto;box-shadow:10px 10px 20px rgba(50,50,50,.3)}
+section.we-work .we-work__blocks i{color:#FFDB4D;font-size:7rem;margin:0;padding:0;width:50px;line-height:200px}
+section.we-work .we-work__blocks .we-work__block{box-sizing:border-box;width:33.33333333333%;height:100%;display:flex;justify-content:space-around;flex-wrap:nowrap;color:#fff}
+section.we-work .we-work__blocks .we-work__block span{width:100px;height:200px;display:inline-block;text-align:center;line-height:200px}
+section.we-work .we-work__blocks .we-work__block span i{font-size:2rem;color:#fff}
+section.we-work .we-work__blocks .we-work__block p{display:inline-block;width:180px;height:100%;padding:5rem 2rem 0 0}
