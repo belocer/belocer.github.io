@@ -22,7 +22,6 @@ body {
 section.we-product {
   width: 85%;
   max-width: 1170px;
-  height: 600px;
   margin: 3rem auto 7rem;
   background: url("../img/icon_metal_electro.png") center center no-repeat no-repeat;
   background-size: cover;
@@ -60,7 +59,8 @@ section.we-product {
   section.we-product .we-product__metal {
     width: 50%;
     display: inline-block;
-    text-align: right; }
+    text-align: right;
+    margin-top: 3rem; }
     section.we-product .we-product__metal ul {
       list-style: none; }
       section.we-product .we-product__metal ul li {
@@ -70,7 +70,8 @@ section.we-product {
   section.we-product .we-product__electro {
     width: 49%;
     display: inline-block;
-    border-left: 2px solid #1b263c; }
+    border-left: 2px solid #1b263c;
+    margin-top: 3rem; }
     section.we-product .we-product__electro ul {
       list-style: none; }
       section.we-product .we-product__electro ul li {
@@ -81,3 +82,36 @@ section.we-product {
     margin: 1rem;
     font-size: 1.5rem;
     text-align: center; }
+
+@media screen and (max-width: 1250px) {
+  body > div > section.we-product > h2 > strong,
+  body > div > section.we-product > h2 {
+    font-weight: 100;
+    font-size: 1.5rem; }
+  section.we-product .we-product__metal ul li,
+  section.we-product .we-product__electro ul li {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 100; } }
+
+@media screen and (max-width: 500px) {
+  body > div > section.we-product > h2 > strong,
+  body > div > section.we-product > h2 {
+    font-weight: 100;
+    font-size: 1.1rem; }
+  section.we-product .we-product__metal ul li,
+  section.we-product .we-product__electro ul li {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 100; }
+  section.we-product .we-product__metal {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 3rem; }
+  section.we-product .we-product__electro {
+    width: 100%;
+    display: inline-block;
+    border-left: none;
+    margin-top: 3rem;
+    text-align: center; } }
