@@ -34,7 +34,7 @@ body {
     top: 0;
     right: 0;
     z-index: 10;
-    border-left: 3px solid #1b263c; }
+    border-left: 2px solid #1b263c; }
     .contact #contact__ton_map div {
       display: block;
       text-align: left;
