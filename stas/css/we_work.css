@@ -23,7 +23,7 @@ section.we-work {
   width: 80%;
   max-width: 1170px;
   height: 100%;
-  margin: 0 auto;
+  margin: 1rem auto;
   background: #E6E6E6; }
   section.we-work .we-work__header {
     margin-top: 3rem;

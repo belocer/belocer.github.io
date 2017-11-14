@@ -800,7 +800,7 @@ section.we-for-you .we-for-you__block h2,section.we-for-you .we-for-you__block p
 *,body{padding:0}
 *{transition:all .5s}
 html{font-size:16px;box-sizing:border-box;color:#1b263c}
-section.we-work{width:80%;max-width:1170px;height:100%;margin:0 auto}
+section.we-work{width:80%;max-width:1170px;height:100%;margin:1rem auto}
 section.we-work .we-work__header{margin-top:3rem;width:100%;font-size:3rem;color:#1b263c;overflow:hidden;white-space:nowrap;text-align:center}
 section.we-work .we-work__header:after,section.we-work .we-work__header:before{content:"";position:relative;display:inline-block;width:50%;height:2px;vertical-align:middle;background:#000;background-clip:content-box;border-bottom:1px solid rgba(255,255,255,.5)}
 section.we-work .we-work__header:before{left:-.5em;margin:0 0 0 -50%}
