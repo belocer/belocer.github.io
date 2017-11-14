@@ -61,7 +61,11 @@ section.partner {
     flex-wrap: wrap;
     background: #1b263c;
     margin-top: 2rem;
-    margin-bottom: 5rem; }
+    margin-bottom: 5rem;
+    box-shadow: 10px 10px 20px rgba(50, 50, 50, 0.3);
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-radius: 5px; }
     section.partner .partner__wrap span {
       display: inline-block;
       width: 120px;

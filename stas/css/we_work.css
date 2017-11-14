@@ -62,7 +62,8 @@ section.we-work {
     margin: 2rem auto 5rem;
     box-shadow: 10px 10px 20px rgba(50, 50, 50, 0.3);
     border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff; }
+    border-right: 2px solid #fff;
+    border-radius: 5px; }
     section.we-work .we-work__blocks i {
       color: #FFDB4D;
       font-size: 7rem;
