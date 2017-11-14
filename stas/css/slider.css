@@ -116,7 +116,9 @@ body {
     width: 104px;
     height: 90px; }
   form.form {
-    width: 50%; } }
+    width: 50%; }
+  .page-header .page-header__wrap .page-header__line .page-header__communications {
+    margin-top: 3rem; } }
 
 /*
 * Мобильник
@@ -128,8 +130,7 @@ body {
     display: none; }
   .wrap-slide .slide .exhortation {
     position: absolute;
-    top: 50%;
-    /* margin-left: -330px; */
+    top: 64%;
     left: 0;
     margin: 0 auto; }
   .page-header .page-header__line {
@@ -158,7 +159,9 @@ body {
     form.form label[for="email"] span {
       top: 142px; }
     form.form label[for="tel"] span {
-      top: 198px; } }
+      top: 198px; }
+  form.form {
+    margin: 3rem auto; } }
 
 .ton {
   position: absolute;

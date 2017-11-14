@@ -120,3 +120,7 @@ form.form {
   form.form input:nth-last-child(1) {
     text-indent: 0;
     box-shadow: none; }
+
+@media screen and (max-width: 600px) {
+  .page-header .page-header__wrap .page-header__line .page-header__communications {
+    margin-top: 3rem; } }

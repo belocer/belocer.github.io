@@ -38,7 +38,7 @@ body {
     .contact #contact__ton_map div {
       display: block;
       text-align: left;
-      margin: 15% 0 0 4%; }
+      margin: 9% 0 0 4%; }
       .contact #contact__ton_map div h2 {
         text-align: left;
         font-family: "Exo 2", sans-serif;
@@ -74,3 +74,14 @@ body {
       .contact #contact__ton_map div h2 {
         text-align: center;
         margin: 2rem; } }
+
+#contact__ton_map > div > div.contact__brand {
+  width: 340px;
+  height: 100px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  background: url("../img/energo-proekt.png") center center no-repeat no-repeat;
+  background-size: contain;
+  border: 2px solid #1b263c;
+  box-sizing: border-box; }

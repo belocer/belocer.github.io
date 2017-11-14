@@ -3,16 +3,17 @@
 nav.page-header__menu ul li,section.we-product .we-product__wrap .we-product__electro ul,section.we-product .we-product__wrap .we-product__metal ul{list-style:none}
 .contact{display:inline-block;width:100%;height:500px;background:#E6E6E6;position:relative}
 .contact #contact__ton_map{width:50%;height:100%;display:inline-block;background:rgba(229,229,229,.7);position:absolute;top:0;right:0;z-index:10;border-left:2px solid #1b263c}
-.contact #contact__ton_map div{display:block;text-align:left;margin:15% 0 0 4%}
+.contact #contact__ton_map div{display:block;text-align:left;margin:9% 0 0 4%}
 .contact #contact__ton_map div h2{text-align:left;font-size:2rem;margin:2rem 2rem 2rem 0;background-color:#565656;color:transparent;text-shadow:0 2px 3px rgba(255,255,255,.5);-webkit-background-clip:text;-moz-background-clip:text;background-clip:text}
 .contact #contact__ton_map div a{color:#1b263c;text-decoration:none;display:block;margin-top:1rem;font-size:1.2rem}
-.fa,.fa-stack{display:inline-block}
 .contact #contact__ton_map div address{margin-top:2rem;font-size:1rem}
 .contact #mymap{width:50%}
 @media (max-width:600px){.contact #contact__ton_map{width:100%}
 .contact #contact__ton_map div{text-align:center}
 .contact #contact__ton_map div h2{text-align:center;margin:2rem}
 }
+#contact__ton_map>div>div.contact__brand{width:340px;height:100px;display:block;margin:0;padding:0;background:url(../../img/energo-proekt.png) center center no-repeat no-repeat;background-size:contain;border:2px solid #1b263c;box-sizing:border-box}
+.fa,.fa-stack{display:inline-block}
 .fa.fa-pull-left,.fa.pull-left{margin-right:.3em}
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -747,6 +748,8 @@ form.form label[for=email] span{top:142.5px;left:7%;border-right:1px solid #1b26
 form.form label[for=tel] span{top:198.5px;left:7%;border-right:1px solid #1b263c;font-size:1.1rem}
 form.form input{width:85%;height:40px;display:inline-block;margin-top:1rem;text-indent:4rem;border:none}
 form.form input:nth-last-child(1){text-indent:0;box-shadow:none}
+@media screen and (max-width:600px){.page-header .page-header__wrap .page-header__line .page-header__communications{margin-top:3rem}
+}
 nav.page-header__menu ul{display:flex;justify-content:space-around;flex-wrap:wrap}
 nav.page-header__menu ul li:not(:first-child){margin-left:1.5rem}
 nav.page-header__menu ul li a{display:inline-block;color:#1b263c;line-height:1;text-decoration:none;cursor:pointer;position:relative}
@@ -791,15 +794,16 @@ html,section.we-for-you .we-for-you__block,section.we-for-you>h2{font-family:"Ex
 .wrap-slide .slide .exhortation h1{font-size:2rem;font-weight:400}
 .page-header .page-header__line .page-header__logo{display:block;width:104px;height:90px}
 form.form{width:50%}
+.page-header .page-header__wrap .page-header__line .page-header__communications{margin-top:3rem}
 }
 @media (max-width:600px){.wrap-slide{height:30rem}
 .wrap-slide .slide .exhortation h1{display:none}
-.wrap-slide .slide .exhortation{position:absolute;top:50%;left:0;margin:0 auto}
+.wrap-slide .slide .exhortation{position:absolute;top:64%;left:0;margin:0 auto}
 .page-header .page-header__line{min-width:350px;width:100%;display:block;padding-top:1rem}
 .page-header .page-header__line .page-header__logo{width:104px;height:90px;margin:0 auto}
 .page-header .page-header__line .page-header__communications{float:none;width:350px;height:150px;margin:2rem auto 0;display:block;text-align:center}
 .page-header .page-header__wrap{width:100%;height:750px}
-form.form{width:96%}
+form.form{width:96%;margin:3rem auto}
 form.form label[for=name] span{top:86px}
 form.form label[for=email] span{top:142px}
 form.form label[for=tel] span{top:198px}
