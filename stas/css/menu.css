@@ -35,7 +35,7 @@ nav.page-header__menu ul {
       cursor: pointer;
       position: relative; }
     nav.page-header__menu ul li a:after {
-      background-color: #ffeb3b;
+      background-color: #FFDB4D;
       display: block;
       content: "";
       height: 2px;
