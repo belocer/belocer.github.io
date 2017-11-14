@@ -86,9 +86,59 @@ section.we-work {
         line-height: 200px; }
         section.we-work .we-work__blocks .we-work__block span i {
           font-size: 3rem;
-          color: #fff; }
+          color: #fff;
+          transform: rotate(0deg); }
       section.we-work .we-work__blocks .we-work__block p {
         display: inline-block;
         width: 180px;
         height: 100%;
         padding: 5rem 2rem 0 0; }
+
+@media screen and (max-width: 1250px) {
+  section.we-work .we-work__blocks {
+    display: block; }
+    section.we-work .we-work__blocks i {
+      color: #FFDB4D;
+      font-size: 4rem;
+      margin: 0 auto;
+      padding: 0;
+      width: 50px;
+      display: block;
+      height: 100px;
+      line-height: 80px;
+      transform: rotate(90deg); }
+    section.we-work .we-work__blocks .we-work__block {
+      box-sizing: border-box;
+      width: 100%;
+      display: block;
+      color: #fff; }
+      section.we-work .we-work__blocks .we-work__block span {
+        width: 100%;
+        height: 50px;
+        display: inline-block;
+        text-align: center;
+        line-height: 200px; }
+        section.we-work .we-work__blocks .we-work__block span i {
+          font-size: 3rem;
+          color: #fff; }
+      section.we-work .we-work__blocks .we-work__block p {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 1rem 0; }
+  body > div > section.we-work > div > div:nth-child(5) {
+    margin-bottom: 3rem; }
+  body > div > section.we-work > div > div:nth-child(1) {
+    padding-top: 1rem; } }
+
+@media screen and (max-width: 800px) {
+  section.we-work .we-work__header {
+    margin-top: 3rem;
+    width: 100%;
+    color: #1b263c;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.5rem; } }

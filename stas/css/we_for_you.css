@@ -93,3 +93,14 @@ section.we-for-you {
     section.we-for-you .we-for-you__block p, section.we-for-you .we-for-you__block h2 {
       font-weight: 300;
       padding: 1rem; }
+
+@media screen and (max-width: 800px) {
+  section.we-for-you > h2 {
+    width: 100%;
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.5rem;
+    color: #1b263c;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: 100; } }

@@ -44,8 +44,8 @@ body {
       font-family: 'Exo 2', sans-serif;
       z-index: 12;
       position: absolute;
-      top: 37%;
-      margin-left: -505px;
+      top: 35%;
+      margin-left: -545px;
       left: 50%; }
       .wrap-slide .slide .exhortation h1 {
         font-size: 4rem;
@@ -69,7 +69,8 @@ body {
         font-family: #1b263c; }
       .wrap-slide .slide .exhortation #btn {
         box-shadow: none;
-        background: #FFDB4D; }
+        background: #FFDB4D;
+        font-size: .9rem; }
         .wrap-slide .slide .exhortation #btn:hover {
           box-shadow: 0 0 20px #000 inset; }
     .wrap-slide .slide .sl {
