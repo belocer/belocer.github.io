@@ -22,6 +22,7 @@
     <!-- Мои стили -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/we_for_you.css">
     <link rel="stylesheet" href="css/we_work.css">
@@ -36,6 +37,17 @@
     <div class="page-header__wrap">
         <div class="page-header__line">
             <a class="page-header__logo" href="/"></a>
+
+            <nav class="page-header__menu">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="#partner">Партнёрство</a></li>
+                    <li><a href="#work">Как мы работаем</a></li>
+                    <li><a href="#contact__ton_map">Контакты</a></li>
+                </ul>
+            </nav>
+
             <div class="page-header__communications">
                 <a href="tel:+79288406792"><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;+7
                     (928) 840 67 92</a>
@@ -92,7 +104,7 @@
 <div class="wrap">
 
     <!-- Наш продукт -->
-    <section class="we-product">
+    <section class="we-product" id="catalog">
         <h2><strong>Металопрокат</strong> и <strong>Электрооборудование</strong></h2>
         <div class="we-product__wrap">
             <div class="we-product__metal">
@@ -126,7 +138,7 @@
     </section>
 
     <!-- Секция Мы для Вас -->
-    <section class="we-for-you">
+    <section class="we-for-you" id="partner">
         <h2>Мы для Вас</h2>
         <span class="hr"></span>
         <div class="we-for-you__block">
@@ -180,7 +192,7 @@
     </section>
 
     <!-- Как мы работаем -->
-    <section class="we-work">
+    <section class="we-work" id="work">
         <h2 class="we-work__header">Как мы работаем</h2>
         <div class="we-work__blocks">
             <div class="we-work__block">
