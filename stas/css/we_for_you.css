@@ -30,10 +30,33 @@ section.we-for-you {
   background: #E6E6E6; }
   section.we-for-you > h2 {
     width: 100%;
-    text-align: center;
     font-family: "Exo 2", sans-serif;
     font-size: 3rem;
-    color: #1b263c; }
+    color: #1b263c;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center; }
+  section.we-for-you > h2:before,
+  section.we-for-you > h2:after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: #000;
+    background-clip: content-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+  section.we-for-you > h2:before {
+    left: -.5em;
+    margin: 0 0 0 -50%; }
+  section.we-for-you > h2:after {
+    left: .5em;
+    margin: 0 -50% 0 0; }
+  section.we-for-you > h2 > span {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal; }
   section.we-for-you .we-for-you__block {
     width: 250px;
     text-align: center;

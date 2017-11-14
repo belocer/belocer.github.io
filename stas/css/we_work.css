@@ -26,17 +26,43 @@ section.we-work {
   margin: 0 auto;
   background: #E6E6E6; }
   section.we-work .we-work__header {
+    margin-top: 3rem;
     width: 100%;
-    text-align: center;
     font-size: 3rem;
-    color: #1b263c; }
+    color: #1b263c;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center; }
+  section.we-work .we-work__header:before,
+  section.we-work .we-work__header:after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: #000;
+    background-clip: content-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+  section.we-work .we-work__header:before {
+    left: -.5em;
+    margin: 0 0 0 -50%; }
+  section.we-work .we-work__header:after {
+    left: .5em;
+    margin: 0 -50% 0 0; }
+  section.we-work .we-work__header > span {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal; }
   section.we-work .we-work__blocks {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     background: #1b263c;
     margin: 2rem auto;
-    box-shadow: 10px 10px 20px rgba(50, 50, 50, 0.3); }
+    box-shadow: 10px 10px 20px rgba(50, 50, 50, 0.3);
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff; }
     section.we-work .we-work__blocks i {
       color: #FFDB4D;
       font-size: 7rem;

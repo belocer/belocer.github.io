@@ -755,6 +755,7 @@ form.form input:nth-last-child(1){text-indent:0;box-shadow:none}
 .wrap-slide .slide .exhortation input{display:inline-block;background:#fff;color:#1b263c;text-decoration:none;width:85%;height:2.5rem;border-radius:50px;line-height:2.5rem;box-shadow:37px 0 47px -6px #000 inset;font-family:#1b263c}
 .wrap-slide .slide .exhortation #btn{box-shadow:none;background:#FFDB4D}
 .wrap-slide .slide .exhortation #btn:hover{box-shadow:0 0 20px #000 inset}
+section.we-for-you .we-for-you__block,section.we-work .we-work__blocks{box-shadow:10px 10px 20px rgba(50,50,50,.3);border-right:2px solid #fff}
 .wrap-slide .slide .sl{margin:0 auto;width:100%;height:100%;max-width:1950px;z-index:3}
 .wrap-slide .slide .sl .sl__slide{position:relative}
 .wrap-slide .slide .sl .sl__slide img{max-width:100%;height:auto}
@@ -783,8 +784,12 @@ form.form label[for=tel] span{top:198px}
 .stance,section.we-for-you{width:80%;height:100%;margin:0 auto;background:#E6E6E6;max-width:1170px}
 .stance{display:inline-block;border-top:1px solid #1b263c}
 section.we-for-you{display:flex;justify-content:space-around;flex-wrap:wrap}
-section.we-for-you>h2{width:100%;text-align:center;font-size:3rem;color:#1b263c}
-section.we-for-you .we-for-you__block{width:250px;text-align:center;color:#fff;margin:3rem;background:#1b263c;border-radius:5px;box-shadow:10px 10px 20px rgba(50,50,50,.3);border-bottom:2px solid #fff;border-right:2px solid #fff}
+section.we-for-you>h2{width:100%;font-size:3rem;color:#1b263c;overflow:hidden;white-space:nowrap;text-align:center}
+section.we-for-you>h2:after,section.we-for-you>h2:before{content:"";position:relative;display:inline-block;width:50%;height:2px;vertical-align:middle;background:#000;background-clip:content-box;border-bottom:1px solid rgba(255,255,255,.5)}
+section.we-for-you>h2:before{left:-.5em;margin:0 0 0 -50%}
+section.we-for-you>h2:after{left:.5em;margin:0 -50% 0 0}
+section.we-for-you>h2>span{display:inline-block;vertical-align:middle;white-space:normal}
+section.we-for-you .we-for-you__block{width:250px;text-align:center;color:#fff;margin:3rem;background:#1b263c;border-radius:5px;border-bottom:2px solid #fff}
 section.we-for-you .we-for-you__block span{width:130px;height:130px;display:inline-block;margin:2rem auto 0;border-radius:50%;background:#fff;color:#1b263c;text-align:center;line-height:130px;font-size:4rem}
 .wrap,body{width:100%}
 section.we-for-you .we-for-you__block span i{background-color:#565656;color:transparent;text-shadow:0 2px 3px rgba(255,255,255,.5);-webkit-background-clip:text;-moz-background-clip:text;background-clip:text}
@@ -796,8 +801,12 @@ section.we-for-you .we-for-you__block h2,section.we-for-you .we-for-you__block p
 *{transition:all .5s}
 html{font-size:16px;box-sizing:border-box;color:#1b263c}
 section.we-work{width:80%;max-width:1170px;height:100%;margin:0 auto}
-section.we-work .we-work__header{width:100%;text-align:center;font-size:3rem;color:#1b263c}
-section.we-work .we-work__blocks{display:flex;justify-content:space-between;flex-wrap:nowrap;background:#1b263c;margin:2rem auto;box-shadow:10px 10px 20px rgba(50,50,50,.3)}
+section.we-work .we-work__header{margin-top:3rem;width:100%;font-size:3rem;color:#1b263c;overflow:hidden;white-space:nowrap;text-align:center}
+section.we-work .we-work__header:after,section.we-work .we-work__header:before{content:"";position:relative;display:inline-block;width:50%;height:2px;vertical-align:middle;background:#000;background-clip:content-box;border-bottom:1px solid rgba(255,255,255,.5)}
+section.we-work .we-work__header:before{left:-.5em;margin:0 0 0 -50%}
+section.we-work .we-work__header:after{left:.5em;margin:0 -50% 0 0}
+section.we-work .we-work__header>span{display:inline-block;vertical-align:middle;white-space:normal}
+section.we-work .we-work__blocks{display:flex;justify-content:space-between;flex-wrap:nowrap;background:#1b263c;margin:2rem auto;border-bottom:2px solid #fff}
 section.we-work .we-work__blocks i{color:#FFDB4D;font-size:7rem;margin:0;padding:0;width:50px;line-height:200px}
 section.we-work .we-work__blocks .we-work__block{box-sizing:border-box;width:33.33333333333%;height:100%;display:flex;justify-content:space-around;flex-wrap:nowrap;color:#fff}
 section.we-work .we-work__blocks .we-work__block span{width:100px;height:200px;display:inline-block;text-align:center;line-height:200px}
