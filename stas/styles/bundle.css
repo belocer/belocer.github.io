@@ -810,5 +810,5 @@ section.we-work .we-work__blocks{display:flex;justify-content:space-between;flex
 section.we-work .we-work__blocks i{color:#FFDB4D;font-size:7rem;margin:0;padding:0;width:50px;line-height:200px}
 section.we-work .we-work__blocks .we-work__block{box-sizing:border-box;width:33.33333333333%;height:100%;display:flex;justify-content:space-around;flex-wrap:nowrap;color:#fff}
 section.we-work .we-work__blocks .we-work__block span{width:100px;height:200px;display:inline-block;text-align:center;line-height:200px}
-section.we-work .we-work__blocks .we-work__block span i{font-size:2rem;color:#fff}
+section.we-work .we-work__blocks .we-work__block span i{font-size:3rem;color:#fff}
 section.we-work .we-work__blocks .we-work__block p{display:inline-block;width:180px;height:100%;padding:5rem 2rem 0 0}
