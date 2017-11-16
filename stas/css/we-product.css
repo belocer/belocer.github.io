@@ -94,8 +94,8 @@ section.we-product {
       section.we-product .we-product__wrap .we-product__metal ul {
         list-style: none; }
         section.we-product .we-product__wrap .we-product__metal ul li {
-          padding: 1rem 2rem;
-          font-size: 1.5rem;
+          padding: .5rem 2rem;
+          font-size: 1.4rem;
           font-weight: 100;
           letter-spacing: -1px; }
     section.we-product .we-product__wrap .we-product__electro {
@@ -107,8 +107,8 @@ section.we-product {
       section.we-product .we-product__wrap .we-product__electro ul {
         list-style: none; }
         section.we-product .we-product__wrap .we-product__electro ul li {
-          padding: 1rem 2rem;
-          font-size: 1.5rem;
+          padding: .5rem 2rem;
+          font-size: 1.4rem;
           font-weight: 100;
           letter-spacing: -1px; }
   section.we-product .manager {

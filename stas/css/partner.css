@@ -94,6 +94,18 @@ section.partner {
     section.partner .partner__wrap span:nth-child(7) {
       background: url("../img/partner/gusi.png") center center no-repeat no-repeat;
       background-size: contain; }
+    section.partner .partner__wrap span:nth-child(8) {
+      background: url("../img/partner/abisk.png") center center no-repeat no-repeat;
+      background-size: contain; }
+    section.partner .partner__wrap span:nth-child(9) {
+      background: url("../img/partner/logo_85years.png") center center no-repeat no-repeat;
+      background-size: contain; }
+    section.partner .partner__wrap span:nth-child(10) {
+      background: url("../img/partner/logo_ru.png") center center no-repeat no-repeat;
+      background-size: contain; }
+    section.partner .partner__wrap span:nth-child(11) {
+      background: url("../img/partner/logo_vtz.png") center center no-repeat no-repeat;
+      background-size: contain; }
 
 @media screen and (max-width: 510px) {
   section.partner h2.partner__header {
