@@ -59,6 +59,7 @@ section.we-for-you {
     white-space: normal; }
   section.we-for-you .we-for-you__block {
     width: 250px;
+    min-width: 200px;
     text-align: center;
     color: #fff;
     font-family: "Exo 2", sans-serif;

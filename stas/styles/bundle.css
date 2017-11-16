@@ -855,7 +855,7 @@ section.we-for-you>h2:after,section.we-for-you>h2:before{content:"";position:rel
 section.we-for-you>h2:before{left:-.5em;margin:0 0 0 -50%}
 section.we-for-you>h2:after{left:.5em;margin:0 -50% 0 0}
 section.we-for-you>h2>span{display:inline-block;vertical-align:middle;white-space:normal}
-section.we-for-you .we-for-you__block{width:250px;text-align:center;color:#fff;margin:3rem;background:#1b263c;border-radius:5px;border-bottom:2px solid #fff}
+section.we-for-you .we-for-you__block{width:250px;min-width:200px;text-align:center;color:#fff;margin:3rem;background:#1b263c;border-radius:5px;border-bottom:2px solid #fff}
 section.we-for-you .we-for-you__block span{width:130px;height:130px;display:inline-block;margin:2rem auto 0;border-radius:50%;background:#fff;color:#1b263c;text-align:center;line-height:130px;font-size:4rem}
 .wrap,body{width:100%}
 section.we-for-you .we-for-you__block span i{background-color:#565656;color:transparent;text-shadow:0 2px 3px rgba(255,255,255,.5);-webkit-background-clip:text;-moz-background-clip:text;background-clip:text}
