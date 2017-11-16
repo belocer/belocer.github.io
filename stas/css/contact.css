@@ -95,7 +95,8 @@ body {
       .contact #contact__ton_map div address {
         font-size: 1rem; }
         .contact #contact__ton_map div address p {
-          text-align: left; }
+          text-align: left;
+          line-height: 26px; }
   .contact #mymap {
     width: 50%; }
 
@@ -118,14 +119,19 @@ body {
       .contact #contact__ton_map div h2 {
         text-align: center;
         margin: 2rem; }
+
   #contact__ton_map > div > a.contact__brand {
     width: 270px;
     height: 80px;
     display: inline-block;
     margin: 1rem auto;
     text-align: center; }
+
   .contact #contact__ton_map div address p {
     margin-left: 4%; }
+
   .contact #contact__ton_map span.contact__director {
     text-align: center;
     margin: 1.5rem auto; } }
+
+/*# sourceMappingURL=contact.css.map */
