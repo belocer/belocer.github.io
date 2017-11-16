@@ -71,7 +71,7 @@ section.we-product {
     section.we-product .we-product__wrap .we-product__icon {
       background: url("../img/icon_metal_electro.png") center center no-repeat no-repeat;
       background-size: contain;
-      animation: sca infinite 5s;
+      animation: sca infinite 8s ease-in-out;
       position: absolute;
       top: 0;
       left: 0;
@@ -80,11 +80,11 @@ section.we-product {
 
 @keyframes sca {
   0% {
-    transform: scale(1); }
+    transform: scale(1) rotate(0); }
   50% {
-    transform: scale(1.1); }
+    transform: scale(1.1) rotate(3deg); }
   100% {
-    transform: scale(1); } }
+    transform: scale(1) rotate(0); } }
     section.we-product .we-product__wrap .we-product__metal {
       width: 50%;
       display: inline-block;
