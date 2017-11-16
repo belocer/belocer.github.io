@@ -95,6 +95,15 @@ section.we-for-you {
       font-weight: 300;
       padding: 1rem; }
 
+#partner > div:nth-child(9) > span > i {
+  animation: rot linear infinite 3s; }
+
+@keyframes rot {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+
 @media screen and (max-width: 800px) {
   section.we-for-you > h2 {
     width: 100%;

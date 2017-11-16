@@ -849,7 +849,7 @@ section.we-product .manager{margin:1rem;font-size:1.5rem;text-align:center}
 @media screen and (max-width:1250px){body>div>section.we-product>h2,body>div>section.we-product>h2>strong{font-weight:100;font-size:1.5rem}
 section.we-product .we-product__wrap .we-product__electro ul li,section.we-product .we-product__wrap .we-product__metal ul li{padding:1rem 2rem;font-size:1rem;font-weight:100}
 }
-@media screen and (max-width:510px){body>div>section.we-product>h2,body>div>section.we-product>h2>strong{font-weight:100;font-size:1.1rem}
+@media screen and (max-width:510px){body>div>section.we-product>h2,body>div>section.we-product>h2>strong{font-weight:100;font-size:.8rem}
 section.we-product .we-product__wrap .we-product__metal{width:100%;display:block;text-align:center;margin-top:3rem}
 section.we-product .we-product__wrap .we-product__electro{width:100%;display:inline-block;border-left:none;margin-top:3rem;text-align:center}
 .we-product__electro>ul>li span,.we-product__metal>ul>li span{display:none}
@@ -869,6 +869,10 @@ section.we-for-you .we-for-you__block h2{margin:1rem 0;text-shadow:1px 1px 1px #
 *,body{margin:0}
 section.we-for-you .we-for-you__block h2,section.we-for-you .we-for-you__block p{font-weight:300;padding:1rem}
 *,body{padding:0}
+#partner>div:nth-child(9)>span>i{animation:rot linear infinite 3s}
+@keyframes rot{0%{transform:rotate(0)}
+100%{transform:rotate(360deg)}
+}
 @media screen and (max-width:800px){section.we-for-you>h2{width:100%;font-family:"Exo 2",sans-serif;font-size:1.5rem;color:#1b263c;overflow:hidden;white-space:nowrap;text-align:center;font-weight:100}
 }
 *{transition:all .5s}
