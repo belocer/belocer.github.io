@@ -1,0 +1,262 @@
+@import "style.scss";
+
+// Бэкграунд меню
+@mixin menu-back {
+  background: rgba(10, 10, 10, .7);
+}
+
+// Название сайта
+@mixin saira {
+  font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+// Название сайта (тест)
+@mixin nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+// Заголовки и меню
+@mixin oswald {
+  font-family: 'Exo 2', sans-serif;
+}
+
+// Тексты
+@mixin vollkorn {
+  font-family: 'Vollkorn', serif;
+}
+
+// Цвет текста
+@mixin color-text {
+  color: #1b263c;
+}
+
+// Ширина контента
+@mixin content-width {
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+}
+
+// Скругление для елементов меню и трёх блоков возможностей
+@mixin bd {
+  border-radius: 5px;
+}
+
+/*
+* Слайдер
+**************************/
+.wrap-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+
+  .slide {
+    margin: 0 auto;
+    @include content-width;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+
+    .exhortation {
+      @include color-text;
+      @include oswald;
+      z-index: 12;
+      position: absolute;
+      top: 26%;
+      margin-left: -432px;
+      left: 50%;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 400;
+
+        strong {
+          font-size: 1.4rem;
+          font-weight: 700;
+        }
+      }
+
+      input {
+        display: inline-block;
+        background: #fff;
+        color: #1b263c;
+        text-decoration: none;
+        width: 85%;
+        height: 2.5rem;
+        border-radius: 50px;
+        line-height: 2.5rem;
+        box-shadow: 37px 0px 47px -6px #000000 inset;
+        font-family: $logo-color;
+      }
+
+      #btn {
+        box-shadow: none;
+        background: #FFDB4D;
+        font-size: .9rem;
+
+        &:hover {
+          box-shadow: 0 0 20px #000 inset;
+        }
+      }
+    }
+
+    .sl {
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+      max-width: 1950px;
+      z-index: 3;
+
+      .sl__slide {
+        position: relative;
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        .sl__text {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          @include menu-back;
+          @include color-text;
+          text-align: left;
+
+          h3 {
+            @include oswald;
+            padding: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+          }
+          p {
+            @include vollkorn;
+            padding: 0 1rem 1rem 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Планшет
+*/
+@media (max-width: 786px) {
+  .wrap-slide .slide .exhortation {
+    position: absolute;
+    top: 40%;
+    margin-left: -330px;
+    left: 50%;
+  }
+
+  .wrap-slide .slide .exhortation h1 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .page-header .page-header__line .page-header__logo {
+    display: block;
+    width: 104px;
+    height: 90px;
+  }
+
+  form.form {
+    width: 50%;
+  }
+
+  .page-header .page-header__wrap .page-header__line .page-header__communications {
+    margin-top: 3rem;
+  }
+}
+
+
+/*
+* Мобильник
+*/
+@media (max-width: 600px) {
+
+  .wrap-slide {
+    height: 30rem;
+  }
+
+  // Убираю заголовок
+  .wrap-slide .slide .exhortation h1 {
+    display: none;
+  }
+
+  .wrap-slide .slide .exhortation {
+    position: absolute;
+    top: 64%;
+    left: 0;
+    margin: 0 auto;
+  }
+
+  .page-header .page-header__line {
+    min-width: 350px;
+    width: 100%;
+    display: block;
+    padding-top: 1rem;
+  }
+
+  .page-header .page-header__line .page-header__logo {
+    width: 104px;
+    height: 90px;
+    margin: 0 auto;
+  }
+
+  .page-header .page-header__line .page-header__communications {
+    float: none;
+    width: 350px;
+    height: 150px;
+    margin: 2rem auto 0;
+    display: block;
+    text-align: center;
+  }
+
+  .page-header .page-header__wrap {
+    width: 100%;
+    height: 750px;
+  }
+
+  form.form {
+    width: 96%;
+
+    label[for="name"] span {
+      top: 86px;
+    }
+
+    label[for="email"] span {
+      top: 142px;
+    }
+
+    label[for="tel"] span {
+      top: 198px;
+    }
+  }
+
+  form.form {
+    margin: 3rem auto;
+  }
+
+}
+
+
+// Тонирование слайдера
+.ton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(229, 229, 229, 0.7);
+  z-index: 5;
+}

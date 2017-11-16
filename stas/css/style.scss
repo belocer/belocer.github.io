@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+// Шрифт
+$exo: 'Exo 2', sans-serif;
+
+// Цвет лого
+$logo-color: #1b263c;
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: all .5s;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #E6E6E6;
+  font-family: $exo;
+  color: $logo-color;
+}
+
+body {
+  width: 100%;
+  //height: 5000px;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  width: 100%;
+  background: #E6E6E6;
+}

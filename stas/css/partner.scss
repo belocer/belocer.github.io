@@ -1,0 +1,126 @@
+@import "style";
+
+section.partner {
+  width: 80%;
+  max-width: 1170px;
+  height: 100%;
+  margin: 1rem auto;
+  background: #E6E6E6;
+
+  h2.partner__header {
+    margin-top: 3rem;
+    width: 100%;
+    font-size: 3rem;
+    color: $logo-color;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  ////////////////////////////////////
+  h2.partner__header:before,
+  h2.partner__header:after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+
+    vertical-align: middle;
+    background: #000;
+    background-clip: content-box;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+  }
+  h2.partner__header:before {
+    left: -.5em;
+    margin: 0 0 0 -50%;
+  }
+  h2.partner__header:after {
+    left: .5em;
+    margin: 0 -50% 0 0;
+  }
+  h2.partner__header > span {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+  }
+
+  ////////////////////////////////////
+
+  .partner__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: $logo-color;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    box-shadow: 10px 10px 20px rgba(50, 50, 50, 0.3);
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-radius: 5px;
+
+    span {
+      display: inline-block;
+      width: 120px;
+      padding: 1rem;
+      margin: 3rem;
+
+      &:hover {
+        background: #FFDB4D;
+      }
+    }
+
+    span:nth-child(1) {
+      background: url("../img/partner/ls.png") center center no-repeat no-repeat;
+      background-size: contain;
+    }
+    span:nth-child(2) {
+      background: url("../img/partner/abb.png") center center no-repeat no-repeat;
+      background-size: contain;
+    }
+    span:nth-child(3) {
+      background: url("../img/partner/dkc.png") center center no-repeat no-repeat;
+      background-size: contain;
+    }
+    span:nth-child(4) {
+      background: url("../img/partner/legrand.png") center center no-repeat no-repeat;
+      background-size: contain;
+    }
+    span:nth-child(5) {
+      background: url("../img/partner/scheider.png") center center no-repeat no-repeat;
+      background-size: contain;
+    }
+    span:nth-child(6) {
+      background: url("../img/partner/siemens.png") center center no-repeat no-repeat;
+      background-size: contain;
+    }
+    span:nth-child(7) {
+      background: url("../img/partner/gusi.png") center center no-repeat no-repeat;
+      background-size: contain;
+    }
+    span:nth-child(8) {
+      background: url("../img/partner/abisk.png") center center no-repeat no-repeat;
+      background-size: contain;
+    }
+    span:nth-child(9) {
+      background: url("../img/partner/logo_85years.png") center center no-repeat no-repeat;
+      background-size: contain;
+    }
+    span:nth-child(10) {
+      background: url("../img/partner/logo_ru.png") center center no-repeat no-repeat;
+      background-size: contain;
+    }
+    span:nth-child(11) {
+      background: url("../img/partner/logo_vtz.png") center center no-repeat no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+@media screen and (max-width: 510px) {
+  section.partner h2.partner__header {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+}

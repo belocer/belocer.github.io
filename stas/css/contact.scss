@@ -1,0 +1,151 @@
+@import "style.scss";
+
+.contact {
+  display: inline-block;
+  width: 100%;
+  height: 500px;
+  background: #E6E6E6;
+  position: relative;
+ h2 {
+  margin: 3rem;
+  font-size: 3rem;
+  color: $logo-color;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+////////////////////////////////////
+h2.contact__header:before,
+h2.contact__header:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+
+  vertical-align: middle;
+  background: #000;
+  background-clip: content-box;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+h2.contact__header:before {
+  left: -.5em;
+  margin: 0 0 0 -50%;
+}
+h2.contact__header:after {
+  left: .5em;
+  margin: 0 -50% 0 0;
+}
+h2.contact__header > span {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+}
+
+////////////////////////////////////
+
+  #contact__ton_map {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    background: rgba(229, 229, 229, 0.7);
+    position: absolute;
+    bottom: -153px;
+    right: 0;
+    z-index: 1;
+    border-left: 2px solid #1b263c;
+
+    span.contact__director {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      display: block;
+      width: 150px;
+      height: 150px;
+      background: url("../img/stas.jpg") center center no-repeat no-repeat;
+      background-size: cover;
+    }
+
+    div {
+      display: block;
+      text-align: left;
+      margin: 0 0 0 4%;
+
+      h2 {
+        text-align: left;
+        font-family: $exo;
+        font-size: 2rem;
+        font-weight: 700;
+        background-color: #565656;
+        color: transparent;
+        text-shadow: 0 2px 3px rgba(255, 255, 255, 0.5);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        margin-left: 0;
+      }
+
+      a {
+        color: $logo-color;
+        text-decoration: none;
+        font-family: $exo;
+        font-weight: 700;
+      }
+
+      address {
+        font-size: 1rem;
+
+        p {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  #mymap {
+    width: 50%;
+  }
+}
+
+#contact__ton_map > div > a.contact__brand {
+  width: 270px;
+  height: 80px;
+  display: block;
+  margin: 1rem 0;
+  padding: 0;
+  background: url("../img/energo-proekt.png") center center no-repeat no-repeat;
+  background-size: contain;
+  border: 2px solid $logo-color;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+
+  .contact #contact__ton_map {
+    width: 100%;
+
+    div {
+      text-align: center;
+
+      h2 {
+        text-align: center;
+        margin: 2rem;
+      }
+    }
+  }
+  #contact__ton_map > div > a.contact__brand {
+    width: 270px;
+    height: 80px;
+    display: inline-block;
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  .contact #contact__ton_map div address p {
+    margin-left: 4%;
+  }
+  .contact #contact__ton_map span.contact__director {
+    text-align: center;
+    margin: 1.5rem auto;
+  }
+}

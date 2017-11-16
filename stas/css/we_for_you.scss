@@ -1,0 +1,124 @@
+@import "style.scss";
+
+section.we-for-you {
+  width: 80%;
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #E6E6E6;
+
+  & > h2 {
+    width: 100%;
+    font-family: $exo;
+    font-size: 3rem;
+    color: $logo-color;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  ////////////////////////////////////
+  & > h2:before,
+  & > h2:after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+
+    vertical-align: middle;
+    background: #000;
+    background-clip: content-box;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+  }
+  & > h2:before {
+    left: -.5em;
+    margin: 0 0 0 -50%;
+  }
+  & > h2:after {
+    left: .5em;
+    margin: 0 -50% 0 0;
+  }
+  & > h2 > span {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+  }
+
+  .we-for-you__block {
+    width: 250px;
+    min-width: 200px;
+    text-align: center;
+    color: #fff;
+    font-family: $exo;
+    margin: 3rem;
+    background: $logo-color;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(50, 50, 50, 0.3);
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+
+    span {
+      width: 130px;
+      height: 130px;
+      display: inline-block;
+      margin: 2rem auto 0;
+      border-radius: 50%;
+      background: #fff;
+      color: #1b263c;
+      text-align: center;
+      line-height: 130px;
+      font-size: 4rem;
+
+      i {
+        background-color: #565656;
+        color: transparent;
+        text-shadow: 0 2px 3px rgba(255, 255, 255, 0.5);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+      }
+    }
+
+    h2 {
+      margin: 1rem 0;
+      text-shadow: 1px 1px 1px #000;
+      color: #FFDB4D;
+    }
+
+    p, h2 {
+      font-weight: 300;
+      padding: 1rem;
+    }
+  }
+}
+
+#partner > div:nth-child(9) > span > i {
+  animation: rot linear infinite 3s;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  section.we-for-you > h2 {
+    width: 100%;
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.5rem;
+    color: #1b263c;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: 100;
+  }
+}
