@@ -747,6 +747,7 @@
 .page-header .page-header__wrap .page-header__line{min-width:325px;width:100%;display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;padding-top:1rem}
 .page-header .page-header__wrap .page-header__line .page-header__logo{display:inline-block;width:185px;height:140px;background:url(../../img/logo.png) center center no-repeat no-repeat;background-size:cover}
 .page-header .page-header__wrap .page-header__line .page-header__communications{float:right}
+.page-header .page-header__wrap .page-header__line .page-header__communications strong{font-size:1.2rem}
 .page-header .page-header__wrap .page-header__line .page-header__communications a{text-decoration:none;color:#1b263c;font-family:"Exo 2",sans-serif;line-height:100%;font-size:1.2rem;font-weight:700}
 #logo{width:100%;height:100%}
 form.form{width:35%;height:316px;display:block;margin:5rem auto;background:#1b263c;border-radius:5px;position:relative;box-shadow:10px 10px 20px rgba(50,50,50,.3);border-bottom:1px solid #fff;border-right:1px solid #fff}
@@ -760,7 +761,7 @@ form.form input{width:85%;height:40px;display:inline-block;margin-top:1rem;text-
 form.form input:nth-last-child(1){text-indent:0;box-shadow:none}
 @media screen and (max-width:600px){.page-header .page-header__wrap .page-header__line .page-header__communications{margin-top:3rem}
 }
-nav.page-header__menu ul{display:flex;justify-content:space-around;flex-wrap:wrap;position:fixed;width:40%;max-width:570px;height:41px;transition:.2s;padding-top:21px;z-index:10;top:8%;left:50%;margin-left:-280px}
+nav.page-header__menu ul{display:flex;justify-content:space-around;flex-wrap:wrap;position:fixed;width:40%;max-width:570px;height:41px;transition:.2s;padding-top:21px;z-index:10;top:8%;left:50%;margin-left:-290px}
 nav.page-header__menu ul li:not(:first-child){margin-left:1.5rem}
 nav.page-header__menu ul li a{display:inline-block;color:#1b263c;line-height:1;text-decoration:none;cursor:pointer;position:relative}
 nav.page-header__menu ul li a:after{background-color:#FFDB4D;display:block;content:"";height:2px;width:0%;left:50%;position:absolute;transition:width .3s ease-in-out;transform:translateX(-50%)}
