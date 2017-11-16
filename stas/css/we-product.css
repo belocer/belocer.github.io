@@ -20,12 +20,13 @@ body {
   background: #E6E6E6; }
 
 section.we-product {
-  width: 85%;
-  max-width: 1170px;
+  width: 100%;
   margin: 3rem auto 7rem; }
   section.we-product h2 {
     width: 100%;
+    max-width: 1170px;
     font-size: 3rem;
+    margin: 0 auto;
     color: #1b263c;
     overflow: hidden;
     white-space: nowrap;
@@ -58,10 +59,11 @@ section.we-product {
     flex-wrap: wrap;
     margin-top: 2rem;
     padding: 1rem;
-    position: relative; }
+    position: relative;
+    color: #fff;
+    overflow: hidden; }
     section.we-product .we-product__wrap .we-product__dots {
-      background: url("../img/dots.png") center center no-repeat no-repeat;
-      background-size: cover;
+      background: url("../img/pattern.png");
       position: absolute;
       top: 0;
       left: 0;
@@ -95,7 +97,7 @@ section.we-product {
         list-style: none; }
         section.we-product .we-product__wrap .we-product__metal ul li {
           padding: .5rem 2rem;
-          font-size: 1.4rem;
+          font-size: 1.6rem;
           font-weight: 100;
           letter-spacing: -1px; }
     section.we-product .we-product__wrap .we-product__electro {
@@ -108,13 +110,15 @@ section.we-product {
         list-style: none; }
         section.we-product .we-product__wrap .we-product__electro ul li {
           padding: .5rem 2rem;
-          font-size: 1.4rem;
+          font-size: 1.6rem;
           font-weight: 100;
           letter-spacing: -1px; }
   section.we-product .manager {
     margin: 1rem;
     font-size: 1.5rem;
-    text-align: center; }
+    text-align: center;
+    color: #fff;
+    z-index: 2; }
 
 @media screen and (max-width: 1250px) {
   body > div > section.we-product > h2 > strong,
