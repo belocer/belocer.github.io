@@ -25,26 +25,61 @@ body {
   height: 500px;
   background: #E6E6E6;
   position: relative; }
+  .contact h2 {
+    margin: 3rem;
+    font-size: 3rem;
+    color: #1b263c;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center; }
+  .contact h2.contact__header:before,
+  .contact h2.contact__header:after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: #000;
+    background-clip: content-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+  .contact h2.contact__header:before {
+    left: -.5em;
+    margin: 0 0 0 -50%; }
+  .contact h2.contact__header:after {
+    left: .5em;
+    margin: 0 -50% 0 0; }
+  .contact h2.contact__header > span {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal; }
   .contact #contact__ton_map {
     width: 50%;
     height: 100%;
     display: inline-block;
     background: rgba(229, 229, 229, 0.7);
     position: absolute;
-    top: 0;
+    bottom: -153px;
     right: 0;
     z-index: 1;
     border-left: 2px solid #1b263c; }
+    .contact #contact__ton_map span.contact__director {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      display: block;
+      width: 150px;
+      height: 150px;
+      background: url("../img/stas.jpg") center center no-repeat no-repeat;
+      background-size: cover; }
     .contact #contact__ton_map div {
       display: block;
       text-align: left;
-      margin: 9% 0 0 4%; }
+      margin: 0 0 0 4%; }
       .contact #contact__ton_map div h2 {
         text-align: left;
         font-family: "Exo 2", sans-serif;
         font-size: 2rem;
         font-weight: 700;
-        margin: 2rem;
         background-color: #565656;
         color: transparent;
         text-shadow: 0 2px 3px rgba(255, 255, 255, 0.5);
@@ -55,14 +90,12 @@ body {
       .contact #contact__ton_map div a {
         color: #1b263c;
         text-decoration: none;
-        display: block;
-        margin-top: 1rem;
         font-family: "Exo 2", sans-serif;
-        font-size: 1.2rem;
         font-weight: 700; }
       .contact #contact__ton_map div address {
-        margin-top: 2rem;
         font-size: 1rem; }
+        .contact #contact__ton_map div address p {
+          text-align: left; }
   .contact #mymap {
     width: 50%; }
 
@@ -90,4 +123,9 @@ body {
     height: 80px;
     display: inline-block;
     margin: 1rem auto;
-    text-align: center; } }
+    text-align: center; }
+  .contact #contact__ton_map div address p {
+    margin-left: 4%; }
+  .contact #contact__ton_map span.contact__director {
+    text-align: center;
+    margin: 1rem auto; } }
