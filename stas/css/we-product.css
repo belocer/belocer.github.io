@@ -52,18 +52,45 @@ section.we-product {
     vertical-align: middle;
     white-space: normal; }
   section.we-product .we-product__wrap {
-    background: url("../img/icon_metal_electro.png") center center no-repeat no-repeat;
     background-size: contain;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 2rem;
-    padding: 1rem; }
+    padding: 1rem;
+    position: relative; }
+    section.we-product .we-product__wrap .we-product__dots {
+      background: url("../img/dots.png") center center no-repeat no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1; }
+    section.we-product .we-product__wrap .we-product__icon {
+      background: url("../img/icon_metal_electro.png") center center no-repeat no-repeat;
+      background-size: contain;
+      animation: sca infinite 5s;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+
+@keyframes sca {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
     section.we-product .we-product__wrap .we-product__metal {
       width: 50%;
       display: inline-block;
       text-align: right;
-      margin-top: 3rem; }
+      margin-top: 3rem;
+      z-index: 2; }
       section.we-product .we-product__wrap .we-product__metal ul {
         list-style: none; }
         section.we-product .we-product__wrap .we-product__metal ul li {
@@ -75,7 +102,8 @@ section.we-product {
       width: 49%;
       display: inline-block;
       border-left: 2px solid #1b263c;
-      margin-top: 3rem; }
+      margin-top: 3rem;
+      z-index: 2; }
       section.we-product .we-product__wrap .we-product__electro ul {
         list-style: none; }
         section.we-product .we-product__wrap .we-product__electro ul li {

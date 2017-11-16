@@ -774,7 +774,7 @@ nav.page-header__menu ul li a:focus:after,nav.page-header__menu ul li a:hover:af
 @media (max-width:1000px){.desktop__menu{display:none}
 .menu__mobile{display:block}
 }
-#scroll100{display:flex;justify-content:space-around;flex-wrap:wrap;max-width:2000px;height:35px;transition:.2s;padding-top:0;z-index:10;top:0;left:0;margin-left:0;background:#fff;line-height:35px}
+#scroll100{display:flex;justify-content:space-around;flex-wrap:wrap;max-width:2000px;height:35px;transition:.2s;padding-top:0;z-index:15;top:0;left:0;margin-left:0;background:#fff;line-height:35px}
 section.partner{width:80%;max-width:1170px;height:100%;margin:1rem auto;background:#E6E6E6}
 section.partner h2.partner__header{margin-top:3rem;width:100%;font-size:3rem;color:#1b263c;overflow:hidden;white-space:nowrap;text-align:center}
 section.partner h2.partner__header:after,section.partner h2.partner__header:before{content:"";position:relative;display:inline-block;width:50%;height:2px;vertical-align:middle;background:#000;background-clip:content-box;border-bottom:1px solid rgba(255,255,255,.5)}
@@ -836,10 +836,15 @@ section.we-product h2:after,section.we-product h2:before{content:"";position:rel
 section.we-product h2:before{left:-.5em;margin:0 0 0 -50%}
 section.we-product h2:after{left:.5em;margin:0 -50% 0 0}
 section.we-product h2>span{display:inline-block;vertical-align:middle;white-space:normal}
-section.we-product .we-product__wrap{background:url(../../img/icon_metal_electro.png) center center no-repeat no-repeat;background-size:contain;display:flex;justify-content:space-around;flex-wrap:wrap;margin-top:2rem;padding:1rem}
+section.we-product .we-product__wrap{background-size:contain;display:flex;justify-content:space-around;flex-wrap:wrap;margin-top:2rem;padding:1rem;position:relative}
 section.we-product .we-product__wrap .we-product__electro ul li,section.we-product .we-product__wrap .we-product__metal ul li{padding:1rem 2rem;font-weight:100;letter-spacing:-1px;font-size:1.5rem}
-section.we-product .we-product__wrap .we-product__metal{width:50%;display:inline-block;text-align:right;margin-top:3rem}
-section.we-product .we-product__wrap .we-product__electro{width:49%;display:inline-block;border-left:2px solid #1b263c;margin-top:3rem}
+section.we-product .we-product__wrap .we-product__dots{background:url(../../img/dots.png) center center no-repeat no-repeat;background-size:cover;position:absolute;top:0;left:0;width:100%;height:100%;z-index:1}
+section.we-product .we-product__wrap .we-product__icon{background:url(../../img/icon_metal_electro.png) center center no-repeat no-repeat;background-size:contain;animation:sca infinite 5s;position:absolute;top:0;left:0;width:100%;height:100%}
+@keyframes sca{0%,100%{transform:scale(1)}
+50%{transform:scale(1.1)}
+}
+section.we-product .we-product__wrap .we-product__metal{width:50%;display:inline-block;text-align:right;margin-top:3rem;z-index:2}
+section.we-product .we-product__wrap .we-product__electro{width:49%;display:inline-block;border-left:2px solid #1b263c;margin-top:3rem;z-index:2}
 section.we-product .manager{margin:1rem;font-size:1.5rem;text-align:center}
 @media screen and (max-width:1250px){body>div>section.we-product>h2,body>div>section.we-product>h2>strong{font-weight:100;font-size:1.5rem}
 section.we-product .we-product__wrap .we-product__electro ul li,section.we-product .we-product__wrap .we-product__metal ul li{padding:1rem 2rem;font-size:1rem;font-weight:100}
