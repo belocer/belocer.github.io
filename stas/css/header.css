@@ -46,14 +46,15 @@ body {
       .page-header .page-header__wrap .page-header__line .page-header__communications {
         float: right; }
         .page-header .page-header__wrap .page-header__line .page-header__communications strong {
-          font-size: 1.2rem; }
+          font-size: 1.2rem;
+          font-weight: 400; }
         .page-header .page-header__wrap .page-header__line .page-header__communications a {
           text-decoration: none;
           color: #1b263c;
           font-family: "Exo 2", sans-serif;
           line-height: 100%;
           font-size: 1.2rem;
-          font-weight: 700; }
+          font-weight: 400; }
 
 #logo {
   width: 100%;

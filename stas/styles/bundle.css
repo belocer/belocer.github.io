@@ -747,8 +747,8 @@
 .page-header .page-header__wrap .page-header__line{min-width:325px;width:100%;display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;padding-top:1rem}
 .page-header .page-header__wrap .page-header__line .page-header__logo{display:inline-block;width:185px;height:140px;background:url(../../img/logo.png) center center no-repeat no-repeat;background-size:cover}
 .page-header .page-header__wrap .page-header__line .page-header__communications{float:right}
-.page-header .page-header__wrap .page-header__line .page-header__communications strong{font-size:1.2rem}
-.page-header .page-header__wrap .page-header__line .page-header__communications a{text-decoration:none;color:#1b263c;font-family:"Exo 2",sans-serif;line-height:100%;font-size:1.2rem;font-weight:700}
+.page-header .page-header__wrap .page-header__line .page-header__communications strong{font-size:1.2rem;font-weight:400}
+.page-header .page-header__wrap .page-header__line .page-header__communications a{text-decoration:none;color:#1b263c;font-family:"Exo 2",sans-serif;line-height:100%;font-size:1.2rem;font-weight:400}
 #logo{width:100%;height:100%}
 form.form{width:35%;height:316px;display:block;margin:5rem auto;background:#1b263c;border-radius:5px;position:relative;box-shadow:10px 10px 20px rgba(50,50,50,.3);border-bottom:1px solid #fff;border-right:1px solid #fff}
 form.form h3{color:#fff;padding-top:1rem;padding-bottom:1rem;font-weight:400;font-size:2rem}
@@ -805,7 +805,7 @@ section.partner .partner__wrap span:nth-child(7){background:url(../../img/partne
 }
 .wrap-slide{position:absolute;top:0;left:0;width:100%;z-index:-1;height:100%}
 .wrap-slide .slide{margin:0 auto;width:100%;max-width:1920px;text-align:center;position:relative;z-index:1;height:100%}
-.wrap-slide .slide .exhortation{color:#1b263c;font-family:'Exo 2',sans-serif;z-index:12;position:absolute;top:26%;margin-left:-480px;left:50%}
+.wrap-slide .slide .exhortation{color:#1b263c;font-family:'Exo 2',sans-serif;z-index:12;position:absolute;top:26%;margin-left:-509px;left:50%}
 .wrap-slide .slide .exhortation h1{font-size:4rem;font-weight:700}
 .wrap-slide .slide .exhortation h2{font-size:1.2rem;font-weight:400}
 .wrap-slide .slide .exhortation h2 strong{font-size:1.4rem;font-weight:700}
