@@ -33,7 +33,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 10;
+    z-index: 1;
     border-left: 2px solid #1b263c; }
     .contact #contact__ton_map div {
       display: block;
@@ -66,22 +66,28 @@ body {
   .contact #mymap {
     width: 50%; }
 
-@media (max-width: 600px) {
+#contact__ton_map > div > a.contact__brand {
+  width: 270px;
+  height: 80px;
+  display: block;
+  margin: 1rem 0;
+  padding: 0;
+  background: url("../img/energo-proekt.png") center center no-repeat no-repeat;
+  background-size: contain;
+  border: 2px solid #1b263c;
+  box-sizing: border-box; }
+
+@media screen and (max-width: 600px) {
   .contact #contact__ton_map {
     width: 100%; }
     .contact #contact__ton_map div {
       text-align: center; }
       .contact #contact__ton_map div h2 {
         text-align: center;
-        margin: 2rem; } }
-
-#contact__ton_map > div > div.contact__brand {
-  width: 340px;
-  height: 100px;
-  display: block;
-  margin: 0;
-  padding: 0;
-  background: url("../img/energo-proekt.png") center center no-repeat no-repeat;
-  background-size: contain;
-  border: 2px solid #1b263c;
-  box-sizing: border-box; }
+        margin: 2rem; }
+  #contact__ton_map > div > a.contact__brand {
+    width: 270px;
+    height: 80px;
+    display: inline-block;
+    margin: 1rem auto;
+    text-align: center; } }

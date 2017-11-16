@@ -1,19 +1,20 @@
 @charset "UTF-8";
 .contact #contact__ton_map div a,.contact #contact__ton_map div h2{font-family:"Exo 2",sans-serif;font-weight:700}
-nav.page-header__menu ul li,section.we-product .we-product__wrap .we-product__electro ul,section.we-product .we-product__wrap .we-product__metal ul{list-style:none}
+.menu ul,nav.page-header__menu ul li,section.we-product .we-product__wrap .we-product__electro ul,section.we-product .we-product__wrap .we-product__metal ul{list-style:none}
 .contact{display:inline-block;width:100%;height:500px;background:#E6E6E6;position:relative}
-.contact #contact__ton_map{width:50%;height:100%;display:inline-block;background:rgba(229,229,229,.7);position:absolute;top:0;right:0;z-index:10;border-left:2px solid #1b263c}
+.contact #contact__ton_map{width:50%;height:100%;display:inline-block;background:rgba(229,229,229,.7);position:absolute;top:0;right:0;z-index:1;border-left:2px solid #1b263c}
 .contact #contact__ton_map div{display:block;text-align:left;margin:9% 0 0 4%}
 .contact #contact__ton_map div h2{text-align:left;font-size:2rem;margin:2rem 2rem 2rem 0;background-color:#565656;color:transparent;text-shadow:0 2px 3px rgba(255,255,255,.5);-webkit-background-clip:text;-moz-background-clip:text;background-clip:text}
 .contact #contact__ton_map div a{color:#1b263c;text-decoration:none;display:block;margin-top:1rem;font-size:1.2rem}
 .contact #contact__ton_map div address{margin-top:2rem;font-size:1rem}
 .contact #mymap{width:50%}
-@media (max-width:600px){.contact #contact__ton_map{width:100%}
+#contact__ton_map>div>a.contact__brand{width:270px;height:80px;display:block;margin:1rem 0;padding:0;background:url(../../img/energo-proekt.png) center center no-repeat no-repeat;background-size:contain;border:2px solid #1b263c;box-sizing:border-box}
+.fa,.fa-stack{display:inline-block}
+@media screen and (max-width:600px){.contact #contact__ton_map{width:100%}
 .contact #contact__ton_map div{text-align:center}
 .contact #contact__ton_map div h2{text-align:center;margin:2rem}
+#contact__ton_map>div>a.contact__brand{width:270px;height:80px;display:inline-block;margin:1rem auto;text-align:center}
 }
-#contact__ton_map>div>div.contact__brand{width:340px;height:100px;display:block;margin:0;padding:0;background:url(../../img/energo-proekt.png) center center no-repeat no-repeat;background-size:contain;border:2px solid #1b263c;box-sizing:border-box}
-.fa,.fa-stack{display:inline-block}
 .fa.fa-pull-left,.fa.pull-left{margin-right:.3em}
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -750,11 +751,30 @@ form.form input{width:85%;height:40px;display:inline-block;margin-top:1rem;text-
 form.form input:nth-last-child(1){text-indent:0;box-shadow:none}
 @media screen and (max-width:600px){.page-header .page-header__wrap .page-header__line .page-header__communications{margin-top:3rem}
 }
-nav.page-header__menu ul{display:flex;justify-content:space-around;flex-wrap:wrap}
+nav.page-header__menu ul{display:flex;justify-content:space-around;flex-wrap:wrap;position:fixed;width:40%;max-width:570px;height:41px;transition:.2s;padding-top:21px;z-index:10;top:8%;left:50%;margin-left:-260px}
 nav.page-header__menu ul li:not(:first-child){margin-left:1.5rem}
 nav.page-header__menu ul li a{display:inline-block;color:#1b263c;line-height:1;text-decoration:none;cursor:pointer;position:relative}
 nav.page-header__menu ul li a:after{background-color:#FFDB4D;display:block;content:"";height:2px;width:0%;left:50%;position:absolute;transition:width .3s ease-in-out;transform:translateX(-50%)}
 nav.page-header__menu ul li a:focus:after,nav.page-header__menu ul li a:hover:after{width:100%}
+.menu-link{position:fixed;top:4%;right:3%;z-index:9;width:3rem;background:#fff;height:3rem;border-radius:50%}
+.menu-link span,.menu-link span:after,.menu-link span:before{display:block;height:2px;width:30px;position:absolute;left:50%;margin-left:-15px;top:50%;margin-top:-2px;background-color:#1b263c}
+#scroll100,.menu,.menu_active{position:fixed}
+.menu-link span:before{transition:all .5s;content:'';margin-top:-10px}
+.menu-link span:after{transition:all .5s;content:"";margin-top:9px}
+.menu-link_active span{background-color:transparent}
+.menu-link_active span:before{transform:rotate(135deg);margin-top:0}
+.menu-link_active span:after{transform:rotate(-135deg);margin-top:0}
+.menu{right:15%;top:-100%;z-index:10;background:#1b263c;box-shadow:0 0 15px #fff}
+.menu_active{right:8%;top:15%}
+.menu ul{padding:2rem 10px 0 0;text-align:right;width:210px}
+#scroll100,.menu ul a,.menu ul li{width:100%}
+.menu ul a{display:block;line-height:4;text-decoration:none;color:#fff;padding-right:10px;letter-spacing:4px;-webkit-transition:all .5s;transition:all .5s;font-family:sans-serif;text-indent:1rem}
+.menu ul a:hover{background-color:#ffdb4d;color:#1b263c}
+.menu__mobile{display:none}
+@media (max-width:1000px){.desktop__menu{display:none}
+.menu__mobile{display:block}
+}
+#scroll100{display:flex;justify-content:space-around;flex-wrap:wrap;max-width:2000px;height:35px;transition:.2s;padding-top:0;z-index:10;top:0;left:0;margin-left:0;background:#fff;line-height:35px}
 section.partner{width:80%;max-width:1170px;height:100%;margin:1rem auto;background:#E6E6E6}
 section.partner h2.partner__header{margin-top:3rem;width:100%;font-size:3rem;color:#1b263c;overflow:hidden;white-space:nowrap;text-align:center}
 section.partner h2.partner__header:after,section.partner h2.partner__header:before{content:"";position:relative;display:inline-block;width:50%;height:2px;vertical-align:middle;background:#000;background-clip:content-box;border-bottom:1px solid rgba(255,255,255,.5)}
@@ -775,7 +795,7 @@ section.partner .partner__wrap span:nth-child(7){background:url(../../img/partne
 }
 .wrap-slide{position:absolute;top:0;left:0;width:100%;z-index:-1;height:100%}
 .wrap-slide .slide{margin:0 auto;width:100%;max-width:1920px;text-align:center;position:relative;z-index:1;height:100%}
-.wrap-slide .slide .exhortation{color:#1b263c;font-family:'Exo 2',sans-serif;z-index:12;position:absolute;top:35%;margin-left:-545px;left:50%}
+.wrap-slide .slide .exhortation{color:#1b263c;font-family:'Exo 2',sans-serif;z-index:12;position:absolute;top:26%;margin-left:-480px;left:50%}
 .wrap-slide .slide .exhortation h1{font-size:4rem;font-weight:700}
 .wrap-slide .slide .exhortation h2{font-size:1.2rem;font-weight:400}
 .wrap-slide .slide .exhortation h2 strong{font-size:1.4rem;font-weight:700}
