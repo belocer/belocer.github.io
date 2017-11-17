@@ -135,3 +135,25 @@ body {
     margin: 1.5rem auto; } }
 
 /*# sourceMappingURL=contact.css.map */
+
+
+// Яндекс поделится
+.ya-share2 {
+  display: inline-block;
+  width: 25px;
+  height: 250px;
+  position: fixed;
+  top: 40%;
+  left: 1%;
+  z-index: 20;
+}
+
+.ya-share2__list_direction_horizontal > .ya-share2__item {
+   margin-top: 0.3rem;
+ }
+.ya-share2__list_direction_horizontal > .ya-share2__item {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+}
