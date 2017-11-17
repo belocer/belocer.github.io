@@ -149,9 +149,6 @@ body {
 }
 
 .ya-share2__list_direction_horizontal > .ya-share2__item {
-   margin-top: 0.3rem;
- }
-.ya-share2__list_direction_horizontal > .ya-share2__item {
   display: inline-block;
   vertical-align: top;
   margin-top: 0.3rem;
