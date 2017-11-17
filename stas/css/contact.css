@@ -138,7 +138,7 @@ body {
 
 
 // Яндекс поделится
-.ya-share2 {
+.ya-share2, body > div.ya-share2.ya-share2_inited {
   display: inline-block;
   width: 25px;
   height: 250px;
