@@ -134,11 +134,8 @@ body {
     text-align: center;
     margin: 1.5rem auto; } }
 
-/*# sourceMappingURL=contact.css.map */
-
-
 // Яндекс поделится
-.ya-share2, body > div.ya-share2.ya-share2_inited {
+.ya-share2, body > div.ya-share2.ya-share2_inited, .ya-share2__container_size_m {
   display: inline-block;
   width: 25px;
   height: 250px;

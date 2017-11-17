@@ -150,3 +150,21 @@ h2.contact__header > span {
     margin: 1.5rem auto;
   }
 }
+
+// Яндекс поделится
+.ya-share2, body > div.ya-share2.ya-share2_inited, .ya-share2__container_size_m {
+  display: inline-block;
+  width: 25px;
+  height: 250px;
+  position: fixed;
+  top: 40%;
+  left: 1%;
+  z-index: 20;
+}
+
+.ya-share2__list_direction_horizontal > .ya-share2__item {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+}
