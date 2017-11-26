@@ -213,8 +213,8 @@ redStart(r, g, b);
     * Отрабатываю загрузку
     */
     window.addEventListener('load', function () {
-        $('#loaded_page').fadeOut(1500);
-        $('.fa-spinner').fadeOut(1500);
+        $('#loaded_page').fadeOut(2000);
+        $('.fa-spinner').fadeOut(2000);
         if ($('#loaded_page')) {
             $('#loaded_page').style.display = 'none';
         }
