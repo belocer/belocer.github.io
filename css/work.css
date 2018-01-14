@@ -47,6 +47,9 @@
     .good_work .work div:nth-child(8) > span {
       background: url("../img/stas.jpg");
       background-size: cover; }
+    .good_work .work div:nth-child(9) > span {
+      background: url("../img/shopHero.png");
+      background-size: cover; }
     .good_work .work div {
       text-align: center;
       display: inline-block;
