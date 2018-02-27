@@ -216,7 +216,7 @@ redStart(r, g, b);
     window.addEventListener('load', function () {
         $('#loaded_page').fadeOut(18000);
         $('.fa-spinner').fadeOut(18000);
-        if ($('#loaded_page')) {
+        if ($('#loaded_page').style.display != 'none') {
             $('#loaded_page').style.display = 'none';
         }
         $('.fa-spinner').style.display = 'none';
