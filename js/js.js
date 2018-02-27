@@ -214,8 +214,8 @@ redStart(r, g, b);
     */
    document.cookie = "userName=Vasya";
     window.addEventListener('load', function () {
-        $('#loaded_page').fadeOut(18000);
-        $('.fa-spinner').fadeOut(18000);
+        $('#loaded_page').fadeOut(17000);
+        $('.fa-spinner').fadeOut(17000);
         if ($('#loaded_page').style.display != 'none') {
             $('#loaded_page').style.display = 'none';
         }
