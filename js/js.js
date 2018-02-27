@@ -243,21 +243,21 @@ redStart(r, g, b);
 
  */
 
-    window.addEventListener('load', function () {
+/*    window.addEventListener('load', function () {
         $('#loaded_page').fadeOut(18000);
         $('.fa-spinner').fadeOut(18000);
         if ($('#loaded_page').style.display != 'none') {
             $('#loaded_page').style.display = 'none';
         }
         $('.fa-spinner').style.display = 'none';
-    });
+    });*/
 
     // Slick
     $(document).ready(function () {
         $('.sl').slick({autoplay: true, autoplaySpeed: 5000, dots: true, arrows: false});
     });
 
-    // Анимация приветствия
+    /*// Анимация приветствия
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 // ——————————————————————————————————————————————————
@@ -333,7 +333,7 @@ var TextScramble = function () {
     };
 
     return TextScramble;
-}();
+}();*/
 
 // ——————————————————————————————————————————————————
 // Example
