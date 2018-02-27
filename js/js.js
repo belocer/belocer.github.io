@@ -212,15 +212,32 @@ redStart(r, g, b);
     /*
     * Отрабатываю загрузку
     */
-   document.cookie = "userName=Vasya";
-    window.addEventListener('load', function () {
-        $('#loaded_page').fadeOut(17000);
-        $('.fa-spinner').fadeOut(17000);
-        if ($('#loaded_page').style.display != 'none') {
-            $('#loaded_page').style.display = 'none';
-        }
-        $('.fa-spinner').style.display = 'none';
-    });
+   	document.cookie = "userName=Vasya";
+   	var date = new Date(new Date().getTime() + 60 * 1000);
+	document.cookie = "userName=Vasya; path=/; expires=" + date.toUTCString();
+
+	function get_cookie ( cookie_name ){
+
+  		var results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );
+ 
+	  	if ( results ){
+	    	return ( unescape ( results[2] ) );
+	  	}else{
+	    	return null;
+	  	}
+	}
+	var z = get_cookie("userName");
+
+	if (z !== "Vasya"){
+	    window.addEventListener('load', function () {
+	        $('#loaded_page').fadeOut(17000);
+	        $('.fa-spinner').fadeOut(17000);
+	        if ($('#loaded_page').style.display != 'none') {
+	            $('#loaded_page').style.display = 'none';
+	        }
+	        $('.fa-spinner').style.display = 'none';
+	    });
+	}
 
     // Slick
     $(document).ready(function () {
