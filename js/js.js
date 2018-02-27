@@ -212,6 +212,9 @@ redStart(r, g, b);
     /*
     * Отрабатываю загрузку
     */
+   
+
+/*
    	document.cookie = "userName=Vasya";
    	var date = new Date(new Date().getTime() + 60 * 1000);
 	document.cookie = "userName=Vasya; path=/; expires=" + date.toUTCString();
@@ -237,7 +240,17 @@ redStart(r, g, b);
 	        }
 	        $('.fa-spinner').style.display = 'none';
 	    });
-	}
+
+ */
+
+    window.addEventListener('load', function () {
+        $('#loaded_page').fadeOut(18000);
+        $('.fa-spinner').fadeOut(18000);
+        if ($('#loaded_page').style.display != 'none') {
+            $('#loaded_page').style.display = 'none';
+        }
+        $('.fa-spinner').style.display = 'none';
+    });
 
     // Slick
     $(document).ready(function () {
