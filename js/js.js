@@ -212,6 +212,7 @@ redStart(r, g, b);
     /*
     * Отрабатываю загрузку
     */
+   document.cookie = "userName=Vasya";
     window.addEventListener('load', function () {
         $('#loaded_page').fadeOut(18000);
         $('.fa-spinner').fadeOut(18000);
