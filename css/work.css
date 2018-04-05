@@ -36,16 +36,16 @@
       background: url("../img/admin.jpg");
       background-size: cover; }
     .good_work .work div:nth-child(5) > span {
-      background: url("../img/shop1.jpg");
-      background-size: cover; }
-    .good_work .work div:nth-child(6) > span {
       background: url("../img/git.jpg");
       background-size: cover; }
-    .good_work .work div:nth-child(7) > span {
+    .good_work .work div:nth-child(6) > span {
       background: url("../img/secret.jpg");
       background-size: cover; }
-    .good_work .work div:nth-child(8) > span {
+    .good_work .work div:nth-child(7) > span {
       background: url("../img/stas.jpg");
+      background-size: cover; }
+    .good_work .work div:nth-child(8) > span {
+      background: url("../img/shopHero.jpg");
       background-size: cover; }
     .good_work .work div:nth-child(9) > span {
       background: url("../img/shopHero.png");
