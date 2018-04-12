@@ -41,9 +41,9 @@ function startAnimate () {
         numArr.push(takePercentage(circles[i].lastElementChild.getAttribute('class')));
     }
 
-    runNum(item[0], numArr[0], 150);
-    runNum(item[1], numArr[1], 200);
-    runNum(item[2], numArr[2], 300);
+    runNum(item[0], numArr[0], 300);
+    runNum(item[1], numArr[1], 500);
+    runNum(item[2], numArr[2], 700);
 
     /*Анимация кругов*/
     var oneCircle = document.querySelector(".circles .circle-75");
