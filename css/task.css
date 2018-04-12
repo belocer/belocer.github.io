@@ -110,7 +110,7 @@
 
 /*Нижний отступ для кнопок*/
 #task > div > div:nth-child(1) > a:nth-child(25),
-#task > div > div:nth-child(2) > a:nth-child(15),
+#task > div > div:nth-child(2) > a:nth-child(16),
 #task > div > div:nth-child(3) > a:nth-child(7) {
   margin-bottom: 1rem; }
 
