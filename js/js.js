@@ -153,204 +153,63 @@ if (window.innerWidth < 1200) {
 /*
  * Меняющийся цвет бэкграунда шапки сайта
  */
-/* var bg = document.querySelector('.bg');
- var r = 20;
- var g = 20;
- var b = 240;
- var timerIdr = 0;
- var timerIdg = 0;
- var timerIdb = 0;
+var bg = document.querySelector('.bg');
+var r = 20;
+var g = 20;
+var b = 240;
+var timerIdr = 0;
+var timerIdg = 0;
+var timerIdb = 0;
 
- redStart(r, g, b);
+redStart(r, g, b);
 
- function redStart(r=20, g=20, b=20) {
- timerIdr = setInterval(function () {
- r++;
- b--;
- bg.style.background = "rgba(" + r + "," + g + "," + b + ", 1)";
- if (r == 240) {
- clearInterval(timerIdr);
- greenStart(r, g, b);
- }
- }, 100);
- }
+function redStart(r=20, g=20, b=20) {
+    timerIdr = setInterval(function () {
+        r++;
+        b--;
+        bg.style.background = "rgba(" + r + "," + g + "," + b + ", 1)";
+        if (r == 240) {
+            clearInterval(timerIdr);
+            greenStart(r, g, b);
+        }
+    }, 100);
+}
 
- function greenStart(r, g, b) {
- timerIdg = setInterval(function () {
- g++;
- r--;
- bg.style.background = "rgba(" + r + "," + g + "," + b + ", 1)";
- if (g == 240) {
- clearInterval(timerIdg);
- blueStart(r, g, b);
- }
- }, 100);
- }
+function greenStart(r, g, b) {
+    timerIdg = setInterval(function () {
+        g++;
+        r--;
+        bg.style.background = "rgba(" + r + "," + g + "," + b + ", 1)";
+        if (g == 240) {
+            clearInterval(timerIdg);
+            blueStart(r, g, b);
+        }
+    }, 100);
+}
 
- function blueStart(r, g, b) {
- timerIdb = setInterval(function () {
- b++;
- g--;
- bg.style.background = "rgba(" + r + "," + g + "," + b + ", 1)";
- if (r <= 20 && g <= 20 && b >= 240) {
- clearInterval(timerIdb);
- timerIdCicle = setInterval(function () {
- b--;
- if (b == 20) {
- clearInterval(timerIdCicle);
- }
- }, 100);
- clearInterval(timerIdg);
- redStart(r, g, b);
- } else if (r == 20 && g == 20 && b == 20) {
- clearInterval(timerIdg);
- redStart(r, g, b);
- }
- }, 100);
- }*/
-
-/*
- * Отрабатываю загрузку
- */
-
-
-/*
- document.cookie = "userName=Vasya";
- var date = new Date(new Date().getTime() + 60 * 1000);
- document.cookie = "userName=Vasya; path=/; expires=" + date.toUTCString();
-
- function get_cookie ( cookie_name ){
-
- var results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );
-
- if ( results ){
- return ( unescape ( results[2] ) );
- }else{
- return null;
- }
- }
- var z = get_cookie("userName");
-
- if (z !== "Vasya"){
- window.addEventListener('load', function () {
- $('#loaded_page').fadeOut(17000);
- $('.fa-spinner').fadeOut(17000);
- if ($('#loaded_page').style.display != 'none') {
- $('#loaded_page').style.display = 'none';
- }
- $('.fa-spinner').style.display = 'none';
- });
-
- */
-
-/*    window.addEventListener('load', function () {
- $('#loaded_page').fadeOut(18000);
- $('.fa-spinner').fadeOut(18000);
- if ($('#loaded_page').style.display != 'none') {
- $('#loaded_page').style.display = 'none';
- }
- $('.fa-spinner').style.display = 'none';
- });*/
+function blueStart(r, g, b) {
+    timerIdb = setInterval(function () {
+        b++;
+        g--;
+        bg.style.background = "rgba(" + r + "," + g + "," + b + ", 1)";
+        if (r <= 20 && g <= 20 && b >= 240) {
+            clearInterval(timerIdb);
+            timerIdCicle = setInterval(function () {
+                b--;
+                if (b == 20) {
+                    clearInterval(timerIdCicle);
+                }
+            }, 100);
+            clearInterval(timerIdg);
+            redStart(r, g, b);
+        } else if (r == 20 && g == 20 && b == 20) {
+            clearInterval(timerIdg);
+            redStart(r, g, b);
+        }
+    }, 100);
+}
 
 // Slick
 $(document).ready(function () {
     $('.sl').slick({autoplay: true, autoplaySpeed: 5000, dots: true, arrows: false});
 });
-
-/*// Анимация приветствия
- function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
- // ——————————————————————————————————————————————————
- // TextScramble
- // ——————————————————————————————————————————————————
-
- var TextScramble = function () {
- function TextScramble(el) {
- _classCallCheck(this, TextScramble);
-
- this.el = el;
- this.chars = '!<>-_\\/[]{}—=+*^?#________';
- this.update = this.update.bind(this);
- }
-
- TextScramble.prototype.setText = function setText(newText) {
- var _this = this;
-
- var oldText = this.el.innerText;
- var length = Math.max(oldText.length, newText.length);
- var promise = new Promise(function (resolve) {
- return _this.resolve = resolve;
- });
- this.queue = [];
- for (var i = 0; i < length; i++) {
- var from = oldText[i] || '';
- var to = newText[i] || '';
- var start = Math.floor(Math.random() * 40);
- var end = start + Math.floor(Math.random() * 40);
- this.queue.push({ from: from, to: to, start: start, end: end });
- }
- cancelAnimationFrame(this.frameRequest);
- this.frame = 0;
- this.update();
- return promise;
- };
-
- TextScramble.prototype.update = function update() {
- var output = '';
- var complete = 0;
- for (var i = 0, n = this.queue.length; i < n; i++) {
- var _queue$i = this.queue[i];
- var from = _queue$i.from;
- var to = _queue$i.to;
- var start = _queue$i.start;
- var end = _queue$i.end;
- var char = _queue$i.char;
-
- if (this.frame >= end) {
- complete++;
- output += to;
- } else if (this.frame >= start) {
- if (!char || Math.random() < 0.28) {
- char = this.randomChar();
- this.queue[i].char = char;
- }
- output += '<span class="dud">' + char + '</span>';
- } else {
- output += from;
- }
- }
- this.el.innerHTML = output;
- if (complete === this.queue.length) {
- this.resolve();
- } else {
- this.frameRequest = requestAnimationFrame(this.update);
- this.frame++;
- }
- };
-
- TextScramble.prototype.randomChar = function randomChar() {
- return this.chars[Math.floor(Math.random() * this.chars.length)];
- };
-
- return TextScramble;
- }();*/
-
-// ——————————————————————————————————————————————————
-// Example
-// ——————————————————————————————————————————————————
-
-/*var phrases = ['Привет,', 'ты читаешь это', 'значит\'ты нашёл меня', 'я тот кто воплатит', 'твои\'мечты в реальность', 'вот и я', 'готовь список желаний'];
-
- var el = document.querySelector('.text');
- var fx = new TextScramble(el);
-
- var counter = 0;
- var next = function next() {
- fx.setText(phrases[counter]).then(function () {
- setTimeout(next, 800);
- });
- counter = (counter + 1) % phrases.length;
- };
-
- next();
- */
