@@ -1,6 +1,6 @@
 var test = document.getElementById('test');
 var oldScrollY = 0;
-/*window.onscroll = function () {
+window.onscroll = function () {
  var scrolled = window.pageYOffset || document.documentElement.scrollTop;
  var dY = scrolled - oldScrollY;
  if (dY > 0) {
@@ -19,7 +19,7 @@ var oldScrollY = 0;
  document.getElementById('test').removeAttribute("class");
  document.getElementById('test').setAttribute("class", "inplace");
  }
- };*/
+ };
 var min_menu = document.getElementById('min_menu');
 var opacit = document.querySelector('.opacit');
 
