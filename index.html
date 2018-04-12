@@ -23,28 +23,10 @@
 
     <!-- Подключение чата VK -->
     <!-- Put this script tag to the <head> of your page -->
-	<script type="text/javascript" src="//vk.com/js/api/openapi.js?147"></script>
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?147"></script>
     <script type="text/javascript">VK.init({apiId: 6178796, onlyWidgets: true});</script>
 </head>
 <body id="body">
-<!--/*Загрузка страницы*/-->
-<!-- <div id="loaded_page">
-
-    <div class="container">
-        <div class="text"></div>
-    </div>
-
-    <div id="load">
-        <div>G</div>
-        <div>N</div>
-        <div>I</div>
-        <div>D</div>
-        <div>A</div>
-        <div>O</div>
-        <div>L</div>
-    </div>
-</div> -->
-<!--<i class="fa fa-spinner" aria-hidden="true"></i>-->
 
 <!--Меню-->
 <header id="potolok">
@@ -87,20 +69,64 @@
     </div>
 
     <!-- Блок со скилами-->
-    <div class="skills_wrap"><h1 class="skills__header">Навыки</h1>
-        <div class="skills wow fadeInUp" data-wow-delay=".2s">
-            <div class="skills__ico1"></div>
+    <div class="skills_wrap wrap">
+        <h1 class="skills__header">Навыки</h1>
+        <div class="skills wow fadeInUp item" data-wow-delay=".2s">
+            <svg class="circles" viewBox="0 0 110 110">
+                <circle r="45" cx="50%" cy="50%" fill="none" class="circle_first"></circle>
+                <circle r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"
+                        class="circle__second circle-75"></circle>
+            </svg>
             <h2>Вёрстка сайтов</h2>
-            <p>Чистый, комментированный, валидный код.<br>Адаптивная вёрстка. &gt;IE10<br>GULP. SASS.
-                Перенос вёрстки на WordPress.<br>SEO, - первоначальная настройка. <br> Photoshop. Assets adobe.</p></div>
-        <div class="skills wow fadeInUp" data-wow-delay=".4s">
-            <div class="skills__ico2"></div>
+            <p>Чистый, комментированный, валидный код.<br>Адаптивная вёрстка. &gt;IE10<br>GULP. SASS. SVG.
+                Перенос вёрстки на WordPress.<br>SEO, - первоначальная настройка. <br> Photoshop. Assets adobe.</p>
+
+            <span class="num">0%</span>
+        </div>
+        <div class="skills wow fadeInUp item" data-wow-delay=".4s">
+            <svg class="circles" viewBox="0 0 110 110">
+                <circle r="45" cx="50%" cy="50%" fill="none" class="circle_first"></circle>
+                <circle r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"
+                        class="circle__second circle-47"></circle>
+            </svg>
             <h2>Написание<br>JavaScript кода</h2>
-            <p>Скрипты анимации, калькулятор для сайта,<br>json, ajax, ES6, API, cookie).</p></div>
-        <div class="skills wow fadeInUp" data-wow-delay=".6s">
-            <div class="skills__ico3"></div>
+            <p>Скрипты анимации, калькулятор для сайта,<br>json, ajax, ES6, API, cookie).</p>
+            <span class="num">0%</span>
+        </div>
+        <div class="skills wow fadeInUp item" data-wow-delay=".6s">
+            <svg class="circles" viewBox="0 0 110 110">
+                <circle r="45" cx="50%" cy="50%" fill="none" class="circle_first"></circle>
+                <circle r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"
+                        class="circle__second circle-54"></circle>
+            </svg>
             <h2>Написание<br>PHP кода</h2>
-            <p>Работа с БД MySQL PostgreSQL. ООП, MVC,<br>API, Безопасность.</p></div>
+            <p>Работа с БД MySQL PostgreSQL. ООП, MVC,<br>API, Безопасность.</p>
+            <span class="num">0%</span>
+        </div>
+        <!-- ------------------------------------------------------------------------------------ -->
+        <!--    <ul class="wrap">
+                    <li class="item">
+                        <svg class="circles" viewBox="0 0 110 110">
+                            <circle r="45" cx="50%" cy="50%" fill="none" class="circle_first"></circle>
+                            <circle r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" class="circle__second circle-75"></circle>
+                        </svg>
+                        <span class="num">0%</span>
+                    </li>
+                    <li class="item">
+                        <svg class="circles" viewBox="0 0 110 110">
+                            <circle r="45" cx="50%" cy="50%" fill="none" class="circle_first"></circle>
+                            <circle r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" class="circle__second circle-47"></circle>
+                        </svg>
+                        <span class="num">0%</span>
+                    </li>
+                    <li class="item">
+                        <svg class="circles" viewBox="0 0 110 110">
+                            <circle r="45" cx="50%" cy="50%" fill="none" class="circle_first"></circle>
+                            <circle r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" class="circle__second circle-54"></circle>
+                        </svg>
+                        <span class="num">0%</span>
+                    </li>
+                </ul>-->
     </div>
 
     <!--Выполненые работы-->
@@ -152,15 +178,17 @@
             <div class="wow fadeInUp" data-wow-offset="200" data-wow-delay=".4s"><h2>ЭнергоПроект</h2>
                 <span></span>
                 <p><span>В моём исполнении :</span>
-                    Дизайн + Вёрстка + Перенос на Wordpress + SEO + перенос на хостинг + Яндекс Метрика</p><a class="main__button"
-                                                                  href="http://energoproekt-krd.ru/"
-                                                                  target="_blank">ЭнергоПроект</a></div>
-	     <div class="wow fadeInUp" data-wow-offset="200" data-wow-delay=".4s"><h2>Магазин в разработке</h2>
+                    Дизайн + Вёрстка + Перенос на Wordpress + SEO + перенос на хостинг + Яндекс Метрика</p><a
+                        class="main__button"
+                        href="http://energoproekt-krd.ru/"
+                        target="_blank">ЭнергоПроект</a></div>
+            <div class="wow fadeInUp" data-wow-offset="200" data-wow-delay=".4s"><h2>Магазин в разработке</h2>
                 <span></span>
                 <p><span>В моём исполнении :</span>
-                    Дизайн + Вёрстка + js + php + MySQL + Админка + SEO + перенос на хостинг + Яндекс Метрика</p><a class="main__button"
-                                                                  href="http://cj34342.tmweb.ru/"
-                                                                  target="_blank">Магазин</a></div>	
+                    Дизайн + Вёрстка + js + php + MySQL + Админка + SEO + перенос на хостинг + Яндекс Метрика</p><a
+                        class="main__button"
+                        href="http://cj34342.tmweb.ru/"
+                        target="_blank">Магазин</a></div>
         </div>
         <div class="ico_back3"><span class="layer" data-depth="0.60"><i class="fa fa-code"
                                                                         aria-hidden="true"></i></span>
@@ -200,51 +228,63 @@
             <div class="sl">
                 <div class="sl__slide"><img src="img/1.jpg" alt="img1" class="sl__img">
                     <div class="sl__text"><h3 class="sl__zag">Ре-дизайн</h3>
-                        <p class="sl__desc">Правки по дизайну</p></div>
+                        <p class="sl__desc">Правки по дизайну</p>
+                    </div>
                 </div>
                 <div class="sl__slide"><img src="img/2.jpg" alt="img2" class="sl__img">
                     <div class="sl__text"><h3 class="sl__zag">Ре-дизайн</h3>
-                        <p class="sl__desc">Доработка страниц, личный кабинет</p></div>
+                        <p class="sl__desc">Доработка страниц, личный кабинет</p>
+                    </div>
                 </div>
                 <div class="sl__slide"><img src="img/3.jpg" alt="img3" class="sl__img">
                     <div class="sl__text"><h3 class="sl__zag">Дизайн</h3>
-                        <p class="sl__desc">Дизайн карточки товара</p></div>
+                        <p class="sl__desc">Дизайн карточки товара</p>
+                    </div>
                 </div>
                 <div class="sl__slide"><img src="img/4.jpg" alt="img4" class="sl__img">
                     <div class="sl__text"><h3 class="sl__zag">Дизайн</h3>
-                        <p class="sl__desc">Дйзайн первого экрана</p></div>
+                        <p class="sl__desc">Дйзайн первого экрана</p>
+                    </div>
                 </div>
                 <div class="sl__slide"><img src="img/5.jpg" alt="img5" class="sl__img">
                     <div class="sl__text"><h3 class="sl__zag">Дизайн</h3>
-                        <p class="sl__desc">Дизайн главной страницы блога</p></div>
+                        <p class="sl__desc">Дизайн главной страницы блога</p>
+                    </div>
                 </div>
                 <div class="sl__slide"><img src="img/6.jpg" alt="img6" class="sl__img">
                     <div class="sl__text"><h3 class="sl__zag">Дизайн + проектировка</h3>
-                        <p class="sl__desc">Дизайн + проектировка Landing Page 2 дня</p></div>
+                        <p class="sl__desc">Дизайн + проектировка Landing Page 2 дня</p>
+                    </div>
                 </div>
                 <div class="sl__slide"><img src="img/7.jpg" alt="img7" class="sl__img">
                     <div class="sl__text"><h3 class="sl__zag">Дизайн VK сообщества</h3>
-                        <p class="sl__desc">Дизайн шапки для vk группы</p></div>
+                        <p class="sl__desc">Дизайн шапки для vk группы</p>
+                    </div>
                 </div>
                 <div class="sl__slide"><img src="img/8.jpg" alt="img8" class="sl__img">
                     <div class="sl__text"><h3 class="sl__zag">Дизайн</h3>
-                        <p class="sl__desc">Дизайн визитки</p></div>
+                        <p class="sl__desc">Дизайн визитки</p>
+                    </div>
                 </div>
                 <div class="sl__slide"><img src="img/9.jpg" alt="img9" class="sl__img">
                     <div class="sl__text"><h3 class="sl__zag">Дизайн</h3>
-                        <p class="sl__desc">Дизайн визитки</p></div>
+                        <p class="sl__desc">Дизайн визитки</p>
+                    </div>
                 </div>
                 <div class="sl__slide"><img src="img/10.jpg" alt="img10" class="sl__img">
                     <div class="sl__text"><h3 class="sl__zag">Дизайн</h3>
-                        <p class="sl__desc">Дизайн визитки</p></div>
+                        <p class="sl__desc">Дизайн визитки</p>
+                    </div>
                 </div>
                 <div class="sl__slide"><img src="img/11.jpg" alt="img11" class="sl__img">
                     <div class="sl__text"><h3 class="sl__zag">Дизайн</h3>
-                        <p class="sl__desc">Дизайн визитки</p></div>
+                        <p class="sl__desc">Дизайн визитки</p>
+                    </div>
                 </div>
                 <div class="sl__slide"><img src="img/12.jpg" alt="img12" class="sl__img">
                     <div class="sl__text"><h3 class="sl__zag">Дизайн</h3>
-                        <p class="sl__desc">Дизайн визитки</p></div>
+                        <p class="sl__desc">Дизайн визитки</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -357,7 +397,7 @@
                 <a class="main__button" href="graduation_projects/" target="_blank">1 В.Проект</a>
                 <a class="main__button" href="lf_php-4/" target="_blank">База Данных</a>
                 <a class="main__button" href="http://y9283007.bget.ru/calc/ver.02102016/"
-                    target="_blank">Калькулятор дат</a>
+                   target="_blank">Калькулятор дат</a>
             </div>
         </div>
         <div class="ico_back3"><span class="layer" data-depth="1.20"><i class="fa fa-code"
@@ -387,50 +427,25 @@
 </div>
 
 <!--/* pluso */-->
-<script type="text/javascript">(function () {
-    if (window.pluso) if (typeof window.pluso.start == "function") return;
-    if (window.ifpluso == undefined) {
-        window.ifpluso = 1;
-        var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
-        s.type = 'text/javascript';
-        s.charset = 'UTF-8';
-        s.async = true;
-        s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://share.pluso.ru/pluso-like.js';
-        var h = d[g]('body')[0];
-        h.appendChild(s);
-    }
-})();</script>
+<script type="text/javascript">
+    /*    (function () {
+     if (window.pluso) if (typeof window.pluso.start == "function") return;
+     if (window.ifpluso == undefined) {
+     window.ifpluso = 1;
+     var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+     s.type = 'text/javascript';
+     s.charset = 'UTF-8';
+     s.async = true;
+     s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://share.pluso.ru/pluso-like.js';
+     var h = d[g]('body')[0];
+     h.appendChild(s);
+     }
+     })();*/
+</script>
 <div class="pluso" id="pluso" data-background="transparent"
      data-options="medium,round,line,vertical,counter,theme=04"
      data-services="vkontakte,odnoklassniki,facebook,google,moimir"></div>
 
-<!-- BEGIN JIVOSITE CODE {literal} -->
-<script type="text/javascript">
-/*(function () {
-    var widget_id = 'VrzrXsaJ06';
-    var d = document;
-    var w = window;
-
-    function l() {
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = '//code.jivosite.com/script/widget/' + widget_id;
-        var ss = document.getElementsByTagName('script')[0];
-        ss.parentNode.insertBefore(s, ss);
-    }
-
-    if (d.readyState == 'complete') {
-        l();
-    } else {
-        if (w.attachEvent) {
-            w.attachEvent('onload', l);
-        } else {
-            w.addEventListener('load', l, false);
-        }
-    }
-})();*/
-</script><!-- {/literal} END JIVOSITE CODE -->
 
 <!-- Jquery НЕ кроссбраузерный -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -440,8 +455,8 @@
 <!-- Parallax -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
 <script>
-    var scene = document.getElementById('scene');
-    var parallax = new Parallax(scene);
+    /*    var scene = document.getElementById('scene');
+     var parallax = new Parallax(scene);*/
 </script>
 <script src="js/jquery-3.2.0.min.js"></script>
 <script src="js/particles.js"></script>
@@ -451,7 +466,7 @@
 <!-- WOW.js -->
 <link rel="stylesheet" href="css/animate.css">
 <script src="js/wow.min.js"></script>
-<script>new WOW().init();</script>
+<script>/*new WOW().init();*/</script>
 
 <!-- VK API -->
 <div id="vk_comments"></div>
