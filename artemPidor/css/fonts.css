@@ -1,0 +1,130 @@
+@font-face {
+	font-family: 'regular 900';
+	src: url('../fonts/MuseoSansCyrl/regular900/MuseoSansCyrl-900.eot');
+	src: url('../fonts/MuseoSansCyrl/regular900/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/MuseoSansCyrl/regular900/MuseoSansCyrl-900.woff2') format('woff2'),
+		 url('../fonts/MuseoSansCyrl/regular900/MuseoSansCyrl-900.woff') format('woff'),
+		 url('../fonts/MuseoSansCyrl/regular900/MuseoSansCyrl-900.ttf') format('truetype'),
+		 url('../fonts/MuseoSansCyrl/regular900/MuseoSansCyrl-900.svg#MuseoSansCyrl-900') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regular 100';
+	src: url('../fonts/MuseoSansCyrl/regular100/MuseoSansCyrl-100.eot');
+	src: url('../fonts/MuseoSansCyrl/regular100/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/MuseoSansCyrl/regular100/MuseoSansCyrl-100.woff2') format('woff2'),
+		 url('../fonts/MuseoSansCyrl/regular100/MuseoSansCyrl-100.woff') format('woff'),
+		 url('../fonts/MuseoSansCyrl/regular100/MuseoSansCyrl-100.ttf') format('truetype'),
+		 url('../fonts/MuseoSansCyrl/regular100/MuseoSansCyrl-100.svg#MuseoSansCyrl-100') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'italic 100';
+	src: url('../fonts/MuseoSansCyrl/italic100/MuseoSansCyrl-100Italic.eot');
+	src: url('../fonts/MuseoSansCyrl/italic100/MuseoSansCyrl-100Italic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/MuseoSansCyrl/italic100/MuseoSansCyrl-100Italic.woff2') format('woff2'),
+		 url('../fonts/MuseoSansCyrl/italic100/MuseoSansCyrl-100Italic.woff') format('woff'),
+		 url('../fonts/MuseoSansCyrl/italic100/MuseoSansCyrl-100Italic.ttf') format('truetype'),
+		 url('../fonts/MuseoSansCyrl/italic100/MuseoSansCyrl-100Italic.svg#MuseoSansCyrl-100Italic') format('svg');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'italic 700';
+	src: url('../fonts/MuseoSansCyrl/italic700/MuseoSansCyrl-700Italic.eot');
+	src: url('../fonts/MuseoSansCyrl/italic700/MuseoSansCyrl-700Italic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/MuseoSansCyrl/italic700/MuseoSansCyrl-700Italic.woff2') format('woff2'),
+		 url('../fonts/MuseoSansCyrl/italic700/MuseoSansCyrl-700Italic.woff') format('woff'),
+		 url('../fonts/MuseoSansCyrl/italic700/MuseoSansCyrl-700Italic.ttf') format('truetype'),
+		 url('../fonts/MuseoSansCyrl/italic700/MuseoSansCyrl-700Italic.svg#MuseoSansCyrl-700Italic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'italic 300';
+	src: url('../fonts/MuseoSansCyrl/italic300/MuseoSansCyrl-300Italic.eot');
+	src: url('../fonts/MuseoSansCyrl/italic300/MuseoSansCyrl-300Italic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/MuseoSansCyrl/italic300/MuseoSansCyrl-300Italic.woff2') format('woff2'),
+		 url('../fonts/MuseoSansCyrl/italic300/MuseoSansCyrl-300Italic.woff') format('woff'),
+		 url('../fonts/MuseoSansCyrl/italic300/MuseoSansCyrl-300Italic.ttf') format('truetype'),
+		 url('../fonts/MuseoSansCyrl/italic300/MuseoSansCyrl-300Italic.svg#MuseoSansCyrl-300Italic') format('svg');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'regular 700';
+	src: url('../fonts/MuseoSansCyrl/regular700/MuseoSansCyrl-700.eot');
+	src: url('../fonts/MuseoSansCyrl/regular700/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/MuseoSansCyrl/regular700/MuseoSansCyrl-700.woff2') format('woff2'),
+		 url('../fonts/MuseoSansCyrl/regular700/MuseoSansCyrl-700.woff') format('woff'),
+		 url('../fonts/MuseoSansCyrl/regular700/MuseoSansCyrl-700.ttf') format('truetype'),
+		 url('../fonts/MuseoSansCyrl/regular700/MuseoSansCyrl-700.svg#MuseoSansCyrl-700') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regular 500';
+	src: url('../fonts/MuseoSansCyrl/regular500/MuseoSansCyrl-500.eot');
+	src: url('../fonts/MuseoSansCyrl/regular500/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/MuseoSansCyrl/regular500/MuseoSansCyrl-500.woff2') format('woff2'),
+		 url('../fonts/MuseoSansCyrl/regular500/MuseoSansCyrl-500.woff') format('woff'),
+		 url('../fonts/MuseoSansCyrl/regular500/MuseoSansCyrl-500.ttf') format('truetype'),
+		 url('../fonts/MuseoSansCyrl/regular500/MuseoSansCyrl-500.svg#MuseoSansCyrl-500') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'italic 500';
+	src: url('../fonts/MuseoSansCyrl/italic500/MuseoSansCyrl-500Italic.eot');
+	src: url('../fonts/MuseoSansCyrl/italic500/MuseoSansCyrl-500Italic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/MuseoSansCyrl/italic500/MuseoSansCyrl-500Italic.woff2') format('woff2'),
+		 url('../fonts/MuseoSansCyrl/italic500/MuseoSansCyrl-500Italic.woff') format('woff'),
+		 url('../fonts/MuseoSansCyrl/italic500/MuseoSansCyrl-500Italic.ttf') format('truetype'),
+		 url('../fonts/MuseoSansCyrl/italic500/MuseoSansCyrl-500Italic.svg#MuseoSansCyrl-500Italic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'regular 300';
+	src: url('../fonts/MuseoSansCyrl/regular300/MuseoSansCyrl-300.eot');
+	src: url('../fonts/MuseoSansCyrl/regular300/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/MuseoSansCyrl/regular300/MuseoSansCyrl-300.woff2') format('woff2'),
+		 url('../fonts/MuseoSansCyrl/regular300/MuseoSansCyrl-300.woff') format('woff'),
+		 url('../fonts/MuseoSansCyrl/regular300/MuseoSansCyrl-300.ttf') format('truetype'),
+		 url('../fonts/MuseoSansCyrl/regular300/MuseoSansCyrl-300.svg#MuseoSansCyrl-300') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'italic 900';
+	src: url('../fonts/MuseoSansCyrl/italic900/MuseoSansCyrl-900Italic.eot');
+	src: url('../fonts/MuseoSansCyrl/italic900/MuseoSansCyrl-900Italic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/MuseoSansCyrl/italic900/MuseoSansCyrl-900Italic.woff2') format('woff2'),
+		 url('../fonts/MuseoSansCyrl/italic900/MuseoSansCyrl-900Italic.woff') format('woff'),
+		 url('../fonts/MuseoSansCyrl/italic900/MuseoSansCyrl-900Italic.ttf') format('truetype'),
+		 url('../fonts/MuseoSansCyrl/italic900/MuseoSansCyrl-900Italic.svg#MuseoSansCyrl-900Italic') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'fontello';
+	src: url('../fonts/fontello.eot?23247683');
+	src: url('../fonts/fontello.eot?23247683#iefix') format('embedded-opentype'),
+		 url('../fonts/fontello.woff?23247683') format('woff'),
+		 url('../fonts/fontello.ttf?23247683') format('truetype'),
+		 url('../fonts/fontello.svg?23247683#fontello') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
