@@ -1,0 +1,8 @@
+контейнер
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+контент 
+    flex: 1;
+футер
+	нечего не нужно писать в футер
