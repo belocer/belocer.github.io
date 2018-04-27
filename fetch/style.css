@@ -1,0 +1,5 @@
+.linia {
+	width: 150px;
+	height: 5px;
+	border-bottom: 5px solid rgba(250,0,0, 0.5);
+}
