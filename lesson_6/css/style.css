@@ -14,8 +14,7 @@
 .market-info__one-block, 
 .market-info__two-block,
 .market-info__three-block,
-.market-info__four-block
-{
+.market-info__four-block {
 min-height: 300px;
 max-height: 310px;
 }
